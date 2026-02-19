@@ -112,7 +112,40 @@
       <p class="chart-insight" id="insight-multiteam"></p>
     </div>
 
-    <!-- Chart 7: Volume by Season / Owner -->
+    <!-- Chart 7: Trade Type Breakdown (FEAT-02) -->
+    <div class="chart-section">
+      <h2>Trade Type Breakdown</h2>
+      <p class="chart-description">
+        How trades are structured — player swaps, pick trades, FAAB deals, and mixed packages.
+        Click any segment or row to drill into matching trades.
+        <span id="type-filter-label" style="font-size:0.82rem;font-weight:600;color:var(--brand-green);margin-left:8px"></span>
+        <button id="clear-type-filter" class="btn btn-ghost btn-sm" style="display:none;margin-left:4px">✕ Clear</button>
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+        <div style="flex:0 0 260px;min-width:220px">
+          <canvas id="chart-trade-type" style="max-height:260px"></canvas>
+        </div>
+        <div id="trade-type-table-wrap" style="flex:1;min-width:240px">
+          <table class="data-table" id="trade-type-table" style="font-size:0.84rem">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th style="width:60px;text-align:right">Count</th>
+                <th style="width:80px;text-align:right">% of All</th>
+              </tr>
+            </thead>
+            <tbody id="trade-type-tbody"></tbody>
+          </table>
+          <div id="trade-subtype-wrap" style="display:none;margin-top:14px">
+            <p style="font-size:0.78rem;font-weight:700;color:var(--text-secondary);margin-bottom:6px">Player-for-Player breakdown:</p>
+            <canvas id="chart-trade-subtype" style="max-height:180px"></canvas>
+          </div>
+        </div>
+      </div>
+      <p class="chart-insight" id="insight-trade-type"></p>
+    </div>
+
+    <!-- Chart 8: Volume by Season / Owner -->
     <div class="chart-section">
       <h2>Trade Volume Per Owner by Season</h2>
       <p class="chart-description">How each owner's trade activity has changed year over year.</p>

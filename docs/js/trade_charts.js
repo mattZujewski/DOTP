@@ -11,6 +11,7 @@
   let tradesData, teamsData, journeysData;
   let activeOwnerFilter = null;   // null = all
   let activeYearFilter  = 'all';
+  let activeTypeFilter  = null;   // FEAT-02: null = all types
   let allTradeEvents    = [];
   let filteredEvents    = [];
 
@@ -117,12 +118,13 @@
 
   // ── Filter logic ─────────────────────────────────────────────────
   function applyFilters() {
-    // Update owner label whenever filters run (no separate patch needed)
     updateOwnerFilterLabel();
+    updateTypeFilterLabel();
     filteredEvents = allTradeEvents.filter(ev => {
-      const yearOk = activeYearFilter === 'all' || ev.year === activeYearFilter;
+      const yearOk  = activeYearFilter === 'all' || ev.year === activeYearFilter;
       const ownerOk = !activeOwnerFilter || (ev.parties || []).includes(activeOwnerFilter);
-      return yearOk && ownerOk;
+      const typeOk  = !activeTypeFilter  || ev.trade_type_label === activeTypeFilter;
+      return yearOk && ownerOk && typeOk;
     });
     updateAllCharts();
     renderTradeList();
@@ -132,8 +134,15 @@
   function updateOwnerFilterLabel() {
     const el  = document.getElementById('owner-filter-label');
     const btn = document.getElementById('clear-owner-filter');
-    if (el)  el.textContent       = activeOwnerFilter ? `Filtering: ${activeOwnerFilter}` : '';
-    if (btn) btn.style.display    = activeOwnerFilter ? 'inline-block' : 'none';
+    if (el)  el.textContent    = activeOwnerFilter ? `Filtering: ${activeOwnerFilter}` : '';
+    if (btn) btn.style.display = activeOwnerFilter ? 'inline-block' : 'none';
+  }
+
+  function updateTypeFilterLabel() {
+    const el  = document.getElementById('type-filter-label');
+    const btn = document.getElementById('clear-type-filter');
+    if (el)  el.textContent    = activeTypeFilter ? `Showing: ${activeTypeFilter}` : '';
+    if (btn) btn.style.display = activeTypeFilter ? 'inline-block' : 'none';
   }
 
   // Chart instances (for destroy/re-render on filter)
@@ -764,6 +773,150 @@
     }
   }
 
+  // ── Chart 7: Trade Type Breakdown (FEAT-02) ───────────────────────
+  const TYPE_COLORS = {
+    'Player-for-Player': 'rgba(68,114,196,0.82)',
+    'Player-for-Pick':   'rgba(237,125,49,0.82)',
+    'Player-for-FAAB':   'rgba(112,173,71,0.82)',
+    'Pick-for-Pick':     'rgba(255,192,0,0.82)',
+    'Pick-for-FAAB':     'rgba(91,155,213,0.82)',
+    'Mixed':             'rgba(165,105,189,0.82)',
+    'Other':             'rgba(150,150,150,0.82)',
+  };
+  const TYPE_ORDER = [
+    'Player-for-Player','Player-for-Pick','Player-for-FAAB',
+    'Pick-for-Pick','Pick-for-FAAB','Mixed','Other',
+  ];
+
+  function renderTradeTypeBreakdown() {
+    destroyChart('tradeType');
+    destroyChart('tradeSubtype');
+
+    const ctx = document.getElementById('chart-trade-type');
+    if (!ctx) return;
+
+    // Count from filteredEvents so chart responds to year/owner filters
+    const counts = {};
+    filteredEvents.forEach(ev => {
+      const lbl = ev.trade_type_label || 'Other';
+      counts[lbl] = (counts[lbl] || 0) + 1;
+    });
+    const total = filteredEvents.length || 1;
+
+    // Respect TYPE_ORDER for consistent colour mapping
+    const labels = TYPE_ORDER.filter(t => counts[t] > 0);
+    const values = labels.map(t => counts[t]);
+    const bgColors = labels.map(t => TYPE_COLORS[t] || 'rgba(150,150,150,0.8)');
+
+    charts.tradeType = new Chart(ctx, {
+      type: 'doughnut',
+      data: { labels, datasets: [{ data: values, backgroundColor: bgColors, borderWidth: 1, borderColor: 'var(--bg-card)' }] },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '62%',
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: item => ` ${item.label}: ${item.parsed} (${Math.round(item.parsed / total * 100)}%)`,
+            },
+          },
+        },
+        onClick: (_, els) => {
+          if (!els.length) return;
+          const clicked = labels[els[0].index];
+          activeTypeFilter = activeTypeFilter === clicked ? null : clicked;
+          applyFilters();
+          renderTradeTypeBreakdown(); // re-render to update highlight
+        },
+      },
+    });
+
+    // Summary table
+    const tbody = document.getElementById('trade-type-tbody');
+    if (tbody) {
+      tbody.innerHTML = labels.map(t => {
+        const cnt  = counts[t];
+        const pct  = Math.round(cnt / total * 100);
+        const dot  = `<span style="width:9px;height:9px;border-radius:50%;background:${TYPE_COLORS[t]||'#999'};display:inline-block;margin-right:6px;flex-shrink:0"></span>`;
+        const isActive = activeTypeFilter === t;
+        return `<tr class="clickable${isActive ? ' active-row' : ''}" data-type="${t}"
+                    style="${isActive ? 'background:var(--bg-primary);font-weight:700' : ''}">
+          <td><span style="display:inline-flex;align-items:center">${dot}${t}</span></td>
+          <td style="text-align:right">${cnt}</td>
+          <td style="text-align:right">${pct}%</td>
+        </tr>`;
+      }).join('');
+
+      tbody.querySelectorAll('tr').forEach(tr => {
+        tr.addEventListener('click', () => {
+          const clicked = tr.dataset.type;
+          activeTypeFilter = activeTypeFilter === clicked ? null : clicked;
+          applyFilters();
+          renderTradeTypeBreakdown();
+        });
+      });
+    }
+
+    // Sub-type bar chart (Player-for-Player only)
+    const subtypeWrap = document.getElementById('trade-subtype-wrap');
+    const subtypeCtx  = document.getElementById('chart-trade-subtype');
+    const showSubtype = activeTypeFilter === 'Player-for-Player' || !activeTypeFilter;
+    const subtypeSummary = tradesData.trade_type_summary?.['Player-for-Player']?.sub_types || {};
+
+    if (subtypeWrap) subtypeWrap.style.display = (showSubtype && Object.keys(subtypeSummary).length > 0) ? 'block' : 'none';
+
+    if (showSubtype && subtypeCtx && Object.keys(subtypeSummary).length > 0) {
+      // Count sub-types from filteredEvents (not global summary) so filters apply
+      const subCounts = {};
+      filteredEvents
+        .filter(ev => ev.trade_type_label === 'Player-for-Player' && ev.player_sub_type)
+        .forEach(ev => { subCounts[ev.player_sub_type] = (subCounts[ev.player_sub_type] || 0) + 1; });
+
+      const subLabels = Object.entries(subCounts).sort((a,b) => b[1]-a[1]).map(([l])=>l);
+      const subValues = subLabels.map(l => subCounts[l]);
+
+      if (subLabels.length) {
+        charts.tradeSubtype = new Chart(subtypeCtx, {
+          type: 'bar',
+          data: {
+            labels: subLabels,
+            datasets: [{
+              data: subValues,
+              backgroundColor: 'rgba(68,114,196,0.72)',
+              borderRadius: 4,
+            }],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { display: false }, ticks: { font: { size: 11 } } },
+              y: { beginAtZero: true, ticks: { precision: 0 } },
+            },
+          },
+        });
+      }
+    }
+
+    // Insight callout
+    const insightEl = document.getElementById('insight-trade-type');
+    if (insightEl) {
+      const topType = labels[0];
+      const topCnt  = counts[topType] || 0;
+      const pfpCnt  = counts['Player-for-Player'] || 0;
+      const pfpPct  = Math.round(pfpCnt / total * 100);
+      insightEl.innerHTML = topType
+        ? `<strong>${topType}</strong> is the most common trade structure
+           (${topCnt} of ${total} trades, ${Math.round(topCnt/total*100)}%).
+           ${pfpCnt && topType !== 'Player-for-Player' ? `Player-for-Player accounts for <strong>${pfpPct}%</strong>. ` : ''}
+           Click any row or donut segment to filter the trade list to that type.`
+        : '';
+    }
+  }
+
   // ── Update all charts ─────────────────────────────────────────────
   function updateAllCharts() {
     renderTradesPerOwner();
@@ -773,12 +926,20 @@
     renderHeatmap();
     renderMultiTeam();
     renderVolumeBySeasonOwner();
+    renderTradeTypeBreakdown();
   }
 
   // ── Clear owner filter button ────────────────────────────────────
   document.getElementById('clear-owner-filter')?.addEventListener('click', () => {
     activeOwnerFilter = null;
     applyFilters();
+  });
+
+  // ── Clear type filter button (FEAT-02) ────────────────────────────
+  document.getElementById('clear-type-filter')?.addEventListener('click', () => {
+    activeTypeFilter = null;
+    applyFilters();
+    renderTradeTypeBreakdown();
   });
 
   // ── Owner Compare ─────────────────────────────────────────────────
@@ -893,6 +1054,7 @@
     renderTradeMatrix();
     renderTradeNetwork();
     renderHeatmap();
+    renderTradeTypeBreakdown();
   });
 
 })();

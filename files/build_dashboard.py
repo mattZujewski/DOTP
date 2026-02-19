@@ -625,6 +625,136 @@ def build_teams_json(
 # JSON Builder: trades.json
 # ---------------------------------------------------------------------------
 
+def classify_trade_type(
+    details_raw: str,
+    assets_by_party: Dict[str, Dict[str, List[str]]],
+) -> Tuple[str, str]:
+    """
+    Classify a trade into a type label and a player sub-type label (FEAT-02).
+
+    Classification is based on:
+    - details_raw  → detect picks ("Draft Pick") and FAAB ("Budget:"), since
+                      these are stripped from assets_by_party arrays.
+    - assets_by_party → count players on each side for sub-type labelling.
+
+    Returns (trade_type_label, player_sub_type):
+      trade_type_label  — one of: "Player-for-Player", "Player-for-Pick",
+                          "Player-for-FAAB", "Pick-for-Pick", "Pick-for-FAAB", "Mixed"
+      player_sub_type   — "1-for-1", "2-for-1", "2-for-2", etc. for Player-for-Player;
+                          "" for all other types.
+
+    Classification matrix (from roadmap Architecture Notes):
+      - Both sides have players, no picks, no FAAB  → Player-for-Player
+      - One side has players, other has FAAB only    → Player-for-FAAB
+      - One side has players, other has picks        → Player-for-Pick
+      - Both sides have only picks                   → Pick-for-Pick
+      - One side picks, other FAAB (no players)      → Pick-for-FAAB
+      - Anything combining ≥2 asset types both sides → Mixed
+    """
+    raw = normalize_quotes(details_raw or "")
+    has_picks = bool(re.search(r"Draft Pick", raw, re.IGNORECASE))
+    has_faab  = bool(re.search(r"Budget\s*:", raw, re.IGNORECASE))
+
+    # Count players per side using assets_by_party (player arrays only).
+    # Use sent arrays where populated; fall back to received arrays when a
+    # single-row trade only records the receiving party (Fantrax data gap —
+    # see BUG-01 investigation: 186 of 352 trade events have only 1 CSV row).
+    all_players_in_trade: Set[str] = set()
+    for party_data in assets_by_party.values():
+        for p in party_data.get("sent", []) + party_data.get("received", []):
+            all_players_in_trade.add(p)
+
+    party_player_counts: List[int] = []
+    for party_data in assets_by_party.values():
+        cnt = len(party_data.get("sent", []))
+        if cnt > 0:
+            party_player_counts.append(cnt)
+
+    # If no sent arrays are populated but we know players exist (e.g. only the
+    # receiving party is in assets_by_party), infer from received arrays.
+    if not party_player_counts and all_players_in_trade:
+        for party_data in assets_by_party.values():
+            cnt = len(party_data.get("received", []))
+            if cnt > 0:
+                party_player_counts.append(cnt)
+
+    # Final fallback: detect player presence via details_raw segment count when
+    # assets_by_party is entirely empty (2019 "X to Y" format trades with no
+    # CSV rows logged by Fantrax).
+    if not party_player_counts:
+        segs = len(re.findall(r"trades away|(?<= ) to (?=[A-Z])", raw, re.IGNORECASE))
+        if segs >= 2 and not has_picks and not has_faab:
+            # No picks, no FAAB, two segments → assume 1-for-1
+            party_player_counts = [1, 1]
+
+    has_players = len(party_player_counts) > 0
+
+    # Apply classification matrix.
+    #
+    # The core question: does ANY single party's "sent" assets mix asset types?
+    # e.g. "Party A trades away PlayerX 2027 Draft Pick Round 2" → Mixed.
+    #
+    # We use details_raw to detect this by parsing each "trades away" segment
+    # and checking whether it contains both players (non-pick, non-budget text)
+    # AND picks or FAAB on the same side. This is more reliable than the full
+    # segment regex because we only need to detect co-occurrence, not enumerate.
+    #
+    # Simple global flags:
+    #   has_picks, has_faab, has_players  ← already computed above
+    #
+    # "Mixed" = any single party sends >=2 asset types in one segment.
+    # We detect this by: within a "trades away ... [next team]" segment,
+    # checking if the content has BOTH player-like text AND picks/FAAB.
+    any_side_mixed = False
+    if "trades away" in raw.lower():
+        # Split on the boundary before each "TeamName trades away" segment.
+        # We iterate over segments and check each side independently.
+        segments = re.split(r"(?=\S.+?\s+trades\s+away\s)", raw, flags=re.IGNORECASE)
+        for seg in segments:
+            m = re.match(r"^.+?\s+trades\s+away\s+(.+)$", seg.strip(), re.IGNORECASE | re.DOTALL)
+            if not m:
+                continue
+            seg_content = m.group(1).strip()
+            seg_has_pick = bool(re.search(r"Draft Pick", seg_content, re.IGNORECASE))
+            seg_has_faab = bool(re.search(r"Budget\s*:", seg_content, re.IGNORECASE))
+            # Has player-like content = after removing picks and budget lines,
+            # something remains that is at least 4 chars (a plausible name).
+            seg_stripped = re.sub(r"\d{4}\s+Draft Pick\b[^,\n]*", "", seg_content, flags=re.IGNORECASE)
+            seg_stripped = re.sub(r"Budget\s*:\s*\$[\d.]+", "", seg_stripped, flags=re.IGNORECASE).strip(" ,\n")
+            seg_has_player = len(seg_stripped) >= 4
+            if seg_has_player and (seg_has_pick or seg_has_faab):
+                any_side_mixed = True
+                break
+
+    if any_side_mixed:
+        label = "Mixed"
+    elif has_players and not has_picks and not has_faab:
+        label = "Player-for-Player"
+    elif has_players and has_faab and not has_picks:
+        label = "Player-for-FAAB"
+    elif has_players and has_picks and not has_faab:
+        label = "Player-for-Pick"
+    elif has_players and has_picks and has_faab:
+        # Players trade across all 3 asset types — always Mixed
+        label = "Mixed"
+    elif has_picks and has_faab and not has_players:
+        label = "Pick-for-FAAB"
+    elif has_picks and not has_faab and not has_players:
+        label = "Pick-for-Pick"
+    else:
+        label = "Other"
+
+    # Sub-type for Player-for-Player trades: "NxM" where N = side A count, M = side B count
+    sub_type = ""
+    if label == "Player-for-Player" and len(party_player_counts) >= 2:
+        a, b = sorted(party_player_counts, reverse=True)[:2]
+        sub_type = f"{a}-for-{b}"
+    elif label == "Player-for-Player" and len(party_player_counts) == 1:
+        sub_type = "1-for-1"  # incomplete CSV coverage — known to be 1-for-1
+
+    return label, sub_type
+
+
 def build_assets_by_party_from_rows(
     transactions_df: pd.DataFrame,
     team_to_owner: Dict[str, str],
@@ -737,24 +867,53 @@ def build_trades_json(
                 if owner:
                     assets_by_owner[owner] = asset_data
 
+        # FEAT-02: classify trade type from details_raw + asset counts
+        type_label, sub_type = classify_trade_type(str(row["details"]), assets_by_owner)
+
         trade_events_list.append({
-            "event_id":        event_id,
-            "date":            str(row["date"]) if pd.notna(row.get("date")) else None,
-            "date_iso":        row.get("date_iso"),
-            "year":            int(row["year"]) if pd.notna(row.get("year")) else None,
-            "month":           row.get("month"),
-            "month_num":       month_num,
-            "details_raw":     str(row["details"]),
-            "parties":         sorted(owners),
-            "party_count":     party_count,
-            "trade_type":      trade_type,
-            "assets_by_party": assets_by_owner,
+            "event_id":          event_id,
+            "date":              str(row["date"]) if pd.notna(row.get("date")) else None,
+            "date_iso":          row.get("date_iso"),
+            "year":              int(row["year"]) if pd.notna(row.get("year")) else None,
+            "month":             row.get("month"),
+            "month_num":         month_num,
+            "details_raw":       str(row["details"]),
+            "parties":           sorted(owners),
+            "party_count":       party_count,
+            "trade_type":        trade_type,
+            "trade_type_label":  type_label,
+            "player_sub_type":   sub_type,
+            "assets_by_party":   assets_by_owner,
         })
 
     # Sort trade events by date
     trade_events_list.sort(
         key=lambda x: x["date_iso"] or "0000-00-00", reverse=True
     )
+
+    # FEAT-02: Build trade_type_summary aggregate block
+    TYPE_ORDER = [
+        "Player-for-Player",
+        "Player-for-Pick",
+        "Player-for-FAAB",
+        "Pick-for-Pick",
+        "Pick-for-FAAB",
+        "Mixed",
+        "Other",
+    ]
+    trade_type_summary: Dict[str, Any] = {t: {"count": 0, "sub_types": {}} for t in TYPE_ORDER}
+    for ev in trade_events_list:
+        lbl = ev.get("trade_type_label", "Other")
+        if lbl not in trade_type_summary:
+            trade_type_summary[lbl] = {"count": 0, "sub_types": {}}
+        trade_type_summary[lbl]["count"] += 1
+        sub = ev.get("player_sub_type", "")
+        if sub:
+            trade_type_summary[lbl]["sub_types"][sub] = (
+                trade_type_summary[lbl]["sub_types"].get(sub, 0) + 1
+            )
+    # Strip empty buckets from output
+    trade_type_summary = {k: v for k, v in trade_type_summary.items() if v["count"] > 0}
 
     # Build matrix
     all_owners_in_trades = sorted(set(owner_trade_counts.keys()))
@@ -789,6 +948,7 @@ def build_trades_json(
         "owner_trade_counts":   dict(owner_trade_counts),
         "trades_by_year_month": dict(trades_by_ym),
         "trades_by_year_owner": {yr: dict(v) for yr, v in trades_by_year_owner.items()},
+        "trade_type_summary":   trade_type_summary,
         "matrix": {
             "owners_ordered": OWNERS_ALPHA,
             "cells":          matrix_cells,

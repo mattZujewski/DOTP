@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T23:09:23.873974Z",
+    "generated_at": "2026-02-19T23:39:40.499912Z",
     "total_trade_events": 352
   },
   "trade_events": [
@@ -18,6 +18,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -41,6 +43,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -74,6 +78,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -107,6 +113,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -130,6 +138,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -165,6 +175,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -200,6 +212,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -233,6 +247,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -270,6 +286,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -303,6 +321,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -336,6 +356,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -369,6 +391,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -402,6 +426,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -435,6 +461,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -470,6 +498,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -503,6 +533,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -536,6 +568,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -573,6 +607,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -608,6 +644,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -645,6 +683,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -668,6 +708,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -703,6 +745,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -740,6 +784,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -777,6 +823,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -812,6 +860,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -846,6 +896,8 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -896,6 +948,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -929,6 +983,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -966,6 +1022,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -1003,6 +1061,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -1036,6 +1096,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -1069,6 +1131,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -1106,6 +1170,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -1129,6 +1195,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -1162,6 +1230,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -1185,6 +1255,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1220,6 +1292,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -1253,6 +1327,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-2",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -1292,6 +1368,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1325,6 +1403,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1360,6 +1440,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1393,6 +1475,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -1416,6 +1500,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -1439,6 +1525,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -1462,6 +1550,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -1495,6 +1585,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1528,6 +1620,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -1551,6 +1645,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -1588,6 +1684,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -1611,6 +1709,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -1644,6 +1744,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
@@ -1683,6 +1785,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -1706,6 +1810,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -1739,6 +1845,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -1762,6 +1870,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -1785,6 +1895,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -1818,6 +1930,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -1853,6 +1967,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -1886,6 +2002,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -1909,6 +2027,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -1932,6 +2052,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -1955,6 +2077,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -1988,6 +2112,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -2021,6 +2147,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2058,6 +2186,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -2091,6 +2221,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -2126,6 +2258,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -2149,6 +2283,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -2172,6 +2308,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -2195,6 +2333,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -2218,6 +2358,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -2251,6 +2393,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2286,6 +2430,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -2309,6 +2455,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -2344,6 +2492,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -2367,6 +2517,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -2390,6 +2542,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -2413,6 +2567,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2450,6 +2606,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2483,6 +2641,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -2516,6 +2676,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -2551,6 +2713,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -2574,6 +2738,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -2607,6 +2773,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -2630,6 +2798,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -2673,6 +2843,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -2696,6 +2868,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -2731,6 +2905,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2764,6 +2940,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -2787,6 +2965,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -2810,6 +2990,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -2845,6 +3027,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -2868,6 +3052,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2901,6 +3087,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -2924,6 +3112,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -2947,6 +3137,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -2980,6 +3172,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3017,6 +3211,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3052,6 +3248,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -3076,6 +3274,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3111,6 +3311,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -3148,6 +3350,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -3171,6 +3375,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -3206,6 +3412,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3245,6 +3453,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3280,6 +3490,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -3303,6 +3515,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -3326,6 +3540,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -3359,6 +3575,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -3392,6 +3610,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -3425,6 +3645,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3460,6 +3682,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3495,6 +3719,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3528,6 +3754,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -3561,6 +3789,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -3584,6 +3814,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3619,6 +3851,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3656,6 +3890,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -3691,6 +3927,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -3714,6 +3952,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -3747,6 +3987,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3784,6 +4026,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -3821,6 +4065,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -3844,6 +4090,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -3877,6 +4125,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -3900,6 +4150,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -3933,6 +4185,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -3968,6 +4222,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -3991,6 +4247,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -4026,6 +4284,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -4049,6 +4309,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -4072,6 +4334,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -4105,6 +4369,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -4128,6 +4394,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -4151,6 +4419,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -4174,6 +4444,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -4197,6 +4469,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -4220,6 +4494,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -4243,6 +4519,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-3",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -4284,6 +4562,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -4319,6 +4599,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -4343,6 +4625,8 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "6-for-4",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -4399,6 +4683,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -4432,6 +4718,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -4455,6 +4743,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -4478,6 +4768,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -4511,6 +4803,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -4534,6 +4828,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -4557,6 +4853,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -4580,6 +4878,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -4603,6 +4903,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -4626,6 +4928,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -4649,6 +4953,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -4684,6 +4990,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -4707,6 +5015,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -4730,6 +5040,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -4753,6 +5065,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
@@ -4786,6 +5100,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -4819,6 +5135,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -4856,6 +5174,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-2",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -4893,6 +5213,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -4926,6 +5248,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -4950,6 +5274,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -4985,6 +5311,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -5020,6 +5348,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -5043,6 +5373,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -5066,6 +5398,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -5099,6 +5433,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -5132,6 +5468,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -5167,6 +5505,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -5190,6 +5530,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -5225,6 +5567,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -5248,6 +5592,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -5281,6 +5627,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -5304,6 +5652,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -5337,6 +5687,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -5370,6 +5722,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -5403,6 +5757,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -5436,6 +5792,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -5469,6 +5827,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -5492,6 +5852,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -5515,6 +5877,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -5538,6 +5902,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -5562,6 +5928,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -5585,6 +5953,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -5618,6 +5988,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -5641,6 +6013,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -5676,6 +6050,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -5699,6 +6075,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -5722,6 +6100,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -5757,6 +6137,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -5780,6 +6162,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -5803,6 +6187,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -5826,6 +6212,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -5850,6 +6238,8 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -5873,6 +6263,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-1",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -5910,6 +6302,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -5933,6 +6327,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -5956,6 +6352,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -5979,6 +6377,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -6014,6 +6414,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -6037,6 +6439,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6060,6 +6464,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -6084,6 +6490,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -6119,6 +6527,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -6154,6 +6564,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -6187,6 +6599,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -6220,6 +6634,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -6243,6 +6659,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -6266,6 +6684,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -6289,6 +6709,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -6326,6 +6748,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -6350,6 +6774,8 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -6364,9 +6790,9 @@
         },
         "Jack Dunne": {
           "sent": [
+            "Kenley Jansen",
             "Evan Phillips",
-            "Kyle Stowers",
-            "Kenley Jansen"
+            "Kyle Stowers"
           ],
           "received": [
             "Willy Adames",
@@ -6400,6 +6826,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6423,6 +6851,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -6456,6 +6886,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -6489,6 +6921,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -6512,6 +6946,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -6535,6 +6971,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -6568,6 +7006,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6591,6 +7031,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -6615,6 +7057,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [],
@@ -6638,6 +7082,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [],
@@ -6662,6 +7108,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -6685,6 +7133,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6708,6 +7158,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6731,6 +7183,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -6754,6 +7208,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -6777,6 +7233,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
@@ -6814,6 +7272,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
@@ -6847,6 +7307,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -6870,6 +7332,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -6903,6 +7367,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -6926,6 +7392,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -6951,6 +7419,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -6986,6 +7456,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -7009,6 +7481,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -7032,6 +7506,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -7055,6 +7531,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -7092,6 +7570,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -7115,6 +7595,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -7150,6 +7632,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -7173,6 +7657,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7196,6 +7682,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -7219,6 +7707,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -7242,6 +7732,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7265,6 +7757,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
@@ -7298,6 +7792,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -7321,6 +7817,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -7344,6 +7842,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -7367,6 +7867,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -7390,6 +7892,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -7413,6 +7917,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -7450,6 +7956,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -7473,6 +7981,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -7496,6 +8006,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7519,6 +8031,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -7542,6 +8056,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -7565,6 +8081,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7588,6 +8106,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -7611,6 +8131,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -7634,6 +8156,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -7667,6 +8191,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7690,6 +8216,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7713,6 +8241,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -7736,6 +8266,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -7771,6 +8303,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -7804,6 +8338,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -7839,6 +8375,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7862,6 +8400,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -7885,6 +8425,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7908,6 +8450,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7931,6 +8475,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -7954,6 +8500,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -7977,6 +8525,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -8000,6 +8550,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -8023,6 +8575,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8046,6 +8600,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -8069,6 +8625,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -8092,6 +8650,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -8115,6 +8675,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -8138,6 +8700,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [],
@@ -8161,6 +8725,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -8184,6 +8750,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -8207,6 +8775,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -8230,6 +8800,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -8263,6 +8835,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8286,6 +8860,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8309,6 +8885,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -8342,6 +8920,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -8365,6 +8945,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8388,6 +8970,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -8421,6 +9005,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -8444,6 +9030,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8467,6 +9055,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -8490,6 +9080,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -8523,6 +9115,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -8546,6 +9140,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8569,6 +9165,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -8592,6 +9190,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -8615,6 +9215,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -8638,6 +9240,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -8661,6 +9265,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-FAAB",
+      "player_sub_type": "",
       "assets_by_party": {
         "Alex Beim": {
           "sent": [],
@@ -8684,6 +9290,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "3-for-2",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
@@ -8723,6 +9331,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -8756,6 +9366,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -8779,6 +9391,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [],
@@ -8802,6 +9416,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -8825,6 +9441,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -8858,6 +9476,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
@@ -8891,6 +9511,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -8914,6 +9536,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
@@ -8947,6 +9571,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -8980,6 +9606,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
@@ -9013,6 +9641,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [
@@ -9046,6 +9676,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -9069,6 +9701,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9092,6 +9726,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -9115,6 +9751,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -9139,6 +9777,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -9162,6 +9802,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
@@ -9199,6 +9841,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -9222,6 +9866,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -9245,6 +9891,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -9268,6 +9916,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9291,6 +9941,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
@@ -9324,6 +9976,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "2-for-1",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -9359,6 +10013,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -9382,6 +10038,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [],
@@ -9405,6 +10063,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9428,6 +10088,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -9451,6 +10113,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -9484,6 +10148,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -9507,6 +10173,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [],
@@ -9530,6 +10198,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9553,6 +10223,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -9588,6 +10260,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [],
@@ -9611,6 +10285,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -9634,6 +10310,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Mixed",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -9657,6 +10335,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Pick",
+      "player_sub_type": "",
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
@@ -9690,6 +10370,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9713,6 +10395,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
@@ -9746,6 +10430,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "David Turley": {
           "sent": [],
@@ -9769,6 +10455,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [],
@@ -9792,6 +10480,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Trent Radding": {
           "sent": [],
@@ -9815,6 +10505,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
@@ -9848,6 +10540,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -9871,6 +10565,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [],
@@ -9895,6 +10591,8 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [],
@@ -9918,6 +10616,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Reed Heim": {
           "sent": [],
@@ -9941,6 +10641,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -9964,6 +10666,8 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
+      "trade_type_label": "Player-for-Player",
+      "player_sub_type": "1-for-1",
       "assets_by_party": {
         "Owen Hern": {
           "sent": [],
@@ -10766,8 +11470,8 @@
     }
   ],
   "owner_trade_counts": {
-    "Owen Hern": 34,
     "Reed Heim": 106,
+    "Owen Hern": 34,
     "Jack Dunne": 133,
     "David Turley": 72,
     "Matthew Zujewski": 32,
@@ -10846,8 +11550,8 @@
   },
   "trades_by_year_owner": {
     "2025": {
-      "Owen Hern": 8,
       "Reed Heim": 39,
+      "Owen Hern": 8,
       "Jack Dunne": 28,
       "David Turley": 14,
       "Matthew Zujewski": 4,
@@ -10876,38 +11580,38 @@
     "2023": {
       "David Turley": 17,
       "Jack Dunne": 23,
-      "Matthew Zujewski": 4,
       "Liam Burns": 13,
+      "Matthew Zujewski": 4,
       "Jordan Papula": 7,
       "Trent Radding": 12,
-      "Reed Heim": 11,
       "Jose Garcia-Chope": 8,
+      "Reed Heim": 11,
       "Owen Hern": 6,
       "Alex Beim": 7,
       "Jason Bartolini": 6,
       "Evan Soraci": 5
     },
     "2022": {
-      "Reed Heim": 14,
       "Evan Soraci": 8,
+      "Reed Heim": 14,
       "Jack Dunne": 21,
       "Jason Bartolini": 6,
       "Jordan Papula": 10,
       "Owen Hern": 4,
       "Liam Burns": 14,
-      "David Turley": 10,
       "Jose Garcia-Chope": 4,
+      "David Turley": 10,
       "Matthew Zujewski": 7,
       "Trent Radding": 5,
       "Alex Beim": 4
     },
     "2021": {
-      "Jack Dunne": 23,
       "Evan Soraci": 4,
+      "Jack Dunne": 23,
       "Matthew Zujewski": 9,
       "Trent Radding": 8,
-      "Jason Bartolini": 5,
       "Jose Garcia-Chope": 5,
+      "Jason Bartolini": 5,
       "Owen Hern": 6,
       "Reed Heim": 5,
       "Liam Burns": 8,
@@ -10930,11 +11634,11 @@
       "Jordan Papula": 2
     },
     "2019": {
-      "Jordan Papula": 2,
       "Liam Burns": 3,
+      "Jordan Papula": 2,
       "David Turley": 3,
-      "Reed Heim": 6,
       "Evan Soraci": 2,
+      "Reed Heim": 6,
       "Jason Bartolini": 3,
       "Jack Dunne": 2,
       "Owen Hern": 3,
@@ -10943,9 +11647,35 @@
     "2026": {
       "Reed Heim": 1,
       "Jack Dunne": 2,
-      "Jordan Papula": 1,
       "Liam Burns": 1,
+      "Jordan Papula": 1,
       "Evan Soraci": 1
+    }
+  },
+  "trade_type_summary": {
+    "Player-for-Player": {
+      "count": 146,
+      "sub_types": {
+        "1-for-1": 111,
+        "2-for-1": 19,
+        "2-for-2": 7,
+        "3-for-1": 5,
+        "3-for-2": 2,
+        "3-for-3": 1,
+        "6-for-4": 1
+      }
+    },
+    "Player-for-Pick": {
+      "count": 55,
+      "sub_types": {}
+    },
+    "Player-for-FAAB": {
+      "count": 49,
+      "sub_types": {}
+    },
+    "Mixed": {
+      "count": 102,
+      "sub_types": {}
     }
   },
   "matrix": {
