@@ -24,10 +24,17 @@
     return;
   }
 
-  // Index standings by owner → season
+  // Filter out incomplete seasons (season hasn't started: max pts across all teams < 10)
+  const _seasonMaxPts = (standingsData.season_standings || []).reduce((acc, r) => {
+    acc[r.season] = Math.max(acc[r.season] || 0, r.pts || 0);
+    return acc;
+  }, {});
+  const COMPLETE_SEASONS = new Set(Object.entries(_seasonMaxPts).filter(([,v]) => v >= 10).map(([k]) => Number(k)));
+
+  // Index standings by owner → season (complete seasons only)
   const standingsByOwner = {};   // owner_real_name → {season → row}
   const alltimeByOwner = {};     // owner_real_name → alltime row
-  (standingsData.season_standings || []).forEach(r => {
+  (standingsData.season_standings || []).filter(r => COMPLETE_SEASONS.has(r.season)).forEach(r => {
     if (!standingsByOwner[r.owner_real_name]) standingsByOwner[r.owner_real_name] = {};
     standingsByOwner[r.owner_real_name][r.season] = r;
   });

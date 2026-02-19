@@ -30,8 +30,33 @@
   const tradeEvents = tradesData.trade_events || [];
 
   // Fantrax standings data
-  const seasonStandings  = standingsData.season_standings  || [];   // [{season, rank, team_name, owner_real_name, pts, hr, ...}]
-  const alltimeStandings = standingsData.alltime_standings || [];  // [{owner_real_name, total_pts, alltime_rank, ...}]
+  // Filter out incomplete seasons: a season is "complete" if ANY team has pts >= 10
+  const INCOMPLETE_SEASONS = new Set(
+    (standingsData.season_standings || [])
+      .reduce((acc, r) => {
+        if (!acc[r.season]) acc[r.season] = 0;
+        acc[r.season] = Math.max(acc[r.season], r.pts || 0);
+        return acc;
+      }, {})
+      // season is incomplete if max pts < 10 (hasn't really started)
+  );
+  // Rebuild: seasons where max pts >= 10 are complete
+  const seasonMaxPts = (standingsData.season_standings || []).reduce((acc, r) => {
+    acc[r.season] = Math.max(acc[r.season] || 0, r.pts || 0);
+    return acc;
+  }, {});
+  const COMPLETE_SEASONS = new Set(Object.entries(seasonMaxPts).filter(([,v]) => v >= 10).map(([k]) => Number(k)));
+
+  const seasonStandings  = (standingsData.season_standings  || []).filter(r => COMPLETE_SEASONS.has(r.season));
+  const alltimeStandings = (standingsData.alltime_standings || []).map(o => {
+    // Recompute best_rank/best_season from season_finishes, excluding incomplete seasons
+    const validFinishes = (o.season_finishes || []).filter(f => COMPLETE_SEASONS.has(f.season) && (f.pts || 0) >= 10);
+    if (validFinishes.length) {
+      const best = validFinishes.reduce((b, f) => f.rank < b.rank ? f : b, validFinishes[0]);
+      return { ...o, best_rank: best.rank, best_season: best.season, season_finishes: validFinishes };
+    }
+    return { ...o, best_rank: null, best_season: null, season_finishes: validFinishes };
+  });
 
   // Index season standings by season
   const standingsBySeason = {};   // season → [row sorted by rank]
@@ -93,10 +118,12 @@
   // ── Season filter bar ─────────────────────────────────────────────
   const seasonBar = document.getElementById('season-filter-bar');
   if (seasonBar) {
+    // Only show complete seasons in filter bar
+    const completeYears = allYears.filter(y => COMPLETE_SEASONS.has(y));
     seasonBar.innerHTML = `
       <label>Season:</label>
       <button class="filter-btn active" data-season="all">All-Time</button>
-      ${allYears.map(y => `<button class="filter-btn" data-season="${y}">${y}</button>`).join('')}
+      ${completeYears.map(y => `<button class="filter-btn" data-season="${y}">${y}</button>`).join('')}
     `;
     seasonBar.addEventListener('click', e => {
       const btn = e.target.closest('.filter-btn');
@@ -191,6 +218,8 @@
       const rows = alltimeStandings.map(o => {
         const dot = `<span style="width:10px;height:10px;border-radius:50%;background:${D.ownerColor(o.owner_real_name)};display:inline-block;margin-right:6px;flex-shrink:0"></span>`;
         const medal = o.alltime_rank === 1 ? '🥇' : o.alltime_rank === 2 ? '🥈' : o.alltime_rank === 3 ? '🥉' : '';
+        // Pre-tracker championships (before 2021 league tracking)
+        const preTrackerTitle = o.owner_real_name === 'Matthew Zujewski' ? ' <span title="🏆 Champion 2019 (pre-tracker)" style="font-size:0.75rem;opacity:0.7;cursor:help">🏆\'19</span>' : '';
         const bestStr = o.best_rank ? `#${o.best_rank} (${o.best_season})` : '—';
         return `<tr class="clickable"
             data-rank="${o.alltime_rank}" data-name="${o.owner_real_name}"
@@ -201,7 +230,7 @@
             data-era="${o.avg_era || 999}" data-obp="${o.avg_obp || 0}"
             onclick="window.location.href='team.html?owner=${encodeURIComponent(o.owner_real_name)}'">
           <td style="text-align:right;font-weight:700;color:var(--text-muted)">${medal || o.alltime_rank}</td>
-          <td><div style="display:flex;align-items:center">${dot}<strong>${o.owner_real_name}</strong></div></td>
+          <td><div style="display:flex;align-items:center">${dot}<strong>${o.owner_real_name}</strong>${preTrackerTitle}</div></td>
           <td style="text-align:right">${o.seasons_played}</td>
           <td style="text-align:right;font-weight:700;color:var(--brand-green)">${fmt(o.total_pts, 1)}</td>
           <td style="text-align:right;color:var(--text-secondary)">${fmt(o.avg_pts_per_season, 1)}</td>
