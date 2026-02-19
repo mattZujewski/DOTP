@@ -171,20 +171,21 @@
       : `Full-season Fantrax rotisserie standings for ${activeSeason}. Click headers to sort. Click a row for Team View.`;
 
     if (isAll) {
-      // All-time table: rank, owner, seasons, total_pts, avg_pts, best_finish, hr, rbi, sb, k, avg_era, avg_obp
+      // All-time table: rank, owner, seasons, total_pts, avg_pts, best_finish, hr, rbi, sb, k, ip, avg_era, avg_obp
       thead.innerHTML = `<tr>
-        <th data-sort="rank" style="text-align:right;width:40px">Rk</th>
-        <th data-sort="name" style="min-width:130px">Owner</th>
+        <th data-sort="rank"    style="text-align:right;width:36px">Rk</th>
+        <th data-sort="name"    style="min-width:130px">Owner</th>
         <th data-sort="seasons" style="text-align:right">Seasons</th>
-        <th data-sort="pts" style="text-align:right">Total Pts</th>
-        <th data-sort="avgpts" style="text-align:right">Avg Pts</th>
-        <th data-sort="best" style="text-align:right">Best Finish</th>
-        <th data-sort="hr" style="text-align:right">HR</th>
-        <th data-sort="rbi" style="text-align:right">RBI</th>
-        <th data-sort="sb" style="text-align:right">SB</th>
-        <th data-sort="k" style="text-align:right">K</th>
-        <th data-sort="era" style="text-align:right">Avg ERA</th>
-        <th data-sort="obp" style="text-align:right">Avg OBP</th>
+        <th data-sort="pts"     style="text-align:right">Total Pts</th>
+        <th data-sort="avgpts"  style="text-align:right">Avg Pts</th>
+        <th data-sort="best"    style="text-align:right">Best Finish</th>
+        <th data-sort="hr"      style="text-align:right" title="Career HR">HR</th>
+        <th data-sort="rbi"     style="text-align:right" title="Career RBI">RBI</th>
+        <th data-sort="sb"      style="text-align:right" title="Career SB">SB</th>
+        <th data-sort="ip"      style="text-align:right" title="Career IP">IP</th>
+        <th data-sort="k"       style="text-align:right" title="Career K (pitching)">K</th>
+        <th data-sort="era"     style="text-align:right" title="Avg ERA">ERA</th>
+        <th data-sort="obp"     style="text-align:right" title="Avg OBP">OBP</th>
       </tr>`;
 
       const rows = alltimeStandings.map(o => {
@@ -192,18 +193,12 @@
         const medal = o.alltime_rank === 1 ? '🥇' : o.alltime_rank === 2 ? '🥈' : o.alltime_rank === 3 ? '🥉' : '';
         const bestStr = o.best_rank ? `#${o.best_rank} (${o.best_season})` : '—';
         return `<tr class="clickable"
-            data-rank="${o.alltime_rank}"
-            data-name="${o.owner_real_name}"
-            data-seasons="${o.seasons_played}"
-            data-pts="${o.total_pts}"
-            data-avgpts="${o.avg_pts_per_season || 0}"
-            data-best="${o.best_rank || 99}"
-            data-hr="${o.hr || 0}"
-            data-rbi="${o.rbi || 0}"
-            data-sb="${o.sb || 0}"
-            data-k="${o.k || 0}"
-            data-era="${o.avg_era || 999}"
-            data-obp="${o.avg_obp || 0}"
+            data-rank="${o.alltime_rank}" data-name="${o.owner_real_name}"
+            data-seasons="${o.seasons_played}" data-pts="${o.total_pts}"
+            data-avgpts="${o.avg_pts_per_season || 0}" data-best="${o.best_rank || 99}"
+            data-hr="${o.hr || 0}" data-rbi="${o.rbi || 0}" data-sb="${o.sb || 0}"
+            data-ip="${o.ip || 0}" data-k="${o.k || 0}"
+            data-era="${o.avg_era || 999}" data-obp="${o.avg_obp || 0}"
             onclick="window.location.href='team.html?owner=${encodeURIComponent(o.owner_real_name)}'">
           <td style="text-align:right;font-weight:700;color:var(--text-muted)">${medal || o.alltime_rank}</td>
           <td><div style="display:flex;align-items:center">${dot}<strong>${o.owner_real_name}</strong></div></td>
@@ -214,6 +209,7 @@
           <td style="text-align:right">${fmt(o.hr)}</td>
           <td style="text-align:right">${fmt(o.rbi)}</td>
           <td style="text-align:right">${fmt(o.sb)}</td>
+          <td style="text-align:right;color:var(--text-muted)">${fmt(o.ip, 1)}</td>
           <td style="text-align:right">${fmt(o.k)}</td>
           <td style="text-align:right;color:var(--text-secondary)">${fmt(o.avg_era, 2)}</td>
           <td style="text-align:right;color:var(--text-secondary)">${fmtOBP(o.avg_obp)}</td>
@@ -223,22 +219,26 @@
       tbody.innerHTML = rows;
 
     } else {
-      // Season-specific table: rank, team, owner, pts, gp, ab, hr, rbi, sb, obp, ip, k, era, whip, svh3, wqs
+      // Season-specific table: full Fantrax roto standings
       thead.innerHTML = `<tr>
-        <th data-sort="rank" style="text-align:right;width:40px">Rk</th>
-        <th data-sort="team" style="min-width:140px">Team</th>
-        <th data-sort="owner" style="min-width:110px">Owner</th>
-        <th data-sort="pts" style="text-align:right" title="Rotisserie Points">Pts</th>
-        <th data-sort="gp" style="text-align:right" title="Games Played">GP</th>
-        <th data-sort="hr" style="text-align:right" title="Home Runs">HR</th>
-        <th data-sort="rbi" style="text-align:right" title="RBI">RBI</th>
-        <th data-sort="sb" style="text-align:right" title="Stolen Bases">SB</th>
-        <th data-sort="obp" style="text-align:right" title="On-Base Percentage">OBP</th>
-        <th data-sort="k" style="text-align:right" title="Strikeouts (pitching)">K</th>
-        <th data-sort="era" style="text-align:right" title="ERA">ERA</th>
+        <th data-sort="rank" style="text-align:right;width:36px">Rk</th>
+        <th data-sort="team" style="min-width:130px">Team</th>
+        <th data-sort="owner" style="min-width:80px">Owner</th>
+        <th data-sort="pts"  style="text-align:right" title="Rotisserie Points">Pts</th>
+        <th data-sort="gp"   style="text-align:right" title="Games Played">GP</th>
+        <th data-sort="ab"   style="text-align:right" title="At Bats">AB</th>
+        <th data-sort="h"    style="text-align:right" title="Hits">H</th>
+        <th data-sort="r"    style="text-align:right" title="Runs">R</th>
+        <th data-sort="hr"   style="text-align:right" title="Home Runs">HR</th>
+        <th data-sort="rbi"  style="text-align:right" title="RBI">RBI</th>
+        <th data-sort="sb"   style="text-align:right" title="Stolen Bases">SB</th>
+        <th data-sort="obp"  style="text-align:right" title="On-Base Percentage">OBP</th>
+        <th data-sort="ip"   style="text-align:right" title="Innings Pitched">IP</th>
+        <th data-sort="k"    style="text-align:right" title="Strikeouts">K</th>
+        <th data-sort="era"  style="text-align:right" title="ERA">ERA</th>
         <th data-sort="whip" style="text-align:right" title="WHIP">WHIP</th>
         <th data-sort="svh3" style="text-align:right" title="Saves + Holds/2">SVH3</th>
-        <th data-sort="wqs" style="text-align:right" title="Wins + Quality Starts">W+QS</th>
+        <th data-sort="wqs"  style="text-align:right" title="Wins + Quality Starts">W+QS</th>
       </tr>`;
 
       const seasonRows = standingsBySeason[String(activeSeason)] || [];
@@ -246,30 +246,25 @@
         const dot = `<span style="width:10px;height:10px;border-radius:50%;background:${D.ownerColor(r.owner_real_name)};display:inline-block;margin-right:5px;flex-shrink:0"></span>`;
         const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : r.rank === 3 ? '🥉' : '';
         return `<tr class="clickable"
-            data-rank="${r.rank}"
-            data-team="${r.team_name}"
-            data-owner="${r.owner_real_name}"
-            data-pts="${r.pts || 0}"
-            data-gp="${r.gp || 0}"
-            data-hr="${r.hr || 0}"
-            data-rbi="${r.rbi || 0}"
-            data-sb="${r.sb || 0}"
-            data-obp="${r.obp || 0}"
-            data-k="${r.k || 0}"
-            data-era="${r.era || 999}"
-            data-whip="${r.whip || 999}"
-            data-svh3="${r.svh3 || 0}"
-            data-wqs="${r.wqs || 0}"
+            data-rank="${r.rank}" data-team="${r.team_name}" data-owner="${r.owner_real_name}"
+            data-pts="${r.pts||0}" data-gp="${r.gp||0}" data-ab="${r.ab||0}" data-h="${r.h||0}"
+            data-r="${r.r||0}" data-hr="${r.hr||0}" data-rbi="${r.rbi||0}" data-sb="${r.sb||0}"
+            data-obp="${r.obp||0}" data-ip="${r.ip||0}" data-k="${r.k||0}"
+            data-era="${r.era||999}" data-whip="${r.whip||999}" data-svh3="${r.svh3||0}" data-wqs="${r.wqs||0}"
             onclick="window.location.href='team.html?owner=${encodeURIComponent(r.owner_real_name)}'">
           <td style="text-align:right;font-weight:700;color:var(--text-muted)">${medal || r.rank}</td>
-          <td style="font-size:0.85rem"><div style="display:flex;align-items:center">${dot}${r.team_name}</div></td>
-          <td style="font-size:0.8rem;color:var(--text-secondary)">${r.owner_real_name.split(' ').pop()}</td>
+          <td style="font-size:0.82rem"><div style="display:flex;align-items:center">${dot}${r.team_name}</div></td>
+          <td style="font-size:0.78rem;color:var(--text-secondary)">${r.owner_real_name.split(' ').pop()}</td>
           <td style="text-align:right;font-weight:700;color:var(--brand-green)">${fmt(r.pts)}</td>
           <td style="text-align:right;color:var(--text-muted)">${fmt(r.gp)}</td>
+          <td style="text-align:right;color:var(--text-muted)">${fmt(r.ab)}</td>
+          <td style="text-align:right">${fmt(r.h)}</td>
+          <td style="text-align:right">${fmt(r.r)}</td>
           <td style="text-align:right">${fmt(r.hr)}</td>
           <td style="text-align:right">${fmt(r.rbi)}</td>
           <td style="text-align:right">${fmt(r.sb)}</td>
           <td style="text-align:right">${fmtOBP(r.obp)}</td>
+          <td style="text-align:right;color:var(--text-muted)">${fmt(r.ip, 1)}</td>
           <td style="text-align:right">${fmt(r.k)}</td>
           <td style="text-align:right">${fmt(r.era, 2)}</td>
           <td style="text-align:right">${fmt(r.whip, 3)}</td>
@@ -278,7 +273,7 @@
         </tr>`;
       }).join('');
 
-      tbody.innerHTML = rows || `<tr><td colspan="14" class="text-center text-muted" style="padding:24px">No standings data for ${activeSeason}.</td></tr>`;
+      tbody.innerHTML = rows || `<tr><td colspan="18" class="text-center text-muted" style="padding:24px">No standings data for ${activeSeason}.</td></tr>`;
     }
 
     D.makeSortable(document.getElementById('standings-table'));

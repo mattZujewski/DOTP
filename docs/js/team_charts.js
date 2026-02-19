@@ -204,10 +204,14 @@
             <td style="font-size:0.82rem;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.team_name}</td>
             <td style="text-align:center;font-weight:700">${medal}</td>
             <td style="text-align:right;font-weight:700;color:var(--brand-green)">${fmt(r.pts)}</td>
+            <td style="text-align:right">${fmt(r.ab)}</td>
+            <td style="text-align:right">${fmt(r.h)}</td>
+            <td style="text-align:right">${fmt(r.r)}</td>
             <td style="text-align:right">${fmt(r.hr)}</td>
             <td style="text-align:right">${fmt(r.rbi)}</td>
             <td style="text-align:right">${fmt(r.sb)}</td>
             <td style="text-align:right">${fmtOBP(r.obp)}</td>
+            <td style="text-align:right">${fmt(r.ip, 1)}</td>
             <td style="text-align:right">${fmt(r.k)}</td>
             <td style="text-align:right">${fmt(r.era, 2)}</td>
             <td style="text-align:right">${fmt(r.whip, 3)}</td>
@@ -228,10 +232,14 @@
                 <th>Team Name</th>
                 <th style="text-align:center;width:45px">Rank</th>
                 <th style="text-align:right" title="Rotisserie Points">Pts</th>
+                <th style="text-align:right" title="At Bats">AB</th>
+                <th style="text-align:right" title="Hits">H</th>
+                <th style="text-align:right" title="Runs">R</th>
                 <th style="text-align:right" title="Home Runs">HR</th>
                 <th style="text-align:right" title="RBI">RBI</th>
                 <th style="text-align:right" title="Stolen Bases">SB</th>
                 <th style="text-align:right" title="On-Base Percentage">OBP</th>
+                <th style="text-align:right" title="Innings Pitched">IP</th>
                 <th style="text-align:right" title="Strikeouts (pitching)">K</th>
                 <th style="text-align:right" title="Earned Run Average">ERA</th>
                 <th style="text-align:right" title="WHIP">WHIP</th>
