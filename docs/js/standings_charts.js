@@ -214,7 +214,7 @@
       },
       options: {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -268,7 +268,7 @@
           })),
         },
         options: {
-          responsive: true, maintainAspectRatio: false,
+          responsive: true, maintainAspectRatio: true,
           plugins: { legend: { display: true, position: 'top' } },
           scales: {
             x: { stacked: true, grid: { display: false }, ticks: { maxRotation: 30 } },
@@ -306,7 +306,7 @@
           }],
         },
         options: {
-          responsive: true, maintainAspectRatio: false,
+          responsive: true, maintainAspectRatio: true,
           plugins: { legend: { display: false } },
           scales: {
             x: { grid: { display: false }, ticks: { maxRotation: 30 } },
@@ -354,7 +354,7 @@
         }],
       },
       options: {
-        responsive: true, maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: true,
         plugins: {
           legend: { display: false },
           tooltip: {

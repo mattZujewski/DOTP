@@ -462,7 +462,7 @@
           pointHoverRadius: 7,
         }],
       },
-      options: { ...D.lineOptions({ yLabel: 'Trade Events' }), maintainAspectRatio: false },
+      options: { ...D.lineOptions({ yLabel: 'Trade Events' }), maintainAspectRatio: true },
     });
 
     const peak = keys[values.indexOf(Math.max(...values))];
@@ -566,7 +566,7 @@
       },
       options: {
         ...D.barOptions({ stacked: true, xLabel: 'Season', yLabel: 'Trade Events' }),
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
       },
     });
 
@@ -611,7 +611,7 @@
       },
       options: {
         ...D.barOptions({ xLabel: 'Owner', yLabel: 'Trades', stacked: false }),
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         scales: {
           x: { ticks: { maxRotation: 35, minRotation: 25 }, grid: { display: false } },
           y: { beginAtZero: true, ticks: { precision: 0 } },

@@ -298,18 +298,15 @@ html.dark .dashboard-card .card-tag {
 }
 
 .chart-wrapper {
-  position: relative;
   width: 100%;
   display: block;
-  /* height is set inline per chart, e.g. style="height:400px" */
+  /* No height here — height comes from the canvas height= attribute */
 }
-/* Canvas fills the wrapper exactly — Chart.js reads offsetWidth/Height from it */
+/* Let Chart.js size the canvas via its height attribute; just stretch width */
 .chart-wrapper canvas {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
+  display: block;
   width: 100% !important;
-  height: 100% !important;
+  max-width: 100%;
 }
 
 .chart-insight {

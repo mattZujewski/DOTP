@@ -184,8 +184,8 @@
       <div class="chart-section">
         <h2>Season Activity</h2>
         <p class="chart-description">Trades and unique players per season for this owner.</p>
-        <div class="chart-wrapper" style="height:240px">
-          <canvas id="season-activity-chart"></canvas>
+        <div class="chart-wrapper">
+          <canvas id="season-activity-chart" height="240"></canvas>
         </div>
       </div>
 
@@ -322,7 +322,7 @@
         },
         options: {
           responsive: true,
-          maintainAspectRatio: false,
+          maintainAspectRatio: true,
           plugins: { legend: { display: true } },
           scales: {
             x: { grid: { display: false } },
