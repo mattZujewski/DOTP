@@ -89,7 +89,7 @@ window.DOTP = window.DOTP || {};
     Chart.defaults.plugins.legend.labels.padding    = 14;
     Chart.defaults.scale = Chart.defaults.scale || {};
     Chart.defaults.scale.grid = { color: borderColor };
-    Chart.defaults.scale.ticks = { color: mutedColor };
+    Chart.defaults.scale.ticks = Object.assign({}, Chart.defaults.scale.ticks, { color: mutedColor });
   }
 
   // Re-apply on theme change
