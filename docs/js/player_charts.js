@@ -37,7 +37,9 @@
     const top20 = mostTraveled.slice(0, 20);
     const labels         = top20.map(p => p.player_name);
     const distinctOwners = top20.map(p => p.distinct_owners ?? p.distinct_teams ?? 0);
-    const totalStints    = top20.map(p => p.total_stints);
+    // BUG-02: use owner_changes (cross-owner moves only) instead of total_stints,
+    // which was inflated by same-owner KEPT stints that aren't real travel.
+    const ownerChanges   = top20.map(p => p.owner_changes ?? p.total_stints ?? 0);
 
     new Chart(ctx, {
       type: 'bar',
@@ -51,8 +53,8 @@
             borderRadius: 4,
           },
           {
-            label: 'Total Stints',
-            data: totalStints,
+            label: 'Owner Changes',
+            data: ownerChanges,
             backgroundColor: 'rgba(26,107,60,0.5)',
             borderRadius: 4,
           },
@@ -87,8 +89,8 @@
 
     const top = top20[0];
     document.getElementById('insight-most-traveled').innerHTML = top
-      ? `<strong>${top.player_name}</strong> has been owned by the most owners — <strong>${top.distinct_owners ?? top.distinct_teams} distinct owners</strong>
-         with <strong>${top.total_stints} total roster stints</strong>. Click any bar to see their full journey.`
+      ? `<strong>${top.player_name}</strong> has been owned by the most managers — <strong>${top.distinct_owners ?? top.distinct_teams} distinct owners</strong>
+         with <strong>${top.owner_changes ?? top.total_stints} ownership changes</strong>. Click any bar to see their full journey.`
       : '';
   })();
 

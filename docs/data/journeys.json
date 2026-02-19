@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T14:22:42.636419Z",
+    "generated_at": "2026-02-19T23:10:41.719740Z",
     "total_stints": 3801,
     "total_unique_players": 564
   },
@@ -45624,6 +45624,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         0,
@@ -45643,6 +45644,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         10,
@@ -45660,6 +45662,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         18,
@@ -45677,6 +45680,7 @@
       "distinct_owners": 9,
       "distinct_teams": 10,
       "total_stints": 17,
+      "owner_changes": 8,
       "current_owner": "Liam Burns",
       "stint_indices": [
         26,
@@ -45703,6 +45707,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         43,
@@ -45725,6 +45730,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         56,
@@ -45745,6 +45751,7 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 13,
+      "owner_changes": 8,
       "current_owner": "Liam Burns",
       "stint_indices": [
         67,
@@ -45767,6 +45774,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         80,
@@ -45787,6 +45795,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         91,
@@ -45807,6 +45816,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         102,
@@ -45827,6 +45837,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         113,
@@ -45844,6 +45855,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         121,
@@ -45861,6 +45873,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         129,
@@ -45880,6 +45893,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         139,
@@ -45902,6 +45916,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         152,
@@ -45922,6 +45937,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         163,
@@ -45941,6 +45957,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         173,
@@ -45961,6 +45978,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Liam Burns",
       "stint_indices": [
         184,
@@ -45982,6 +46000,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         196,
@@ -46000,6 +46019,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Liam Burns",
       "stint_indices": [
         205,
@@ -46021,6 +46041,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         217,
@@ -46041,6 +46062,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         228,
@@ -46059,6 +46081,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         237,
@@ -46077,6 +46100,7 @@
       "distinct_owners": 5,
       "distinct_teams": 9,
       "total_stints": 12,
+      "owner_changes": 7,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         246,
@@ -46098,6 +46122,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         258,
@@ -46118,6 +46143,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         269,
@@ -46138,6 +46164,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "David Turley",
       "stint_indices": [
         280,
@@ -46159,6 +46186,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         292,
@@ -46176,6 +46204,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         300,
@@ -46196,6 +46225,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         311,
@@ -46215,6 +46245,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         321,
@@ -46233,6 +46264,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Reed Heim",
       "stint_indices": [
         330,
@@ -46255,6 +46287,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         343,
@@ -46274,6 +46307,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         353,
@@ -46297,6 +46331,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         367,
@@ -46313,6 +46348,7 @@
       "distinct_owners": 9,
       "distinct_teams": 13,
       "total_stints": 17,
+      "owner_changes": 12,
       "current_owner": "Owen Hern",
       "stint_indices": [
         374,
@@ -46339,6 +46375,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         391,
@@ -46359,6 +46396,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         402,
@@ -46370,6 +46408,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Trent Radding",
       "stint_indices": [
         404,
@@ -46387,6 +46426,7 @@
       "distinct_owners": 2,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         412,
@@ -46405,6 +46445,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Owen Hern",
       "stint_indices": [
         421,
@@ -46424,6 +46465,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 5,
       "current_owner": "Alex Beim",
       "stint_indices": [
         431,
@@ -46443,6 +46485,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         441,
@@ -46460,6 +46503,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         449,
@@ -46479,6 +46523,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Owen Hern",
       "stint_indices": [
         459,
@@ -46499,6 +46544,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Liam Burns",
       "stint_indices": [
         470,
@@ -46520,6 +46566,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         482,
@@ -46539,6 +46586,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Owen Hern",
       "stint_indices": [
         492,
@@ -46557,6 +46605,7 @@
       "distinct_owners": 7,
       "distinct_teams": 12,
       "total_stints": 18,
+      "owner_changes": 12,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         501,
@@ -46584,6 +46633,7 @@
       "distinct_owners": 8,
       "distinct_teams": 11,
       "total_stints": 14,
+      "owner_changes": 9,
       "current_owner": "David Turley",
       "stint_indices": [
         519,
@@ -46607,6 +46657,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         533,
@@ -46624,6 +46675,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         541,
@@ -46641,6 +46693,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 5,
       "current_owner": "Alex Beim",
       "stint_indices": [
         549,
@@ -46660,6 +46713,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         559,
@@ -46681,6 +46735,7 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "David Turley",
       "stint_indices": [
         571,
@@ -46704,6 +46759,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Alex Beim",
       "stint_indices": [
         585,
@@ -46722,6 +46778,7 @@
       "distinct_owners": 2,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         594,
@@ -46740,6 +46797,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         603,
@@ -46760,6 +46818,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         614,
@@ -46782,6 +46841,7 @@
       "distinct_owners": 8,
       "distinct_teams": 11,
       "total_stints": 16,
+      "owner_changes": 10,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         627,
@@ -46807,6 +46867,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Alex Beim",
       "stint_indices": [
         643,
@@ -46827,6 +46888,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         654,
@@ -46844,6 +46906,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         662,
@@ -46864,6 +46927,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         673,
@@ -46884,6 +46948,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         684,
@@ -46903,6 +46968,7 @@
       "distinct_owners": 7,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 7,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         694,
@@ -46926,6 +46992,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         708,
@@ -46948,6 +47015,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 5,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         721,
@@ -46969,6 +47037,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Owen Hern",
       "stint_indices": [
         733,
@@ -46987,6 +47056,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         742,
@@ -47009,6 +47079,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         755,
@@ -47022,6 +47093,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         759,
@@ -47038,6 +47110,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         766,
@@ -47056,6 +47129,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Trent Radding",
       "stint_indices": [
         775,
@@ -47074,6 +47148,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         784,
@@ -47092,6 +47167,7 @@
       "distinct_owners": 4,
       "distinct_teams": 8,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         793,
@@ -47112,6 +47188,7 @@
       "distinct_owners": 4,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         804,
@@ -47134,6 +47211,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         817,
@@ -47153,6 +47231,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 14,
+      "owner_changes": 5,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         827,
@@ -47176,6 +47255,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         841,
@@ -47190,6 +47270,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         846,
@@ -47208,6 +47289,7 @@
       "distinct_owners": 5,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         855,
@@ -47231,6 +47313,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Liam Burns",
       "stint_indices": [
         869,
@@ -47253,6 +47336,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 7,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         882,
@@ -47269,6 +47353,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         889,
@@ -47287,6 +47372,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Trent Radding",
       "stint_indices": [
         898,
@@ -47305,6 +47391,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         907,
@@ -47326,6 +47413,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         919,
@@ -47339,6 +47427,7 @@
       "distinct_owners": 8,
       "distinct_teams": 9,
       "total_stints": 16,
+      "owner_changes": 8,
       "current_owner": "Owen Hern",
       "stint_indices": [
         923,
@@ -47364,6 +47453,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         939,
@@ -47384,6 +47474,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         950,
@@ -47406,6 +47497,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         963,
@@ -47418,6 +47510,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Alex Beim",
       "stint_indices": [
         966,
@@ -47436,6 +47529,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Liam Burns",
       "stint_indices": [
         975,
@@ -47456,6 +47550,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 6,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         986,
@@ -47476,6 +47571,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         997,
@@ -47493,6 +47589,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 4,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1005,
@@ -47508,6 +47605,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1011,
@@ -47528,6 +47626,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1022,
@@ -47545,6 +47644,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1030,
@@ -47565,6 +47665,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 3,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1041,
@@ -47579,6 +47680,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1046,
@@ -47601,6 +47703,7 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1059,
@@ -47623,6 +47726,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1072,
@@ -47642,6 +47746,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 5,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1082,
@@ -47662,6 +47767,7 @@
       "distinct_owners": 7,
       "distinct_teams": 10,
       "total_stints": 15,
+      "owner_changes": 10,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1093,
@@ -47686,6 +47792,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1108,
@@ -47702,6 +47809,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1115,
@@ -47716,6 +47824,7 @@
       "distinct_owners": 7,
       "distinct_teams": 10,
       "total_stints": 17,
+      "owner_changes": 9,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1120,
@@ -47742,6 +47851,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1137,
@@ -47761,6 +47871,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1147,
@@ -47780,6 +47891,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1157,
@@ -47797,6 +47909,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1165,
@@ -47815,6 +47928,7 @@
       "distinct_owners": 7,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 7,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1174,
@@ -47837,6 +47951,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         1187,
@@ -47854,6 +47969,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1195,
@@ -47873,6 +47989,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Owen Hern",
       "stint_indices": [
         1205,
@@ -47891,6 +48008,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "David Turley",
       "stint_indices": [
         1214,
@@ -47913,6 +48031,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 6,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1227,
@@ -47930,6 +48049,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1235,
@@ -47953,6 +48073,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1249,
@@ -47976,6 +48097,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         1263,
@@ -47992,6 +48114,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1270,
@@ -48008,6 +48131,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 14,
+      "owner_changes": 7,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1277,
@@ -48031,6 +48155,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "David Turley",
       "stint_indices": [
         1291,
@@ -48049,6 +48174,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1300,
@@ -48060,6 +48186,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1302,
@@ -48079,6 +48206,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1312,
@@ -48096,6 +48224,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         1320,
@@ -48114,6 +48243,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 7,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1329,
@@ -48130,6 +48260,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1336,
@@ -48153,6 +48284,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1350,
@@ -48172,6 +48304,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1360,
@@ -48190,6 +48323,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1369,
@@ -48209,6 +48343,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1379,
@@ -48229,6 +48364,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1390,
@@ -48247,6 +48383,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1399,
@@ -48264,6 +48401,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1407,
@@ -48282,6 +48420,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1416,
@@ -48295,6 +48434,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 5,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1420,
@@ -48311,6 +48451,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         1427,
@@ -48325,6 +48466,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1432,
@@ -48343,6 +48485,7 @@
       "distinct_owners": 2,
       "distinct_teams": 7,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1441,
@@ -48361,6 +48504,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1450,
@@ -48378,6 +48522,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1458,
@@ -48398,6 +48543,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 13,
+      "owner_changes": 5,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1469,
@@ -48420,6 +48566,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1482,
@@ -48439,6 +48586,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1492,
@@ -48456,6 +48604,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1500,
@@ -48474,6 +48623,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1509,
@@ -48487,6 +48637,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "David Turley",
       "stint_indices": [
         1513,
@@ -48506,6 +48657,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1523,
@@ -48528,6 +48680,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1536,
@@ -48546,6 +48699,7 @@
       "distinct_owners": 7,
       "distinct_teams": 9,
       "total_stints": 13,
+      "owner_changes": 8,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1545,
@@ -48568,6 +48722,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         1558,
@@ -48585,6 +48740,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 12,
+      "owner_changes": 4,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1566,
@@ -48606,6 +48762,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         1578,
@@ -48624,6 +48781,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1587,
@@ -48638,6 +48796,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         1592,
@@ -48652,6 +48811,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1597,
@@ -48672,6 +48832,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1608,
@@ -48691,6 +48852,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1618,
@@ -48706,6 +48868,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1624,
@@ -48724,6 +48887,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         1633,
@@ -48742,6 +48906,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         1642,
@@ -48755,6 +48920,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1646,
@@ -48769,6 +48935,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1651,
@@ -48789,6 +48956,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1662,
@@ -48807,6 +48975,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1671,
@@ -48829,6 +48998,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1684,
@@ -48848,6 +49018,7 @@
       "distinct_owners": 7,
       "distinct_teams": 11,
       "total_stints": 15,
+      "owner_changes": 9,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1694,
@@ -48872,6 +49043,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1709,
@@ -48883,6 +49055,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1711,
@@ -48900,6 +49073,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 12,
+      "owner_changes": 6,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1719,
@@ -48921,6 +49095,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1731,
@@ -48940,6 +49115,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         1741,
@@ -48953,6 +49129,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 12,
+      "owner_changes": 7,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1745,
@@ -48974,6 +49151,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 5,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1757,
@@ -48991,6 +49169,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 5,
       "current_owner": "Alex Beim",
       "stint_indices": [
         1765,
@@ -49010,6 +49189,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1775,
@@ -49025,6 +49205,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1781,
@@ -49044,6 +49225,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1791,
@@ -49062,6 +49244,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1800,
@@ -49080,6 +49263,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1809,
@@ -49096,6 +49280,7 @@
       "distinct_owners": 5,
       "distinct_teams": 11,
       "total_stints": 14,
+      "owner_changes": 8,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1816,
@@ -49119,6 +49304,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1830,
@@ -49138,6 +49324,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1840,
@@ -49155,6 +49342,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Owen Hern",
       "stint_indices": [
         1848,
@@ -49173,6 +49361,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Trent Radding",
       "stint_indices": [
         1857,
@@ -49191,6 +49380,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1866,
@@ -49209,6 +49399,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         1875,
@@ -49221,6 +49412,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1878,
@@ -49232,6 +49424,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1880,
@@ -49244,6 +49437,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         1883,
@@ -49257,6 +49451,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         1887,
@@ -49271,6 +49466,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         1892,
@@ -49290,6 +49486,7 @@
       "distinct_owners": 5,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 6,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         1902,
@@ -49309,6 +49506,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1912,
@@ -49321,6 +49519,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 4,
       "current_owner": "David Turley",
       "stint_indices": [
         1915,
@@ -49337,6 +49536,7 @@
       "distinct_owners": 2,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         1922,
@@ -49354,6 +49554,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         1930,
@@ -49366,6 +49567,7 @@
       "distinct_owners": 4,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 5,
       "current_owner": "Trent Radding",
       "stint_indices": [
         1933,
@@ -49387,6 +49589,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1945,
@@ -49402,6 +49605,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1951,
@@ -49419,6 +49623,7 @@
       "distinct_owners": 5,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         1959,
@@ -49441,6 +49646,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1972,
@@ -49460,6 +49666,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "David Turley",
       "stint_indices": [
         1982,
@@ -49475,6 +49682,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         1988,
@@ -49489,6 +49697,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         1993,
@@ -49504,6 +49713,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         1999,
@@ -49524,6 +49734,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2010,
@@ -49541,6 +49752,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2018,
@@ -49559,6 +49771,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2027,
@@ -49573,6 +49786,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2032,
@@ -49590,6 +49804,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2040,
@@ -49607,6 +49822,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2048,
@@ -49624,6 +49840,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2056,
@@ -49643,6 +49860,7 @@
       "distinct_owners": 6,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 5,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2066,
@@ -49660,6 +49878,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2074,
@@ -49677,6 +49896,7 @@
       "distinct_owners": 3,
       "distinct_teams": 7,
       "total_stints": 12,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         2082,
@@ -49698,6 +49918,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2094,
@@ -49714,6 +49935,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2101,
@@ -49732,6 +49954,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2110,
@@ -49745,6 +49968,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         2114,
@@ -49759,6 +49983,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2119,
@@ -49770,6 +49995,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2121,
@@ -49785,6 +50011,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2127,
@@ -49799,6 +50026,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2132,
@@ -49818,6 +50046,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2142,
@@ -49834,6 +50063,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2149,
@@ -49850,6 +50080,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2156,
@@ -49865,6 +50096,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2162,
@@ -49882,6 +50114,7 @@
       "distinct_owners": 5,
       "distinct_teams": 9,
       "total_stints": 11,
+      "owner_changes": 6,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2170,
@@ -49902,6 +50135,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2181,
@@ -49920,6 +50154,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2190,
@@ -49939,6 +50174,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2200,
@@ -49954,6 +50190,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2206,
@@ -49966,6 +50203,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2209,
@@ -49984,6 +50222,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2218,
@@ -49998,6 +50237,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2223,
@@ -50015,6 +50255,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2231,
@@ -50035,6 +50276,7 @@
       "distinct_owners": 1,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2242,
@@ -50052,6 +50294,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 11,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2250,
@@ -50072,6 +50315,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2261,
@@ -50086,6 +50330,7 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 11,
+      "owner_changes": 6,
       "current_owner": "David Turley",
       "stint_indices": [
         2266,
@@ -50106,6 +50351,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2277,
@@ -50123,6 +50369,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2285,
@@ -50140,6 +50387,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2293,
@@ -50155,6 +50403,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 8,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2299,
@@ -50172,6 +50421,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2307,
@@ -50190,6 +50440,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 5,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2316,
@@ -50209,6 +50460,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2326,
@@ -50227,6 +50479,7 @@
       "distinct_owners": 6,
       "distinct_teams": 6,
       "total_stints": 7,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2335,
@@ -50243,6 +50496,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2342,
@@ -50260,6 +50514,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2350,
@@ -50272,6 +50527,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 7,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2353,
@@ -50288,6 +50544,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2360,
@@ -50304,6 +50561,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2367,
@@ -50319,6 +50577,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2373,
@@ -50330,6 +50589,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2375,
@@ -50342,6 +50602,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2378,
@@ -50355,6 +50616,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2382,
@@ -50374,6 +50636,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2392,
@@ -50391,6 +50654,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2400,
@@ -50410,6 +50674,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2410,
@@ -50424,6 +50689,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2415,
@@ -50441,6 +50707,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 10,
+      "owner_changes": 4,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2423,
@@ -50460,6 +50727,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2433,
@@ -50474,6 +50742,7 @@
       "distinct_owners": 2,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2438,
@@ -50492,6 +50761,7 @@
       "distinct_owners": 4,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2447,
@@ -50514,6 +50784,7 @@
       "distinct_owners": 4,
       "distinct_teams": 7,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2460,
@@ -50532,6 +50803,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2469,
@@ -50546,6 +50818,7 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2474,
@@ -50568,6 +50841,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 10,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2487,
@@ -50587,6 +50861,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2497,
@@ -50604,6 +50879,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2505,
@@ -50618,6 +50894,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2510,
@@ -50636,6 +50913,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2519,
@@ -50653,6 +50931,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2527,
@@ -50664,6 +50943,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2529,
@@ -50676,6 +50956,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2532,
@@ -50690,6 +50971,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2537,
@@ -50705,6 +50987,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2543,
@@ -50717,6 +51000,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2546,
@@ -50731,6 +51015,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2551,
@@ -50743,6 +51028,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2554,
@@ -50759,6 +51045,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2561,
@@ -50772,6 +51059,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2565,
@@ -50792,6 +51080,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         2576,
@@ -50806,6 +51095,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2581,
@@ -50824,6 +51114,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2590,
@@ -50840,6 +51131,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2597,
@@ -50855,6 +51147,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 4,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2603,
@@ -50871,6 +51164,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2610,
@@ -50889,6 +51183,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2619,
@@ -50901,6 +51196,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2622,
@@ -50917,6 +51213,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2629,
@@ -50933,6 +51230,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2636,
@@ -50950,6 +51248,7 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 9,
       "current_owner": "David Turley",
       "stint_indices": [
         2644,
@@ -50973,6 +51272,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2658,
@@ -50989,6 +51289,7 @@
       "distinct_owners": 3,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2665,
@@ -51007,6 +51308,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2674,
@@ -51022,6 +51324,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2680,
@@ -51039,6 +51342,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2688,
@@ -51056,6 +51360,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2696,
@@ -51073,6 +51378,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         2704,
@@ -51084,6 +51390,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2706,
@@ -51095,6 +51402,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2708,
@@ -51109,6 +51417,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2713,
@@ -51121,6 +51430,7 @@
       "distinct_owners": 6,
       "distinct_teams": 6,
       "total_stints": 11,
+      "owner_changes": 5,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2716,
@@ -51141,6 +51451,7 @@
       "distinct_owners": 6,
       "distinct_teams": 6,
       "total_stints": 9,
+      "owner_changes": 5,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2727,
@@ -51159,6 +51470,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2736,
@@ -51175,6 +51487,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2743,
@@ -51190,6 +51503,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2749,
@@ -51206,6 +51520,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2756,
@@ -51221,6 +51536,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2762,
@@ -51235,6 +51551,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2767,
@@ -51248,6 +51565,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2771,
@@ -51262,6 +51580,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2776,
@@ -51274,6 +51593,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2779,
@@ -51291,6 +51611,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2787,
@@ -51306,6 +51627,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2793,
@@ -51322,6 +51644,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2800,
@@ -51338,6 +51661,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2807,
@@ -51354,6 +51678,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2814,
@@ -51371,6 +51696,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2822,
@@ -51388,6 +51714,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2830,
@@ -51401,6 +51728,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2834,
@@ -51416,6 +51744,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 6,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2840,
@@ -51437,6 +51766,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2852,
@@ -51450,6 +51780,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2856,
@@ -51464,6 +51795,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2861,
@@ -51479,6 +51811,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2867,
@@ -51493,6 +51826,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2872,
@@ -51509,6 +51843,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2879,
@@ -51525,6 +51860,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2886,
@@ -51538,6 +51874,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "David Turley",
       "stint_indices": [
         2890,
@@ -51556,6 +51893,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2899,
@@ -51568,6 +51906,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 3,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2902,
@@ -51582,6 +51921,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         2907,
@@ -51597,6 +51937,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2913,
@@ -51614,6 +51955,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         2921,
@@ -51630,6 +51972,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2928,
@@ -51645,6 +51988,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2934,
@@ -51658,6 +52002,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         2938,
@@ -51670,6 +52015,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         2941,
@@ -51682,6 +52028,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2944,
@@ -51697,6 +52044,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         2950,
@@ -51713,6 +52061,7 @@
       "distinct_owners": 2,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2957,
@@ -51728,6 +52077,7 @@
       "distinct_owners": 1,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2963,
@@ -51742,6 +52092,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         2968,
@@ -51753,6 +52104,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2970,
@@ -51768,6 +52120,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         2976,
@@ -51783,6 +52136,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         2982,
@@ -51794,6 +52148,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         2984,
@@ -51806,6 +52161,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         2987,
@@ -51821,6 +52177,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         2993,
@@ -51836,6 +52193,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         2999,
@@ -51848,6 +52206,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3002,
@@ -51860,6 +52219,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3005,
@@ -51871,6 +52231,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3007,
@@ -51886,6 +52247,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3013,
@@ -51902,6 +52264,7 @@
       "distinct_owners": 4,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3020,
@@ -51919,6 +52282,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3028,
@@ -51933,6 +52297,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3033,
@@ -51945,6 +52310,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3036,
@@ -51963,6 +52329,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3045,
@@ -51975,6 +52342,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3048,
@@ -51987,6 +52355,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 3,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3051,
@@ -52004,6 +52373,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3059,
@@ -52015,6 +52385,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3061,
@@ -52030,6 +52401,7 @@
       "distinct_owners": 7,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 7,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3067,
@@ -52051,6 +52423,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3079,
@@ -52066,6 +52439,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3085,
@@ -52079,6 +52453,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3089,
@@ -52093,6 +52468,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3094,
@@ -52104,6 +52480,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3096,
@@ -52117,6 +52494,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3100,
@@ -52131,6 +52509,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3105,
@@ -52143,6 +52522,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3108,
@@ -52154,6 +52534,7 @@
       "distinct_owners": 5,
       "distinct_teams": 6,
       "total_stints": 8,
+      "owner_changes": 5,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3110,
@@ -52171,6 +52552,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3118,
@@ -52185,6 +52567,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3123,
@@ -52196,6 +52579,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3125,
@@ -52211,6 +52595,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3131,
@@ -52224,6 +52609,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3135,
@@ -52235,6 +52621,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3137,
@@ -52248,6 +52635,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3141,
@@ -52259,6 +52647,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3143,
@@ -52270,6 +52659,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3145,
@@ -52284,6 +52674,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3150,
@@ -52298,6 +52689,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3155,
@@ -52309,6 +52701,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3157,
@@ -52320,6 +52713,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3159,
@@ -52332,6 +52726,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3162,
@@ -52345,6 +52740,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3166,
@@ -52360,6 +52756,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3172,
@@ -52376,6 +52773,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3179,
@@ -52387,6 +52785,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "David Turley",
       "stint_indices": [
         3181,
@@ -52403,6 +52802,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3188,
@@ -52414,6 +52814,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3190,
@@ -52428,6 +52829,7 @@
       "distinct_owners": 1,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3195,
@@ -52443,6 +52845,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3201,
@@ -52460,6 +52863,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3209,
@@ -52475,6 +52879,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3215,
@@ -52488,6 +52893,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3219,
@@ -52502,6 +52908,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3224,
@@ -52517,6 +52924,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3230,
@@ -52531,6 +52939,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3235,
@@ -52546,6 +52955,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3241,
@@ -52558,6 +52968,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3244,
@@ -52569,6 +52980,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3246,
@@ -52581,6 +52993,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3249,
@@ -52593,6 +53006,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3252,
@@ -52608,6 +53022,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3258,
@@ -52620,6 +53035,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3261,
@@ -52631,6 +53047,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3263,
@@ -52642,6 +53059,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3265,
@@ -52655,6 +53073,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3269,
@@ -52667,6 +53086,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3272,
@@ -52680,6 +53100,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3276,
@@ -52693,6 +53114,7 @@
       "distinct_owners": 4,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3280,
@@ -52709,6 +53131,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3287,
@@ -52722,6 +53145,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3291,
@@ -52736,6 +53160,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 8,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3296,
@@ -52753,6 +53178,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3304,
@@ -52764,6 +53190,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3306,
@@ -52779,6 +53206,7 @@
       "distinct_owners": 3,
       "distinct_teams": 5,
       "total_stints": 9,
+      "owner_changes": 4,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3312,
@@ -52797,6 +53225,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3321,
@@ -52810,6 +53239,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         3325,
@@ -52825,6 +53255,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3331,
@@ -52837,6 +53268,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3334,
@@ -52849,6 +53281,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3337,
@@ -52860,6 +53293,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3339,
@@ -52874,6 +53308,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3344,
@@ -52888,6 +53323,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3349,
@@ -52902,6 +53338,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3354,
@@ -52914,6 +53351,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3357,
@@ -52928,6 +53366,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3362,
@@ -52942,6 +53381,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3367,
@@ -52954,6 +53394,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3370,
@@ -52969,6 +53410,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3376,
@@ -52982,6 +53424,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 7,
+      "owner_changes": 4,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3380,
@@ -52998,6 +53441,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3387,
@@ -53011,6 +53455,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3391,
@@ -53025,6 +53470,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3396,
@@ -53036,6 +53482,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3398,
@@ -53048,6 +53495,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3401,
@@ -53064,6 +53512,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3408,
@@ -53077,6 +53526,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3412,
@@ -53088,6 +53538,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3414,
@@ -53100,6 +53551,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3417,
@@ -53113,6 +53565,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3421,
@@ -53124,6 +53577,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3423,
@@ -53135,6 +53589,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3425,
@@ -53147,6 +53602,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3428,
@@ -53159,6 +53615,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3431,
@@ -53175,6 +53632,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3438,
@@ -53187,6 +53645,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3441,
@@ -53198,6 +53657,7 @@
       "distinct_owners": 2,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3443,
@@ -53213,6 +53673,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3449,
@@ -53225,6 +53686,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3452,
@@ -53237,6 +53699,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3455,
@@ -53248,6 +53711,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3457,
@@ -53263,6 +53727,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3463,
@@ -53278,6 +53743,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3469,
@@ -53291,6 +53757,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3473,
@@ -53304,6 +53771,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3477,
@@ -53317,6 +53785,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3481,
@@ -53328,6 +53797,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3483,
@@ -53342,6 +53812,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 8,
+      "owner_changes": 4,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3488,
@@ -53359,6 +53830,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3496,
@@ -53372,6 +53844,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3500,
@@ -53385,6 +53858,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3504,
@@ -53398,6 +53872,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3508,
@@ -53410,6 +53885,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3511,
@@ -53421,6 +53897,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3513,
@@ -53432,6 +53909,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3515,
@@ -53443,6 +53921,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3517,
@@ -53457,6 +53936,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3522,
@@ -53469,6 +53949,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3525,
@@ -53482,6 +53963,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3529,
@@ -53494,6 +53976,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 3,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3532,
@@ -53508,6 +53991,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3537,
@@ -53520,6 +54004,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3540,
@@ -53533,6 +54018,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3544,
@@ -53546,6 +54032,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3548,
@@ -53557,6 +54044,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3550,
@@ -53571,6 +54059,7 @@
       "distinct_owners": 1,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3555,
@@ -53584,6 +54073,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3559,
@@ -53598,6 +54088,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3564,
@@ -53610,6 +54101,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3567,
@@ -53621,6 +54113,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3569,
@@ -53634,6 +54127,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "David Turley",
       "stint_indices": [
         3573,
@@ -53648,6 +54142,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3578,
@@ -53662,6 +54157,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 6,
+      "owner_changes": 3,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3583,
@@ -53677,6 +54173,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3589,
@@ -53690,6 +54187,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3593,
@@ -53704,6 +54202,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3598,
@@ -53718,6 +54217,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3603,
@@ -53729,6 +54229,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3605,
@@ -53740,6 +54241,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3607,
@@ -53753,6 +54255,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3611,
@@ -53765,6 +54268,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3614,
@@ -53779,6 +54283,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3619,
@@ -53792,6 +54297,7 @@
       "distinct_owners": 4,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 3,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3623,
@@ -53808,6 +54314,7 @@
       "distinct_owners": 3,
       "distinct_teams": 4,
       "total_stints": 7,
+      "owner_changes": 2,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3630,
@@ -53824,6 +54331,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3637,
@@ -53837,6 +54345,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3641,
@@ -53850,6 +54359,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3645,
@@ -53862,6 +54372,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3648,
@@ -53873,6 +54384,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3650,
@@ -53884,6 +54396,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3652,
@@ -53897,6 +54410,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 5,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3656,
@@ -53911,6 +54425,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3661,
@@ -53922,6 +54437,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3663,
@@ -53934,6 +54450,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3666,
@@ -53945,6 +54462,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3668,
@@ -53956,6 +54474,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3670,
@@ -53969,6 +54488,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3674,
@@ -53981,6 +54501,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3677,
@@ -53993,6 +54514,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3680,
@@ -54004,6 +54526,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3682,
@@ -54015,6 +54538,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3684,
@@ -54027,6 +54551,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3687,
@@ -54039,6 +54564,7 @@
       "distinct_owners": 2,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3690,
@@ -54052,6 +54578,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3694,
@@ -54064,6 +54591,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3697,
@@ -54075,6 +54603,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3699,
@@ -54088,6 +54617,7 @@
       "distinct_owners": 1,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3703,
@@ -54100,6 +54630,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 5,
+      "owner_changes": 2,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3706,
@@ -54114,6 +54645,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3711,
@@ -54125,6 +54657,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Evan Soraci",
       "stint_indices": [
         3713,
@@ -54138,6 +54671,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3717,
@@ -54149,6 +54683,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3719,
@@ -54160,6 +54695,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3721,
@@ -54172,6 +54708,7 @@
       "distinct_owners": 3,
       "distinct_teams": 3,
       "total_stints": 4,
+      "owner_changes": 2,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3724,
@@ -54185,6 +54722,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3728,
@@ -54197,6 +54735,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3731,
@@ -54209,6 +54748,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3734,
@@ -54221,6 +54761,7 @@
       "distinct_owners": 5,
       "distinct_teams": 5,
       "total_stints": 6,
+      "owner_changes": 4,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3737,
@@ -54236,6 +54777,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3743,
@@ -54247,6 +54789,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3745,
@@ -54259,6 +54802,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 4,
+      "owner_changes": 1,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3748,
@@ -54272,6 +54816,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 3,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3752,
@@ -54284,6 +54829,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "David Turley",
       "stint_indices": [
         3755,
@@ -54296,6 +54842,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Trent Radding",
       "stint_indices": [
         3758,
@@ -54307,6 +54854,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3760,
@@ -54318,6 +54866,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "David Turley",
       "stint_indices": [
         3762,
@@ -54329,6 +54878,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3764,
@@ -54341,6 +54891,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Owen Hern",
       "stint_indices": [
         3767,
@@ -54352,6 +54903,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3769,
@@ -54364,6 +54916,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3772,
@@ -54375,6 +54928,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 4,
+      "owner_changes": 0,
       "current_owner": "Liam Burns",
       "stint_indices": [
         3774,
@@ -54388,6 +54942,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jack Dunne",
       "stint_indices": [
         3778,
@@ -54399,6 +54954,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Reed Heim",
       "stint_indices": [
         3780,
@@ -54410,6 +54966,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3782,
@@ -54422,6 +54979,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3785,
@@ -54433,6 +54991,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3787,
@@ -54444,6 +55003,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Jordan Papula",
       "stint_indices": [
         3789,
@@ -54456,6 +55016,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Alex Beim",
       "stint_indices": [
         3792,
@@ -54467,6 +55028,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jose Garcia-Chope",
       "stint_indices": [
         3794,
@@ -54478,6 +55040,7 @@
       "distinct_owners": 1,
       "distinct_teams": 1,
       "total_stints": 2,
+      "owner_changes": 0,
       "current_owner": "Jason Bartolini",
       "stint_indices": [
         3796,
@@ -54489,6 +55052,7 @@
       "distinct_owners": 2,
       "distinct_teams": 2,
       "total_stints": 3,
+      "owner_changes": 1,
       "current_owner": "Matthew Zujewski",
       "stint_indices": [
         3798,
@@ -54499,20 +55063,22 @@
   },
   "most_traveled_players": [
     {
-      "player_id": "01gya",
-      "player_name": "Aroldis Chapman",
-      "distinct_owners": 9,
-      "distinct_teams": 10,
-      "total_stints": 17,
-      "current_owner": "Liam Burns"
-    },
-    {
       "player_id": "02c2h",
       "player_name": "Chris Bassitt",
       "distinct_owners": 9,
       "distinct_teams": 13,
       "total_stints": 17,
+      "owner_changes": 12,
       "current_owner": "Owen Hern"
+    },
+    {
+      "player_id": "01gya",
+      "player_name": "Aroldis Chapman",
+      "distinct_owners": 9,
+      "distinct_teams": 10,
+      "total_stints": 17,
+      "owner_changes": 8,
+      "current_owner": "Liam Burns"
     },
     {
       "player_id": "02x0f",
@@ -54520,15 +55086,8 @@
       "distinct_owners": 8,
       "distinct_teams": 11,
       "total_stints": 16,
+      "owner_changes": 10,
       "current_owner": "Jack Dunne"
-    },
-    {
-      "player_id": "03d6s",
-      "player_name": "Matt Chapman",
-      "distinct_owners": 8,
-      "distinct_teams": 9,
-      "total_stints": 16,
-      "current_owner": "Owen Hern"
     },
     {
       "player_id": "02mw3",
@@ -54536,7 +55095,17 @@
       "distinct_owners": 8,
       "distinct_teams": 11,
       "total_stints": 14,
+      "owner_changes": 9,
       "current_owner": "David Turley"
+    },
+    {
+      "player_id": "03d6s",
+      "player_name": "Matt Chapman",
+      "distinct_owners": 8,
+      "distinct_teams": 9,
+      "total_stints": 16,
+      "owner_changes": 8,
+      "current_owner": "Owen Hern"
     },
     {
       "player_id": "02jh6",
@@ -54544,15 +55113,8 @@
       "distinct_owners": 7,
       "distinct_teams": 12,
       "total_stints": 18,
+      "owner_changes": 12,
       "current_owner": "Jose Garcia-Chope"
-    },
-    {
-      "player_id": "03nmw",
-      "player_name": "Ian Happ",
-      "distinct_owners": 7,
-      "distinct_teams": 10,
-      "total_stints": 17,
-      "current_owner": "Liam Burns"
     },
     {
       "player_id": "03m6o",
@@ -54560,7 +55122,17 @@
       "distinct_owners": 7,
       "distinct_teams": 10,
       "total_stints": 15,
+      "owner_changes": 10,
       "current_owner": "Jordan Papula"
+    },
+    {
+      "player_id": "03nmw",
+      "player_name": "Ian Happ",
+      "distinct_owners": 7,
+      "distinct_teams": 10,
+      "total_stints": 17,
+      "owner_changes": 9,
+      "current_owner": "Liam Burns"
     },
     {
       "player_id": "04ali",
@@ -54568,7 +55140,17 @@
       "distinct_owners": 7,
       "distinct_teams": 11,
       "total_stints": 15,
+      "owner_changes": 9,
       "current_owner": "Matthew Zujewski"
+    },
+    {
+      "player_id": "0425t",
+      "player_name": "Bailey Ober",
+      "distinct_owners": 7,
+      "distinct_teams": 9,
+      "total_stints": 13,
+      "owner_changes": 8,
+      "current_owner": "Jose Garcia-Chope"
     },
     {
       "player_id": "0311c",
@@ -54576,6 +55158,7 @@
       "distinct_owners": 7,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 7,
       "current_owner": "Jack Dunne"
     },
     {
@@ -54584,15 +55167,8 @@
       "distinct_owners": 7,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 7,
       "current_owner": "Jason Bartolini"
-    },
-    {
-      "player_id": "0425t",
-      "player_name": "Bailey Ober",
-      "distinct_owners": 7,
-      "distinct_teams": 9,
-      "total_stints": 13,
-      "current_owner": "Jose Garcia-Chope"
     },
     {
       "player_id": "05t9v",
@@ -54600,6 +55176,34 @@
       "distinct_owners": 7,
       "distinct_teams": 8,
       "total_stints": 12,
+      "owner_changes": 7,
+      "current_owner": "Evan Soraci"
+    },
+    {
+      "player_id": "05ajg",
+      "player_name": "HA Seong Kim",
+      "distinct_owners": 6,
+      "distinct_teams": 9,
+      "total_stints": 14,
+      "owner_changes": 9,
+      "current_owner": "David Turley"
+    },
+    {
+      "player_id": "01spl",
+      "player_name": "Jurickson Profar",
+      "distinct_owners": 6,
+      "distinct_teams": 9,
+      "total_stints": 13,
+      "owner_changes": 8,
+      "current_owner": "Liam Burns"
+    },
+    {
+      "player_id": "03qr0",
+      "player_name": "Cedric Mullins",
+      "distinct_owners": 6,
+      "distinct_teams": 8,
+      "total_stints": 14,
+      "owner_changes": 7,
       "current_owner": "Evan Soraci"
     },
     {
@@ -54608,71 +55212,17 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 14,
+      "owner_changes": 6,
       "current_owner": "David Turley"
     },
     {
-      "player_id": "03ae8",
-      "player_name": "Dansby Swanson",
+      "player_id": "03deg",
+      "player_name": "Justin Steele",
       "distinct_owners": 6,
       "distinct_teams": 7,
-      "total_stints": 14,
-      "current_owner": "Jose Garcia-Chope"
-    },
-    {
-      "player_id": "03pov",
-      "player_name": "Brady Singer",
-      "distinct_owners": 6,
-      "distinct_teams": 7,
-      "total_stints": 14,
+      "total_stints": 11,
+      "owner_changes": 6,
       "current_owner": "Jason Bartolini"
-    },
-    {
-      "player_id": "03qjy",
-      "player_name": "Brandon Lowe",
-      "distinct_owners": 6,
-      "distinct_teams": 8,
-      "total_stints": 14,
-      "current_owner": "Alex Beim"
-    },
-    {
-      "player_id": "03qr0",
-      "player_name": "Cedric Mullins",
-      "distinct_owners": 6,
-      "distinct_teams": 8,
-      "total_stints": 14,
-      "current_owner": "Evan Soraci"
-    },
-    {
-      "player_id": "03yso",
-      "player_name": "AJ Puk",
-      "distinct_owners": 6,
-      "distinct_teams": 8,
-      "total_stints": 14,
-      "current_owner": "Matthew Zujewski"
-    },
-    {
-      "player_id": "05ajg",
-      "player_name": "HA Seong Kim",
-      "distinct_owners": 6,
-      "distinct_teams": 9,
-      "total_stints": 14,
-      "current_owner": "David Turley"
-    },
-    {
-      "player_id": "01s8u",
-      "player_name": "Mike Trout",
-      "distinct_owners": 6,
-      "distinct_teams": 8,
-      "total_stints": 13,
-      "current_owner": "Jordan Papula"
-    },
-    {
-      "player_id": "01spl",
-      "player_name": "Jurickson Profar",
-      "distinct_owners": 6,
-      "distinct_teams": 9,
-      "total_stints": 13,
-      "current_owner": "Liam Burns"
     },
     {
       "player_id": "03e5m",
@@ -54680,6 +55230,7 @@
       "distinct_owners": 6,
       "distinct_teams": 8,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jason Bartolini"
     },
     {
@@ -54688,7 +55239,35 @@
       "distinct_owners": 6,
       "distinct_teams": 9,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jordan Papula"
+    },
+    {
+      "player_id": "03pov",
+      "player_name": "Brady Singer",
+      "distinct_owners": 6,
+      "distinct_teams": 7,
+      "total_stints": 14,
+      "owner_changes": 6,
+      "current_owner": "Jason Bartolini"
+    },
+    {
+      "player_id": "03qjy",
+      "player_name": "Brandon Lowe",
+      "distinct_owners": 6,
+      "distinct_teams": 8,
+      "total_stints": 14,
+      "owner_changes": 6,
+      "current_owner": "Alex Beim"
+    },
+    {
+      "player_id": "03yso",
+      "player_name": "AJ Puk",
+      "distinct_owners": 6,
+      "distinct_teams": 8,
+      "total_stints": 14,
+      "owner_changes": 6,
+      "current_owner": "Matthew Zujewski"
     },
     {
       "player_id": "041v6",
@@ -54696,7 +55275,17 @@
       "distinct_owners": 6,
       "distinct_teams": 7,
       "total_stints": 13,
+      "owner_changes": 6,
       "current_owner": "Jose Garcia-Chope"
+    },
+    {
+      "player_id": "04aee",
+      "player_name": "JO Adell",
+      "distinct_owners": 6,
+      "distinct_teams": 7,
+      "total_stints": 13,
+      "owner_changes": 6,
+      "current_owner": "Alex Beim"
     }
   ],
   "owner_throughput": {

@@ -453,10 +453,12 @@ def compute_player_tenure_stats(journeys_df: pd.DataFrame) -> Dict[str, Any]:
 
 
 def build_player_index(stints: List[Dict]) -> Dict[str, Any]:
-    """Build player_id → {name, distinct_owners, distinct_teams, total_stints, current_owner, stint_indices}
+    """Build player_id → {name, distinct_owners, distinct_teams, total_stints, owner_changes, current_owner, stint_indices}
 
     distinct_owners counts unique real owners (ignoring team name changes year-to-year).
     distinct_teams counts unique team names (may be higher due to rebranding).
+    owner_changes counts transitions to a DIFFERENT owner — the true "travel" metric (BUG-02).
+      Same-owner KEPT stints do not increment this counter.
     """
     index: Dict[str, Any] = {}
     for i, stint in enumerate(stints):
@@ -467,20 +469,29 @@ def build_player_index(stints: List[Dict]) -> Dict[str, Any]:
                 "distinct_owners": set(),   # by real_name — ignores name changes
                 "distinct_teams":  set(),   # by team_name — counts renames too
                 "total_stints":    0,
+                "owner_changes":   0,       # BUG-02: only count cross-owner moves
+                "_prev_owner":     None,    # transient — stripped before return
                 "current_owner":   None,
                 "stint_indices":   [],
             }
-        index[pid]["distinct_owners"].add(stint["owner_real_name"])
+        owner = stint["owner_real_name"]
+        index[pid]["distinct_owners"].add(owner)
         index[pid]["distinct_teams"].add(stint["team_name"])
         index[pid]["total_stints"] += 1
         index[pid]["stint_indices"].append(i)
+        # Count as an owner change only when the owner differs from the previous stint
+        # (excludes KEPT stints with the same owner, which inflate total_stints)
+        if owner != "Unknown" and owner != index[pid]["_prev_owner"] and index[pid]["_prev_owner"] is not None:
+            index[pid]["owner_changes"] += 1
+        index[pid]["_prev_owner"] = owner
         if stint["is_current"]:
-            index[pid]["current_owner"] = stint["owner_real_name"]
+            index[pid]["current_owner"] = owner
 
-    # Serialize sets → counts
+    # Serialize sets → counts; strip transient field
     for pid in index:
         index[pid]["distinct_owners"] = len(index[pid]["distinct_owners"])
         index[pid]["distinct_teams"]  = len(index[pid]["distinct_teams"])
+        del index[pid]["_prev_owner"]
 
     return index
 
@@ -834,8 +845,10 @@ def build_journeys_json(
 
     player_index = build_player_index(stints)
 
-    # Most traveled players (top 25) — ranked by distinct OWNERS, not team names
-    # This ensures a player kept by the same owner across a team rename doesn't inflate the count
+    # Most traveled players (top 25) — ranked by distinct OWNERS, then owner_changes.
+    # distinct_owners: how many unique managers ever owned this player.
+    # owner_changes:   how many times the player moved to a DIFFERENT owner (BUG-02 fix).
+    #   Excludes same-owner KEPT stints that inflate total_stints without real travel.
     most_traveled = sorted(
         [
             {
@@ -844,11 +857,12 @@ def build_journeys_json(
                 "distinct_owners": data["distinct_owners"],  # true mobility metric
                 "distinct_teams":  data["distinct_teams"],   # raw team-name count for reference
                 "total_stints":    data["total_stints"],
+                "owner_changes":   data["owner_changes"],    # BUG-02: cross-owner moves only
                 "current_owner":   data["current_owner"],
             }
             for pid, data in player_index.items()
         ],
-        key=lambda x: (x["distinct_owners"], x["total_stints"]),
+        key=lambda x: (x["distinct_owners"], x["owner_changes"]),
         reverse=True,
     )[:25]
 
