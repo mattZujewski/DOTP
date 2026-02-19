@@ -614,17 +614,85 @@ def build_teams_json(
 # JSON Builder: trades.json
 # ---------------------------------------------------------------------------
 
+def build_assets_by_party_from_rows(
+    transactions_df: pd.DataFrame,
+    team_to_owner: Dict[str, str],
+) -> Dict[str, Dict[str, Dict[str, List[str]]]]:
+    """
+    Build a lookup keyed by (date, details) → {owner: {sent: [...], received: [...]}}
+    using the per-player CSV rows, where team_name = receiving team and player_name = player.
+
+    This replaces regex parsing of the details string, which cannot reliably split
+    space-separated multi-player strings like 'Jarren Duran Jack Leiter'.
+    """
+    trades = transactions_df[transactions_df["action_type"] == "TRADED"].copy()
+    trades["details_norm"] = trades["details"].fillna("").apply(normalize_quotes)
+    trades["date_str"]     = trades["date"].fillna("").astype(str)
+    trades["player_name"]  = trades["player_name"].fillna("").astype(str)
+    trades["team_name_norm"] = trades["team_name"].fillna("").apply(
+        lambda t: normalize_quotes(str(t))
+    )
+
+    # Each row: player_name was RECEIVED by team_name / owner_real_name.
+    # Group by (date, details) to reconstruct each trade event's asset lists.
+    result: Dict[str, Dict[str, Dict[str, List[str]]]] = {}
+
+    for (date_str, details_norm), group in trades.groupby(["date_str", "details_norm"]):
+        key = (date_str, details_norm)
+        assets: Dict[str, Dict[str, List[str]]] = {}
+
+        # Collect all receiving owners in this trade and what they received
+        all_receiving_owners: Set[str] = set()
+        for _, row in group.iterrows():
+            player  = row["player_name"].strip()
+            team_nm = row["team_name_norm"].strip()
+            if not player:
+                continue
+            owner = (
+                team_to_owner.get(team_nm)
+                or team_to_owner.get(team_nm.lower())
+            )
+            if not owner:
+                # Fall back to owner_real_name from the row itself
+                owner_csv = str(row.get("owner_real_name", "")).strip()
+                owner = owner_csv if owner_csv and owner_csv != "Unknown" else None
+            if not owner:
+                continue
+            all_receiving_owners.add(owner)
+            if owner not in assets:
+                assets[owner] = {"sent": [], "received": []}
+            assets[owner]["received"].append(player)
+
+        # Sent = what the OTHER owners received.
+        # For each owner, sent = everything received by the other parties.
+        for owner in all_receiving_owners:
+            for other_owner in all_receiving_owners:
+                if other_owner == owner:
+                    continue
+                assets[owner]["sent"].extend(assets[other_owner]["received"])
+
+        result[key] = assets
+
+    return result
+
+
 def build_trades_json(
     trade_events_df: pd.DataFrame,
     trade_pairs_df: pd.DataFrame,
     all_team_names_sorted: List[str],
     team_to_owner: Dict[str, str],
+    transactions_df: Optional[pd.DataFrame] = None,
 ) -> Dict:
     owner_trade_counts: Dict[str, int] = defaultdict(int)
     trades_by_ym: Dict[str, int] = defaultdict(int)
     trades_by_year_owner: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     trade_events_list = []
+
+    # Build per-row asset lookup (BUG-01 fix: use CSV player rows, not regex parsing)
+    row_assets_lookup: Dict[Tuple[str, str], Dict[str, Dict[str, List[str]]]] = {}
+    if transactions_df is not None:
+        row_assets_lookup = build_assets_by_party_from_rows(transactions_df, team_to_owner)
 
     for idx, row in trade_events_df.iterrows():
         teams  = extract_trade_partners(row["details"], all_team_names_sorted)
@@ -646,12 +714,17 @@ def build_trades_json(
             for o in owners:
                 trades_by_year_owner[year_str][o] += 1
 
-        assets = parse_asset_lists(row["details"], all_team_names_sorted)
-        assets_by_owner: Dict[str, Dict[str, List[str]]] = {}
-        for team_name, asset_data in assets.items():
-            owner = team_to_owner.get(normalize_quotes(team_name))
-            if owner:
-                assets_by_owner[owner] = asset_data
+        # BUG-01: Look up assets from per-player CSV rows first (exact, no parsing required).
+        # Fall back to regex parsing only if CSV lookup misses (e.g. format "X to Y").
+        date_str_key = str(row.get("date", "")).strip()
+        details_norm_key = normalize_quotes(str(row.get("details", "")).strip())
+        assets_by_owner = row_assets_lookup.get((date_str_key, details_norm_key), {})
+        if not assets_by_owner:
+            assets = parse_asset_lists(row["details"], all_team_names_sorted)
+            for team_name, asset_data in assets.items():
+                owner = team_to_owner.get(normalize_quotes(team_name))
+                if owner:
+                    assets_by_owner[owner] = asset_data
 
         trade_events_list.append({
             "event_id":        event_id,
@@ -988,7 +1061,8 @@ def main() -> None:
     # --- trades.json ---
     print("\n[3/4] Building trades.json...")
     trades_data = build_trades_json(
-        trade_events, trade_pairs, all_team_names_sorted, team_to_owner
+        trade_events, trade_pairs, all_team_names_sorted, team_to_owner,
+        transactions_df=txns,
     )
     out = data_dir / "trades.json"
     out.write_text(json.dumps(trades_data, indent=2, default=str), encoding="utf-8")

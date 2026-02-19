@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T14:22:42.471536Z",
+    "generated_at": "2026-02-19T23:09:23.873974Z",
     "total_trade_events": 352
   },
   "trade_events": [
@@ -20,16 +20,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 3 (Wallace & deGromit) Budget: $5.00"
-          ],
-          "received": []
-        },
-        "Evan Soraci": {
-          "sent": [
-            "Round 4 (The Roman Empire) Coby Mayo"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Coby Mayo"
+          ]
         }
       }
     },
@@ -48,17 +42,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Otto Lopez"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
             "Marcell Ozuna"
           ],
-          "received": []
+          "received": [
+            "Otto Lopez"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Otto Lopez"
+          ],
+          "received": [
+            "Marcell Ozuna"
+          ]
         }
       }
     },
@@ -77,11 +75,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Addison Barger"
+          ],
+          "received": [
+            "Tanner Bibee"
+          ]
+        },
         "Jack Dunne": {
           "sent": [
-            "Round 1 (Wallace & deGromit) Tanner Bibee"
+            "Tanner Bibee"
           ],
-          "received": []
+          "received": [
+            "Addison Barger"
+          ]
         }
       }
     },
@@ -101,16 +109,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Trent Radding": {
-          "sent": [
-            "Round 2 (Mojo Dojo Casas House)"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Jonny Farmelo"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -129,17 +131,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Jarren Duran Jack Leiter"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Maikel Garcia"
           ],
-          "received": []
+          "received": [
+            "Jarren Duran",
+            "Jack Leiter"
+          ]
+        },
+        "Matthew Zujewski": {
+          "sent": [
+            "Jarren Duran",
+            "Jack Leiter"
+          ],
+          "received": [
+            "Maikel Garcia"
+          ]
         }
       }
     },
@@ -160,15 +168,21 @@
       "assets_by_party": {
         "David Turley": {
           "sent": [
-            "Raisel Iglesias Kendry Chourio"
+            "Kendry Chourio",
+            "Raisel Iglesias"
           ],
-          "received": []
+          "received": [
+            "Braxton Ashcraft"
+          ]
         },
         "Matthew Zujewski": {
           "sent": [
-            "Braxton Ashcraft Budget: $4.50"
+            "Braxton Ashcraft"
           ],
-          "received": []
+          "received": [
+            "Kendry Chourio",
+            "Raisel Iglesias"
+          ]
         }
       }
     },
@@ -187,11 +201,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Chase Delauter"
+          ],
+          "received": [
+            "Ozzie Albies"
+          ]
+        },
         "Jose Garcia-Chope": {
           "sent": [
             "Ozzie Albies"
           ],
-          "received": []
+          "received": [
+            "Chase Delauter"
+          ]
         }
       }
     },
@@ -212,15 +236,23 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Ivan Herrera Noah Schultz"
+            "Noah Schultz",
+            "Ivan Herrera"
           ],
-          "received": []
+          "received": [
+            "Tyler Glasnow",
+            "Zyhir Hope"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Zyhir Hope Tyler Glasnow"
+            "Tyler Glasnow",
+            "Zyhir Hope"
           ],
-          "received": []
+          "received": [
+            "Noah Schultz",
+            "Ivan Herrera"
+          ]
         }
       }
     },
@@ -239,17 +271,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Sal Frelick"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
           "sent": [
             "Johan Oviedo"
           ],
-          "received": []
+          "received": [
+            "Sal Frelick"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Sal Frelick"
+          ],
+          "received": [
+            "Johan Oviedo"
+          ]
         }
       }
     },
@@ -268,17 +304,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Ivan Herrera"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Ryan Pepiot"
           ],
-          "received": []
+          "received": [
+            "Ivan Herrera"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Ivan Herrera"
+          ],
+          "received": [
+            "Ryan Pepiot"
+          ]
         }
       }
     },
@@ -297,17 +337,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Ian Happ"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
             "Luis Castillo"
           ],
-          "received": []
+          "received": [
+            "Ian Happ"
+          ]
+        },
+        "Alex Beim": {
+          "sent": [
+            "Ian Happ"
+          ],
+          "received": [
+            "Luis Castillo"
+          ]
         }
       }
     },
@@ -330,13 +374,17 @@
           "sent": [
             "Ryne Nelson"
           ],
-          "received": []
+          "received": [
+            "Eugenio Suarez"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "Eugenio Suarez"
           ],
-          "received": []
+          "received": [
+            "Ryne Nelson"
+          ]
         }
       }
     },
@@ -359,7 +407,17 @@
           "sent": [
             "Marcus Semien"
           ],
-          "received": []
+          "received": [
+            "Reynaldo Lopez"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Reynaldo Lopez"
+          ],
+          "received": [
+            "Marcus Semien"
+          ]
         }
       }
     },
@@ -382,13 +440,19 @@
           "sent": [
             "Bryan Reynolds"
           ],
-          "received": []
+          "received": [
+            "Dillon Dingler",
+            "Zac Veen"
+          ]
         },
         "Jason Bartolini": {
           "sent": [
-            "Zac Veen Dillon Dingler"
+            "Dillon Dingler",
+            "Zac Veen"
           ],
-          "received": []
+          "received": [
+            "Bryan Reynolds"
+          ]
         }
       }
     },
@@ -409,15 +473,19 @@
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
-            "Round 2 (Gho-Strider)"
+            "Adley Rutschman"
           ],
-          "received": []
+          "received": [
+            "Geraldo Perdomo"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "Geraldo Perdomo"
           ],
-          "received": []
+          "received": [
+            "Adley Rutschman"
+          ]
         }
       }
     },
@@ -436,17 +504,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Noelvi Marte"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Shane Baz"
           ],
-          "received": []
+          "received": [
+            "Noelvi Marte"
+          ]
+        },
+        "Evan Soraci": {
+          "sent": [
+            "Noelvi Marte"
+          ],
+          "received": [
+            "Shane Baz"
+          ]
         }
       }
     },
@@ -467,15 +539,23 @@
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
-            "Kyle Bradish Isaac Paredes"
+            "Isaac Paredes",
+            "Kyle Bradish"
           ],
-          "received": []
+          "received": [
+            "Brice Turang",
+            "Caden Scarborough"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Caden Scarborough Brice Turang"
+            "Brice Turang",
+            "Caden Scarborough"
           ],
-          "received": []
+          "received": [
+            "Isaac Paredes",
+            "Kyle Bradish"
+          ]
         }
       }
     },
@@ -498,13 +578,19 @@
           "sent": [
             "Drake Baldwin"
           ],
-          "received": []
+          "received": [
+            "Devin Williams",
+            "Chris Sale"
+          ]
         },
         "Alex Beim": {
           "sent": [
-            "Round 5 (The Undisputed ERA) Chris Sale"
+            "Devin Williams",
+            "Chris Sale"
           ],
-          "received": []
+          "received": [
+            "Drake Baldwin"
+          ]
         }
       }
     },
@@ -525,15 +611,23 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Mike Trout Kristian Campbell"
+            "Kristian Campbell",
+            "Mike Trout"
           ],
-          "received": []
+          "received": [
+            "Gavin Williams",
+            "Royce Lewis"
+          ]
         },
         "Jordan Papula": {
           "sent": [
-            "Gavin Williams Royce Lewis"
+            "Gavin Williams",
+            "Royce Lewis"
           ],
-          "received": []
+          "received": [
+            "Kristian Campbell",
+            "Mike Trout"
+          ]
         }
       }
     },
@@ -552,11 +646,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Trent Radding": {
+          "sent": [],
+          "received": [
             "Will Warren"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -575,17 +669,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Mike Trout Jeff Hoffman"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Luis Robert Jr."
+            "Luis Robert JR"
           ],
-          "received": []
+          "received": [
+            "Jeff Hoffman",
+            "Mike Trout"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Jeff Hoffman",
+            "Mike Trout"
+          ],
+          "received": [
+            "Luis Robert JR"
+          ]
         }
       }
     },
@@ -604,17 +704,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Payton Tolle Michael Harris II Brandon Sproat"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
-            "Round 2 (The Juan-Binary Murderers' Row) Oneil Cruz"
+            "Oneil Cruz"
           ],
-          "received": []
+          "received": [
+            "Brandon Sproat",
+            "Michael Harris II",
+            "Payton Tolle"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Brandon Sproat",
+            "Michael Harris II",
+            "Payton Tolle"
+          ],
+          "received": [
+            "Oneil Cruz"
+          ]
         }
       }
     },
@@ -635,15 +743,23 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Carter Jensen MacKenzie Gore Daylen Lile"
+            "Mackenzie Gore",
+            "Daylen Lile",
+            "Carter Jensen"
           ],
-          "received": []
+          "received": [
+            "CJ Abrams"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "CJ Abrams"
           ],
-          "received": []
+          "received": [
+            "Mackenzie Gore",
+            "Daylen Lile",
+            "Carter Jensen"
+          ]
         }
       }
     },
@@ -664,15 +780,21 @@
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
-            "Round 2 (*Deleted*) Budget: $3.00"
+            "Mike Trout"
           ],
-          "received": []
+          "received": [
+            "Jesus Luzardo",
+            "Isaac Collins"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Isaac Collins Jesus Luzardo"
+            "Jesus Luzardo",
+            "Isaac Collins"
           ],
-          "received": []
+          "received": [
+            "Mike Trout"
+          ]
         }
       }
     },
@@ -695,13 +817,17 @@
           "sent": [
             "Trey Yesavage"
           ],
-          "received": []
+          "received": [
+            "George Springer"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "George Springer"
           ],
-          "received": []
+          "received": [
+            "Trey Yesavage"
+          ]
         }
       }
     },
@@ -720,7 +846,41 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Ben Rice",
+            "Brandon Woodruff",
+            "Cade Smith"
+          ],
+          "received": [
+            "Eduardo Quintero",
+            "Maikel Garcia"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Eduardo Quintero",
+            "Maikel Garcia",
+            "Cade Smith"
+          ],
+          "received": [
+            "Ben Rice",
+            "Brandon Woodruff"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Eduardo Quintero",
+            "Maikel Garcia",
+            "Ben Rice",
+            "Brandon Woodruff"
+          ],
+          "received": [
+            "Cade Smith"
+          ]
+        }
+      }
     },
     {
       "event_id": "2025-08-03-047",
@@ -741,13 +901,17 @@
           "sent": [
             "Brandon Sproat"
           ],
-          "received": []
+          "received": [
+            "Cooper Pratt"
+          ]
         },
         "Jack Dunne": {
           "sent": [
             "Cooper Pratt"
           ],
-          "received": []
+          "received": [
+            "Brandon Sproat"
+          ]
         }
       }
     },
@@ -768,15 +932,23 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Lazaro Montes Edward Florentino"
+            "Edward Florentino",
+            "Lazaro Montes"
           ],
-          "received": []
+          "received": [
+            "Andrew Painter",
+            "Ryan Pepiot"
+          ]
         },
         "Jason Bartolini": {
           "sent": [
-            "Ryan Pepiot Andrew Painter"
+            "Andrew Painter",
+            "Ryan Pepiot"
           ],
-          "received": []
+          "received": [
+            "Edward Florentino",
+            "Lazaro Montes"
+          ]
         }
       }
     },
@@ -795,17 +967,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "David Turley": {
+          "sent": [
+            "Teoscar Hernandez",
+            "Brandon Lowe",
+            "Emilio Pagan"
+          ],
+          "received": [
+            "Pablo Lopez"
+          ]
+        },
         "Alex Beim": {
           "sent": [
             "Pablo Lopez"
           ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Brandon Lowe Emilio Pagan Teoscar Hernandez"
-          ],
-          "received": []
+          "received": [
+            "Teoscar Hernandez",
+            "Brandon Lowe",
+            "Emilio Pagan"
+          ]
         }
       }
     },
@@ -826,15 +1006,19 @@
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
-            "Round 2 (*Deleted*) Payton Tolle"
+            "Payton Tolle"
           ],
-          "received": []
+          "received": [
+            "Jhostynxon Garcia"
+          ]
         },
         "Jack Dunne": {
           "sent": [
             "Jhostynxon Garcia"
           ],
-          "received": []
+          "received": [
+            "Payton Tolle"
+          ]
         }
       }
     },
@@ -853,17 +1037,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Cristian Javier Alek Manoah"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
             "Alec Burleson"
           ],
-          "received": []
+          "received": [
+            "Cristian Javier"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Cristian Javier"
+          ],
+          "received": [
+            "Alec Burleson"
+          ]
         }
       }
     },
@@ -882,17 +1070,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Joshua Baez Justin Crawford"
-          ],
-          "received": []
-        },
         "David Turley": {
           "sent": [
-            "Cade Cavalli Taylor Ward"
+            "Cade Cavalli",
+            "Taylor Ward"
           ],
-          "received": []
+          "received": [
+            "Joshua Baez",
+            "Justin Crawford"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Joshua Baez",
+            "Justin Crawford"
+          ],
+          "received": [
+            "Cade Cavalli",
+            "Taylor Ward"
+          ]
         }
       }
     },
@@ -911,11 +1107,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
+        "Alex Beim": {
+          "sent": [],
+          "received": [
             "Otto Lopez"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -934,17 +1130,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Round 3 (*Deleted*) Hyeseong Kim"
-          ],
-          "received": []
-        },
         "David Turley": {
           "sent": [
-            "Round 2 (*Deleted*) Carson Benge"
+            "Carson Benge"
           ],
-          "received": []
+          "received": [
+            "Hyeseong Kim"
+          ]
+        },
+        "Jason Bartolini": {
+          "sent": [
+            "Hyeseong Kim"
+          ],
+          "received": [
+            "Carson Benge"
+          ]
         }
       }
     },
@@ -964,16 +1164,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jordan Papula": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Lars Nootbaar"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -992,17 +1186,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Grant Holmes",
+            "Hunter Barco"
+          ],
+          "received": [
+            "Cade Horton"
+          ]
+        },
         "Owen Hern": {
           "sent": [
             "Cade Horton"
           ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Grant Holmes Hunter Barco"
-          ],
-          "received": []
+          "received": [
+            "Grant Holmes",
+            "Hunter Barco"
+          ]
         }
       }
     },
@@ -1025,7 +1225,17 @@
           "sent": [
             "Sandy Alcantara"
           ],
-          "received": []
+          "received": [
+            "Andrew Abbott"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Andrew Abbott"
+          ],
+          "received": [
+            "Sandy Alcantara"
+          ]
         }
       }
     },
@@ -1044,17 +1254,27 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Sean Manaea Jhostynxon Garcia Yordan Alvarez"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
-            "Aroldis Chapman Christian Yelich"
+            "Christian Yelich",
+            "Aroldis Chapman"
           ],
-          "received": []
+          "received": [
+            "Jhostynxon Garcia",
+            "Yordan Alvarez",
+            "Sean Manaea"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Jhostynxon Garcia",
+            "Yordan Alvarez",
+            "Sean Manaea"
+          ],
+          "received": [
+            "Christian Yelich",
+            "Aroldis Chapman"
+          ]
         }
       }
     },
@@ -1073,17 +1293,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Spencer Schwellenbach"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Freddy Peralta"
           ],
-          "received": []
+          "received": [
+            "Spencer Schwellenbach"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Spencer Schwellenbach"
+          ],
+          "received": [
+            "Freddy Peralta"
+          ]
         }
       }
     },
@@ -1106,13 +1330,19 @@
           "sent": [
             "Christian Yelich"
           ],
-          "received": []
+          "received": [
+            "Zebby Matthews",
+            "Bubba Chandler"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Zebby Matthews Bubba Chandler"
+            "Zebby Matthews",
+            "Bubba Chandler"
           ],
-          "received": []
+          "received": [
+            "Christian Yelich"
+          ]
         }
       }
     },
@@ -1135,13 +1365,17 @@
           "sent": [
             "Shea Langeliers"
           ],
-          "received": []
+          "received": [
+            "Reese Olson"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Reese Olson"
           ],
-          "received": []
+          "received": [
+            "Shea Langeliers"
+          ]
         }
       }
     },
@@ -1161,10 +1395,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Grant Holmes"
+          ]
         }
       }
     },
@@ -1184,16 +1418,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Kevin Gausman"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1213,16 +1441,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Trent Radding": {
-          "sent": [
-            "Shelby Miller"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Shane Smith"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1241,17 +1463,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Jose Altuve"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
             "Aroon Escobar"
           ],
-          "received": []
+          "received": [
+            "Jose Altuve"
+          ]
+        },
+        "Alex Beim": {
+          "sent": [
+            "Jose Altuve"
+          ],
+          "received": [
+            "Aroon Escobar"
+          ]
         }
       }
     },
@@ -1270,17 +1496,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Brice Turang"
+          ],
+          "received": [
+            "Bailey Ober"
+          ]
+        },
         "Jack Dunne": {
           "sent": [
             "Bailey Ober"
           ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "received": [
+            "Brice Turang"
+          ]
         }
       }
     },
@@ -1300,16 +1530,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Jake Mangum"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Lucas Erceg"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1328,17 +1552,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Round 1 (*Deleted*) Grant Taylor Kristian Campbell"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Mason Miller Jack Flaherty"
+            "Mason Miller",
+            "Jack Flaherty"
           ],
-          "received": []
+          "received": [
+            "Grant Taylor",
+            "Kristian Campbell"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Grant Taylor",
+            "Kristian Campbell"
+          ],
+          "received": [
+            "Mason Miller",
+            "Jack Flaherty"
+          ]
         }
       }
     },
@@ -1357,17 +1589,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Gabriel Moreno"
-          ],
-          "received": []
-        },
         "Trent Radding": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Gabriel Moreno"
+          ]
         }
       }
     },
@@ -1390,7 +1616,17 @@
           "sent": [
             "Merrill Kelly"
           ],
-          "received": []
+          "received": [
+            "Mike Sirota"
+          ]
+        },
+        "Alex Beim": {
+          "sent": [
+            "Mike Sirota"
+          ],
+          "received": [
+            "Merrill Kelly"
+          ]
         }
       }
     },
@@ -1409,17 +1645,27 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Ranger Suarez Fernando Tatis Jr. Lars Nootbaar"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
           "sent": [
-            "Round 2 (*Deleted*) Jonah Tong Francisco Lindor"
+            "Francisco Lindor",
+            "Jonah Tong"
           ],
-          "received": []
+          "received": [
+            "Lars Nootbaar",
+            "Ranger Suarez",
+            "Fernando Tatis JR"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Lars Nootbaar",
+            "Ranger Suarez",
+            "Fernando Tatis JR"
+          ],
+          "received": [
+            "Francisco Lindor",
+            "Jonah Tong"
+          ]
         }
       }
     },
@@ -1438,17 +1684,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Joe Boyle"
-          ],
-          "received": []
-        },
         "Trent Radding": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Joe Boyle"
+          ]
         }
       }
     },
@@ -1469,9 +1709,19 @@
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Zac Gallen"
           ],
-          "received": []
+          "received": [
+            "Eugenio Suarez"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Eugenio Suarez"
+          ],
+          "received": [
+            "Zac Gallen"
+          ]
         }
       }
     },
@@ -1490,11 +1740,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Alex Beim": {
+          "sent": [],
+          "received": [
             "Jose Caballero"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1513,17 +1763,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Jeremiah Estrada"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jeremiah Estrada"
+          ]
         }
       }
     },
@@ -1542,17 +1786,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Rhett Lowder"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Byron Buxton"
           ],
-          "received": []
+          "received": [
+            "Rhett Lowder"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Rhett Lowder"
+          ],
+          "received": [
+            "Byron Buxton"
+          ]
         }
       }
     },
@@ -1573,15 +1821,21 @@
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
-            "Manny Machado Chandler Simpson"
+            "Chandler Simpson",
+            "Manny Machado"
           ],
-          "received": []
+          "received": [
+            "Alex Bregman"
+          ]
         },
         "Alex Beim": {
           "sent": [
             "Alex Bregman"
           ],
-          "received": []
+          "received": [
+            "Chandler Simpson",
+            "Manny Machado"
+          ]
         }
       }
     },
@@ -1600,17 +1854,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "George Lombard Jr."
-          ],
-          "received": []
-        },
         "Owen Hern": {
           "sent": [
             "Bryce Rainer"
           ],
-          "received": []
+          "received": [
+            "George Lombard JR"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "George Lombard JR"
+          ],
+          "received": [
+            "Bryce Rainer"
+          ]
         }
       }
     },
@@ -1630,16 +1888,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jason Bartolini": {
-          "sent": [
-            "Ceddanne Rafaela Budget: $3.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Ceddanne Rafaela"
+          ]
         }
       }
     },
@@ -1658,17 +1910,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Aroldis Chapman"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Aroldis Chapman"
+          ]
         }
       }
     },
@@ -1687,17 +1933,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Cody Bellinger"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Cody Bellinger"
+          ]
         }
       }
     },
@@ -1716,17 +1956,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "David Festa"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Yandy Diaz"
           ],
-          "received": []
+          "received": [
+            "David Festa"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "David Festa"
+          ],
+          "received": [
+            "Yandy Diaz"
+          ]
         }
       }
     },
@@ -1749,13 +1993,17 @@
           "sent": [
             "Nick Pivetta"
           ],
-          "received": []
+          "received": [
+            "Jonathan Aranda"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "Jonathan Aranda"
           ],
-          "received": []
+          "received": [
+            "Nick Pivetta"
+          ]
         }
       }
     },
@@ -1774,17 +2022,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Bryce Eldridge Chase DeLauter Jonny Farmelo"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "J.T. Ginn Tanner Bibee"
+            "Tanner Bibee"
           ],
-          "received": []
+          "received": [
+            "Bryce Eldridge",
+            "Chase Delauter",
+            "Jonny Farmelo"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Bryce Eldridge",
+            "Chase Delauter",
+            "Jonny Farmelo"
+          ],
+          "received": [
+            "Tanner Bibee"
+          ]
         }
       }
     },
@@ -1805,15 +2061,19 @@
       "assets_by_party": {
         "Jose Garcia-Chope": {
           "sent": [
-            "Tanner Houck Budget: $5.00"
+            "Tanner Houck"
           ],
-          "received": []
+          "received": [
+            "Tyler Mahle"
+          ]
         },
         "Jason Bartolini": {
           "sent": [
             "Tyler Mahle"
           ],
-          "received": []
+          "received": [
+            "Tanner Houck"
+          ]
         }
       }
     },
@@ -1832,17 +2092,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Kris Bubic Jose Soriano"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
-            "Round 1 (*Deleted*) Christian Walker"
+            "Christian Walker"
           ],
-          "received": []
+          "received": [
+            "Kris Bubic",
+            "Jose Soriano"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Kris Bubic",
+            "Jose Soriano"
+          ],
+          "received": [
+            "Christian Walker"
+          ]
         }
       }
     },
@@ -1861,17 +2127,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Matthew Boyd Budget: $2.00"
-          ],
-          "received": []
-        },
         "Alex Beim": {
-          "sent": [
-            "Keibert Ruiz Erick Fedde"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Matthew Boyd"
+          ]
         }
       }
     },
@@ -1890,11 +2150,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Landen Roupp"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1914,16 +2174,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*) Budget: $8.00"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
-            "Ha-seong Kim"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "HA Seong Kim"
+          ]
         }
       }
     },
@@ -1942,11 +2196,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Casey Mize"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -1965,17 +2219,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Round 2 (*Deleted*) Ryan Weathers"
-          ],
-          "received": []
-        },
         "David Turley": {
           "sent": [
             "Matt Chapman"
           ],
-          "received": []
+          "received": [
+            "Ryan Weathers"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Ryan Weathers"
+          ],
+          "received": [
+            "Matt Chapman"
+          ]
         }
       }
     },
@@ -1994,17 +2252,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Ben Joyce Thomas White"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Round 3 (*Deleted*) Budget: $1.00 Jesus Luzardo"
+            "Jesus Luzardo"
           ],
-          "received": []
+          "received": [
+            "Ben Joyce",
+            "Thomas White"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Ben Joyce",
+            "Thomas White"
+          ],
+          "received": [
+            "Jesus Luzardo"
+          ]
         }
       }
     },
@@ -2023,11 +2287,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
+        "Reed Heim": {
+          "sent": [],
+          "received": [
             "Agustin Ramirez"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -2046,17 +2310,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Round 1 (*Deleted*) Jackson Merrill"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
-            "Round 1 (*Deleted*) Michael King Colton Cowser"
+            "Colton Cowser",
+            "Michael King"
           ],
-          "received": []
+          "received": [
+            "Jackson Merrill"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Jackson Merrill"
+          ],
+          "received": [
+            "Colton Cowser",
+            "Michael King"
+          ]
         }
       }
     },
@@ -2075,17 +2345,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Jack Flaherty"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Josh Lowe"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jack Flaherty"
+          ]
         }
       }
     },
@@ -2104,17 +2368,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Max Muncy"
-          ],
-          "received": []
-        },
         "Alex Beim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Max Muncy"
+          ]
         }
       }
     },
@@ -2134,16 +2392,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Christian Moore"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -2164,15 +2416,23 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Round 3 (*Deleted*) Jordan Lawlar"
+            "Jordan Lawlar",
+            "Jacob Wilson"
           ],
-          "received": []
+          "received": [
+            "Lazaro Montes",
+            "Kevin Gausman"
+          ]
         },
         "Trent Radding": {
           "sent": [
-            "Lazaro Montes Kevin Gausman"
+            "Lazaro Montes",
+            "Kevin Gausman"
           ],
-          "received": []
+          "received": [
+            "Jordan Lawlar",
+            "Jacob Wilson"
+          ]
         }
       }
     },
@@ -2191,17 +2451,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Pete Crow-Armstrong Heston Kjerstad"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Reynaldo Lopez Bowden Francis"
+            "Reynaldo Lopez"
           ],
-          "received": []
+          "received": [
+            "Pete Crow Armstrong"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Pete Crow Armstrong"
+          ],
+          "received": [
+            "Reynaldo Lopez"
+          ]
         }
       }
     },
@@ -2224,13 +2488,17 @@
           "sent": [
             "Jurickson Profar"
           ],
-          "received": []
+          "received": [
+            "Colby Thomas"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "Colby Thomas"
           ],
-          "received": []
+          "received": [
+            "Jurickson Profar"
+          ]
         }
       }
     },
@@ -2249,17 +2517,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
-            "Kevin McGonigle Colt Emerson"
+            "Kevin Mcgonigle",
+            "Colt Emerson"
           ],
-          "received": []
+          "received": [
+            "Jesus Made"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Jesus Made"
+          ],
+          "received": [
+            "Kevin Mcgonigle",
+            "Colt Emerson"
+          ]
         }
       }
     },
@@ -2278,17 +2552,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Alejandro Rosario"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Bowden Francis"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Alejandro Rosario"
+          ]
         }
       }
     },
@@ -2309,15 +2577,19 @@
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
-            "Josue De Paula"
+            "Josue DE Paula"
           ],
-          "received": []
+          "received": [
+            "Justin Martinez"
+          ]
         },
         "Trent Radding": {
           "sent": [
             "Justin Martinez"
           ],
-          "received": []
+          "received": [
+            "Josue DE Paula"
+          ]
         }
       }
     },
@@ -2337,16 +2609,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 4 Pick 4"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Jeremiah Estrada"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -2367,15 +2633,29 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Rafael Devers Felix Bautista Gerrit Cole Shane McClanahan"
+            "Gerrit Cole",
+            "Felix Bautista",
+            "Rafael Devers",
+            "Shane Mcclanahan"
           ],
-          "received": []
+          "received": [
+            "Bryce Eldridge",
+            "Mark Vientos",
+            "Fernando Tatis JR"
+          ]
         },
         "Jose Garcia-Chope": {
           "sent": [
-            "Round 2 Pick 10 Fernando Tatis Jr."
+            "Bryce Eldridge",
+            "Mark Vientos",
+            "Fernando Tatis JR"
           ],
-          "received": []
+          "received": [
+            "Gerrit Cole",
+            "Felix Bautista",
+            "Rafael Devers",
+            "Shane Mcclanahan"
+          ]
         }
       }
     },
@@ -2394,17 +2674,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 3 Pick 1 David Bednar"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 1 Pick 10"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "David Bednar"
+          ]
         }
       }
     },
@@ -2427,13 +2701,19 @@
           "sent": [
             "Coby Mayo"
           ],
-          "received": []
+          "received": [
+            "Owen Caissie",
+            "Leodalis DE Vries"
+          ]
         },
         "Evan Soraci": {
           "sent": [
-            "Owen Caissie Leodalis De Vries"
+            "Owen Caissie",
+            "Leodalis DE Vries"
           ],
-          "received": []
+          "received": [
+            "Coby Mayo"
+          ]
         }
       }
     },
@@ -2452,17 +2732,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Reed Heim": {
+          "sent": [
+            "Kevin Mcgonigle"
+          ],
+          "received": [
+            "Shea Langeliers"
+          ]
+        },
         "Trent Radding": {
           "sent": [
             "Shea Langeliers"
           ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Round 3 Pick 1 Kevin McGonigle"
-          ],
-          "received": []
+          "received": [
+            "Kevin Mcgonigle"
+          ]
         }
       }
     },
@@ -2481,17 +2765,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Tyler O'Neill"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tyler Oneill"
+          ]
         }
       }
     },
@@ -2510,17 +2788,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Jung Hoo Lee"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Robert Calaz"
+          ]
         }
       }
     },
@@ -2541,15 +2813,21 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Round 2 (*Deleted*)"
+            "Emmanuel Rodriguez",
+            "Matt Wallner"
           ],
-          "received": []
+          "received": [
+            "Gerrit Cole"
+          ]
         },
         "Trent Radding": {
           "sent": [
-            "Round 3 Pick 6"
+            "Gerrit Cole"
           ],
-          "received": []
+          "received": [
+            "Emmanuel Rodriguez",
+            "Matt Wallner"
+          ]
         }
       }
     },
@@ -2568,17 +2846,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 3 Pick 6"
-          ],
-          "received": []
-        },
         "Trent Radding": {
-          "sent": [
-            "Round 2 Pick 6"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Justin Martinez"
+          ]
         }
       }
     },
@@ -2597,17 +2869,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Heliot Ramos"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Sean Manaea"
           ],
-          "received": []
+          "received": [
+            "Heliot Ramos"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Heliot Ramos"
+          ],
+          "received": [
+            "Sean Manaea"
+          ]
         }
       }
     },
@@ -2626,17 +2902,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Lucas Giolito"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
-          "sent": [
-            "Connor Wong"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Lucas Giolito"
+          ]
         }
       }
     },
@@ -2655,11 +2925,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Trent Radding": {
+          "sent": [],
+          "received": [
             "Luke Weaver"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -2678,17 +2948,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Reynaldo Lopez Miguel Bleis"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Michael Busch"
           ],
-          "received": []
+          "received": [
+            "Reynaldo Lopez"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Reynaldo Lopez"
+          ],
+          "received": [
+            "Michael Busch"
+          ]
         }
       }
     },
@@ -2709,15 +2983,23 @@
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
-            "Clay Holmes Brent Rooker"
+            "Clay Holmes",
+            "Brent Rooker"
           ],
-          "received": []
+          "received": [
+            "Lazaro Montes",
+            "Colt Emerson"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Xavier Isaac Colt Emerson Lazaro Montes"
+            "Lazaro Montes",
+            "Colt Emerson"
           ],
-          "received": []
+          "received": [
+            "Clay Holmes",
+            "Brent Rooker"
+          ]
         }
       }
     },
@@ -2738,15 +3020,21 @@
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
-            "Carson Williams Randy Arozarena"
+            "Randy Arozarena",
+            "Carson Williams"
           ],
-          "received": []
+          "received": [
+            "Coby Mayo"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "Coby Mayo"
           ],
-          "received": []
+          "received": [
+            "Randy Arozarena",
+            "Carson Williams"
+          ]
         }
       }
     },
@@ -2766,16 +3054,11 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 1 Pick 12 Luis Severino"
-          ],
-          "received": []
-        },
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Tony Gonsolin Jake Burger"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jake Burger",
+            "Tony Gonsolin"
+          ]
         }
       }
     },
@@ -2794,17 +3077,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Brayan Bello Spencer Arrighetti"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Ivan Herrera"
           ],
-          "received": []
+          "received": [
+            "Spencer Arrighetti",
+            "Brayan Bello"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Spencer Arrighetti",
+            "Brayan Bello"
+          ],
+          "received": [
+            "Ivan Herrera"
+          ]
         }
       }
     },
@@ -2827,13 +3116,21 @@
           "sent": [
             "Oneil Cruz"
           ],
-          "received": []
+          "received": [
+            "Lars Nootbaar",
+            "Shane Mcclanahan",
+            "Bryce Miller"
+          ]
         },
         "Liam Burns": {
           "sent": [
-            "Shane McClanahan Lars Nootbaar Bryce Miller"
+            "Lars Nootbaar",
+            "Shane Mcclanahan",
+            "Bryce Miller"
           ],
-          "received": []
+          "received": [
+            "Oneil Cruz"
+          ]
         }
       }
     },
@@ -2852,17 +3149,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Round 2 (*Deleted*) Justin Verlander"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Brice Turang"
+          ]
         }
       }
     },
@@ -2883,15 +3174,21 @@
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
-            "Round 1 (*Deleted*) Shea Langeliers"
+            "Shea Langeliers"
           ],
-          "received": []
+          "received": [
+            "Robert Suarez",
+            "JT Realmuto"
+          ]
         },
         "Trent Radding": {
           "sent": [
-            "J.T. Realmuto Robert Suarez"
+            "Robert Suarez",
+            "JT Realmuto"
           ],
-          "received": []
+          "received": [
+            "Shea Langeliers"
+          ]
         }
       }
     },
@@ -2912,15 +3209,25 @@
       "assets_by_party": {
         "Reed Heim": {
           "sent": [
-            "Round 1 (*Deleted*) Bubba Chandler Rafael Devers"
+            "Bubba Chandler",
+            "Rafael Devers"
           ],
-          "received": []
+          "received": [
+            "Junior Caminero",
+            "Tanner Bibee",
+            "Zack Gelof"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Round 2 (*Deleted*) Junior Caminero"
+            "Junior Caminero",
+            "Tanner Bibee",
+            "Zack Gelof"
           ],
-          "received": []
+          "received": [
+            "Bubba Chandler",
+            "Rafael Devers"
+          ]
         }
       }
     },
@@ -2943,13 +3250,19 @@
           "sent": [
             "Seiya Suzuki"
           ],
-          "received": []
+          "received": [
+            "Shane Baz",
+            "Mackenzie Gore"
+          ]
         },
         "Alex Beim": {
           "sent": [
-            "MacKenzie Gore Shane Baz"
+            "Shane Baz",
+            "Mackenzie Gore"
           ],
-          "received": []
+          "received": [
+            "Seiya Suzuki"
+          ]
         }
       }
     },
@@ -2968,17 +3281,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Round 2 (*Deleted*) Zac Veen"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Nestor Cortes Jr."
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Zac Veen"
+          ]
         }
       }
     },
@@ -2998,16 +3305,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ben Joyce"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3026,17 +3327,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Jack Dunne": {
+          "sent": [
+            "Jeremiah Estrada"
+          ],
+          "received": [
+            "Zebby Matthews"
+          ]
+        },
         "Jordan Papula": {
           "sent": [
             "Zebby Matthews"
           ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Jeremiah Estrada Nolan Schanuel"
-          ],
-          "received": []
+          "received": [
+            "Jeremiah Estrada"
+          ]
         }
       }
     },
@@ -3055,17 +3360,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Luis Garcia Jr."
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
           "sent": [
             "Kerry Carpenter"
           ],
-          "received": []
+          "received": [
+            "Luis Garcia JR"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Luis Garcia JR"
+          ],
+          "received": [
+            "Kerry Carpenter"
+          ]
         }
       }
     },
@@ -3086,15 +3395,19 @@
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
-            "Round 2 (*Deleted*) Jordan Lawlar"
+            "Jordan Lawlar"
           ],
-          "received": []
+          "received": [
+            "Justin Steele"
+          ]
         },
         "Reed Heim": {
           "sent": [
             "Justin Steele"
           ],
-          "received": []
+          "received": [
+            "Jordan Lawlar"
+          ]
         }
       }
     },
@@ -3113,17 +3426,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Round 2 (*Deleted*) Brent Rooker Noelvi Marte"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Kyle Schwarber"
           ],
-          "received": []
+          "received": [
+            "Noelvi Marte",
+            "Brent Rooker"
+          ]
+        },
+        "Jose Garcia-Chope": {
+          "sent": [
+            "Noelvi Marte",
+            "Brent Rooker"
+          ],
+          "received": [
+            "Kyle Schwarber"
+          ]
         }
       }
     },
@@ -3142,17 +3461,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Marcus Semien"
           ],
-          "received": []
+          "received": [
+            "Brenton Doyle",
+            "Michael Busch"
+          ]
+        },
+        "Jose Garcia-Chope": {
+          "sent": [
+            "Brenton Doyle",
+            "Michael Busch"
+          ],
+          "received": [
+            "Marcus Semien"
+          ]
         }
       }
     },
@@ -3171,17 +3496,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Jasson Dominguez Anthony Volpe"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Zack Wheeler"
           ],
-          "received": []
+          "received": [
+            "Jasson Dominguez"
+          ]
+        },
+        "Alex Beim": {
+          "sent": [
+            "Jasson Dominguez"
+          ],
+          "received": [
+            "Zack Wheeler"
+          ]
         }
       }
     },
@@ -3202,15 +3531,19 @@
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
-            "Jack Flaherty Lane Thomas"
+            "Jack Flaherty"
           ],
-          "received": []
+          "received": [
+            "Bryan Reynolds"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "Bryan Reynolds"
           ],
-          "received": []
+          "received": [
+            "Jack Flaherty"
+          ]
         }
       }
     },
@@ -3229,17 +3562,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Garrett Whitlock Budget: $1.50 Casey Mize"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Jason Foley"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Casey Mize"
+          ]
         }
       }
     },
@@ -3258,17 +3585,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Brooks Lee Aidan Miller"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Mike Trout"
           ],
-          "received": []
+          "received": [
+            "Brooks Lee",
+            "Aidan Miller"
+          ]
+        },
+        "Jose Garcia-Chope": {
+          "sent": [
+            "Brooks Lee",
+            "Aidan Miller"
+          ],
+          "received": [
+            "Mike Trout"
+          ]
         }
       }
     },
@@ -3287,17 +3620,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*) Noble Meyer Aaron Civale"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
-            "Round 1 (*Deleted*) Chris Bassitt"
+            "Chris Bassitt",
+            "Teoscar Hernandez"
           ],
-          "received": []
+          "received": [
+            "Noble Meyer",
+            "Michael King"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Noble Meyer",
+            "Michael King"
+          ],
+          "received": [
+            "Chris Bassitt",
+            "Teoscar Hernandez"
+          ]
         }
       }
     },
@@ -3316,17 +3657,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*) Braxton Ashcraft"
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
           "sent": [
             "Michael King"
           ],
-          "received": []
+          "received": [
+            "Braxton Ashcraft",
+            "Josue DE Paula"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Braxton Ashcraft",
+            "Josue DE Paula"
+          ],
+          "received": [
+            "Michael King"
+          ]
         }
       }
     },
@@ -3346,10 +3693,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Sean Manaea"
+          ]
         }
       }
     },
@@ -3372,13 +3719,17 @@
           "sent": [
             "Brandon Nimmo"
           ],
-          "received": []
+          "received": [
+            "Bailey Ober"
+          ]
         },
         "David Turley": {
           "sent": [
             "Bailey Ober"
           ],
-          "received": []
+          "received": [
+            "Brandon Nimmo"
+          ]
         }
       }
     },
@@ -3401,13 +3752,21 @@
           "sent": [
             "Trea Turner"
           ],
-          "received": []
+          "received": [
+            "Walker Jenkins",
+            "Colson Montgomery",
+            "Colton Cowser"
+          ]
         },
         "Owen Hern": {
           "sent": [
-            "Round 1 (*Deleted*) Colton Cowser Colson Montgomery"
+            "Walker Jenkins",
+            "Colson Montgomery",
+            "Colton Cowser"
           ],
-          "received": []
+          "received": [
+            "Trea Turner"
+          ]
         }
       }
     },
@@ -3426,17 +3785,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Round 1 (*Deleted*) Budget: $5.00"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
           "sent": [
-            "Aaron Nola Josh Hader"
+            "Josh Hader",
+            "Aaron Nola"
           ],
-          "received": []
+          "received": [
+            "Marcelo Mayer",
+            "Alec Bohm"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Marcelo Mayer",
+            "Alec Bohm"
+          ],
+          "received": [
+            "Josh Hader",
+            "Aaron Nola"
+          ]
         }
       }
     },
@@ -3454,7 +3821,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
+            "Brayan Bello"
+          ]
+        }
+      }
     },
     {
       "event_id": "2024-07-02-227",
@@ -3471,17 +3845,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Sebastian Walcott"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Nico Hoerner"
           ],
-          "received": []
+          "received": [
+            "Sebastian Walcott"
+          ]
+        },
+        "Alex Beim": {
+          "sent": [
+            "Sebastian Walcott"
+          ],
+          "received": [
+            "Nico Hoerner"
+          ]
         }
       }
     },
@@ -3501,16 +3879,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Drew Thorpe"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Kenley Jansen"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3529,17 +3901,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Jesus Luzardo"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Bryan Reynolds"
           ],
-          "received": []
+          "received": [
+            "Jesus Luzardo"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Jesus Luzardo"
+          ],
+          "received": [
+            "Bryan Reynolds"
+          ]
         }
       }
     },
@@ -3558,17 +3934,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Jhoan Duran Bryce Miller"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
             "Michael Harris II"
           ],
-          "received": []
+          "received": [
+            "Jhoan Duran",
+            "Bryce Miller"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Jhoan Duran",
+            "Bryce Miller"
+          ],
+          "received": [
+            "Michael Harris II"
+          ]
         }
       }
     },
@@ -3588,10 +3970,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jordan Papula": {
-          "sent": [
-            "Joey Ortiz"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Andrew Abbott"
+          ]
         }
       }
     },
@@ -3612,15 +3994,21 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Christian Walker Budget: $4.00"
+            "Christian Walker"
           ],
-          "received": []
+          "received": [
+            "Zack Gelof",
+            "Cade Cavalli"
+          ]
         },
         "Jose Garcia-Chope": {
           "sent": [
-            "Zack Gelof Cade Cavalli"
+            "Zack Gelof",
+            "Cade Cavalli"
           ],
-          "received": []
+          "received": [
+            "Christian Walker"
+          ]
         }
       }
     },
@@ -3639,11 +4027,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Andrew Abbott"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3662,17 +4050,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Marcell Ozuna"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Jordan Montgomery"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Marcell Ozuna"
+          ]
         }
       }
     },
@@ -3693,15 +4075,19 @@
       "assets_by_party": {
         "Jason Bartolini": {
           "sent": [
-            "Round 4 (*Deleted*)"
+            "Nico Hoerner"
           ],
-          "received": []
+          "received": [
+            "Matt Mclain"
+          ]
         },
         "Trent Radding": {
           "sent": [
-            "Round 2 (*Deleted*) Matt McLain"
+            "Matt Mclain"
           ],
-          "received": []
+          "received": [
+            "Nico Hoerner"
+          ]
         }
       }
     },
@@ -3720,11 +4106,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
+        "Matthew Zujewski": {
+          "sent": [],
+          "received": [
             "Brandon Lowe"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3744,16 +4130,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Noah Schultz"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3772,11 +4152,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
+        "Jason Bartolini": {
+          "sent": [],
+          "received": [
             "Brett Baty"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3795,11 +4175,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
+        "Reed Heim": {
+          "sent": [],
+          "received": [
             "Jordan Westburg"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3818,11 +4198,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Brandon Lowe"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3841,17 +4221,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Orion Kerkering"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Chris Paddack"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Orion Kerkering"
+          ]
         }
       }
     },
@@ -3870,17 +4244,29 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Nolan Schanuel Yainer Diaz Camilo Doval Justin Steele Cody Bellinger"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Eury Perez Noah Schultz Ezequiel Tovar Teoscar Hernandez Xavier Isaac"
+            "Noah Schultz",
+            "Eury Perez",
+            "Teoscar Hernandez"
           ],
-          "received": []
+          "received": [
+            "Yainer Diaz",
+            "Justin Steele",
+            "Cody Bellinger"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Yainer Diaz",
+            "Justin Steele",
+            "Cody Bellinger"
+          ],
+          "received": [
+            "Noah Schultz",
+            "Eury Perez",
+            "Teoscar Hernandez"
+          ]
         }
       }
     },
@@ -3899,17 +4285,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
-            "Eduardo Rodriguez Teoscar Hernandez"
+            "Teoscar Hernandez"
           ],
-          "received": []
+          "received": [
+            "Chase Delauter",
+            "Felix Bautista"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "Chase Delauter",
+            "Felix Bautista"
+          ],
+          "received": [
+            "Teoscar Hernandez"
+          ]
         }
       }
     },
@@ -3929,16 +4321,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ryan Jeffers"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -3957,7 +4343,47 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Liam Burns": {
+          "sent": [
+            "Robert Gasser",
+            "AJ Smith Shawver",
+            "Juan Soto",
+            "Colt Emerson"
+          ],
+          "received": [
+            "Lars Nootbaar",
+            "Jesus Luzardo",
+            "Yordan Alvarez"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "Lars Nootbaar",
+            "Jesus Luzardo",
+            "Yordan Alvarez",
+            "Colt Emerson"
+          ],
+          "received": [
+            "Robert Gasser",
+            "AJ Smith Shawver",
+            "Juan Soto"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Robert Gasser",
+            "AJ Smith Shawver",
+            "Juan Soto",
+            "Lars Nootbaar",
+            "Jesus Luzardo",
+            "Yordan Alvarez"
+          ],
+          "received": [
+            "Colt Emerson"
+          ]
+        }
+      }
     },
     {
       "event_id": "2024-02-16-122",
@@ -3978,13 +4404,17 @@
           "sent": [
             "Tommy Edman"
           ],
-          "received": []
+          "received": [
+            "Tyler Locklear"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Round 3 (*Deleted*)"
+            "Tyler Locklear"
           ],
-          "received": []
+          "received": [
+            "Tommy Edman"
+          ]
         }
       }
     },
@@ -4003,11 +4433,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
+        "David Turley": {
+          "sent": [],
+          "received": [
             "Gavin Stone"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4026,11 +4456,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Sawyer Gipson-Long"
-          ],
-          "received": []
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
+            "Sawyer Gipson Long"
+          ]
         }
       }
     },
@@ -4049,17 +4479,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 4 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
             "Bryan Reynolds"
           ],
-          "received": []
+          "received": [
+            "Xander Bogaerts"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Xander Bogaerts"
+          ],
+          "received": [
+            "Bryan Reynolds"
+          ]
         }
       }
     },
@@ -4078,17 +4512,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Endy Rodriguez Budget: $5.00"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Endy Rodriguez"
+          ]
         }
       }
     },
@@ -4108,16 +4536,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*) Budget: $3.50"
-          ],
-          "received": []
-        },
-        "Evan Soraci": {
-          "sent": [
-            "Tyler O'Neill"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tyler Oneill"
+          ]
         }
       }
     },
@@ -4136,17 +4558,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Emmanuel Rodriguez"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Xavier Isaac"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Emmanuel Rodriguez"
+          ]
         }
       }
     },
@@ -4166,16 +4582,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Round 2 Pick 6"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "Round 1 (*Deleted*) Hunter Greene Budget: $5.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Hunter Greene"
+          ]
         }
       }
     },
@@ -4195,16 +4605,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Evan Soraci": {
-          "sent": [
-            "Jake Fraley"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Drew Rasmussen"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4223,17 +4627,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Wilyer Abreu"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Kutter Crawford"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Wilyer Abreu"
+          ]
         }
       }
     },
@@ -4252,17 +4650,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Jack Dunne": {
+          "sent": [
+            "Tyler Glasnow",
+            "Bryan Woo"
+          ],
+          "received": [
+            "Junior Caminero"
+          ]
+        },
         "David Turley": {
           "sent": [
             "Junior Caminero"
           ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Tyler Glasnow Bryan Woo"
-          ],
-          "received": []
+          "received": [
+            "Tyler Glasnow",
+            "Bryan Woo"
+          ]
         }
       }
     },
@@ -4281,11 +4685,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Reese Olson"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4305,16 +4709,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Jorge Soler"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Nathan Eovaldi"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4333,11 +4731,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Jordan Papula": {
+          "sent": [],
+          "received": [
             "John Means"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4360,13 +4758,17 @@
           "sent": [
             "Luis Castillo"
           ],
-          "received": []
+          "received": [
+            "Francisco Lindor"
+          ]
         },
         "Liam Burns": {
           "sent": [
             "Francisco Lindor"
           ],
-          "received": []
+          "received": [
+            "Luis Castillo"
+          ]
         }
       }
     },
@@ -4385,17 +4787,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 2 (*Deleted*) Cedric Mullins"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Eduardo Rodriguez Colt Keith"
+            "Colt Keith"
           ],
-          "received": []
+          "received": [
+            "Cedric Mullins"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Cedric Mullins"
+          ],
+          "received": [
+            "Colt Keith"
+          ]
         }
       }
     },
@@ -4416,15 +4822,23 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Round 4 (*Deleted*) Yandy Diaz"
+            "Yandy Diaz"
           ],
-          "received": []
+          "received": [
+            "Christian Walker",
+            "Samuel Basallo",
+            "Marcell Ozuna"
+          ]
         },
         "Trent Radding": {
           "sent": [
-            "Round 5 Pick 8 Marcell Ozuna Samuel Basallo Christian Walker"
+            "Christian Walker",
+            "Samuel Basallo",
+            "Marcell Ozuna"
           ],
-          "received": []
+          "received": [
+            "Yandy Diaz"
+          ]
         }
       }
     },
@@ -4443,17 +4857,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Mason Black Jakob Marsee Manny Machado"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
-            "Yandy Diaz Cody Bellinger"
+            "Cody Bellinger",
+            "Yandy Diaz"
           ],
-          "received": []
+          "received": [
+            "Jakob Marsee",
+            "Manny Machado"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Jakob Marsee",
+            "Manny Machado"
+          ],
+          "received": [
+            "Cody Bellinger",
+            "Yandy Diaz"
+          ]
         }
       }
     },
@@ -4472,17 +4894,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Trent Radding": {
+          "sent": [
+            "Seiya Suzuki"
+          ],
+          "received": [
+            "Chris Bassitt"
+          ]
+        },
         "Reed Heim": {
           "sent": [
             "Chris Bassitt"
           ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "Round 3 (*Deleted*) Seiya Suzuki"
-          ],
-          "received": []
+          "received": [
+            "Seiya Suzuki"
+          ]
         }
       }
     },
@@ -4501,17 +4927,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Gabriel Gonzalez Josh Naylor"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Triston McKenzie"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Josh Naylor",
+            "Gabriel Gonzalez"
+          ]
         }
       }
     },
@@ -4530,17 +4951,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Cristopher Sanchez CJ Abrams"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
-            "Round 1 (*Deleted*) Kyle Schwarber"
+            "Kyle Schwarber"
           ],
-          "received": []
+          "received": [
+            "CJ Abrams",
+            "Cristopher Sanchez"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "CJ Abrams",
+            "Cristopher Sanchez"
+          ],
+          "received": [
+            "Kyle Schwarber"
+          ]
         }
       }
     },
@@ -4561,15 +4988,21 @@
       "assets_by_party": {
         "Liam Burns": {
           "sent": [
-            "Alex Bregman Devin Williams"
+            "Alex Bregman",
+            "Devin Williams"
           ],
-          "received": []
+          "received": [
+            "Joe Ryan"
+          ]
         },
         "Alex Beim": {
           "sent": [
             "Joe Ryan"
           ],
-          "received": []
+          "received": [
+            "Alex Bregman",
+            "Devin Williams"
+          ]
         }
       }
     },
@@ -4589,16 +5022,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 1 Pick 11 Esteury Ruiz Ryan Pressly"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Cedric Mullins"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -4617,17 +5044,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Yu Darvish Keibert Ruiz"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Yainer Diaz"
+          ]
         }
       }
     },
@@ -4650,13 +5071,17 @@
           "sent": [
             "Austin Riley"
           ],
-          "received": []
+          "received": [
+            "David Bednar"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Round 3 (*Deleted*) Paul Goldschmidt"
+            "David Bednar"
           ],
-          "received": []
+          "received": [
+            "Austin Riley"
+          ]
         }
       }
     },
@@ -4675,17 +5100,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 2 (*Deleted*) Zach Neto"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
           "sent": [
-            "Esteury Ruiz Justin Steele"
+            "Justin Steele"
           ],
-          "received": []
+          "received": [
+            "Zach Neto"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Zach Neto"
+          ],
+          "received": [
+            "Justin Steele"
+          ]
         }
       }
     },
@@ -4706,15 +5135,21 @@
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
-            "Round 3 (*Deleted*) Chris Sale"
+            "Matt Chapman",
+            "Chris Sale"
           ],
-          "received": []
+          "received": [
+            "Jordan Westburg"
+          ]
         },
         "Alex Beim": {
           "sent": [
-            "Jordan Westburg Christian Encarnacion-Strand"
+            "Jordan Westburg"
           ],
-          "received": []
+          "received": [
+            "Matt Chapman",
+            "Chris Sale"
+          ]
         }
       }
     },
@@ -4732,7 +5167,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Reed Heim": {
+          "sent": [],
+          "received": [
+            "Chris Bassitt"
+          ]
+        }
+      }
     },
     {
       "event_id": "2023-07-27-187",
@@ -4749,17 +5191,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "AJ Smith-Shawver Raisel Iglesias"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
-            "Round 3 (*Deleted*) Edwin Diaz"
+            "Edwin Diaz"
           ],
-          "received": []
+          "received": [
+            "Raisel Iglesias",
+            "AJ Smith Shawver"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Raisel Iglesias",
+            "AJ Smith Shawver"
+          ],
+          "received": [
+            "Edwin Diaz"
+          ]
         }
       }
     },
@@ -4779,16 +5227,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Kevin Ginkel"
+          ]
         }
       }
     },
@@ -4809,15 +5251,19 @@
       "assets_by_party": {
         "David Turley": {
           "sent": [
-            "Josh Lowe Ryan Pepiot Blade Tidwell"
+            "Ryan Pepiot"
           ],
-          "received": []
+          "received": [
+            "Bailey Ober"
+          ]
         },
         "Jason Bartolini": {
           "sent": [
             "Bailey Ober"
           ],
-          "received": []
+          "received": [
+            "Ryan Pepiot"
+          ]
         }
       }
     },
@@ -4836,17 +5282,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Jacob Misiorowski"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Eduardo Rodriguez"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jacob Misiorowski"
+          ]
         }
       }
     },
@@ -4869,13 +5309,17 @@
           "sent": [
             "Carlos Estevez"
           ],
-          "received": []
+          "received": [
+            "Cade Horton"
+          ]
         },
         "Alex Beim": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Cade Horton"
           ],
-          "received": []
+          "received": [
+            "Carlos Estevez"
+          ]
         }
       }
     },
@@ -4894,17 +5338,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
           "sent": [
             "Willson Contreras"
           ],
-          "received": []
+          "received": [
+            "Gavin Stone"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Gavin Stone"
+          ],
+          "received": [
+            "Willson Contreras"
+          ]
         }
       }
     },
@@ -4923,17 +5371,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Ha-seong Kim"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
-            "Will Benson Merrill Kelly"
+            "Merrill Kelly"
           ],
-          "received": []
+          "received": [
+            "HA Seong Kim"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "HA Seong Kim"
+          ],
+          "received": [
+            "Merrill Kelly"
+          ]
         }
       }
     },
@@ -4956,13 +5408,17 @@
           "sent": [
             "Coby Mayo"
           ],
-          "received": []
+          "received": [
+            "Tanner Bibee"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "Tanner Bibee"
           ],
-          "received": []
+          "received": [
+            "Coby Mayo"
+          ]
         }
       }
     },
@@ -4983,15 +5439,19 @@
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
-            "Round 3 (*Deleted*) Leody Taveras Kodai Senga"
+            "Kodai Senga"
           ],
-          "received": []
+          "received": [
+            "Carlos Rodon"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Carlos Rodon Budget: $4.20"
+            "Carlos Rodon"
           ],
-          "received": []
+          "received": [
+            "Kodai Senga"
+          ]
         }
       }
     },
@@ -5011,16 +5471,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Alex Beim": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ian Happ"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5039,11 +5493,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
+        "Matthew Zujewski": {
+          "sent": [],
+          "received": [
             "Jarren Duran"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5062,11 +5516,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
+        "Owen Hern": {
+          "sent": [],
+          "received": [
             "Giancarlo Stanton"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5085,17 +5539,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Wander Franco"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Spencer Strider",
+            "Tyler Wells"
+          ]
         }
       }
     },
@@ -5115,16 +5564,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Jon Gray"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "David Bednar"
+          ]
         }
       }
     },
@@ -5143,17 +5586,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Trent Radding": {
+          "sent": [
+            "Jackson Merrill"
+          ],
+          "received": [
+            "Felix Bautista"
+          ]
+        },
         "Jordan Papula": {
           "sent": [
             "Felix Bautista"
           ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "Anthony Rizzo Jackson Merrill Masataka Yoshida"
-          ],
-          "received": []
+          "received": [
+            "Jackson Merrill"
+          ]
         }
       }
     },
@@ -5172,11 +5619,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Reed Heim": {
+          "sent": [],
+          "received": [
             "Bryan Abreu"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5195,17 +5642,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Round 1 (*Deleted*) Logan Gilbert"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
           "sent": [
-            "Round 3 (*Deleted*) Louis Varland"
+            "Mike Trout"
           ],
-          "received": []
+          "received": [
+            "Jordan Walker",
+            "Logan Gilbert"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "Jordan Walker",
+            "Logan Gilbert"
+          ],
+          "received": [
+            "Mike Trout"
+          ]
         }
       }
     },
@@ -5224,17 +5677,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "CJ Abrams"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Robert Hassell"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "CJ Abrams"
+          ]
         }
       }
     },
@@ -5253,11 +5700,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Jett Williams"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5276,17 +5723,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Shane Bieber Alejandro Kirk"
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
           "sent": [
-            "Bryan Reynolds Budget: $5.00 Luis Matos"
+            "Bryan Reynolds"
           ],
-          "received": []
+          "received": [
+            "Alejandro Kirk",
+            "Shane Bieber"
+          ]
+        },
+        "Jose Garcia-Chope": {
+          "sent": [
+            "Alejandro Kirk",
+            "Shane Bieber"
+          ],
+          "received": [
+            "Bryan Reynolds"
+          ]
         }
       }
     },
@@ -5305,11 +5758,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
+        "Alex Beim": {
+          "sent": [],
+          "received": [
             "Jason Adam"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5329,16 +5782,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Jose Alvarado"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Emmanuel Rodriguez Budget: $7.50"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Emmanuel Rodriguez"
+          ]
         }
       }
     },
@@ -5357,11 +5804,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Jason Bartolini": {
+          "sent": [],
+          "received": [
             "Johan Oviedo"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5381,16 +5828,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Evan Soraci": {
-          "sent": [
-            "Round 4 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "Round 2 (*Deleted*) Brandon Pfaadt"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Brandon Pfaadt"
+          ]
         }
       }
     },
@@ -5409,7 +5850,14 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Owen Hern": {
+          "sent": [],
+          "received": [
+            "HA Seong Kim"
+          ]
+        }
+      }
     },
     {
       "event_id": "2023-03-27-279",
@@ -5428,15 +5876,23 @@
       "assets_by_party": {
         "Owen Hern": {
           "sent": [
-            "Triston Casas Grayson Rodriguez Riley Greene"
+            "Riley Greene",
+            "Grayson Rodriguez",
+            "Triston Casas"
           ],
-          "received": []
+          "received": [
+            "Aaron Judge"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "Aaron Judge"
           ],
-          "received": []
+          "received": [
+            "Riley Greene",
+            "Grayson Rodriguez",
+            "Triston Casas"
+          ]
         }
       }
     },
@@ -5456,16 +5912,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Brayan Bello"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5484,17 +5934,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Jason Adam"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jason Adam"
+          ]
         }
       }
     },
@@ -5513,17 +5957,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Brayan Bello"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Brayan Bello"
+          ]
         }
       }
     },
@@ -5542,17 +5980,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Ranger Suarez Tony Gonsolin Budget: $3.00"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
-            "Joey Meneses Brady Singer"
+            "Brady Singer"
           ],
-          "received": []
+          "received": [
+            "Tony Gonsolin",
+            "Ranger Suarez"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Tony Gonsolin",
+            "Ranger Suarez"
+          ],
+          "received": [
+            "Brady Singer"
+          ]
         }
       }
     },
@@ -5571,17 +6015,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Alex Beim": {
-          "sent": [
-            "Daniel Hudson"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jordan Westburg"
+          ]
         }
       }
     },
@@ -5601,16 +6039,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Alex Kirilloff"
-          ],
-          "received": []
-        },
-        "Jose Garcia-Chope": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Bryson Stott"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5629,17 +6061,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*) Tink Hence"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
-          "sent": [
-            "Yu Darvish"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Gavin Williams",
+            "Tink Hence"
+          ]
         }
       }
     },
@@ -5658,17 +6085,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Marcus Semien Austin Riley"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Round 2 (*Deleted*) Mookie Betts"
+            "Mookie Betts"
           ],
-          "received": []
+          "received": [
+            "Austin Riley",
+            "Marcus Semien"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Austin Riley",
+            "Marcus Semien"
+          ],
+          "received": [
+            "Mookie Betts"
+          ]
         }
       }
     },
@@ -5689,15 +6122,21 @@
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
-            "Anthony Volpe Max Fried Joe Ryan"
+            "Joe Ryan",
+            "Max Fried"
           ],
-          "received": []
+          "received": [
+            "Gerrit Cole"
+          ]
         },
         "Alex Beim": {
           "sent": [
             "Gerrit Cole"
           ],
-          "received": []
+          "received": [
+            "Joe Ryan",
+            "Max Fried"
+          ]
         }
       }
     },
@@ -5720,13 +6159,17 @@
           "sent": [
             "Seiya Suzuki"
           ],
-          "received": []
+          "received": [
+            "David Bednar"
+          ]
         },
         "Jack Dunne": {
           "sent": [
             "David Bednar"
           ],
-          "received": []
+          "received": [
+            "Seiya Suzuki"
+          ]
         }
       }
     },
@@ -5749,13 +6192,17 @@
           "sent": [
             "Devin Williams"
           ],
-          "received": []
+          "received": [
+            "Endy Rodriguez"
+          ]
         },
         "Liam Burns": {
           "sent": [
-            "Ricky Tiedemann Endy Rodriguez"
+            "Endy Rodriguez"
           ],
-          "received": []
+          "received": [
+            "Devin Williams"
+          ]
         }
       }
     },
@@ -5775,16 +6222,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Drey Jameson Luisangel Acuna"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Emmanuel Rodriguez"
+          ]
         }
       }
     },
@@ -5804,16 +6245,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Round 1 Pick 9"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Andres Munoz Budget: $6.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Andres Munoz"
+          ]
         }
       }
     },
@@ -5833,16 +6268,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jordan Papula": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Matthew Zujewski": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Termarr Johnson"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -5863,9 +6292,23 @@
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
-            "Andy Pages Devin Williams"
+            "Andy Pages",
+            "Devin Williams"
           ],
-          "received": []
+          "received": [
+            "Evan Carter",
+            "Matt Chapman"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Evan Carter",
+            "Matt Chapman"
+          ],
+          "received": [
+            "Andy Pages",
+            "Devin Williams"
+          ]
         }
       }
     },
@@ -5884,17 +6327,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Mitch Keller"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Mitch Keller"
+          ]
         }
       }
     },
@@ -5913,7 +6350,41 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "David Turley": {
+          "sent": [
+            "Kenley Jansen",
+            "Willy Adames",
+            "Hunter Brown"
+          ],
+          "received": [
+            "Evan Phillips",
+            "Kyle Stowers"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Evan Phillips",
+            "Kyle Stowers",
+            "Kenley Jansen"
+          ],
+          "received": [
+            "Willy Adames",
+            "Hunter Brown"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "Evan Phillips",
+            "Kyle Stowers",
+            "Willy Adames",
+            "Hunter Brown"
+          ],
+          "received": [
+            "Kenley Jansen"
+          ]
+        }
+      }
     },
     {
       "event_id": "2022-12-16-318",
@@ -5930,17 +6401,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Round 2 Pick 1"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Alek Thomas"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Coby Mayo"
+          ]
         }
       }
     },
@@ -5959,17 +6424,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Tyler Glasnow Brandon Drury"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
             "Dansby Swanson"
           ],
-          "received": []
+          "received": [
+            "Tyler Glasnow"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Tyler Glasnow"
+          ],
+          "received": [
+            "Dansby Swanson"
+          ]
         }
       }
     },
@@ -5990,9 +6459,19 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Quinn Priester Jake Cronenworth"
+            "Quinn Priester"
           ],
-          "received": []
+          "received": [
+            "Brandon Nimmo"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Brandon Nimmo"
+          ],
+          "received": [
+            "Quinn Priester"
+          ]
         }
       }
     },
@@ -6012,16 +6491,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Adolis Garcia"
-          ],
-          "received": []
-        },
-        "Jordan Papula": {
-          "sent": [
-            "Round 4 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tommy Edman"
+          ]
         }
       }
     },
@@ -6041,16 +6514,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Jameson Taillon"
-          ],
-          "received": []
-        },
-        "Alex Beim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Yandy Diaz"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6071,15 +6538,19 @@
       "assets_by_party": {
         "David Turley": {
           "sent": [
-            "Walker Buehler Nestor Cortes Jr."
+            "Walker Buehler"
           ],
-          "received": []
+          "received": [
+            "Austin Riley"
+          ]
         },
         "Jason Bartolini": {
           "sent": [
             "Austin Riley"
           ],
-          "received": []
+          "received": [
+            "Walker Buehler"
+          ]
         }
       }
     },
@@ -6099,16 +6570,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Alexis Diaz"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ian Happ"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6127,17 +6592,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Starling Marte"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "George Kirby",
+            "Austin Wells"
+          ]
         }
       }
     },
@@ -6157,16 +6617,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jose Garcia-Chope": {
-          "sent": [
-            "Craig Kimbrel"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Cade Cavalli"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6185,17 +6639,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*) Michael Busch Jeffrey Springs"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
-          "sent": [
-            "Jon Gray"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jeffrey Springs",
+            "Michael Busch"
+          ]
         }
       }
     },
@@ -6214,11 +6663,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
+        "Trent Radding": {
+          "sent": [],
+          "received": [
             "Max Muncy"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6238,16 +6687,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Miles Mikolas"
-          ],
-          "received": []
-        },
-        "Jordan Papula": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Quinn Priester"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6266,11 +6709,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Max Muncy"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6290,10 +6733,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Tim Anderson"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Edwin Diaz"
+          ]
         }
       }
     },
@@ -6312,17 +6755,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Christian Yelich"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Robert Hassell"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Christian Yelich"
+          ]
         }
       }
     },
@@ -6341,17 +6778,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Round 1 (*Deleted*) Triston Casas"
-          ],
-          "received": []
-        },
         "Owen Hern": {
           "sent": [
-            "Francisco Lindor Nick Yorke"
+            "Francisco Lindor"
           ],
-          "received": []
+          "received": [
+            "Tyler Stephenson",
+            "Gleyber Torres",
+            "Triston Casas"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Tyler Stephenson",
+            "Gleyber Torres",
+            "Triston Casas"
+          ],
+          "received": [
+            "Francisco Lindor"
+          ]
         }
       }
     },
@@ -6370,17 +6815,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Jordan Papula": {
+          "sent": [
+            "Oneil Cruz"
+          ],
+          "received": [
+            "George Springer"
+          ]
+        },
         "Jack Dunne": {
           "sent": [
             "George Springer"
           ],
-          "received": []
-        },
-        "Jordan Papula": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "received": [
+            "Oneil Cruz"
+          ]
         }
       }
     },
@@ -6399,17 +6848,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Chris Sale"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Round 3 (*Deleted*) Budget: $6.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Chris Sale"
+          ]
         }
       }
     },
@@ -6428,17 +6871,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Round 2 (*Deleted*) Gabriel Moreno"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
           "sent": [
-            "Round 2 (*Deleted*)"
+            "Sean Murphy"
           ],
-          "received": []
+          "received": [
+            "Gabriel Moreno"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Gabriel Moreno"
+          ],
+          "received": [
+            "Sean Murphy"
+          ]
         }
       }
     },
@@ -6457,17 +6904,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Round 3 (*Deleted*) Trent Grisham"
-          ],
-          "received": []
-        },
         "Alex Beim": {
-          "sent": [
-            "Jeff McNeil"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Trent Grisham"
+          ]
         }
       }
     },
@@ -6486,11 +6927,13 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Spencer Strider Jo Adell Gavin Williams"
-          ],
-          "received": []
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
+            "Gavin Williams",
+            "Spencer Strider",
+            "JO Adell"
+          ]
         }
       }
     },
@@ -6509,17 +6952,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Dustin May Taj Bradley"
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
           "sent": [
             "Alex Bregman"
           ],
-          "received": []
+          "received": [
+            "Taj Bradley",
+            "Dustin May"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Taj Bradley",
+            "Dustin May"
+          ],
+          "received": [
+            "Alex Bregman"
+          ]
         }
       }
     },
@@ -6539,16 +6988,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Jorge Soler"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Merrill Kelly"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6567,17 +7010,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "Devin Williams"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Round 4 (*Deleted*) Luis Patino"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Devin Williams"
+          ]
         }
       }
     },
@@ -6596,17 +7033,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Round 2 (*Deleted*) Tony Gonsolin"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tony Gonsolin"
+          ]
         }
       }
     },
@@ -6625,17 +7056,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
           "sent": [
-            "Christian Yelich Budget: $5.00 Tyler O'Neill"
+            "Tyler Oneill",
+            "Christian Yelich"
           ],
-          "received": []
+          "received": [
+            "Gunnar Henderson",
+            "Alex Bregman"
+          ]
+        },
+        "Evan Soraci": {
+          "sent": [
+            "Gunnar Henderson",
+            "Alex Bregman"
+          ],
+          "received": [
+            "Tyler Oneill",
+            "Christian Yelich"
+          ]
         }
       }
     },
@@ -6655,16 +7094,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Jose Berrios"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*) James Wood"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "James Wood"
+          ]
         }
       }
     },
@@ -6683,17 +7116,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Lucas Giolito Cade Cavalli"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Liam Hendriks Ian Happ"
+            "Ian Happ"
           ],
-          "received": []
+          "received": [
+            "Lucas Giolito",
+            "Cade Cavalli"
+          ]
+        },
+        "Liam Burns": {
+          "sent": [
+            "Lucas Giolito",
+            "Cade Cavalli"
+          ],
+          "received": [
+            "Ian Happ"
+          ]
         }
       }
     },
@@ -6713,16 +7152,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Trent Radding": {
-          "sent": [
-            "Round 4 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*) J.T. Realmuto"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "JT Realmuto"
+          ]
         }
       }
     },
@@ -6741,11 +7174,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
+        "Jack Dunne": {
+          "sent": [],
+          "received": [
             "Bailey Ober"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6764,17 +7197,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 2 (*Deleted*) Trevor Rogers"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
-          "sent": [
-            "Jonathan India"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Trevor Rogers"
+          ]
         }
       }
     },
@@ -6794,16 +7221,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jason Bartolini": {
-          "sent": [
-            "Mitch Haniger"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Tyler Mahle"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6822,17 +7243,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Carlos Rodon Budget: $3.00"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Adalberto Mondesi"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Carlos Rodon"
+          ]
         }
       }
     },
@@ -6853,15 +7268,19 @@
       "assets_by_party": {
         "Matthew Zujewski": {
           "sent": [
-            "Ian Happ Budget: $3.00"
+            "Ian Happ"
           ],
-          "received": []
+          "received": [
+            "Kyle Harrison"
+          ]
         },
         "Reed Heim": {
           "sent": [
-            "Round 2 (*Deleted*)"
+            "Kyle Harrison"
           ],
-          "received": []
+          "received": [
+            "Ian Happ"
+          ]
         }
       }
     },
@@ -6880,17 +7299,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Round 2 (*Deleted*) Budget: $7.00 Andy Pages"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Alex Verdugo"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Andy Pages"
+          ]
         }
       }
     },
@@ -6908,7 +7321,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Reed Heim": {
+          "sent": [],
+          "received": [
+            "Jarren Duran"
+          ]
+        }
+      }
     },
     {
       "event_id": "2022-04-02-086",
@@ -6926,16 +7346,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Cristian Javier"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -6955,16 +7369,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Carson Kelly Jake McGee"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Carson Kelly"
+          ]
         }
       }
     },
@@ -6984,16 +7392,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Trent Radding": {
-          "sent": [
-            "Robert Hassell"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Hunter Greene"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7012,17 +7414,25 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "George Kirby Zack Wheeler Hunter Greene"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Yordan Alvarez"
           ],
-          "received": []
+          "received": [
+            "George Kirby",
+            "Hunter Greene",
+            "Zack Wheeler"
+          ]
+        },
+        "Owen Hern": {
+          "sent": [
+            "George Kirby",
+            "Hunter Greene",
+            "Zack Wheeler"
+          ],
+          "received": [
+            "Yordan Alvarez"
+          ]
         }
       }
     },
@@ -7042,16 +7452,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Miguel Vargas"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7071,16 +7475,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jason Bartolini": {
-          "sent": [
-            "Scott Barlow"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Andy Pages"
+          ]
         }
       }
     },
@@ -7100,16 +7498,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jason Bartolini": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Dansby Swanson"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7129,16 +7521,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Alex Beim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Matt Brash"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7157,17 +7543,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Gleyber Torres"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Alex Kirilloff"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Gleyber Torres"
+          ]
         }
       }
     },
@@ -7186,17 +7566,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Nick Senzel Garrett Crochet"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Pedro Leon"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Garrett Crochet"
+          ]
         }
       }
     },
@@ -7215,17 +7589,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Eury Perez"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Eury Perez"
+          ]
         }
       }
     },
@@ -7244,17 +7612,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Aroldis Chapman Nicky Lopez"
-          ],
-          "received": []
-        },
         "Alex Beim": {
-          "sent": [
-            "Round 1 (*Deleted*) Nestor Cortes Jr."
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Aroldis Chapman"
+          ]
         }
       }
     },
@@ -7273,17 +7635,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Jordan Walker"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
             "Quinn Priester"
           ],
-          "received": []
+          "received": [
+            "Jordan Walker"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Jordan Walker"
+          ],
+          "received": [
+            "Quinn Priester"
+          ]
         }
       }
     },
@@ -7302,17 +7668,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Xavier Edwards"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 10 Pick 4"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Xavier Edwards"
+          ]
         }
       }
     },
@@ -7331,17 +7691,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Orelvis Martinez Jose Urquidy"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Rhys Hoskins"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Orelvis Martinez"
+          ]
         }
       }
     },
@@ -7361,16 +7715,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jose Garcia-Chope": {
-          "sent": [
+          "sent": [],
+          "received": [
             "John Means"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7391,15 +7739,21 @@
       "assets_by_party": {
         "Evan Soraci": {
           "sent": [
-            "Round 2 (*Deleted*)"
+            "George Springer",
+            "Chris Bassitt"
           ],
-          "received": []
+          "received": [
+            "Jarren Duran"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Round 3 (*Deleted*) Jarren Duran"
+            "Jarren Duran"
           ],
-          "received": []
+          "received": [
+            "George Springer",
+            "Chris Bassitt"
+          ]
         }
       }
     },
@@ -7420,15 +7774,19 @@
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
-            "Jonathan India Framber Valdez"
+            "Framber Valdez"
           ],
-          "received": []
+          "received": [
+            "Cedric Mullins"
+          ]
         },
         "Jordan Papula": {
           "sent": [
             "Cedric Mullins"
           ],
-          "received": []
+          "received": [
+            "Framber Valdez"
+          ]
         }
       }
     },
@@ -7449,15 +7807,21 @@
       "assets_by_party": {
         "Trent Radding": {
           "sent": [
-            "Hunter Renfroe Jose Altuve"
+            "Jose Altuve"
           ],
-          "received": []
+          "received": [
+            "Giancarlo Stanton",
+            "Ryan Pepiot"
+          ]
         },
         "Alex Beim": {
           "sent": [
-            "Giancarlo Stanton Ryan Pepiot"
+            "Giancarlo Stanton",
+            "Ryan Pepiot"
           ],
-          "received": []
+          "received": [
+            "Jose Altuve"
+          ]
         }
       }
     },
@@ -7476,17 +7840,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Jarren Duran Adalberto Mondesi"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Lance McCullers Jr. Korey Lee"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jarren Duran"
+          ]
         }
       }
     },
@@ -7505,17 +7863,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Lucas Giolito"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Eloy Jimenez"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Lucas Giolito"
+          ]
         }
       }
     },
@@ -7534,17 +7886,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Eury Perez"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Eury Perez"
+          ]
         }
       }
     },
@@ -7564,16 +7910,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Carlos Carrasco"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
-            "David Bednar Budget: $5.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "David Bednar"
+          ]
         }
       }
     },
@@ -7593,16 +7933,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Alex Beim": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Ryan Pepiot Carlos Hernandez"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Ryan Pepiot"
+          ]
         }
       }
     },
@@ -7621,17 +7955,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Round 2 (*Deleted*) Gleyber Torres"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "J.D. Martinez"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Gleyber Torres"
+          ]
         }
       }
     },
@@ -7650,17 +7978,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Owen Hern": {
-          "sent": [
-            "Jose Abreu"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jesus Luzardo"
+          ]
         }
       }
     },
@@ -7680,16 +8002,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Franmil Reyes"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Michael Harris II Luis Severino"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Michael Harris II"
+          ]
         }
       }
     },
@@ -7709,16 +8025,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Michael Pineda Budget: $6.00"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Kendall Graveman Tony Santillan"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tony Santillan"
+          ]
         }
       }
     },
@@ -7738,16 +8048,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Owen Hern": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Marcus Semien"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7767,16 +8071,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Round 2 (*Deleted*) Alek Manoah"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Marcus Semien"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7796,16 +8094,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*) Alek Manoah Gavin Lux"
-          ],
-          "received": []
-        },
-        "Owen Hern": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Marcus Semien"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -7824,17 +8116,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Nick Senzel Nathan Eovaldi"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Mitch Haniger"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Nathan Eovaldi"
+          ]
         }
       }
     },
@@ -7853,17 +8139,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Robbie Ray"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
-          "sent": [
-            "Triston McKenzie Budget: $5.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Robbie Ray"
+          ]
         }
       }
     },
@@ -7882,17 +8162,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Devin Williams George Valera"
-          ],
-          "received": []
-        },
         "Owen Hern": {
-          "sent": [
-            "Diego Castillo Budget: $3.00"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Devin Williams"
+          ]
         }
       }
     },
@@ -7911,17 +8185,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Buster Posey Sean Manaea"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Yadier Molina Nick Gonzales"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Sean Manaea"
+          ]
         }
       }
     },
@@ -7941,16 +8209,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jordan Papula": {
-          "sent": [
-            "Anthony Rizzo"
-          ],
-          "received": []
-        },
-        "Evan Soraci": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tommy Edman"
+          ]
         }
       }
     },
@@ -7969,17 +8231,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Edward Cabrera Budget: $3.50"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
           "sent": [
             "Chris Bassitt"
           ],
-          "received": []
+          "received": [
+            "Edward Cabrera"
+          ]
+        },
+        "Evan Soraci": {
+          "sent": [
+            "Edward Cabrera"
+          ],
+          "received": [
+            "Chris Bassitt"
+          ]
         }
       }
     },
@@ -7997,7 +8263,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Matthew Zujewski": {
+          "sent": [],
+          "received": [
+            "Heliot Ramos"
+          ]
+        }
+      }
     },
     {
       "event_id": "2021-06-02-332",
@@ -8014,11 +8287,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Round 3 (*Deleted*) Nick Madrigal Anthony Santander Emerson Hancock"
-          ],
-          "received": []
+        "Matthew Zujewski": {
+          "sent": [],
+          "received": [
+            "Anthony Santander"
+          ]
         }
       }
     },
@@ -8037,17 +8310,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Franmil Reyes Garrett Crochet"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
             "Ketel Marte"
           ],
-          "received": []
+          "received": [
+            "Garrett Crochet"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Garrett Crochet"
+          ],
+          "received": [
+            "Ketel Marte"
+          ]
         }
       }
     },
@@ -8066,17 +8343,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jordan Papula": {
-          "sent": [
-            "Max Muncy"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Ian Anderson"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Max Muncy"
+          ]
         }
       }
     },
@@ -8095,11 +8366,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
+        "Matthew Zujewski": {
+          "sent": [],
+          "received": [
             "Victor Robles"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8120,15 +8391,19 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Round 2 (*Deleted*) Chris Sale"
+            "Chris Sale"
           ],
-          "received": []
+          "received": [
+            "Raisel Iglesias"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Michael Conforto Budget: $3.00 Raisel Iglesias"
+            "Raisel Iglesias"
           ],
-          "received": []
+          "received": [
+            "Chris Sale"
+          ]
         }
       }
     },
@@ -8148,16 +8423,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jason Bartolini": {
-          "sent": [
-            "Round 4 (*Deleted*) Budget: $12.00"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Austin Riley"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8177,16 +8446,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Matt Barnes Budget: $5.00"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Max Meyer"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8205,17 +8468,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Dylan Carlson Orelvis Martinez"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Joey Gallo"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Orelvis Martinez"
+          ]
         }
       }
     },
@@ -8234,11 +8491,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Jack Dunne": {
+          "sent": [
+            "Framber Valdez"
+          ],
+          "received": [
+            "Devin Williams"
+          ]
+        },
         "Trent Radding": {
           "sent": [
             "Devin Williams"
           ],
-          "received": []
+          "received": [
+            "Framber Valdez"
+          ]
         }
       }
     },
@@ -8258,16 +8525,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jack Dunne": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Alex Beim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Chris Bassitt"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8287,16 +8548,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "Jason Bartolini": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Nick Lodolo"
+          ]
         }
       }
     },
@@ -8316,16 +8571,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Matthew Zujewski": {
-          "sent": [
-            "J.D. Martinez Justin Verlander"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ramon Laureano"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8345,16 +8594,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Gio Urshela"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Round 2 (*Deleted*) Tyler Mahle"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tyler Mahle"
+          ]
         }
       }
     },
@@ -8373,17 +8616,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Julio Rodriguez"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Keston Hiura"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Julio Rodriguez"
+          ]
         }
       }
     },
@@ -8402,17 +8639,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Kenley Jansen Dylan Moore"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Round 3 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Kenley Jansen"
+          ]
         }
       }
     },
@@ -8431,11 +8662,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
+        "Alex Beim": {
+          "sent": [],
+          "received": [
             "Mick Abel"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8454,17 +8685,27 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Austin Martin Max Scherzer Aaron Judge"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
           "sent": [
-            "Manny Machado Pete Fairbanks Julio Rodriguez"
+            "Julio Rodriguez",
+            "Manny Machado",
+            "Pete Fairbanks"
           ],
-          "received": []
+          "received": [
+            "Austin Martin",
+            "Aaron Judge"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Austin Martin",
+            "Aaron Judge"
+          ],
+          "received": [
+            "Julio Rodriguez",
+            "Manny Machado",
+            "Pete Fairbanks"
+          ]
         }
       }
     },
@@ -8483,17 +8724,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Luke Voit Heliot Ramos"
-          ],
-          "received": []
-        },
         "Trent Radding": {
           "sent": [
-            "Ian Happ Rhys Hoskins"
+            "Ian Happ"
           ],
-          "received": []
+          "received": [
+            "Heliot Ramos"
+          ]
+        },
+        "Matthew Zujewski": {
+          "sent": [
+            "Heliot Ramos"
+          ],
+          "received": [
+            "Ian Happ"
+          ]
         }
       }
     },
@@ -8513,16 +8758,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Liam Burns": {
-          "sent": [
-            "Austin Meadows"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Matt Chapman"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -8542,16 +8781,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jose Garcia-Chope": {
-          "sent": [
-            "Round 1 (*Deleted*) Lance McCullers Jr. Zack Greinke"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Nelson Cruz Edwin Diaz"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Edwin Diaz"
+          ]
         }
       }
     },
@@ -8571,16 +8804,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Javier Baez Will Smith"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "JJ Bleday Zack Wheeler Garrett Hampson"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Zack Wheeler"
+          ]
         }
       }
     },
@@ -8599,17 +8826,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Liam Burns": {
+          "sent": [
+            "Ramon Laureano"
+          ],
+          "received": [
+            "Ketel Marte"
+          ]
+        },
         "Jack Dunne": {
           "sent": [
             "Ketel Marte"
           ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
-            "Ramon Laureano Forrest Whitley"
-          ],
-          "received": []
+          "received": [
+            "Ramon Laureano"
+          ]
         }
       }
     },
@@ -8630,15 +8861,19 @@
       "assets_by_party": {
         "Jordan Papula": {
           "sent": [
-            "Framber Valdez Franmil Reyes"
+            "Framber Valdez"
           ],
-          "received": []
+          "received": [
+            "Byron Buxton"
+          ]
         },
         "Jack Dunne": {
           "sent": [
-            "Forrest Whitley Byron Buxton"
+            "Byron Buxton"
           ],
-          "received": []
+          "received": [
+            "Framber Valdez"
+          ]
         }
       }
     },
@@ -8658,16 +8893,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jason Bartolini": {
-          "sent": [
-            "Dylan Moore"
-          ],
-          "received": []
-        },
-        "Jack Dunne": {
-          "sent": [
-            "Jordan Balazovic Jazz Chisholm Jr."
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jazz Chisholm JR"
+          ]
         }
       }
     },
@@ -8686,17 +8915,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Tony Gonsolin"
-          ],
-          "received": []
-        },
         "Reed Heim": {
           "sent": [
             "Ian Happ"
           ],
-          "received": []
+          "received": [
+            "Tony Gonsolin"
+          ]
+        },
+        "Trent Radding": {
+          "sent": [
+            "Tony Gonsolin"
+          ],
+          "received": [
+            "Ian Happ"
+          ]
         }
       }
     },
@@ -8715,17 +8948,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Blake Snell"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
             "George Springer"
           ],
-          "received": []
+          "received": [
+            "Blake Snell"
+          ]
+        },
+        "Evan Soraci": {
+          "sent": [
+            "Blake Snell"
+          ],
+          "received": [
+            "George Springer"
+          ]
         }
       }
     },
@@ -8744,17 +8981,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Ryan Mountcastle Blake Snell"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
           "sent": [
             "Pete Alonso"
           ],
-          "received": []
+          "received": [
+            "Blake Snell"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Blake Snell"
+          ],
+          "received": [
+            "Pete Alonso"
+          ]
         }
       }
     },
@@ -8777,13 +9018,17 @@
           "sent": [
             "Brandon Lowe"
           ],
-          "received": []
+          "received": [
+            "Tarik Skubal"
+          ]
         },
         "Evan Soraci": {
           "sent": [
-            "Spencer Howard Tarik Skubal"
+            "Tarik Skubal"
           ],
-          "received": []
+          "received": [
+            "Brandon Lowe"
+          ]
         }
       }
     },
@@ -8802,17 +9047,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Tyler Glasnow Dylan Carlson"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Eloy Jimenez"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Tyler Glasnow"
+          ]
         }
       }
     },
@@ -8831,17 +9070,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Owen Hern": {
-          "sent": [
-            "J.T. Realmuto"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Kyle Lewis Joey Bart"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "JT Realmuto"
+          ]
         }
       }
     },
@@ -8860,17 +9093,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Liam Burns": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Evan Soraci": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Brady Singer"
+          ]
         }
       }
     },
@@ -8889,17 +9116,12 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "David Fletcher Anthony Rendon"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Ketel Marte",
+            "Chris Sale"
+          ]
         }
       }
     },
@@ -8918,17 +9140,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Jose Altuve"
-          ],
-          "received": []
-        },
         "Trent Radding": {
-          "sent": [
-            "Max Kepler Justin Dunn"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Jose Altuve"
+          ]
         }
       }
     },
@@ -8949,15 +9165,23 @@
       "assets_by_party": {
         "Jack Dunne": {
           "sent": [
-            "Round 2 (*Deleted*) Cody Bellinger"
+            "Cody Bellinger"
           ],
-          "received": []
+          "received": [
+            "Blake Snell",
+            "Trent Grisham",
+            "Victor Robles"
+          ]
         },
         "David Turley": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Blake Snell",
+            "Trent Grisham",
+            "Victor Robles"
           ],
-          "received": []
+          "received": [
+            "Cody Bellinger"
+          ]
         }
       }
     },
@@ -8977,16 +9201,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Dylan Bundy"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "George Kirby"
+          ]
         }
       }
     },
@@ -9005,17 +9223,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Trent Radding": {
-          "sent": [
-            "Edwin Diaz"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Round 1 (*Deleted*) Blake Taylor Edward Olivares"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Edwin Diaz"
+          ]
         }
       }
     },
@@ -9035,16 +9247,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Alec Bohm"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9063,17 +9269,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Matthew Zujewski": {
-          "sent": [
-            "Round 2 (*Deleted*)"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Round 1 (*Deleted*) DL Hall Cristian Pache"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Aroldis Chapman"
+          ]
         }
       }
     },
@@ -9091,7 +9291,24 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Trent Radding": {
+          "sent": [
+            "JO Adell"
+          ],
+          "received": [
+            "Logan Gilbert"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Logan Gilbert"
+          ],
+          "received": [
+            "JO Adell"
+          ]
+        }
+      }
     },
     {
       "event_id": "2020-08-23-046",
@@ -9108,17 +9325,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
+        "Jose Garcia-Chope": {
+          "sent": [
+            "Cristian Javier",
+            "Zac Gallen"
+          ],
+          "received": [
+            "Ozzie Albies"
+          ]
+        },
         "Liam Burns": {
           "sent": [
             "Ozzie Albies"
           ],
-          "received": []
-        },
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Cristian Javier Zac Gallen"
-          ],
-          "received": []
+          "received": [
+            "Cristian Javier",
+            "Zac Gallen"
+          ]
         }
       }
     },
@@ -9137,17 +9360,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Alex Beim": {
-          "sent": [
-            "Eugenio Suarez"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Luis Patino"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Eugenio Suarez"
+          ]
         }
       }
     },
@@ -9166,17 +9383,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jose Garcia-Chope": {
-          "sent": [
-            "Brendan McKay Nolan Jones Bobby Witt Jr. Jose Berrios"
-          ],
-          "received": []
-        },
         "Matthew Zujewski": {
-          "sent": [
-            "Zack Greinke Patrick Corbin"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Bobby Witt JR"
+          ]
         }
       }
     },
@@ -9196,16 +9407,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Josiah Gray Zach Plesac"
-          ],
-          "received": []
-        },
-        "Trent Radding": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Brandon Lowe"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9224,17 +9429,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Luis Garcia Jr."
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Zack Britton"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Luis Garcia JR"
+          ]
         }
       }
     },
@@ -9253,17 +9452,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Dustin May"
-          ],
-          "received": []
-        },
         "Liam Burns": {
           "sent": [
             "Yordan Alvarez"
           ],
-          "received": []
+          "received": [
+            "Dustin May"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Dustin May"
+          ],
+          "received": [
+            "Yordan Alvarez"
+          ]
         }
       }
     },
@@ -9283,16 +9486,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Evan Soraci": {
-          "sent": [
-            "Austin Meadows Dylan Carlson"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Alex Bregman"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9311,17 +9508,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Brady Singer Lorenzo Cain"
-          ],
-          "received": []
-        },
         "Liam Burns": {
-          "sent": [
-            "Hector Neris"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Brady Singer"
+          ]
         }
       }
     },
@@ -9340,17 +9531,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Kyle Hendricks Raisel Iglesias"
-          ],
-          "received": []
-        },
         "David Turley": {
-          "sent": [
-            "Kenta Maeda Alex Verdugo"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Raisel Iglesias"
+          ]
         }
       }
     },
@@ -9369,17 +9554,23 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Reed Heim": {
-          "sent": [
-            "Round 3 (*Deleted*) Kyle Tucker Zac Gallen"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
-            "Round 1 (*Deleted*)"
+            "Brandon Woodruff"
           ],
-          "received": []
+          "received": [
+            "Kyle Tucker",
+            "Zac Gallen"
+          ]
+        },
+        "Reed Heim": {
+          "sent": [
+            "Kyle Tucker",
+            "Zac Gallen"
+          ],
+          "received": [
+            "Brandon Woodruff"
+          ]
         }
       }
     },
@@ -9398,17 +9589,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Nick Lodolo J.D. Davis"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
-          "sent": [
-            "Carlos Carrasco"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Nick Lodolo"
+          ]
         }
       }
     },
@@ -9428,16 +9613,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Evan Soraci": {
-          "sent": [
-            "Josh Bell"
-          ],
-          "received": []
-        },
-        "Jason Bartolini": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Willson Contreras"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9456,17 +9635,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Mitch Keller"
-          ],
-          "received": []
-        },
         "Jordan Papula": {
-          "sent": [
-            "Round 1 (*Deleted*)"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Mitch Keller"
+          ]
         }
       }
     },
@@ -9485,17 +9658,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "David Turley": {
-          "sent": [
-            "Round 2 (*Deleted*) Nick Castellanos"
-          ],
-          "received": []
-        },
         "Jose Garcia-Chope": {
           "sent": [
             "Matt Chapman"
           ],
-          "received": []
+          "received": [
+            "Nick Castellanos"
+          ]
+        },
+        "David Turley": {
+          "sent": [
+            "Nick Castellanos"
+          ],
+          "received": [
+            "Matt Chapman"
+          ]
         }
       }
     },
@@ -9515,16 +9692,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "David Turley": {
-          "sent": [
-            "Joc Pederson"
-          ],
-          "received": []
-        },
-        "Owen Hern": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Mitch Keller"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9543,17 +9714,21 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jack Dunne": {
-          "sent": [
-            "Casey Mize Wander Franco"
-          ],
-          "received": []
-        },
         "Jason Bartolini": {
           "sent": [
             "Aaron Judge"
           ],
-          "received": []
+          "received": [
+            "Casey Mize"
+          ]
+        },
+        "Jack Dunne": {
+          "sent": [
+            "Casey Mize"
+          ],
+          "received": [
+            "Aaron Judge"
+          ]
         }
       }
     },
@@ -9571,7 +9746,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "David Turley": {
+          "sent": [],
+          "received": [
+            "Nick Castellanos"
+          ]
+        }
+      }
     },
     {
       "event_id": "2019-07-25-338",
@@ -9589,16 +9771,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Jordan Papula": {
-          "sent": [
-            "Daniel Vogelbach"
-          ],
-          "received": []
-        },
-        "Liam Burns": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Sonny Gray"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9618,16 +9794,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Trent Radding": {
-          "sent": [
-            "Luis Severino"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
-            "Jo Adell"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "JO Adell"
+          ]
         }
       }
     },
@@ -9645,7 +9815,24 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Liam Burns": {
+          "sent": [
+            "Max Muncy"
+          ],
+          "received": [
+            "Tyler Glasnow"
+          ]
+        },
+        "Jordan Papula": {
+          "sent": [
+            "Tyler Glasnow"
+          ],
+          "received": [
+            "Max Muncy"
+          ]
+        }
+      }
     },
     {
       "event_id": "2019-07-17-133",
@@ -9662,17 +9849,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Evan Soraci": {
-          "sent": [
-            "Eduardo Rodriguez Logan Gilbert David Dahl"
-          ],
-          "received": []
-        },
         "Reed Heim": {
-          "sent": [
-            "Trevor Bauer Ryan Pressly"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Logan Gilbert"
+          ]
         }
       }
     },
@@ -9691,17 +9872,11 @@
       "party_count": 2,
       "trade_type": "2-team",
       "assets_by_party": {
-        "Jason Bartolini": {
-          "sent": [
-            "Byron Buxton"
-          ],
-          "received": []
-        },
         "Jack Dunne": {
-          "sent": [
-            "Caleb Smith"
-          ],
-          "received": []
+          "sent": [],
+          "received": [
+            "Byron Buxton"
+          ]
         }
       }
     },
@@ -9720,7 +9895,14 @@
       ],
       "party_count": 3,
       "trade_type": "3-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Evan Soraci": {
+          "sent": [],
+          "received": [
+            "Aaron Nola"
+          ]
+        }
+      }
     },
     {
       "event_id": "2019-04-04-322",
@@ -9738,16 +9920,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Reed Heim": {
-          "sent": [
-            "Greg Holland"
-          ],
-          "received": []
-        },
-        "David Turley": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Sean Manaea"
-          ],
-          "received": []
+          ]
         }
       }
     },
@@ -9765,7 +9941,14 @@
       ],
       "party_count": 2,
       "trade_type": "2-team",
-      "assets_by_party": {}
+      "assets_by_party": {
+        "Owen Hern": {
+          "sent": [],
+          "received": [
+            "Mitch Keller"
+          ]
+        }
+      }
     },
     {
       "event_id": "2019-03-25-257",
@@ -9783,16 +9966,10 @@
       "trade_type": "2-team",
       "assets_by_party": {
         "Owen Hern": {
-          "sent": [
-            "Marco Gonzales"
-          ],
-          "received": []
-        },
-        "Reed Heim": {
-          "sent": [
+          "sent": [],
+          "received": [
             "Ian Happ"
-          ],
-          "received": []
+          ]
         }
       }
     }
@@ -10589,9 +10766,9 @@
     }
   ],
   "owner_trade_counts": {
-    "Jack Dunne": 133,
-    "Reed Heim": 106,
     "Owen Hern": 34,
+    "Reed Heim": 106,
+    "Jack Dunne": 133,
     "David Turley": 72,
     "Matthew Zujewski": 32,
     "Liam Burns": 79,
@@ -10669,9 +10846,9 @@
   },
   "trades_by_year_owner": {
     "2025": {
-      "Jack Dunne": 28,
-      "Reed Heim": 39,
       "Owen Hern": 8,
+      "Reed Heim": 39,
+      "Jack Dunne": 28,
       "David Turley": 14,
       "Matthew Zujewski": 4,
       "Jordan Papula": 9,
@@ -10683,8 +10860,8 @@
       "Trent Radding": 17
     },
     "2024": {
-      "Jack Dunne": 26,
       "Reed Heim": 23,
+      "Jack Dunne": 26,
       "David Turley": 9,
       "Jordan Papula": 6,
       "Trent Radding": 15,
@@ -10699,14 +10876,14 @@
     "2023": {
       "David Turley": 17,
       "Jack Dunne": 23,
-      "Liam Burns": 13,
       "Matthew Zujewski": 4,
+      "Liam Burns": 13,
       "Jordan Papula": 7,
       "Trent Radding": 12,
-      "Jose Garcia-Chope": 8,
       "Reed Heim": 11,
-      "Alex Beim": 7,
+      "Jose Garcia-Chope": 8,
       "Owen Hern": 6,
+      "Alex Beim": 7,
       "Jason Bartolini": 6,
       "Evan Soraci": 5
     },
@@ -10716,10 +10893,10 @@
       "Jack Dunne": 21,
       "Jason Bartolini": 6,
       "Jordan Papula": 10,
-      "Liam Burns": 14,
       "Owen Hern": 4,
-      "Jose Garcia-Chope": 4,
+      "Liam Burns": 14,
       "David Turley": 10,
+      "Jose Garcia-Chope": 4,
       "Matthew Zujewski": 7,
       "Trent Radding": 5,
       "Alex Beim": 4
@@ -10729,18 +10906,18 @@
       "Evan Soraci": 4,
       "Matthew Zujewski": 9,
       "Trent Radding": 8,
-      "Jose Garcia-Chope": 5,
       "Jason Bartolini": 5,
+      "Jose Garcia-Chope": 5,
       "Owen Hern": 6,
-      "Liam Burns": 8,
       "Reed Heim": 5,
+      "Liam Burns": 8,
       "Jordan Papula": 4,
       "David Turley": 9,
       "Alex Beim": 4
     },
     "2020": {
-      "Liam Burns": 8,
       "Reed Heim": 7,
+      "Liam Burns": 8,
       "Jose Garcia-Chope": 5,
       "David Turley": 10,
       "Alex Beim": 1,
@@ -10758,14 +10935,14 @@
       "David Turley": 3,
       "Reed Heim": 6,
       "Evan Soraci": 2,
-      "Jack Dunne": 2,
       "Jason Bartolini": 3,
+      "Jack Dunne": 2,
       "Owen Hern": 3,
       "Trent Radding": 1
     },
     "2026": {
-      "Jack Dunne": 2,
       "Reed Heim": 1,
+      "Jack Dunne": 2,
       "Jordan Papula": 1,
       "Liam Burns": 1,
       "Evan Soraci": 1
