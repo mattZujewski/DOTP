@@ -1,137 +1,46 @@
 /**
- * Chart.js 4.4.0 NaN/null layout fix
+ * Chart.js bar rendering fix
  *
- * Root cause: ticks.padding resolves to undefined → fit() computes
- * NaN/null for scale width/height → chartArea null → blank canvas.
+ * Root cause: _stacks._top is NaN/null when chart.defaults.scale.ticks
+ * was replaced instead of merged, clearing ticks.padding. This causes
+ * _calculateBarValuePixels to return NaN for `base`, so bars never draw.
  *
- * The NaN propagates through the layout pass (ss/ns functions) which also
- * resets scale geometry after fit(). Patching fit() alone is not sufficient
- * because the layout manager overwrites the fixed values.
- *
- * Fix: wrap Chart.layouts.update to sanitize ALL scale dimensions
- * (width, height, left, right, top, bottom, _length) after the full layout
- * pass completes, then force a chartArea recompute.
+ * Fix: patch BarController._calculateBarValuePixels to fall back to
+ * computing base directly from the value scale when the result is NaN.
  */
 (function () {
-  if (typeof Chart === 'undefined' || !Chart.layouts || !Chart.layouts.update) return;
+  if (typeof Chart === 'undefined') return;
 
-  function sanitizeNum(val, fallback) {
-    return isFinite(val) && val !== null ? val : (fallback || 0);
+  function applyBarFix() {
+    var BarController = Chart.registry && Chart.registry.controllers && Chart.registry.controllers.get('bar');
+    if (!BarController || BarController.prototype._dotpBarFixed) return;
+    BarController.prototype._dotpBarFixed = true;
+
+    var orig = BarController.prototype._calculateBarValuePixels;
+    BarController.prototype._calculateBarValuePixels = function (index) {
+      var result = orig.call(this, index);
+      if (!result || isFinite(result.base)) return result;
+
+      // base is NaN — compute directly from the value scale
+      var vScale = this.chart.scales.y
+        || (this._cachedMeta.vScale && this.chart.scales[this._cachedMeta.vScale.id]);
+      if (!vScale) return result;
+
+      var parsed = this._cachedMeta._parsed[index];
+      var vAxis = (this._cachedMeta.vScale && this._cachedMeta.vScale.axis) || 'y';
+      var val = parsed && parsed[vAxis];
+      if (val == null) return result;
+
+      var head = vScale.getPixelForValue(val);
+      var base = vScale.getPixelForValue(0);
+      var size = head - base;
+      return { size: size, base: base, head: head, center: base + size / 2 };
+    };
   }
 
-  const origUpdate = Chart.layouts.update;
-  Chart.layouts.update = function (chart, width, height, padding) {
-    const result = origUpdate.call(this, chart, width, height, padding);
-
-    if (!chart || !chart.scales) return result;
-
-    // After layout pass, check if any scales have null/NaN dimensions
-    let needsRepair = false;
-    for (const scale of Object.values(chart.scales)) {
-      if (!isFinite(scale.width) || !isFinite(scale.height)) {
-        needsRepair = true;
-        break;
-      }
-    }
-    if (!needsRepair) return result;
-
-    // Repair each broken scale
-    for (const scale of Object.values(chart.scales)) {
-      const isH = scale.isHorizontal();
-
-      if (!isH && !isFinite(scale.width)) {
-        // Left/right axis: compute width from label sizes
-        let labelW = 0;
-        try {
-          const sizes = scale._getLabelSizes && scale._getLabelSizes();
-          labelW = (sizes && sizes.widest && sizes.widest.width) || 0;
-        } catch (e) {}
-        const pad = (scale.options && scale.options.ticks && +scale.options.ticks.padding) || 3;
-        scale.width = Math.min(scale.maxWidth || 200, labelW + pad * 2 + 8);
-        scale._length = scale.height;
-      }
-
-      if (isH && !isFinite(scale.height)) {
-        // Top/bottom axis: compute height from label sizes
-        let labelH = 0;
-        try {
-          const sizes = scale._getLabelSizes && scale._getLabelSizes();
-          labelH = (sizes && sizes.highest && sizes.highest.height) || 0;
-        } catch (e) {}
-        const pad = (scale.options && scale.options.ticks && +scale.options.ticks.padding) || 3;
-        scale.height = Math.min(scale.maxHeight || 60, labelH + pad * 2 + 8);
-        scale._length = scale.width;
-      }
-    }
-
-    // Recompute scale positions (left/right/top/bottom) from repaired widths/heights
-    // Uses the same logic Chart.js uses internally: accumulate from edges
-    const chartW = width || (chart.canvas && chart.canvas.width / (chart.currentDevicePixelRatio || 1)) || 0;
-    const chartH = height || (chart.canvas && chart.canvas.height / (chart.currentDevicePixelRatio || 1)) || 0;
-
-    let padLeft = 0, padRight = 0, padTop = 0, padBottom = 0;
-    // First pass: measure padding contributions
-    for (const scale of Object.values(chart.scales)) {
-      if (!scale.options || !scale.options.display) continue;
-      const pos = scale.position;
-      if (pos === 'left')   padLeft   = Math.max(padLeft,   scale.width  || 0);
-      if (pos === 'right')  padRight  = Math.max(padRight,  scale.width  || 0);
-      if (pos === 'top')    padTop    = Math.max(padTop,    scale.height || 0);
-      if (pos === 'bottom') padBottom = Math.max(padBottom, scale.height || 0);
-    }
-
-    // Apply chartArea from repaired padding
-    const ca = {
-      left:   padLeft,
-      right:  chartW - padRight,
-      top:    padTop,
-      bottom: chartH - padBottom,
-    };
-    ca.width  = ca.right  - ca.left;
-    ca.height = ca.bottom - ca.top;
-
-    if (ca.width > 0 && ca.height > 0) {
-      Object.assign(chart.chartArea, ca);
-
-      // Update scale geometry to match repaired chartArea
-      for (const scale of Object.values(chart.scales)) {
-        const pos = scale.position;
-        if (pos === 'left') {
-          scale.left   = 0;
-          scale.right  = ca.left;
-          scale.top    = ca.top;
-          scale.bottom = ca.bottom;
-          scale.width  = ca.left;
-          scale.height = ca.height;
-          scale._length = ca.height;
-        } else if (pos === 'right') {
-          scale.left   = ca.right;
-          scale.right  = chartW;
-          scale.top    = ca.top;
-          scale.bottom = ca.bottom;
-          scale.width  = chartW - ca.right;
-          scale.height = ca.height;
-          scale._length = ca.height;
-        } else if (pos === 'top') {
-          scale.left   = ca.left;
-          scale.right  = ca.right;
-          scale.top    = 0;
-          scale.bottom = ca.top;
-          scale.width  = ca.width;
-          scale.height = ca.top;
-          scale._length = ca.width;
-        } else if (pos === 'bottom') {
-          scale.left   = ca.left;
-          scale.right  = ca.right;
-          scale.top    = ca.bottom;
-          scale.bottom = chartH;
-          scale.width  = ca.width;
-          scale.height = chartH - ca.bottom;
-          scale._length = ca.width;
-        }
-      }
-    }
-
-    return result;
-  };
+  // Apply immediately if Chart is ready, otherwise wait for DOMContentLoaded
+  if (Chart.registry && Chart.registry.controllers) {
+    applyBarFix();
+  }
+  document.addEventListener('DOMContentLoaded', applyBarFix);
 })();
