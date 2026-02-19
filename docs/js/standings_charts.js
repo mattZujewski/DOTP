@@ -31,17 +31,7 @@
   const tradeEvents = tradesData.trade_events || [];
 
   // Fantrax standings data
-  // Filter out incomplete seasons: a season is "complete" if ANY team has pts >= 10
-  const INCOMPLETE_SEASONS = new Set(
-    (standingsData.season_standings || [])
-      .reduce((acc, r) => {
-        if (!acc[r.season]) acc[r.season] = 0;
-        acc[r.season] = Math.max(acc[r.season], r.pts || 0);
-        return acc;
-      }, {})
-      // season is incomplete if max pts < 10 (hasn't really started)
-  );
-  // Rebuild: seasons where max pts >= 10 are complete
+  // Seasons where max pts >= 10 are "complete" (has meaningfully started)
   const seasonMaxPts = (standingsData.season_standings || []).reduce((acc, r) => {
     acc[r.season] = Math.max(acc[r.season] || 0, r.pts || 0);
     return acc;
