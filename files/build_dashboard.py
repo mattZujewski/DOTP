@@ -539,7 +539,9 @@ def build_owner_stats(
 
     for owner, group in journeys_df[journeys_df["owner_real_name"].notna()].groupby("owner_real_name"):
         if owner in stats and not group.empty:
-            acq_counts = group["acquisition_type"].value_counts()
+            # Exclude KEPT — it's a roster retention flag, not a real acquisition method
+            real_acq = group[group["acquisition_type"] != "KEPT"]["acquisition_type"]
+            acq_counts = real_acq.value_counts()
             if not acq_counts.empty:
                 stats[owner]["most_common_acquisition"] = str(acq_counts.index[0])
 
@@ -806,16 +808,60 @@ def build_rosters_json(
     rosters_df: pd.DataFrame,
     journeys_df: pd.DataFrame,
 ) -> Dict:
-    # Build a lookup: player_id → stint_start (for current stints = null end_date)
+    # Build a lookup: player_id → owner → all stints (sorted by start_date asc)
+    # Used to look up the original acquisition when a player was KEPT.
+    owner_stints_by_pid: Dict[str, Dict[str, List]] = defaultdict(lambda: defaultdict(list))
+    for _, row in journeys_df.iterrows():
+        pid   = str(row.get("player_id", ""))
+        owner = str(row.get("owner_real_name", ""))
+        if pid and owner:
+            owner_stints_by_pid[pid][owner].append({
+                "start_date":      to_iso(row.get("start_date")),
+                "end_date":        to_iso(row.get("end_date")) if not (pd.isna(row.get("end_date")) or str(row.get("end_date","")).strip()=="") else None,
+                "acquisition_type": str(row.get("acquisition_type", "")),
+            })
+
+    # Sort each list by start_date asc
+    for pid in owner_stints_by_pid:
+        for owner in owner_stints_by_pid[pid]:
+            owner_stints_by_pid[pid][owner].sort(key=lambda s: s["start_date"] or "")
+
+    # Build current stint lookup: player_id → {start_date, acquisition_type}
+    # For KEPT players: walk back to find the original acquisition + start date
+    # for the current unbroken run with this owner.
     current_stints: Dict[str, str] = {}
     current_acq: Dict[str, str] = {}
+    current_real_acq: Dict[str, str] = {}  # non-KEPT original acquisition type
+
     for _, row in journeys_df.iterrows():
         if pd.isna(row.get("end_date")) or str(row.get("end_date", "")).strip() == "":
-            pid = str(row.get("player_id", ""))
-            iso = to_iso(row.get("start_date"))
+            pid   = str(row.get("player_id", ""))
+            owner = str(row.get("owner_real_name", ""))
+            iso   = to_iso(row.get("start_date"))
             if pid and iso:
                 current_stints[pid] = iso
-                current_acq[pid] = str(row.get("acquisition_type", ""))
+                current_acq[pid]    = str(row.get("acquisition_type", ""))
+
+                # If acquired via KEPT, find the earliest consecutive stint with this owner
+                # that represents the real original acquisition.
+                if current_acq[pid] == "KEPT" and owner:
+                    stints = owner_stints_by_pid.get(pid, {}).get(owner, [])
+                    # Walk back from the most recent (current) stint to find the first
+                    # in an unbroken chain (no gap > 14 days between consecutive stints)
+                    earliest_start = iso
+                    earliest_acq   = "KEPT"
+                    for s in reversed(stints):
+                        if s["acquisition_type"] != "KEPT":
+                            earliest_start = s["start_date"] or iso
+                            earliest_acq   = s["acquisition_type"]
+                            break
+                        elif s["start_date"] and s["start_date"] < earliest_start:
+                            earliest_start = s["start_date"]
+
+                    current_stints[pid]    = earliest_start
+                    current_real_acq[pid]  = earliest_acq
+                else:
+                    current_real_acq[pid] = current_acq[pid]
 
     players_list = []
     by_owner: Dict[str, List] = defaultdict(list)
@@ -825,7 +871,9 @@ def build_rosters_json(
         pid          = str(row.get("player_id", ""))
         stint_start  = current_stints.get(pid)
         days_on_team = days_since(stint_start)
-        acq_type     = current_acq.get(pid, "")
+        # Use the real (non-KEPT) acquisition type so the roster shows how the
+        # player was originally acquired, not just "KEPT" for retained players.
+        acq_type     = current_real_acq.get(pid, current_acq.get(pid, ""))
         team_name    = str(row.get("team_name", ""))
         owner        = str(row.get("owner_real_name", ""))
         status       = str(row.get("roster_status", ""))

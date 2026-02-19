@@ -301,11 +301,13 @@ html.dark .dashboard-card .card-tag {
   position: relative;
   width: 100%;
   display: block;
-  overflow: hidden;
+  /* height is set inline per chart, e.g. style="height:400px" */
 }
-/* Chart.js needs the canvas to NOT be absolute — wrapper height drives it */
+/* Canvas fills the wrapper exactly — Chart.js reads offsetWidth/Height from it */
 .chart-wrapper canvas {
-  display: block;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
   height: 100% !important;
 }

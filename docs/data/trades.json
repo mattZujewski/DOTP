@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T07:21:03.518490Z",
+    "generated_at": "2026-02-19T07:38:30.470101Z",
     "total_trade_events": 352
   },
   "trade_events": [
@@ -10589,9 +10589,9 @@
     }
   ],
   "owner_trade_counts": {
+    "Jack Dunne": 133,
     "Reed Heim": 106,
     "Owen Hern": 34,
-    "Jack Dunne": 133,
     "David Turley": 72,
     "Matthew Zujewski": 32,
     "Liam Burns": 79,
@@ -10669,9 +10669,9 @@
   },
   "trades_by_year_owner": {
     "2025": {
+      "Jack Dunne": 28,
       "Reed Heim": 39,
       "Owen Hern": 8,
-      "Jack Dunne": 28,
       "David Turley": 14,
       "Matthew Zujewski": 4,
       "Jordan Papula": 9,
@@ -10683,12 +10683,12 @@
       "Trent Radding": 17
     },
     "2024": {
-      "Reed Heim": 23,
       "Jack Dunne": 26,
+      "Reed Heim": 23,
       "David Turley": 9,
       "Jordan Papula": 6,
-      "Jose Garcia-Chope": 6,
       "Trent Radding": 15,
+      "Jose Garcia-Chope": 6,
       "Liam Burns": 12,
       "Owen Hern": 4,
       "Alex Beim": 4,
@@ -10703,21 +10703,21 @@
       "Matthew Zujewski": 4,
       "Jordan Papula": 7,
       "Trent Radding": 12,
-      "Reed Heim": 11,
       "Jose Garcia-Chope": 8,
+      "Reed Heim": 11,
       "Alex Beim": 7,
       "Owen Hern": 6,
       "Jason Bartolini": 6,
       "Evan Soraci": 5
     },
     "2022": {
-      "Reed Heim": 14,
       "Evan Soraci": 8,
+      "Reed Heim": 14,
       "Jack Dunne": 21,
       "Jason Bartolini": 6,
       "Jordan Papula": 10,
-      "Owen Hern": 4,
       "Liam Burns": 14,
+      "Owen Hern": 4,
       "David Turley": 10,
       "Jose Garcia-Chope": 4,
       "Matthew Zujewski": 7,
@@ -10725,22 +10725,22 @@
       "Alex Beim": 4
     },
     "2021": {
-      "Jack Dunne": 23,
       "Evan Soraci": 4,
+      "Jack Dunne": 23,
       "Matthew Zujewski": 9,
       "Trent Radding": 8,
       "Jason Bartolini": 5,
       "Jose Garcia-Chope": 5,
       "Owen Hern": 6,
-      "Reed Heim": 5,
       "Liam Burns": 8,
+      "Reed Heim": 5,
       "Jordan Papula": 4,
-      "Alex Beim": 4,
-      "David Turley": 9
+      "David Turley": 9,
+      "Alex Beim": 4
     },
     "2020": {
-      "Reed Heim": 7,
       "Liam Burns": 8,
+      "Reed Heim": 7,
       "Jose Garcia-Chope": 5,
       "David Turley": 10,
       "Alex Beim": 1,
@@ -10753,21 +10753,21 @@
       "Jordan Papula": 2
     },
     "2019": {
-      "Jordan Papula": 2,
       "Liam Burns": 3,
+      "Jordan Papula": 2,
       "David Turley": 3,
-      "Reed Heim": 6,
       "Evan Soraci": 2,
-      "Jason Bartolini": 3,
+      "Reed Heim": 6,
       "Jack Dunne": 2,
+      "Jason Bartolini": 3,
       "Owen Hern": 3,
       "Trent Radding": 1
     },
     "2026": {
-      "Reed Heim": 1,
       "Jack Dunne": 2,
-      "Jordan Papula": 1,
+      "Reed Heim": 1,
       "Liam Burns": 1,
+      "Jordan Papula": 1,
       "Evan Soraci": 1
     }
   },

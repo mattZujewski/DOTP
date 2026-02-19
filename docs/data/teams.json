@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T07:21:03.443515Z",
+    "generated_at": "2026-02-19T07:38:30.391864Z",
     "league_name": "Ducks on the Pond Dynasty",
     "total_trade_events": 352,
     "total_unique_players": 564,
@@ -52,7 +52,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 7,
         "median_player_tenure_days": 213.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -96,7 +96,7 @@
         "most_traded_with": "Reed Heim",
         "most_traded_with_count": 11,
         "median_player_tenure_days": 103.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -136,7 +136,7 @@
         "most_traded_with": "Reed Heim",
         "most_traded_with_count": 9,
         "median_player_tenure_days": 213.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -176,7 +176,7 @@
         "most_traded_with": "Reed Heim",
         "most_traded_with_count": 26,
         "median_player_tenure_days": 94.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "TRADED"
       }
     },
     {
@@ -216,7 +216,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 12,
         "median_player_tenure_days": 241.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -256,7 +256,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 14,
         "median_player_tenure_days": 202.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -296,7 +296,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 9,
         "median_player_tenure_days": 188.5,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -336,7 +336,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 19,
         "median_player_tenure_days": 117.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -376,7 +376,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 11,
         "median_player_tenure_days": 273.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -416,7 +416,7 @@
         "most_traded_with": "David Turley",
         "most_traded_with_count": 9,
         "median_player_tenure_days": 213.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -456,7 +456,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 26,
         "median_player_tenure_days": 94.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     },
     {
@@ -500,7 +500,7 @@
         "most_traded_with": "Jack Dunne",
         "most_traded_with_count": 14,
         "median_player_tenure_days": 117.0,
-        "most_common_acquisition": "KEPT"
+        "most_common_acquisition": "CLAIMED"
       }
     }
   ]

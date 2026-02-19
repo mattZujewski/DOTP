@@ -91,7 +91,7 @@ python fantrax_tracker_v4.py --seasons 2024 2025
 python fantrax_tracker_v4.py --refresh --all-seasons --workers 10
 
 # More parallel threads (default: 8)
-python fantrax_tracker_v4.py --all-seasons --workers 6
+python fantrax_tracker_v4.py --all-seasons --workers 10
 ```
 
 ### 4. Build the dashboard JSON
