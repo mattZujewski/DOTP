@@ -1,0 +1,29 @@
+# Credentials & private data — never commit these
+files/config.yaml
+files/fantrax_data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+.env
+
+# Dashboard output (generated locally, not needed in repo)
+files/trade_dashboard_output/
+files/player_history_output/
+
+# Archives
+*.zip
+*.tar.gz
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~

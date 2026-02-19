@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🦆 Ducks on the Pond Dynasty</title>
+  <!-- Prevent FOUC on dark mode -->
+  <script>if(localStorage.getItem('dotp_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>🦆 Ducks on the Pond Dynasty</h1>
+      <p class="subtitle" id="league-subtitle">Loading league data…</p>
+    </header>
+
+    <!-- Stat Bar -->
+    <div class="stat-bar" id="stat-bar">
+      <div class="stat-card">
+        <span class="stat-label">Total Trades</span>
+        <span class="stat-value" id="stat-trades">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Unique Players</span>
+        <span class="stat-value gold" id="stat-players">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Seasons</span>
+        <span class="stat-value" id="stat-seasons">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Owners</span>
+        <span class="stat-value gold" id="stat-owners">—</span>
+      </div>
+    </div>
+
+    <!-- Dashboard Navigation Cards -->
+    <div class="dashboard-grid">
+      <a class="dashboard-card" href="standings.html">
+        <div class="card-icon">🏆</div>
+        <div class="card-title">Standings</div>
+        <div class="card-desc">
+          All-time and per-season stats: trades, unique players, median
+          tenure, top partners, and team name history.
+        </div>
+        <span class="card-tag">Year Switcher</span>
+      </a>
+      <a class="dashboard-card" href="trade.html">
+        <div class="card-icon">🔄</div>
+        <div class="card-title">Trade Analysis</div>
+        <div class="card-desc">
+          Who's dealt the most? Trade partner matrix, trade network,
+          timeline, and volume breakdowns across all 6 seasons.
+        </div>
+        <span class="card-tag">7 Charts</span>
+      </a>
+      <a class="dashboard-card" href="player_history.html">
+        <div class="card-icon">⚾</div>
+        <div class="card-title">Player History</div>
+        <div class="card-desc">
+          Most-traveled players, roster turnover by owner, ownership flow
+          network, acquisition styles, and tenure analysis.
+        </div>
+        <span class="card-tag">6 Charts</span>
+      </a>
+      <a class="dashboard-card" href="team.html">
+        <div class="card-icon">🏟️</div>
+        <div class="card-title">Team View</div>
+        <div class="card-desc">
+          Deep-dive into any owner: current roster, player journeys,
+          trade history, and season-by-season stats.
+        </div>
+        <span class="card-tag">Interactive</span>
+      </a>
+    </div>
+
+    <!-- Season History Table -->
+    <div class="season-table-wrapper">
+      <h2>Season History — All 12 Owners</h2>
+      <div class="data-table-wrapper" id="season-table-container">
+        <div class="loading-spinner"><div class="spinner"></div> Loading…</div>
+      </div>
+    </div>
+
+    <!-- Owner Quick Stats -->
+    <div class="chart-section mt-24" id="owner-stats-section" style="display:none">
+      <h2>Owner Overview</h2>
+      <p class="chart-description">Key stats for all 12 managers across all seasons.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="owner-stats-table">
+          <thead>
+            <tr>
+              <th data-sort="name">Owner</th>
+              <th data-sort="team">Current Team (2026)</th>
+              <th data-sort="trades">Total Trades</th>
+              <th data-sort="players">Unique Players</th>
+              <th data-sort="mostWith">Top Trade Partner</th>
+              <th data-sort="acq">Fav. Acquisition</th>
+            </tr>
+          </thead>
+          <tbody id="owner-stats-tbody"></tbody>
+        </table>
+      </div>
+      <p class="chart-insight" id="owner-stats-insight"></p>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script>
+    (async function () {
+      const D = window.DOTP;
+
+      let teamsData;
+      try {
+        teamsData = await D.loadJSON('data/teams.json');
+      } catch (e) {
+        document.getElementById('league-subtitle').textContent = 'Error loading data — run build_dashboard.py first.';
+        return;
+      }
+
+      const meta   = teamsData.meta;
+      const owners = teamsData.owners;
+
+      // Nav date
+      window.dotpNav?.setNavDate(meta.generated_at);
+
+      // Subtitle
+      document.getElementById('league-subtitle').textContent =
+        `${meta.seasons.length} Seasons · ${meta.total_owners} Owners · ${meta.total_trade_events} Trades`;
+
+      // Stat bar
+      document.getElementById('stat-trades').textContent  = meta.total_trade_events;
+      document.getElementById('stat-players').textContent = meta.total_unique_players;
+      document.getElementById('stat-seasons').textContent = meta.seasons.length;
+      document.getElementById('stat-owners').textContent  = meta.total_owners;
+
+      // Season history table
+      const seasons = [...meta.seasons].sort((a,b) => b - a); // desc
+      const nameToData = {};
+      owners.forEach(o => nameToData[o.real_name] = o);
+
+      const thead = `<thead><tr><th>Owner</th>${seasons.map(y=>`<th>${y}</th>`).join('')}</tr></thead>`;
+      const tbody = `<tbody>${owners.sort((a,b)=>a.real_name.localeCompare(b.real_name)).map(o => {
+        const cells = seasons.map(yr => {
+          const h = o.history.find(h => h.season === yr);
+          const isCurrent = yr === Math.max(...seasons);
+          return `<td style="${isCurrent ? 'font-weight:700;color:var(--brand-green)' : ''}">${h ? h.team_name : '—'}</td>`;
+        }).join('');
+        const color = D.ownerColor(o.real_name);
+        return `<tr>
+          <td style="white-space:nowrap">
+            <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:7px;vertical-align:middle"></span>
+            <strong>${o.real_name}</strong>
+          </td>${cells}
+        </tr>`;
+      }).join('')}</tbody>`;
+
+      document.getElementById('season-table-container').innerHTML =
+        `<table class="data-table">${thead}${tbody}</table>`;
+
+      // Owner stats table
+      const ownerStatsTbody = document.getElementById('owner-stats-tbody');
+      const sortedOwners = [...owners].sort((a,b)=> (b.stats?.total_trades||0)-(a.stats?.total_trades||0));
+
+      ownerStatsTbody.innerHTML = sortedOwners.map(o => {
+        const s = o.stats || {};
+        const color = D.ownerColor(o.real_name);
+        return `<tr>
+          <td>
+            <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:7px;vertical-align:middle"></span>
+            <a href="team.html?owner=${encodeURIComponent(o.real_name)}" style="font-weight:600">${o.real_name}</a>
+          </td>
+          <td>${o.current_team}</td>
+          <td style="text-align:center;font-weight:700">${s.total_trades ?? '—'}</td>
+          <td style="text-align:center">${s.unique_players_rostered ?? '—'}</td>
+          <td>${s.most_traded_with ? `${s.most_traded_with} (${s.most_traded_with_count})` : '—'}</td>
+          <td>${s.most_common_acquisition ? D.acqBadge(s.most_common_acquisition) : '—'}</td>
+        </tr>`;
+      }).join('');
+
+      D.makeSortable(document.getElementById('owner-stats-table'));
+
+      // Insight
+      const topTrader = sortedOwners[0];
+      if (topTrader) {
+        const s = topTrader.stats || {};
+        document.getElementById('owner-stats-insight').innerHTML =
+          `<strong>${topTrader.real_name}</strong> leads with <strong>${s.total_trades}</strong> trade events
+           and has rostered <strong>${s.unique_players_rostered}</strong> unique players across all seasons.
+           ${s.most_traded_with ? `Their most frequent trade partner is <strong>${s.most_traded_with}</strong>
+           (${s.most_traded_with_count} trades together).` : ''}`;
+      }
+
+      document.getElementById('owner-stats-section').style.display = 'block';
+    })();
+  </script>
+</body>
+</html>

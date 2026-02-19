@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Analysis — DOTP Dynasty</title>
+  <script>if(localStorage.getItem('dotp_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- CDN libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>🔄 Trade Analysis</h1>
+      <p class="subtitle">All 6 seasons · 12 owners · interactive filters</p>
+    </header>
+
+    <!-- Filter Bar -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar" id="year-filter-bar">
+        <div class="loading-spinner" style="height:36px"><div class="spinner"></div></div>
+      </div>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:10px">
+        <span id="owner-filter-label" style="font-size:0.82rem;font-weight:600;color:var(--brand-green)"></span>
+        <button id="clear-owner-filter" class="btn btn-ghost btn-sm" style="display:none">✕ Clear Filter</button>
+        <span class="text-muted" style="font-size:0.8rem">Click any chart bar or node to filter by owner</span>
+        <button id="compare-toggle-btn" class="btn btn-outline btn-sm" style="margin-left:auto">
+          ⚖️ Compare Two Owners
+        </button>
+      </div>
+
+      <!-- Compare Panel (hidden until toggled) -->
+      <div id="compare-panel" style="display:none;margin-top:14px;padding:14px 18px;background:var(--bg-primary);border-radius:var(--radius-md);border:1px solid var(--border)">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:12px">
+          <span style="font-size:0.82rem;font-weight:700;color:var(--text-secondary)">Compare:</span>
+          <select id="compare-owner-a" class="filter-select">
+            <option value="">Select Owner A…</option>
+          </select>
+          <span style="color:var(--text-muted);font-weight:600">↔</span>
+          <select id="compare-owner-b" class="filter-select">
+            <option value="">Select Owner B…</option>
+          </select>
+          <button id="compare-run-btn" class="btn btn-primary btn-sm" disabled>View Trades</button>
+          <button id="compare-close-btn" class="btn btn-ghost btn-sm">✕</button>
+        </div>
+        <p id="compare-summary" style="margin-top:8px;font-size:0.8rem;color:var(--text-muted)"></p>
+      </div>
+    </div>
+
+    <!-- Chart 1: Trades Per Owner -->
+    <div class="chart-section">
+      <h2>Trade Participation by Owner</h2>
+      <p class="chart-description">Total trade events each owner participated in. Click a bar to filter all charts to that owner.</p>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-per-owner"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-per-owner"></p>
+    </div>
+
+    <!-- Chart 2: Trade Partner Matrix -->
+    <div class="chart-section">
+      <h2>Trade Partner Matrix</h2>
+      <p class="chart-description">How many times each pair of owners has traded. Hover for exact counts, click for trade list.</p>
+      <div class="d3-container" id="chart-matrix-d3" style="min-height:260px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+      <p class="chart-insight" id="insight-matrix"></p>
+    </div>
+
+    <!-- Chart 3: Trade Network -->
+    <div class="chart-section">
+      <h2>Trade Network</h2>
+      <p class="chart-description">Force-directed graph of trade relationships. Node size = total volume. Drag nodes to explore. Hover for details.</p>
+      <div class="d3-container" id="chart-network-d3" style="min-height:400px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+      <p class="chart-insight" id="insight-network"></p>
+    </div>
+
+    <!-- Chart 4: Timeline -->
+    <div class="chart-section">
+      <h2>Trade Activity Timeline</h2>
+      <p class="chart-description">Monthly trade volume across all seasons. Hover for exact counts.</p>
+      <div class="chart-wrapper" style="height:240px">
+        <canvas id="chart-timeline"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-timeline"></p>
+    </div>
+
+    <!-- Chart 5: Heatmap -->
+    <div class="chart-section">
+      <h2>Trade Activity Heatmap</h2>
+      <p class="chart-description">Year × Month view of trade frequency. Darker cells = more trades. Hover for exact counts.</p>
+      <div class="d3-container" id="chart-heatmap-d3" style="min-height:200px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+      <p class="chart-insight" id="insight-heatmap"></p>
+    </div>
+
+    <!-- Chart 6: 2-Team vs 3-Team -->
+    <div class="chart-section">
+      <h2>2-Team vs 3-Team Trades Per Season</h2>
+      <p class="chart-description">Breakdown of trade complexity by year.</p>
+      <div class="chart-wrapper" style="height:300px">
+        <canvas id="chart-multiteam"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-multiteam"></p>
+    </div>
+
+    <!-- Chart 7: Volume by Season / Owner -->
+    <div class="chart-section">
+      <h2>Trade Volume Per Owner by Season</h2>
+      <p class="chart-description">How each owner's trade activity has changed year over year.</p>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-vol-season"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-vol-season"></p>
+    </div>
+
+    <!-- Trade Events List -->
+    <div class="chart-section">
+      <h2>Trade Events List</h2>
+      <p class="chart-description">
+        <span id="trade-list-count">Loading…</span> — players shown inline. Click a row for full details &amp; post-trade tenure.
+      </p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="trade-events-table">
+          <thead>
+            <tr>
+              <th style="width:90px">Date</th>
+              <th style="width:160px">Parties</th>
+              <th>Players Traded</th>
+              <th style="width:60px">Type</th>
+              <th style="width:55px">Season</th>
+            </tr>
+          </thead>
+          <tbody id="trade-list-tbody">
+            <tr><td colspan="5" class="text-center text-muted" style="padding:24px">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script src="js/trade_charts.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

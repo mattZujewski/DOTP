@@ -1,0 +1,18 @@
+# Fantrax Tracker Configuration
+# Copy this to config.yaml and fill in your values
+
+# Required: Your Fantrax league ID (from URL)
+league_id: "hzoys3dqm33njr46"
+
+# Required: Your JSESSIONID cookie
+# Get from: Chrome DevTools -> Application -> Cookies -> fantrax.com -> JSESSIONID
+# Note: This expires! Refresh when you get auth errors.
+jsessionid: "YOUR_JSESSIONID_HERE"
+
+# Optional: User Secret ID (from Fantrax profile page)
+# Used for some public API endpoints
+user_secret_id: ""
+
+# Optional settings
+request_delay: 0.5  # Seconds between API calls
+data_root: "fantrax_data"  # Output folder

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Player History — DOTP Dynasty</title>
+  <script>if(localStorage.getItem('dotp_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>⚾ Player History</h1>
+      <p class="subtitle">Roster journeys, ownership flows & tenure across 6 seasons</p>
+    </header>
+
+    <!-- Chart 1: Most Traveled Players -->
+    <div class="chart-section">
+      <h2>Most Traveled Players (Top 20)</h2>
+      <p class="chart-description">Players who have been owned by the most distinct owners. Orange = distinct owners, green = total stints (team renames by same owner don't count as a new owner). Click a bar to see full journey.</p>
+      <div class="chart-wrapper" style="height:520px">
+        <canvas id="chart-most-traveled"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-most-traveled"></p>
+    </div>
+
+    <!-- Chart 2: Owner Throughput -->
+    <div class="chart-section">
+      <h2>Roster Turnover — Unique Players Per Owner</h2>
+      <p class="chart-description">How many unique players have ever appeared on each owner's roster across all seasons. High counts reflect active waiver/trade activity. Click a bar to jump to that owner's Team View.</p>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-throughput"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-throughput"></p>
+    </div>
+
+    <!-- Chart 3: Ownership Flow Network -->
+    <div class="chart-section">
+      <h2>Player Ownership Flow Network</h2>
+      <p class="chart-description">Directed graph showing how players move between owners. Arrow direction = player movement. Thickness = number of distinct players transferred. Drag nodes to explore.</p>
+      <div class="d3-container" id="chart-flow-d3" style="min-height:480px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+      <p class="chart-insight" id="insight-flow"></p>
+    </div>
+
+    <!-- Chart 4: Acquisition Breakdown -->
+    <div class="chart-section">
+      <h2>Roster Building Style by Owner</h2>
+      <p class="chart-description">How each owner builds their roster — through keeping, waiver claims, trades, or drafts.</p>
+      <div class="filter-bar">
+        <label>Owner:</label>
+        <select id="acq-owner-filter" class="filter-select"></select>
+      </div>
+      <div class="chart-wrapper" style="height:380px">
+        <canvas id="chart-acq-breakdown"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-acq"></p>
+    </div>
+
+    <!-- Chart 5: Roster Composition -->
+    <div class="chart-section">
+      <h2>Current Roster Composition (2026)</h2>
+      <p class="chart-description">Breakdown of roster slots by status for each team. Click a donut to jump to that team's view.</p>
+      <div id="chart-roster-composition" style="min-height:200px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+      <p class="chart-insight" id="insight-roster-comp"></p>
+    </div>
+
+    <!-- Chart 6: Tenure Distribution -->
+    <div class="chart-section">
+      <h2>Player Tenure Distribution</h2>
+      <p class="chart-description">How long players stay on a roster. Left: frequency histogram of all completed stints. Right: Q1–Q3 range by acquisition method (hover for median & extremes).</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="chart-tenure-hist"></canvas>
+        </div>
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="chart-tenure-box"></canvas>
+        </div>
+      </div>
+      <p class="chart-insight" id="insight-tenure"></p>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script src="js/player_charts.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

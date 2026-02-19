@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Standings — DOTP Dynasty</title>
+  <script>if(localStorage.getItem('dotp_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>🏆 League Standings &amp; Stats</h1>
+      <p class="subtitle">All-time dynasty stats · Season history · Owner profiles</p>
+    </header>
+
+    <!-- Season filter -->
+    <div class="chart-section" style="padding:16px 24px">
+      <div class="filter-bar" id="season-filter-bar">
+        <label>Season:</label>
+        <div class="loading-spinner" style="height:34px"><div class="spinner"></div></div>
+      </div>
+      <div id="season-context" style="font-size:0.82rem;color:var(--text-muted);margin-top:8px"></div>
+    </div>
+
+    <!-- All-time / Season standings table -->
+    <div class="chart-section">
+      <h2 id="standings-table-title">All-Time Owner Stats</h2>
+      <p class="chart-description" id="standings-table-desc">
+        Summary stats per owner across all seasons. Click a column header to sort. Click a row to go to Team View.
+      </p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="standings-table">
+          <thead id="standings-thead"></thead>
+          <tbody id="standings-tbody">
+            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Chart: Unique players per season -->
+    <div class="chart-section">
+      <h2>Roster Churn — Unique Players per Owner</h2>
+      <p class="chart-description">How many distinct players each owner has rostered. Filtered by selected season (or all-time).</p>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-players-bar"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-players-bar"></p>
+    </div>
+
+    <!-- Chart: Trade activity by season -->
+    <div class="chart-section">
+      <h2>Trade Activity by Owner &amp; Season</h2>
+      <p class="chart-description">Trade participations per owner. Stacked by season when viewing All-Time.</p>
+      <div class="chart-wrapper" style="height:380px">
+        <canvas id="chart-trades-owner"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-trades-owner"></p>
+    </div>
+
+    <!-- Chart: Median player tenure -->
+    <div class="chart-section">
+      <h2>Median Player Tenure by Owner</h2>
+      <p class="chart-description">How long (in days) players typically stay on each owner's roster. Higher = more stable roster.</p>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-tenure-owner"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-tenure-owner"></p>
+    </div>
+
+    <!-- Season History Grid -->
+    <div class="chart-section">
+      <h2>Season Team Name History</h2>
+      <p class="chart-description">Every owner's team name for each season (2021–2026). Click a cell to jump to that owner's Team View.</p>
+      <div id="season-history-grid" style="min-height:200px">
+        <div class="loading-spinner"><div class="spinner"></div></div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script src="js/standings_charts.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

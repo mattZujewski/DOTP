@@ -1,0 +1,507 @@
+{
+  "meta": {
+    "generated_at": "2026-02-19T07:06:36.727451Z",
+    "league_name": "Ducks on the Pond Dynasty",
+    "total_trade_events": 352,
+    "total_unique_players": 564,
+    "total_owners": 12,
+    "seasons": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "owners": [
+    {
+      "username": "Beim",
+      "real_name": "Alex Beim",
+      "current_team": "The Undisputed ERA",
+      "color_index": 0,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Hold Me Closer, Ohtani Dancer"
+        },
+        {
+          "season": 2022,
+          "team_name": "The Manbolorians"
+        },
+        {
+          "season": 2023,
+          "team_name": "The Cole Train"
+        },
+        {
+          "season": 2024,
+          "team_name": "Acu\u00f1a Matata"
+        },
+        {
+          "season": 2025,
+          "team_name": "Hold Me Closer, Ohtani Dancer"
+        },
+        {
+          "season": 2026,
+          "team_name": "The Undisputed ERA"
+        }
+      ],
+      "stats": {
+        "total_trades": 30,
+        "unique_players_rostered": 98,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 7,
+        "median_player_tenure_days": 213.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "dturls55",
+      "real_name": "David Turley",
+      "current_team": "Yoshi's Riland",
+      "color_index": 1,
+      "history": [
+        {
+          "season": 2020,
+          "team_name": "Kershawshank Redemption"
+        },
+        {
+          "season": 2021,
+          "team_name": "Ward Of The Rings"
+        },
+        {
+          "season": 2022,
+          "team_name": "Ranger Things"
+        },
+        {
+          "season": 2023,
+          "team_name": "Lux Luthors"
+        },
+        {
+          "season": 2024,
+          "team_name": "Seage(r) Miller Band"
+        },
+        {
+          "season": 2025,
+          "team_name": "Yoshi's Riland"
+        },
+        {
+          "season": 2026,
+          "team_name": "Yoshi's Riland"
+        }
+      ],
+      "stats": {
+        "total_trades": 72,
+        "unique_players_rostered": 152,
+        "most_traded_with": "Reed Heim",
+        "most_traded_with_count": 11,
+        "median_player_tenure_days": 103.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "esoraci",
+      "real_name": "Evan Soraci",
+      "current_team": "The Roman Empire",
+      "color_index": 2,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "The Kirby Superstars"
+        },
+        {
+          "season": 2022,
+          "team_name": "Power Troutage"
+        },
+        {
+          "season": 2023,
+          "team_name": "The Wuhan BatEaters"
+        },
+        {
+          "season": 2024,
+          "team_name": "The 430 Million Dollar Man"
+        },
+        {
+          "season": 2025,
+          "team_name": "The Kirby Superstars"
+        },
+        {
+          "season": 2026,
+          "team_name": "The Roman Empire"
+        }
+      ],
+      "stats": {
+        "total_trades": 41,
+        "unique_players_rostered": 110,
+        "most_traded_with": "Reed Heim",
+        "most_traded_with_count": 9,
+        "median_player_tenure_days": 213.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "Jookuh",
+      "real_name": "Jack Dunne",
+      "current_team": "Wallace & deGromit",
+      "color_index": 3,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Booze Cruz"
+        },
+        {
+          "season": 2022,
+          "team_name": "Petey Blinders"
+        },
+        {
+          "season": 2023,
+          "team_name": "Richmond Mazers"
+        },
+        {
+          "season": 2024,
+          "team_name": "Richmond Mazers"
+        },
+        {
+          "season": 2025,
+          "team_name": "The Wire Nation"
+        },
+        {
+          "season": 2026,
+          "team_name": "Wallace & deGromit"
+        }
+      ],
+      "stats": {
+        "total_trades": 133,
+        "unique_players_rostered": 197,
+        "most_traded_with": "Reed Heim",
+        "most_traded_with_count": 26,
+        "median_player_tenure_days": 94.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "sfgiant",
+      "real_name": "Jason Bartolini",
+      "current_team": "Gho-Strider",
+      "color_index": 4,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "The J-Rod Squad"
+        },
+        {
+          "season": 2022,
+          "team_name": "The Riley Reid's"
+        },
+        {
+          "season": 2023,
+          "team_name": "Waiting for Cespedes"
+        },
+        {
+          "season": 2024,
+          "team_name": "Waiting for Cespedes"
+        },
+        {
+          "season": 2025,
+          "team_name": "Gho-Strider"
+        },
+        {
+          "season": 2026,
+          "team_name": "Gho-Strider"
+        }
+      ],
+      "stats": {
+        "total_trades": 42,
+        "unique_players_rostered": 90,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 12,
+        "median_player_tenure_days": 241.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "Jpapula",
+      "real_name": "Jordan Papula",
+      "current_team": "Mojo Dojo Casas House",
+      "color_index": 6,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Attack of the Crons"
+        },
+        {
+          "season": 2022,
+          "team_name": "The Phamtom Menace"
+        },
+        {
+          "season": 2023,
+          "team_name": "Bay of Puigs"
+        },
+        {
+          "season": 2024,
+          "team_name": "Bay of Puigs"
+        },
+        {
+          "season": 2025,
+          "team_name": "Mojo Dojo Casas House"
+        },
+        {
+          "season": 2026,
+          "team_name": "Mojo Dojo Casas House"
+        }
+      ],
+      "stats": {
+        "total_trades": 41,
+        "unique_players_rostered": 122,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 14,
+        "median_player_tenure_days": 202.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "Jgchope",
+      "real_name": "Jose Garcia-Chope",
+      "current_team": "Rates & Carrolls",
+      "color_index": 5,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "The KamikOzzie's"
+        },
+        {
+          "season": 2022,
+          "team_name": "Shark(are)nado"
+        },
+        {
+          "season": 2023,
+          "team_name": "Shark(are)nado"
+        },
+        {
+          "season": 2024,
+          "team_name": "Shark(are)nado"
+        },
+        {
+          "season": 2025,
+          "team_name": "Rates & Carrolls"
+        },
+        {
+          "season": 2026,
+          "team_name": "Rates & Carrolls"
+        }
+      ],
+      "stats": {
+        "total_trades": 35,
+        "unique_players_rostered": 118,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 9,
+        "median_player_tenure_days": 188.5,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "lpburns",
+      "real_name": "Liam Burns",
+      "current_team": "Boot & Raleigh",
+      "color_index": 7,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Sohto League Champions"
+        },
+        {
+          "season": 2022,
+          "team_name": "Sohto League Champions"
+        },
+        {
+          "season": 2023,
+          "team_name": "Soto's Johto League Champions"
+        },
+        {
+          "season": 2024,
+          "team_name": "Everybody Loves Ramon"
+        },
+        {
+          "season": 2025,
+          "team_name": "Boot & Raleigh"
+        },
+        {
+          "season": 2026,
+          "team_name": "Boot & Raleigh"
+        }
+      ],
+      "stats": {
+        "total_trades": 79,
+        "unique_players_rostered": 166,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 19,
+        "median_player_tenure_days": 117.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "MattZujewski",
+      "real_name": "Matthew Zujewski",
+      "current_team": "Top Gunnar",
+      "color_index": 8,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Jung Gunnars"
+        },
+        {
+          "season": 2022,
+          "team_name": "Purple Hayes"
+        },
+        {
+          "season": 2023,
+          "team_name": "The Juice is Loose"
+        },
+        {
+          "season": 2024,
+          "team_name": "My Team is Better Than Reed's"
+        },
+        {
+          "season": 2025,
+          "team_name": "Quentin Pasquantino"
+        },
+        {
+          "season": 2026,
+          "team_name": "Top Gunnar"
+        }
+      ],
+      "stats": {
+        "total_trades": 32,
+        "unique_players_rostered": 91,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 11,
+        "median_player_tenure_days": 273.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "owenhern",
+      "real_name": "Owen Hern",
+      "current_team": "The Juan-Binary Murderers' Row",
+      "color_index": 9,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "DJ LeMachine"
+        },
+        {
+          "season": 2022,
+          "team_name": "DJ LeMachine"
+        },
+        {
+          "season": 2023,
+          "team_name": "DJ LeMachine"
+        },
+        {
+          "season": 2024,
+          "team_name": "DJ LeMachine"
+        },
+        {
+          "season": 2025,
+          "team_name": "The New Murderers' Row"
+        },
+        {
+          "season": 2026,
+          "team_name": "The Juan-Binary Murderers' Row"
+        }
+      ],
+      "stats": {
+        "total_trades": 34,
+        "unique_players_rostered": 98,
+        "most_traded_with": "David Turley",
+        "most_traded_with_count": 9,
+        "median_player_tenure_days": 213.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "rheim",
+      "real_name": "Reed Heim",
+      "current_team": "Reed's Trading Post",
+      "color_index": 10,
+      "history": [
+        {
+          "season": 2021,
+          "team_name": "Heimlich Maneuver"
+        },
+        {
+          "season": 2022,
+          "team_name": "If You Give a Mouse a Mookie"
+        },
+        {
+          "season": 2023,
+          "team_name": "Lil' Tikes"
+        },
+        {
+          "season": 2024,
+          "team_name": "Lil' Tikes"
+        },
+        {
+          "season": 2025,
+          "team_name": "Heimlich Maneuver"
+        },
+        {
+          "season": 2026,
+          "team_name": "Reed's Trading Post"
+        }
+      ],
+      "stats": {
+        "total_trades": 106,
+        "unique_players_rostered": 198,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 26,
+        "median_player_tenure_days": 94.0,
+        "most_common_acquisition": "KEPT"
+      }
+    },
+    {
+      "username": "trentradding",
+      "real_name": "Trent Radding",
+      "current_team": "Partially Torked",
+      "color_index": 11,
+      "history": [
+        {
+          "season": 2020,
+          "team_name": "Team CarmenCiardiello"
+        },
+        {
+          "season": 2021,
+          "team_name": "Turner Burners"
+        },
+        {
+          "season": 2022,
+          "team_name": "Fully Torked"
+        },
+        {
+          "season": 2023,
+          "team_name": "Championship or Bust (2021)"
+        },
+        {
+          "season": 2024,
+          "team_name": "A Few Jung Men"
+        },
+        {
+          "season": 2025,
+          "team_name": "A Few Jung Men"
+        },
+        {
+          "season": 2026,
+          "team_name": "Partially Torked"
+        }
+      ],
+      "stats": {
+        "total_trades": 64,
+        "unique_players_rostered": 151,
+        "most_traded_with": "Jack Dunne",
+        "most_traded_with_count": 14,
+        "median_player_tenure_days": 117.0,
+        "most_common_acquisition": "KEPT"
+      }
+    }
+  ]
+}
