@@ -17,6 +17,7 @@
       D.loadJSON('data/journeys.json'),
       D.loadJSON('data/trades.json'),
       D.loadJSON('data/standings.json'),
+      document.fonts.ready,
     ]);
   } catch (e) {
     document.getElementById('team-content').innerHTML =

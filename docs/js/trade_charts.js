@@ -21,6 +21,7 @@
       D.loadJSON('data/teams.json'),
       D.loadJSON('data/journeys.json'),
     ]);
+    await document.fonts.ready;
   } catch (e) {
     document.body.innerHTML += `<div class="error-msg" style="margin:40px auto;max-width:600px">
       ⚠ Failed to load data. Run <code>python build_dashboard.py</code> first.<br>${e.message}

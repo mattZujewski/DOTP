@@ -15,6 +15,7 @@
       D.loadJSON('data/journeys.json'),
       D.loadJSON('data/trades.json'),
       D.loadJSON('data/standings.json'),
+      document.fonts.ready,
     ]);
   } catch (e) {
     document.body.innerHTML += `<div class="error-msg" style="margin:40px auto;max-width:600px">

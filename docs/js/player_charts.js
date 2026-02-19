@@ -13,6 +13,7 @@
     [journeysData, teamsData] = await Promise.all([
       D.loadJSON('data/journeys.json'),
       D.loadJSON('data/teams.json'),
+      document.fonts.ready,
     ]);
   } catch (e) {
     document.body.innerHTML += `<div class="error-msg" style="margin:40px auto;max-width:600px">

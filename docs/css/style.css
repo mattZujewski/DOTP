@@ -297,17 +297,14 @@ html.dark .dashboard-card .card-tag {
   line-height: 1.5;
 }
 
-/* Chart wrapper: fixed pixel height via inline style, canvas fills it */
+/* Chart wrapper: height set via inline style="height:Xpx" on the div */
 .chart-wrapper {
-  position: relative;
   width: 100%;
   /* height set via inline style="height:Xpx" on the div */
 }
 .chart-wrapper canvas {
-  position: absolute;
-  top: 0; left: 0;
+  display: block;
   width: 100% !important;
-  height: 100% !important;
 }
 
 .chart-insight {
