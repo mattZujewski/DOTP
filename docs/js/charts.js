@@ -96,9 +96,8 @@ window.DOTP = window.DOTP || {};
   document.addEventListener('themechange', applyChartDefaults);
 
   // ── Standard chart options factories ───────────────────────────
-  function horizontalBarOptions({ title, xLabel, yLabel, indexAxis = 'y' } = {}) {
+  function horizontalBarOptions({ title, xLabel, yLabel } = {}) {
     return {
-      indexAxis,
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
@@ -106,13 +105,13 @@ window.DOTP = window.DOTP || {};
         title: title ? { display: true, text: title, font: { size: 14, weight: '700' }, padding: { bottom: 12 } } : { display: false },
         tooltip: {
           callbacks: {
-            label: (ctx) => ` ${ctx.parsed.x ?? ctx.parsed.y}`,
+            label: (ctx) => ` ${ctx.parsed.y ?? ctx.parsed.x}`,
           },
         },
       },
       scales: {
-        x: { grid: { drawBorder: false }, title: xLabel ? { display: true, text: xLabel } : { display: false } },
-        y: { grid: { display: false },   title: yLabel ? { display: true, text: yLabel } : { display: false } },
+        x: { grid: { display: false }, ticks: { maxRotation: 35, font: { size: 11 } }, title: xLabel ? { display: true, text: xLabel } : { display: false } },
+        y: { beginAtZero: true, grid: { drawBorder: false }, title: yLabel ? { display: true, text: yLabel } : { display: false } },
       },
     };
   }

@@ -52,7 +52,10 @@
     }
   }
 
-  // Apply before each chart is initialized
+  // Try to apply immediately (scales may already be registered)
+  patchFit();
+
+  // Also hook Chart constructor in case scales register after this script runs
   const origInit = Chart.prototype.initialize;
   if (origInit) {
     Chart.prototype.initialize = function () {

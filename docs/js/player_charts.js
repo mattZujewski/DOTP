@@ -59,7 +59,6 @@
         ],
       },
       options: {
-        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
@@ -75,8 +74,8 @@
           },
         },
         scales: {
-          x: { beginAtZero: true, ticks: { precision: 0 } },
-          y: { grid: { display: false } },
+          x: { grid: { display: false }, ticks: { maxRotation: 35, font: { size: 10 } } },
+          y: { beginAtZero: true, ticks: { precision: 0 } },
         },
         onClick: (_, els) => {
           if (!els.length) return;
@@ -118,14 +117,13 @@
         }],
       },
       options: {
-        indexAxis: 'y',
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (ctx) => ` ${ctx.parsed.x} unique players`,
+              label: (ctx) => ` ${ctx.parsed.y} unique players`,
               afterBody: (items) => {
                 const o = labels[items[0].dataIndex];
                 const d = throughput[o];
@@ -137,8 +135,8 @@
           },
         },
         scales: {
-          x: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Unique Players Ever Rostered' } },
-          y: { grid: { display: false } },
+          x: { grid: { display: false }, ticks: { maxRotation: 35, font: { size: 11 } } },
+          y: { beginAtZero: true, ticks: { precision: 0 }, title: { display: true, text: 'Unique Players Ever Rostered' } },
         },
         onClick: (_, els) => {
           if (!els.length) return;
@@ -292,11 +290,11 @@
       }
       if (!entries.length) return;
 
-      // Sort by total acquisitions ascending (so largest bar is at top)
+      // Sort by total acquisitions descending (so largest bar is first/tallest)
       entries.sort((a,b) => {
         const ta = Object.values(a[1].acquisition_breakdown||{}).reduce((s,v)=>s+v,0);
         const tb = Object.values(b[1].acquisition_breakdown||{}).reduce((s,v)=>s+v,0);
-        return ta - tb;
+        return tb - ta;
       });
 
       const labels = entries.map(([o]) => o);
@@ -315,19 +313,18 @@
           })),
         },
         options: {
-          indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
           plugins: { legend: { display: true } },
           scales: {
-            x: { stacked: true, beginAtZero: true, title: { display: true, text: 'Roster Acquisitions' } },
-            y: { stacked: true, grid: { display: false }, ticks: { font: { size: 11 } } },
+            x: { stacked: true, grid: { display: false }, ticks: { maxRotation: 35, font: { size: 11 } } },
+            y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Roster Acquisitions' } },
           },
         },
       });
 
-      // Insight from highest-total owner
-      const top = entries[entries.length - 1];
+      // Insight from highest-total owner (first after descending sort)
+      const top = entries[0];
       const ab = throughput[top[0]]?.acquisition_breakdown || {};
       const domAcq = acqTypes.reduce((best, a) => (ab[a]||0) > (ab[best]||0) ? a : best, acqTypes[0]);
       document.getElementById('insight-acq').innerHTML =

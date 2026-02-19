@@ -150,7 +150,7 @@
     filteredEvents.forEach(ev => {
       (ev.parties || []).forEach(o => { counts[o] = (counts[o]||0)+1; });
     });
-    const sorted = Object.entries(counts).sort((a,b)=>a[1]-b[1]);
+    const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]);
     const labels = sorted.map(([o])=>o);
     const values = sorted.map(([,v])=>v);
     const bgColors = labels.map(o => activeOwnerFilter === o ? D.ownerColor(o) : D.ownerColorAlpha(o, 0.7));
@@ -164,7 +164,7 @@
         datasets: [{ data: values, backgroundColor: bgColors, borderRadius: 4 }],
       },
       options: {
-        ...D.horizontalBarOptions({ xLabel: 'Trade Events' }),
+        ...D.horizontalBarOptions({ yLabel: 'Trade Events' }),
         onClick: (_, els) => {
           if (!els.length) return;
           const owner = labels[els[0].index];
@@ -175,7 +175,7 @@
     });
 
     // Insight
-    const top = sorted[sorted.length-1];
+    const top = sorted[0];
     document.getElementById('insight-per-owner').innerHTML = top
       ? `<strong>${top[0]}</strong> leads with <strong>${top[1]}</strong> trade participations.
          Click a bar to filter all charts to that owner.`
