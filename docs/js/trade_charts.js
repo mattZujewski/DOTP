@@ -640,30 +640,53 @@
         ? '<span class="badge badge-3team">3-Team</span>'
         : '<span class="badge badge-2team">2-Team</span>';
 
-      // Build inline player pills using assets_by_party
+      // BUG-03: Build separate Sent and Received cells.
+      // For 2-team trades: show from Party A's perspective (sent → received).
+      // For 3-team trades: list each owner's sent and received stacked.
       const hasAssets = ev.assets_by_party && Object.keys(ev.assets_by_party).length > 0;
-      let playersCells = '';
+
+      const makePills = (players, receivingOwner) => players.map(p => {
+        const t = receivingOwner ? postTradeTenure(p, receivingOwner, ev.date_iso || '') : null;
+        const tenure = t
+          ? `<span style="color:var(--text-muted);font-size:0.7rem;margin-left:2px">${t.isCurrent ? '★' : t.days + 'd'}</span>`
+          : '';
+        return `<span style="display:inline-flex;align-items:center;background:var(--bg-primary);border:1px solid var(--border);border-radius:10px;padding:1px 6px;font-size:0.74rem;margin:1px;white-space:nowrap">${p}${tenure}</span>`;
+      }).join('');
+
+      let sentCell = '', receivedCell = '';
 
       if (hasAssets) {
-        // Show what each owner RECEIVED (= what others sent to them)
-        playersCells = (ev.parties || []).map(owner => {
-          const received = getPlayersReceivedByOwner(ev, owner);
-          if (!received.length) return '';
-          const dot = `<span style="width:8px;height:8px;border-radius:50%;background:${D.ownerColor(owner)};display:inline-block;margin-right:3px;flex-shrink:0"></span>`;
-          const pills = received.map(p => {
-            const t = postTradeTenure(p, owner, ev.date_iso || '');
-            const tenure = t
-              ? `<span style="color:var(--text-muted);font-size:0.7rem;margin-left:2px">${t.isCurrent ? '★' : t.days + 'd'}</span>`
-              : '';
-            return `<span style="display:inline-flex;align-items:center;background:var(--bg-primary);border:1px solid var(--border);border-radius:10px;padding:1px 6px;font-size:0.74rem;margin:1px;white-space:nowrap">${p}${tenure}</span>`;
-          }).join('');
-          return `<div style="display:flex;align-items:center;flex-wrap:wrap;gap:1px;margin:1px 0">${dot}${pills}</div>`;
-        }).filter(Boolean).join('');
+        const parties = ev.parties || [];
+        if (ev.party_count >= 3) {
+          // 3-team: show one line per owner with their color dot
+          sentCell = parties.map(owner => {
+            const sent = getPlayersSentByOwner(ev, owner);
+            if (!sent.length) return '';
+            const dot = `<span style="width:7px;height:7px;border-radius:50%;background:${D.ownerColor(owner)};display:inline-block;margin-right:3px;flex-shrink:0"></span>`;
+            return `<div style="display:flex;align-items:center;flex-wrap:wrap;gap:1px;margin:1px 0">${dot}${makePills(sent, null)}</div>`;
+          }).filter(Boolean).join('');
+          receivedCell = parties.map(owner => {
+            const received = getPlayersReceivedByOwner(ev, owner);
+            if (!received.length) return '';
+            const dot = `<span style="width:7px;height:7px;border-radius:50%;background:${D.ownerColor(owner)};display:inline-block;margin-right:3px;flex-shrink:0"></span>`;
+            return `<div style="display:flex;align-items:center;flex-wrap:wrap;gap:1px;margin:1px 0">${dot}${makePills(received, owner)}</div>`;
+          }).filter(Boolean).join('');
+        } else {
+          // 2-team: use first party as the reference perspective
+          const partyA = parties[0];
+          const partyB = parties[1];
+          const sent     = partyA ? getPlayersSentByOwner(ev, partyA)     : [];
+          const received = partyA ? getPlayersReceivedByOwner(ev, partyA) : [];
+          sentCell     = sent.length     ? makePills(sent, partyB)     : '';
+          receivedCell = received.length ? makePills(received, partyA) : '';
+        }
       }
 
-      if (!playersCells) {
-        const raw = (ev.details_raw || '').slice(0, 110);
-        playersCells = `<span style="font-size:0.74rem;color:var(--text-muted)">${raw}${(ev.details_raw?.length || 0) > 110 ? '…' : ''}</span>`;
+      if (!sentCell && !receivedCell) {
+        const raw = (ev.details_raw || '').slice(0, 80);
+        const fallback = `<span style="font-size:0.74rem;color:var(--text-muted)">${raw}${(ev.details_raw?.length || 0) > 80 ? '…' : ''}</span>`;
+        sentCell = fallback;
+        receivedCell = '';
       }
 
       const ownerDots = (ev.parties || []).map(p =>
@@ -675,7 +698,8 @@
       return `<tr class="clickable" data-idx="${i}">
         <td style="white-space:nowrap;font-size:0.8rem">${ev.date||'—'}</td>
         <td>${ownerDots}</td>
-        <td>${playersCells}</td>
+        <td>${sentCell}</td>
+        <td>${receivedCell}</td>
         <td>${typeBadge}</td>
         <td style="text-align:center;font-size:0.8rem">${ev.year||'—'}</td>
       </tr>`;
