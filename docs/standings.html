@@ -15,7 +15,7 @@
   <main class="page-container">
     <header class="page-header">
       <h1>🏆 League Standings &amp; Stats</h1>
-      <p class="subtitle">All-time dynasty stats · Season history · Owner profiles</p>
+      <p class="subtitle">All-time rotisserie standings · Season-by-season · Fantrax live data</p>
     </header>
 
     <!-- Season filter -->
@@ -37,9 +37,28 @@
         <table class="data-table" id="standings-table">
           <thead id="standings-thead"></thead>
           <tbody id="standings-tbody">
-            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading…</td></tr>
+            <tr><td colspan="12" class="text-center text-muted" style="padding:24px">Loading…</td></tr>
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <!-- Chart: Roto Points by Owner -->
+    <div class="chart-section">
+      <h2>Rotisserie Points by Owner</h2>
+      <p class="chart-description">Roto points earned per owner. All-time view stacks each season's contribution. Click a year season filter to see that year's standings.</p>
+      <div class="chart-wrapper">
+        <canvas id="chart-pts-rank" height="340"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-pts-rank"></p>
+    </div>
+
+    <!-- Chart: HR / RBI / SB counting stats -->
+    <div class="chart-section">
+      <h2>Hitting Stats — HR, RBI, SB</h2>
+      <p class="chart-description">Cumulative (all-time) or single-season hitting counting stats per owner/team. Sorted by standings rank.</p>
+      <div class="chart-wrapper">
+        <canvas id="chart-stat-rankings" height="320"></canvas>
       </div>
     </div>
 
@@ -76,7 +95,7 @@
     <!-- Season History Grid -->
     <div class="chart-section">
       <h2>Season Team Name History</h2>
-      <p class="chart-description">Every owner's team name for each season (2021–2026). Click a cell to jump to that owner's Team View.</p>
+      <p class="chart-description">Every owner's team name for each season (2021–2026) with final rank and Roto points. Click a cell to jump to that owner's Team View.</p>
       <div id="season-history-grid" style="min-height:200px">
         <div class="loading-spinner"><div class="spinner"></div></div>
       </div>
