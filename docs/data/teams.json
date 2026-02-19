@@ -1,11 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T07:38:30.391864Z",
+    "generated_at": "2026-02-19T14:22:42.388487Z",
     "league_name": "Ducks on the Pond Dynasty",
     "total_trade_events": 352,
     "total_unique_players": 564,
     "total_owners": 12,
     "seasons": [
+      2019,
+      2020,
       2021,
       2022,
       2023,
@@ -21,6 +23,14 @@
       "current_team": "The Undisputed ERA",
       "color_index": 0,
       "history": [
+        {
+          "season": 2019,
+          "team_name": "Acu\u00f1a Matata"
+        },
+        {
+          "season": 2020,
+          "team_name": "The Cole Train"
+        },
         {
           "season": 2021,
           "team_name": "Hold Me Closer, Ohtani Dancer"
@@ -62,8 +72,12 @@
       "color_index": 1,
       "history": [
         {
+          "season": 2019,
+          "team_name": "Seage(r) Miller Band"
+        },
+        {
           "season": 2020,
-          "team_name": "Kershawshank Redemption"
+          "team_name": "Lux Luthors"
         },
         {
           "season": 2021,
@@ -106,6 +120,14 @@
       "color_index": 2,
       "history": [
         {
+          "season": 2019,
+          "team_name": "The 430 Million Dollar Man"
+        },
+        {
+          "season": 2020,
+          "team_name": "The Wuhan BatEaters"
+        },
+        {
           "season": 2021,
           "team_name": "The Kirby Superstars"
         },
@@ -145,6 +167,14 @@
       "current_team": "Wallace & deGromit",
       "color_index": 3,
       "history": [
+        {
+          "season": 2019,
+          "team_name": "Richmond Mazers"
+        },
+        {
+          "season": 2020,
+          "team_name": "Richmond Mazers"
+        },
         {
           "season": 2021,
           "team_name": "Booze Cruz"
@@ -186,6 +216,14 @@
       "color_index": 4,
       "history": [
         {
+          "season": 2019,
+          "team_name": "Waiting for Cespedes"
+        },
+        {
+          "season": 2020,
+          "team_name": "The Riley Reid's"
+        },
+        {
           "season": 2021,
           "team_name": "The J-Rod Squad"
         },
@@ -225,6 +263,14 @@
       "current_team": "Mojo Dojo Casas House",
       "color_index": 6,
       "history": [
+        {
+          "season": 2019,
+          "team_name": "Bay of Puigs"
+        },
+        {
+          "season": 2020,
+          "team_name": "The Phamtom Menace"
+        },
         {
           "season": 2021,
           "team_name": "Attack of the Crons"
@@ -266,6 +312,14 @@
       "color_index": 5,
       "history": [
         {
+          "season": 2019,
+          "team_name": "Shark(are)nado"
+        },
+        {
+          "season": 2020,
+          "team_name": "Shark(are)nado"
+        },
+        {
           "season": 2021,
           "team_name": "The KamikOzzie's"
         },
@@ -305,6 +359,14 @@
       "current_team": "Boot & Raleigh",
       "color_index": 7,
       "history": [
+        {
+          "season": 2019,
+          "team_name": "Everybody Loves Ramon"
+        },
+        {
+          "season": 2020,
+          "team_name": "Soto's Johto League Champions"
+        },
         {
           "season": 2021,
           "team_name": "Sohto League Champions"
@@ -346,6 +408,14 @@
       "color_index": 8,
       "history": [
         {
+          "season": 2019,
+          "team_name": "My Team is Better Than Reed's"
+        },
+        {
+          "season": 2020,
+          "team_name": "The Juice is Loose"
+        },
+        {
           "season": 2021,
           "team_name": "Jung Gunnars"
         },
@@ -385,6 +455,14 @@
       "current_team": "The Juan-Binary Murderers' Row",
       "color_index": 9,
       "history": [
+        {
+          "season": 2019,
+          "team_name": "DJ LeMachine"
+        },
+        {
+          "season": 2020,
+          "team_name": "DJ LeMachine"
+        },
         {
           "season": 2021,
           "team_name": "DJ LeMachine"
@@ -426,6 +504,14 @@
       "color_index": 10,
       "history": [
         {
+          "season": 2019,
+          "team_name": "Lil' Tikes"
+        },
+        {
+          "season": 2020,
+          "team_name": "If You Give a Mouse a Mookie"
+        },
+        {
           "season": 2021,
           "team_name": "Heimlich Maneuver"
         },
@@ -466,8 +552,12 @@
       "color_index": 11,
       "history": [
         {
-          "season": 2020,
+          "season": 2019,
           "team_name": "Team CarmenCiardiello"
+        },
+        {
+          "season": 2020,
+          "team_name": "Championship or Bust (2021)"
         },
         {
           "season": 2021,

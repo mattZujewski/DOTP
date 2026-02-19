@@ -209,8 +209,6 @@
       const rows = alltimeStandings.map(o => {
         const dot = `<span style="width:10px;height:10px;border-radius:50%;background:${D.ownerColor(o.owner_real_name)};display:inline-block;margin-right:6px;flex-shrink:0"></span>`;
         const medal = o.alltime_rank === 1 ? '🥇' : o.alltime_rank === 2 ? '🥈' : o.alltime_rank === 3 ? '🥉' : '';
-        // Pre-tracker championships (before 2021 league tracking)
-        const preTrackerTitle = o.owner_real_name === 'Matthew Zujewski' ? ' <span title="🏆 Champion 2019 (pre-tracker)" style="font-size:0.75rem;opacity:0.7;cursor:help">🏆\'19</span>' : '';
         const bestStr = o.best_rank ? `#${o.best_rank} (${o.best_season})` : '—';
         return `<tr class="clickable"
             data-rank="${o.alltime_rank}" data-name="${o.owner_real_name}"
@@ -221,7 +219,7 @@
             data-era="${o.avg_era || 999}" data-obp="${o.avg_obp || 0}"
             onclick="window.location.href='team.html?owner=${encodeURIComponent(o.owner_real_name)}'">
           <td style="text-align:right;font-weight:700;color:var(--text-muted)">${medal || o.alltime_rank}</td>
-          <td><div style="display:flex;align-items:center">${dot}<strong>${o.owner_real_name}</strong>${preTrackerTitle}</div></td>
+          <td><div style="display:flex;align-items:center">${dot}<strong>${o.owner_real_name}</strong></div></td>
           <td style="text-align:right">${o.seasons_played}</td>
           <td style="text-align:right;font-weight:700;color:var(--brand-green)">${fmt(o.total_pts, 1)}</td>
           <td style="text-align:right;color:var(--text-secondary)">${fmt(o.avg_pts_per_season, 1)}</td>
@@ -312,6 +310,8 @@
       const ownersSorted = [...alltimeStandings].sort((a, b) => b.total_pts - a.total_pts);
 
       const seasonColors = {
+        2019: 'rgba(20,184,166,0.85)',
+        2020: 'rgba(251,146,60,0.85)',
         2021: 'rgba(251,191,36,0.85)',
         2022: 'rgba(74,222,128,0.85)',
         2023: 'rgba(96,165,250,0.85)',

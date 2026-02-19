@@ -35,7 +35,7 @@ import pandas as pd
 MONTH_ORDER = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-SEASONS = [2021, 2022, 2023, 2024, 2025, 2026]
+SEASONS = [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
 
 # Owners in alphabetical real_name order → fixed color index for JS
 OWNERS_ALPHA = [
@@ -59,75 +59,85 @@ OWNER_HISTORY: Dict[str, Dict] = {
         "real_name": "Matthew Zujewski",
         "teams": {2026: "Top Gunnar", 2025: "Quentin Pasquantino",
                   2024: "My Team is Better Than Reed's", 2023: "The Juice is Loose",
-                  2022: "Purple Hayes", 2021: "Jung Gunnars"},
+                  2022: "Purple Hayes", 2021: "Jung Gunnars",
+                  2020: "The Juice is Loose", 2019: "My Team is Better Than Reed's"},
     },
     "lpburns": {
         "real_name": "Liam Burns",
         "teams": {2026: "Boot & Raleigh", 2025: "Boot & Raleigh",
                   2024: "Everybody Loves Ramon", 2023: "Soto's Johto League Champions",
-                  2022: "Sohto League Champions", 2021: "Sohto League Champions"},
+                  2022: "Sohto League Champions", 2021: "Sohto League Champions",
+                  2020: "Soto's Johto League Champions", 2019: "Everybody Loves Ramon"},
     },
     "sfgiant": {
         "real_name": "Jason Bartolini",
         "teams": {2026: "Gho-Strider", 2025: "Gho-Strider",
                   2024: "Waiting for Cespedes", 2023: "Waiting for Cespedes",
-                  2022: "The Riley Reid's", 2021: "The J-Rod Squad"},
+                  2022: "The Riley Reid's", 2021: "The J-Rod Squad",
+                  2020: "The Riley Reid's", 2019: "Waiting for Cespedes"},
     },
     "Jpapula": {
         "real_name": "Jordan Papula",
         "teams": {2026: "Mojo Dojo Casas House", 2025: "Mojo Dojo Casas House",
                   2024: "Bay of Puigs", 2023: "Bay of Puigs",
-                  2022: "The Phamtom Menace", 2021: "Attack of the Crons"},
+                  2022: "The Phamtom Menace", 2021: "Attack of the Crons",
+                  2020: "The Phamtom Menace", 2019: "Bay of Puigs"},
     },
     "trentradding": {
         "real_name": "Trent Radding",
         "teams": {2026: "Partially Torked", 2025: "A Few Jung Men",
                   2024: "A Few Jung Men", 2023: "Championship or Bust (2021)",
                   2022: "Fully Torked", 2021: "Turner Burners",
-                  2020: "Team CarmenCiardiello"},
+                  2020: "Championship or Bust (2021)", 2019: "Team CarmenCiardiello"},
     },
     "Jgchope": {
         "real_name": "Jose Garcia-Chope",
         "teams": {2026: "Rates & Carrolls", 2025: "Rates & Carrolls",
                   2024: "Shark(are)nado", 2023: "Shark(are)nado",
-                  2022: "Shark(are)nado", 2021: "The KamikOzzie's"},
+                  2022: "Shark(are)nado", 2021: "The KamikOzzie's",
+                  2020: "Shark(are)nado", 2019: "Shark(are)nado"},
     },
     "rheim": {
         "real_name": "Reed Heim",
         "teams": {2026: "Reed's Trading Post", 2025: "Heimlich Maneuver",
                   2024: "Lil' Tikes", 2023: "Lil' Tikes",
-                  2022: "If You Give a Mouse a Mookie", 2021: "Heimlich Maneuver"},
+                  2022: "If You Give a Mouse a Mookie", 2021: "Heimlich Maneuver",
+                  2020: "If You Give a Mouse a Mookie", 2019: "Lil' Tikes"},
     },
     "owenhern": {
         "real_name": "Owen Hern",
         "teams": {2026: "The Juan-Binary Murderers' Row", 2025: "The New Murderers' Row",
                   2024: "DJ LeMachine", 2023: "DJ LeMachine",
-                  2022: "DJ LeMachine", 2021: "DJ LeMachine"},
+                  2022: "DJ LeMachine", 2021: "DJ LeMachine",
+                  2020: "DJ LeMachine", 2019: "DJ LeMachine"},
     },
     "esoraci": {
         "real_name": "Evan Soraci",
         "teams": {2026: "The Roman Empire", 2025: "The Kirby Superstars",
                   2024: "The 430 Million Dollar Man", 2023: "The Wuhan BatEaters",
-                  2022: "Power Troutage", 2021: "The Kirby Superstars"},
+                  2022: "Power Troutage", 2021: "The Kirby Superstars",
+                  2020: "The Wuhan BatEaters", 2019: "The 430 Million Dollar Man"},
     },
     "Beim": {
         "real_name": "Alex Beim",
         "teams": {2026: "The Undisputed ERA", 2025: "Hold Me Closer, Ohtani Dancer",
                   2024: "Acuña Matata", 2023: "The Cole Train",
-                  2022: "The Manbolorians", 2021: "Hold Me Closer, Ohtani Dancer"},
+                  2022: "The Manbolorians", 2021: "Hold Me Closer, Ohtani Dancer",
+                  2020: "The Cole Train", 2019: "Acuña Matata"},
     },
     "Jookuh": {
         "real_name": "Jack Dunne",
         "teams": {2026: "Wallace & deGromit", 2025: "The Wire Nation",
                   2024: "Richmond Mazers", 2023: "Richmond Mazers",
-                  2022: "Petey Blinders", 2021: "Booze Cruz"},
+                  2022: "Petey Blinders", 2021: "Booze Cruz",
+                  2020: "Richmond Mazers", 2019: "Richmond Mazers"},
     },
     "dturls55": {
         "real_name": "David Turley",
         "teams": {2026: "Yoshi's Riland", 2025: "Yoshi's Riland",
                   2024: "Seage(r) Miller Band", 2023: "Lux Luthors",
                   2022: "Ranger Things", 2021: "Ward Of The Rings",
-                  2020: "Kershawshank Redemption"},
+                  2020: "Lux Luthors", 2019: "Seage(r) Miller Band"},
     },
 }
 

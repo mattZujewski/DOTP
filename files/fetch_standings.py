@@ -28,6 +28,7 @@ OWNERS = {
             2026: "Top Gunnar", 2025: "Quentin Pasquantino",
             2024: "My Team is Better Than Reed's", 2023: "The Juice is Loose",
             2022: "Purple Hayes", 2021: "Jung Gunnars",
+            2020: "The Juice is Loose", 2019: "My Team is Better Than Reed's",
         },
     },
     "lpburns": {
@@ -36,6 +37,7 @@ OWNERS = {
             2026: "Boot & Raleigh", 2025: "Boot & Raleigh",
             2024: "Everybody Loves Ramon", 2023: "Soto's Johto League Champions",
             2022: "Sohto League Champions", 2021: "Sohto League Champions",
+            2020: "Soto's Johto League Champions", 2019: "Everybody Loves Ramon",
         },
     },
     "sfgiant": {
@@ -44,6 +46,7 @@ OWNERS = {
             2026: "Gho-Strider", 2025: "Gho-Strider",
             2024: "Waiting for Cespedes", 2023: "Waiting for Cespedes",
             2022: "The Riley Reid's", 2021: "The J-Rod Squad",
+            2020: "The Riley Reid's", 2019: "Waiting for Cespedes",
         },
     },
     "Jpapula": {
@@ -52,6 +55,7 @@ OWNERS = {
             2026: "Mojo Dojo Casas House", 2025: "Mojo Dojo Casas House",
             2024: "Bay of Puigs", 2023: "Bay of Puigs",
             2022: "The Phamtom Menace", 2021: "Attack of the Crons",
+            2020: "The Phamtom Menace", 2019: "Bay of Puigs",
         },
     },
     "trentradding": {
@@ -60,6 +64,7 @@ OWNERS = {
             2026: "Partially Torked", 2025: "A Few Jung Men",
             2024: "A Few Jung Men", 2023: "Championship or Bust (2021)",
             2022: "Fully Torked", 2021: "Turner Burners",
+            2020: "Fully Torked", 2019: "Team CarmenCiardiello",
         },
     },
     "Jgchope": {
@@ -68,6 +73,7 @@ OWNERS = {
             2026: "Rates & Carrolls", 2025: "Rates & Carrolls",
             2024: "Shark(are)nado", 2023: "Shark(are)nado",
             2022: "Shark(are)nado", 2021: "The KamikOzzie's",
+            2020: "Shark(are)nado", 2019: "Shark(are)nado",
         },
     },
     "rheim": {
@@ -76,6 +82,7 @@ OWNERS = {
             2026: "Reed's Trading Post", 2025: "Heimlich Maneuver",
             2024: "Lil' Tikes", 2023: "Lil' Tikes",
             2022: "If You Give a Mouse a Mookie", 2021: "Heimlich Maneuver",
+            2020: "If You Give a Mouse a Mookie", 2019: "Lil' Tikes",
         },
     },
     "owenhern": {
@@ -84,6 +91,7 @@ OWNERS = {
             2026: "The Juan-Binary Murderers' Row", 2025: "The New Murderers' Row",
             2024: "DJ LeMachine", 2023: "DJ LeMachine",
             2022: "DJ LeMachine", 2021: "DJ LeMachine",
+            2020: "DJ LeMachine", 2019: "DJ LeMachine",
         },
     },
     "esoraci": {
@@ -92,6 +100,7 @@ OWNERS = {
             2026: "The Roman Empire", 2025: "The Kirby Superstars",
             2024: "The 430 Million Dollar Man", 2023: "The Wuhan BatEaters",
             2022: "Power Troutage", 2021: "The Kirby Superstars",
+            2020: "The Wuhan BatEaters", 2019: "The 430 Million Dollar Man",
         },
     },
     "Beim": {
@@ -100,6 +109,7 @@ OWNERS = {
             2026: "The Undisputed ERA", 2025: "Hold Me Closer, Ohtani Dancer",
             2024: "Acuña Matata", 2023: "The Cole Train",
             2022: "The Manbolorians", 2021: "Hold Me Closer, Ohtani Dancer",
+            2020: "The Cole Train", 2019: "Acuña Matata",
         },
     },
     "Jookuh": {
@@ -108,6 +118,7 @@ OWNERS = {
             2026: "Wallace & deGromit", 2025: "The Wire Nation",
             2024: "Richmond Mazers", 2023: "Richmond Mazers",
             2022: "Petey Blinders", 2021: "Booze Cruz",
+            2020: "Richmond Mazers", 2019: "Richmond Mazers",
         },
     },
     "dturls55": {
@@ -116,7 +127,11 @@ OWNERS = {
             2026: "Yoshi's Riland", 2025: "Yoshi's Riland",
             2024: "Seage(r) Miller Band", 2023: "Lux Luthors",
             2022: "Ranger Things", 2021: "Ward Of The Rings",
+            # Also register legacy names Fantrax may surface for 2021 season
+            2020: "Lux Luthors", 2019: "Seage(r) Miller Band",
         },
+        # Extra aliases that Fantrax may return for historical seasons
+        "aliases": ["Kershawshank Redemption"],
     },
 }
 
@@ -130,6 +145,11 @@ for _uname, _odata in OWNERS.items():
         _info = {"username": _uname, "real_name": _odata["real_name"], "season": _yr}
         TEAM_TO_OWNER[_tname] = _info
         TEAM_TO_OWNER[_norm(_tname)] = _info
+    # Register any extra aliases (e.g. legacy team names Fantrax may surface)
+    for _alias in _odata.get("aliases", []):
+        _info = {"username": _uname, "real_name": _odata["real_name"], "season": 0}
+        TEAM_TO_OWNER[_alias] = _info
+        TEAM_TO_OWNER[_norm(_alias)] = _info
 
 def owner_from_team(team_name: str) -> Dict:
     for candidate in (team_name, _norm(team_name)):
@@ -313,7 +333,7 @@ def build_standings_json(all_rows: List[Dict]) -> Dict:
             }
         o = alltime_by_owner[own]
         o["seasons_played"] += 1
-        o["total_pts"] += (row["pts"] or 0)
+        o["total_pts"] = round(o["total_pts"] + (row["pts"] or 0), 1)
         o["total_gp"] += (row["gp"] or 0)
         for stat in ("ab", "h", "r", "hr", "rbi", "sb", "k"):
             o[stat] = (o[stat] or 0) + (row[stat] or 0)
@@ -341,7 +361,7 @@ def build_standings_json(all_rows: List[Dict]) -> Dict:
         o["avg_whip"] = round(o["_whip_sum"] / o["_whip_n"], 4) if o["_whip_n"] else None
         for k in ("_obp_sum", "_obp_n", "_era_sum", "_era_n", "_whip_sum", "_whip_n"):
             del o[k]
-        o["avg_pts_per_season"] = round(o["total_pts"] / o["seasons_played"], 1) if o["seasons_played"] else None
+        o["avg_pts_per_season"] = round(o["total_pts"] / o["seasons_played"], 2) if o["seasons_played"] else None
         o["season_finishes"] = sorted(o["season_finishes"], key=lambda x: x["season"])
         alltime_list.append(o)
 
@@ -381,8 +401,8 @@ def main():
     all_season_ids = {int(k): str(v) for k, v in cfg.get("all_season_league_ids", {}).items()}
     delay = cfg.get("request_delay", 0.4)
 
-    # Only seasons 2021–2026
-    target_seasons = sorted(s for s in all_season_ids if 2021 <= s <= 2026)
+    # All seasons 2019–2026
+    target_seasons = sorted(s for s in all_season_ids if 2019 <= s <= 2026)
     if args.seasons:
         target_seasons = [s for s in target_seasons if s in args.seasons]
 
