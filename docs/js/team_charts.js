@@ -9,19 +9,31 @@
   const D = window.DOTP;
 
   // ── Load all data ─────────────────────────────────────────────────
-  let teamsData, rostersData, journeysData, tradesData;
+  let teamsData, rostersData, journeysData, tradesData, standingsData;
   try {
-    [teamsData, rostersData, journeysData, tradesData] = await Promise.all([
+    [teamsData, rostersData, journeysData, tradesData, standingsData] = await Promise.all([
       D.loadJSON('data/teams.json'),
       D.loadJSON('data/rosters.json'),
       D.loadJSON('data/journeys.json'),
       D.loadJSON('data/trades.json'),
+      D.loadJSON('data/standings.json'),
     ]);
   } catch (e) {
     document.getElementById('team-content').innerHTML =
       `<div class="error-msg">⚠ Failed to load data. Run <code>python build_dashboard.py</code> first.<br>${e.message}</div>`;
     return;
   }
+
+  // Index standings by owner → season
+  const standingsByOwner = {};   // owner_real_name → {season → row}
+  const alltimeByOwner = {};     // owner_real_name → alltime row
+  (standingsData.season_standings || []).forEach(r => {
+    if (!standingsByOwner[r.owner_real_name]) standingsByOwner[r.owner_real_name] = {};
+    standingsByOwner[r.owner_real_name][r.season] = r;
+  });
+  (standingsData.alltime_standings || []).forEach(r => {
+    alltimeByOwner[r.owner_real_name] = r;
+  });
 
   window.dotpNav?.setNavDate(teamsData.meta.generated_at);
 
@@ -156,8 +168,82 @@
             <span class="stat-label">Avg Tenure</span>
             <span class="stat-value" style="font-size:0.9rem">${stats.median_player_tenure_days ? Math.round(stats.median_player_tenure_days)+'d' : '—'}</span>
           </div>
+          ${alltimeByOwner[ownerName] ? `
+          <div class="stat-card" style="min-width:110px">
+            <span class="stat-label">All-Time Rank</span>
+            <span class="stat-value gold">#${alltimeByOwner[ownerName].alltime_rank}</span>
+          </div>
+          <div class="stat-card" style="min-width:110px">
+            <span class="stat-label">Total Roto Pts</span>
+            <span class="stat-value" style="font-size:0.9rem">${alltimeByOwner[ownerName].total_pts}</span>
+          </div>` : ''}
         </div>
       </div>
+
+      <!-- Fantrax Season Stats Table -->
+      ${(() => {
+        const ownerSeasons = standingsByOwner[ownerName] || {};
+        const seasonKeys = Object.keys(ownerSeasons).map(Number).sort();
+        if (!seasonKeys.length) return '';
+
+        function fmt(v, dec=0) {
+          if (v == null) return '—';
+          if (dec > 0) return Number(v).toFixed(dec);
+          return Number(v).toLocaleString();
+        }
+        function fmtOBP(v) {
+          if (v == null) return '—';
+          return Number(v).toFixed(3).replace(/^0/, '');
+        }
+
+        const rows = seasonKeys.map(yr => {
+          const r = ownerSeasons[yr];
+          const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : r.rank === 3 ? '🥉' : `#${r.rank}`;
+          return `<tr>
+            <td style="font-weight:700">${yr}</td>
+            <td style="font-size:0.82rem;color:var(--text-secondary);max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.team_name}</td>
+            <td style="text-align:center;font-weight:700">${medal}</td>
+            <td style="text-align:right;font-weight:700;color:var(--brand-green)">${fmt(r.pts)}</td>
+            <td style="text-align:right">${fmt(r.hr)}</td>
+            <td style="text-align:right">${fmt(r.rbi)}</td>
+            <td style="text-align:right">${fmt(r.sb)}</td>
+            <td style="text-align:right">${fmtOBP(r.obp)}</td>
+            <td style="text-align:right">${fmt(r.k)}</td>
+            <td style="text-align:right">${fmt(r.era, 2)}</td>
+            <td style="text-align:right">${fmt(r.whip, 3)}</td>
+            <td style="text-align:right">${fmt(r.svh3, 1)}</td>
+            <td style="text-align:right">${fmt(r.wqs, 1)}</td>
+          </tr>`;
+        }).join('');
+
+        return `
+      <div class="chart-section" style="margin-top:0">
+        <h2>📊 Fantrax Season Stats</h2>
+        <p class="chart-description">Rotisserie standings & stats by season. Click a row to jump to Standings page.</p>
+        <div class="data-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th style="width:50px">Year</th>
+                <th>Team Name</th>
+                <th style="text-align:center;width:45px">Rank</th>
+                <th style="text-align:right" title="Rotisserie Points">Pts</th>
+                <th style="text-align:right" title="Home Runs">HR</th>
+                <th style="text-align:right" title="RBI">RBI</th>
+                <th style="text-align:right" title="Stolen Bases">SB</th>
+                <th style="text-align:right" title="On-Base Percentage">OBP</th>
+                <th style="text-align:right" title="Strikeouts (pitching)">K</th>
+                <th style="text-align:right" title="Earned Run Average">ERA</th>
+                <th style="text-align:right" title="WHIP">WHIP</th>
+                <th style="text-align:right" title="Saves + Holds/2">SVH3</th>
+                <th style="text-align:right" title="W+QS">W+QS</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>`;
+      })()}
 
       <!-- Current Roster -->
       <div class="chart-section">
