@@ -320,7 +320,7 @@
           })),
         },
         options: {
-          responsive: true, maintainAspectRatio: true,
+          responsive: true, maintainAspectRatio: false,
           plugins: {
             legend: { display: true, position: 'top' },
             tooltip: {
@@ -369,7 +369,7 @@
           }],
         },
         options: {
-          responsive: true, maintainAspectRatio: true,
+          responsive: true, maintainAspectRatio: false,
           plugins: {
             legend: { display: false },
             tooltip: {
@@ -441,7 +441,7 @@
         ],
       },
       options: {
-        responsive: true, maintainAspectRatio: true,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { display: true, position: 'top' },
           tooltip: {
@@ -489,7 +489,7 @@
         }],
       },
       options: {
-        responsive: true, maintainAspectRatio: true,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -542,7 +542,7 @@
           })),
         },
         options: {
-          responsive: true, maintainAspectRatio: true,
+          responsive: true, maintainAspectRatio: false,
           plugins: { legend: { display: true, position: 'top' } },
           scales: {
             x: { stacked: true, grid: { display: false }, ticks: { maxRotation: 30 } },
@@ -579,7 +579,7 @@
           }],
         },
         options: {
-          responsive: true, maintainAspectRatio: true,
+          responsive: true, maintainAspectRatio: false,
           plugins: { legend: { display: false } },
           scales: {
             x: { grid: { display: false }, ticks: { maxRotation: 30 } },
@@ -627,7 +627,7 @@
         }],
       },
       options: {
-        responsive: true, maintainAspectRatio: true,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {

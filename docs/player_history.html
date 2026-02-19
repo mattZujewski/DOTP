@@ -22,8 +22,8 @@
     <div class="chart-section">
       <h2>Most Traveled Players (Top 20)</h2>
       <p class="chart-description">Players who have been owned by the most distinct owners. Orange = distinct owners, green = total stints (team renames by same owner don't count as a new owner). Click a bar to see full journey.</p>
-      <div class="chart-wrapper">
-        <canvas id="chart-most-traveled" height="520"></canvas>
+      <div class="chart-wrapper" style="height:520px">
+        <canvas id="chart-most-traveled"></canvas>
       </div>
       <p class="chart-insight" id="insight-most-traveled"></p>
     </div>
@@ -32,8 +32,8 @@
     <div class="chart-section">
       <h2>Roster Turnover — Unique Players Per Owner</h2>
       <p class="chart-description">How many unique players have ever appeared on each owner's roster across all seasons. High counts reflect active waiver/trade activity. Click a bar to jump to that owner's Team View.</p>
-      <div class="chart-wrapper">
-        <canvas id="chart-throughput" height="340"></canvas>
+      <div class="chart-wrapper" style="height:340px">
+        <canvas id="chart-throughput"></canvas>
       </div>
       <p class="chart-insight" id="insight-throughput"></p>
     </div>
@@ -56,8 +56,8 @@
         <label>Owner:</label>
         <select id="acq-owner-filter" class="filter-select"></select>
       </div>
-      <div class="chart-wrapper">
-        <canvas id="chart-acq-breakdown" height="380"></canvas>
+      <div class="chart-wrapper" style="height:380px">
+        <canvas id="chart-acq-breakdown"></canvas>
       </div>
       <p class="chart-insight" id="insight-acq"></p>
     </div>
@@ -77,11 +77,11 @@
       <h2>Player Tenure Distribution</h2>
       <p class="chart-description">How long players stay on a roster. Left: frequency histogram of all completed stints. Right: Q1–Q3 range by acquisition method (hover for median & extremes).</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
-        <div class="chart-wrapper">
-          <canvas id="chart-tenure-hist" height="280"></canvas>
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="chart-tenure-hist"></canvas>
         </div>
-        <div class="chart-wrapper">
-          <canvas id="chart-tenure-box" height="280"></canvas>
+        <div class="chart-wrapper" style="height:280px">
+          <canvas id="chart-tenure-box"></canvas>
         </div>
       </div>
       <p class="chart-insight" id="insight-tenure"></p>

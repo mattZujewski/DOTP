@@ -100,7 +100,7 @@ window.DOTP = window.DOTP || {};
     return {
       indexAxis,
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
         title: title ? { display: true, text: title, font: { size: 14, weight: '700' }, padding: { bottom: 12 } } : { display: false },
@@ -120,7 +120,7 @@ window.DOTP = window.DOTP || {};
   function lineOptions({ title, xLabel, yLabel } = {}) {
     return {
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: true },
         title: title ? { display: true, text: title, font: { size: 14, weight: '700' }, padding: { bottom: 12 } } : { display: false },
@@ -139,7 +139,7 @@ window.DOTP = window.DOTP || {};
   function barOptions({ title, xLabel, yLabel, stacked = false } = {}) {
     return {
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: stacked },
         title: title ? { display: true, text: title, font: { size: 14, weight: '700' }, padding: { bottom: 12 } } : { display: false },

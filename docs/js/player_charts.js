@@ -60,7 +60,7 @@
       options: {
         indexAxis: 'y',
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: { display: true },
           tooltip: {
@@ -119,7 +119,7 @@
       options: {
         indexAxis: 'y',
         responsive: true,
-        maintainAspectRatio: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -316,7 +316,7 @@
         options: {
           indexAxis: 'y',
           responsive: true,
-          maintainAspectRatio: true,
+          maintainAspectRatio: false,
           plugins: { legend: { display: true } },
           scales: {
             x: { stacked: true, beginAtZero: true, title: { display: true, text: 'Roster Acquisitions' } },
@@ -461,7 +461,7 @@
         },
         options: {
           responsive: true,
-          maintainAspectRatio: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: { display: true },
             tooltip: {
@@ -523,7 +523,7 @@
         },
         options: {
           responsive: true,
-          maintainAspectRatio: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: { display: true },
             tooltip: {
