@@ -89,7 +89,15 @@ window.DOTP = window.DOTP || {};
     Chart.defaults.plugins.legend.labels.padding    = 14;
     Chart.defaults.scale = Chart.defaults.scale || {};
     Chart.defaults.scale.grid = { color: borderColor };
+    // Merge ticks — preserving padding (and any other internals) rather than replacing
     Chart.defaults.scale.ticks = Object.assign({}, Chart.defaults.scale.ticks, { color: mutedColor });
+    // Ensure padding is set on all scale type defaults so fit() never sees undefined
+    ['category', 'linear', 'logarithmic', 'time', 'timeseries', 'radialLinear'].forEach(type => {
+      try {
+        const sd = Chart.defaults.scales[type] = Chart.defaults.scales[type] || {};
+        sd.ticks = Object.assign({ padding: 3 }, sd.ticks, { color: mutedColor });
+      } catch (_) {}
+    });
   }
 
   // Re-apply on theme change
