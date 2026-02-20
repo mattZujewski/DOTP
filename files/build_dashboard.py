@@ -1172,6 +1172,241 @@ def build_rosters_json(
     }
 
 # ---------------------------------------------------------------------------
+# FEAT-03: Traded Picks Results
+# ---------------------------------------------------------------------------
+
+def build_picks_json(
+    trades_data: Dict,
+    docs_dir: Path,
+    journeys_data: Dict,
+) -> Dict:
+    """
+    Join traded draft picks from trades.json to draft results in draft_results.json.
+
+    For every pick reference in trade events:
+      - Extract pick_year, pick_round, sending_owner, receiving_owner
+      - Look up which player was drafted with that pick (draft_results.json)
+      - Enrich with current player status from journeys_data player_index
+      - Return result_status: "matched" | "ambiguous" | "pending" | "unknown"
+
+    Output written to docs/data/picks.json
+    """
+    import re as _re
+
+    draft_results_path = docs_dir / "data" / "draft_results.json"
+    if not draft_results_path.exists():
+        print("  [WARN] draft_results.json not found — skipping picks.json. Run fetch_draft_results.py first.")
+        return {"pick_results": [], "meta": {"error": "draft_results.json missing"}}
+
+    with open(draft_results_path, encoding="utf-8") as f:
+        draft_data = json.load(f)
+
+    player_index: Dict[str, Dict] = journeys_data.get("player_index", {})
+
+    # Build draft lookup: (draft_year, round, owner_name_lower) → list of picks
+    # We use a list because the same owner may hold multiple picks of the same year+round
+    draft_lookup: Dict[tuple, List[Dict]] = defaultdict(list)
+    for season in draft_data.get("seasons", []):
+        for pick in season.get("picks", []):
+            key = (pick["draft_year"], pick["round"], pick["owner_name"].lower().strip())
+            draft_lookup[key].append(pick)
+
+    # Build a flat team_name_lower → owner_real_name lookup from OWNER_HISTORY
+    # Used to resolve "Wallace & deGromit trades away..." → Jack Dunne
+    # Note: OWNER_HISTORY keys are usernames; real_name lives inside each entry.
+    _all_team_to_owner: Dict[str, str] = {}
+    for _username, _odata in OWNER_HISTORY.items():
+        _real = _odata.get("real_name", _username)
+        for _yr, _team in _odata.get("teams", {}).items():
+            _all_team_to_owner[_team.lower().strip()] = _real
+            _all_team_to_owner[normalize_quotes(_team).lower().strip()] = _real
+
+    PICK_PAT = _re.compile(
+        r"(\d{4})\s+Draft\s+Pick[^,\n]*,\s*Round\s*(\d+)\s*\(([^)]+)\)",
+        _re.IGNORECASE,
+    )
+    TRADES_AWAY_PAT = _re.compile(r"^(.+?)\s+trades\s+away\s+(.+)$", _re.IGNORECASE | _re.DOTALL)
+
+    # Build an anchored segment-split pattern from known team names (longest first)
+    # to avoid partial matches inside team names (e.g., "re" inside "The Roman Empire")
+    _team_names_for_split = sorted(_all_team_to_owner.keys(), key=len, reverse=True)
+    _split_team_pat = "|".join(_re.escape(t) for t in _team_names_for_split)
+    SEG_SPLIT_PAT = _re.compile(
+        rf"(?=(?:{_split_team_pat})\s+trades\s+away\s)",
+        _re.IGNORECASE,
+    )
+
+    pick_results: List[Dict] = []
+
+    for ev in trades_data.get("trade_events", []):
+        raw = normalize_quotes(ev.get("details_raw") or "")
+        if not _re.search(r"Draft Pick", raw, _re.IGNORECASE):
+            continue
+
+        parties: List[str] = ev.get("parties", [])
+        date_iso: str       = ev.get("date_iso", ev.get("date", ""))
+        trade_type_label    = ev.get("trade_type_label", "")
+
+        # Split raw into per-sender segments at each "X trades away" boundary
+        # We need to know which owner's segment each pick reference falls in
+        segments: List[tuple] = []  # (sender_name, segment_text)
+        raw_lower = raw.lower()
+        if "trades away" in raw_lower:
+            # Split on each "TEAM trades away" occurrence, anchored to known team names
+            # to avoid false splits on partial matches inside team names
+            parts = SEG_SPLIT_PAT.split(raw)
+            for part in parts:
+                part = part.strip()
+                if not part:
+                    continue
+                m = TRADES_AWAY_PAT.match(part)
+                if m:
+                    sender_team = normalize_quotes(m.group(1).strip())
+                    segment_text = m.group(2).strip()
+                    segments.append((sender_team, segment_text))
+                else:
+                    # Fallback: treat whole part as unknown sender
+                    segments.append(("", part))
+        else:
+            # "X to Y" format — no picks expected, skip
+            continue
+
+        # Build a team→owner lookup from this event's party list
+        assets_by_party: Dict[str, Dict] = ev.get("assets_by_party", {})
+        # Collect all team names mentioned across all segments
+        event_team_to_owner: Dict[str, str] = {}
+        for o in parties:
+            event_team_to_owner[o.lower().strip()] = o  # real_name is already the owner
+
+        for sender_team_raw, seg_text in segments:
+            picks_in_seg = PICK_PAT.findall(seg_text)
+            if not picks_in_seg:
+                continue
+
+            # Resolve sender owner: the team name at start of this segment.
+            # parties[] contains owner real names; details_raw uses team names.
+            # Try direct match first, then look up via OWNER_HISTORY team→owner map.
+            sending_owner = ""
+            for key_candidate in [sender_team_raw, normalize_quotes(sender_team_raw)]:
+                # Direct match against owner names (unlikely but handles edge cases)
+                for o in parties:
+                    if o.lower().strip() == key_candidate.lower().strip():
+                        sending_owner = o
+                        break
+                if sending_owner:
+                    break
+                # Lookup team name → owner real name
+                resolved = _all_team_to_owner.get(key_candidate.lower().strip(), "")
+                if resolved and resolved in parties:
+                    sending_owner = resolved
+                    break
+
+            # Receiving owner(s): all other parties
+            receiving_owners = [o for o in parties if o != sending_owner]
+
+            for pick_year_s, pick_round_s, holder_in_parens in picks_in_seg:
+                pick_year  = int(pick_year_s)
+                pick_round = int(pick_round_s)
+                is_deleted = holder_in_parens.strip().lower() == "*deleted*"
+                original_holder = "" if is_deleted else normalize_quotes(holder_in_parens.strip())
+
+                # Determine receiving owner (who will use this pick to draft)
+                # For 2-party trades: only one other party
+                # For 3-party trades: use receiving_owners list (may be ambiguous)
+                if len(receiving_owners) == 1:
+                    receiving_owner = receiving_owners[0]
+                elif len(receiving_owners) > 1:
+                    receiving_owner = receiving_owners[0]  # best guess for 3-way
+                else:
+                    receiving_owner = ""
+
+                # Determine result_status
+                if pick_year > 2026:
+                    result_status = "pending"
+                    matched_picks = []
+                else:
+                    lookup_key = (pick_year, pick_round, receiving_owner.lower().strip())
+                    matched_picks = draft_lookup.get(lookup_key, [])
+                    if not matched_picks:
+                        # Try all parties in case receiving_owner resolution was wrong
+                        for o in parties:
+                            alt_key = (pick_year, pick_round, o.lower().strip())
+                            candidates = draft_lookup.get(alt_key, [])
+                            if candidates:
+                                matched_picks = candidates
+                                receiving_owner = o
+                                break
+                    if not matched_picks:
+                        result_status = "pending" if pick_year >= 2026 else "unknown"
+                    elif len(matched_picks) == 1:
+                        result_status = "matched"
+                    else:
+                        result_status = "ambiguous"
+
+                # Build drafted_player or ambiguous_candidates
+                drafted_player = None
+                ambiguous_candidates = []
+
+                if result_status in ("matched", "ambiguous"):
+                    def _enrich_pick(dp: Dict) -> Dict:
+                        pid = dp.get("player_id", "")
+                        ji  = player_index.get(pid, {})
+                        return {
+                            "player_name":    dp.get("player_name", ""),
+                            "player_id":      pid,
+                            "draft_year":     dp.get("draft_year"),
+                            "round":          dp.get("round"),
+                            "pick_in_round":  dp.get("pick_in_round"),
+                            "overall_pick":   dp.get("overall_pick"),
+                            "drafting_owner": dp.get("owner_name", ""),
+                            "drafting_team":  dp.get("team_name", ""),
+                            # Current status from journeys
+                            "current_owner":  ji.get("current_owner", ""),
+                            "still_rostered": bool(ji),
+                            "owner_changes":  ji.get("owner_changes", 0),
+                            "total_stints":   ji.get("total_stints", 0),
+                        }
+
+                    if result_status == "matched":
+                        drafted_player = _enrich_pick(matched_picks[0])
+                    else:
+                        ambiguous_candidates = [_enrich_pick(dp) for dp in matched_picks]
+
+                pick_results.append({
+                    "pick_year":           pick_year,
+                    "pick_round":          pick_round,
+                    "is_deleted":          is_deleted,
+                    "original_holder":     original_holder,
+                    "sending_owner":       sending_owner,
+                    "receiving_owner":     receiving_owner,
+                    "all_parties":         parties,
+                    "trade_date":          date_iso,
+                    "trade_type_label":    trade_type_label,
+                    "result_status":       result_status,
+                    "drafted_player":      drafted_player,
+                    "ambiguous_candidates": ambiguous_candidates,
+                })
+
+    # Summary stats
+    status_counts = defaultdict(int)
+    for pr in pick_results:
+        status_counts[pr["result_status"]] += 1
+
+    print(f"      Traded picks extracted: {len(pick_results)}")
+    for status, count in sorted(status_counts.items()):
+        print(f"        {status}: {count}")
+
+    return {
+        "meta": {
+            "generated_at":   datetime.utcnow().isoformat() + "Z",
+            "total_pick_refs": len(pick_results),
+            "status_counts":  dict(status_counts),
+        },
+        "pick_results": pick_results,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -1254,6 +1489,13 @@ def main() -> None:
     rosters_data = build_rosters_json(rosters_df, journeys_df)
     out = data_dir / "rosters.json"
     out.write_text(json.dumps(rosters_data, indent=2, default=str), encoding="utf-8")
+    print(f"      Written: {out} ({out.stat().st_size // 1024}KB)")
+
+    # --- picks.json ---
+    print("\n[5/5] Building picks.json (FEAT-03: Traded Picks Results)...")
+    picks_data = build_picks_json(trades_data, docs_dir, journeys_data)
+    out = data_dir / "picks.json"
+    out.write_text(json.dumps(picks_data, indent=2, default=str), encoding="utf-8")
     print(f"      Written: {out} ({out.stat().st_size // 1024}KB)")
 
     print("\n" + "=" * 60)

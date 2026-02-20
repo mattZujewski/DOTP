@@ -1,5 +1,5 @@
 /**
- * trade_charts.js — All 7 Trade Analysis charts + trade events list
+ * trade_charts.js — All 7 Trade Analysis charts + trade events list + traded picks
  * Loaded by trade.html. Requires Chart.js, D3, and charts.js (DOTP).
  */
 
@@ -8,19 +8,21 @@
   const D = window.DOTP;
 
   // ── State ────────────────────────────────────────────────────────
-  let tradesData, teamsData, journeysData;
+  let tradesData, teamsData, journeysData, picksData;
   let activeOwnerFilter = null;   // null = all
   let activeYearFilter  = 'all';
   let activeTypeFilter  = null;   // FEAT-02: null = all types
+  let activePicksFilter = null;   // FEAT-03: null = all statuses
   let allTradeEvents    = [];
   let filteredEvents    = [];
 
   // ── Load data ────────────────────────────────────────────────────
   try {
-    [tradesData, teamsData, journeysData] = await Promise.all([
+    [tradesData, teamsData, journeysData, picksData] = await Promise.all([
       D.loadJSON('data/trades.json'),
       D.loadJSON('data/teams.json'),
       D.loadJSON('data/journeys.json'),
+      D.loadJSON('data/picks.json').catch(() => null),  // graceful fallback
     ]);
     await document.fonts.ready;
   } catch (e) {
@@ -927,6 +929,7 @@
     renderMultiTeam();
     renderVolumeBySeasonOwner();
     renderTradeTypeBreakdown();
+    renderPickResults();
   }
 
   // ── Clear owner filter button ────────────────────────────────────
@@ -1041,8 +1044,194 @@
     `);
   }
 
+  // ── FEAT-03: Traded Picks Results ────────────────────────────────
+
+  const PICK_STATUS_CONFIG = {
+    matched:   { label: 'Matched',   color: '#22c55e', desc: 'Pick used on a confirmed player' },
+    ambiguous: { label: 'Ambiguous', color: '#f59e0b', desc: 'Multiple picks of same slot — cannot confirm which player' },
+    pending:   { label: 'Pending',   color: '#6b7280', desc: 'Draft has not occurred yet' },
+    unknown:   { label: 'Unknown',   color: '#ef4444', desc: 'Pick exercised but no matching draft record found' },
+  };
+
+  function renderPickResults() {
+    if (!picksData) return;
+
+    const picks = picksData.pick_results || [];
+    const meta  = picksData.meta || {};
+    const summaryBar = document.getElementById('picks-summary-bar');
+    const tbody      = document.getElementById('picks-tbody');
+    const insight    = document.getElementById('insight-picks');
+    const filterLabel = document.getElementById('picks-filter-label');
+    const clearBtn    = document.getElementById('clear-picks-filter');
+
+    if (!summaryBar || !tbody) return;
+
+    // Status counts
+    const statusCounts = meta.status_counts || {};
+
+    // Render summary chips (clickable filter)
+    summaryBar.innerHTML = Object.entries(PICK_STATUS_CONFIG).map(([status, cfg]) => {
+      const count = statusCounts[status] || 0;
+      const isActive = activePicksFilter === status;
+      return `<button
+        data-picks-status="${status}"
+        style="
+          padding:5px 14px;border-radius:20px;border:2px solid ${cfg.color};
+          background:${isActive ? cfg.color : 'transparent'};
+          color:${isActive ? '#fff' : cfg.color};
+          cursor:pointer;font-size:13px;font-weight:600;transition:all 0.15s
+        "
+        title="${cfg.desc}"
+      >${cfg.label} (${count})</button>`;
+    }).join('');
+
+    // Chip click → filter
+    summaryBar.querySelectorAll('[data-picks-status]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const s = btn.dataset.picksStatus;
+        activePicksFilter = (activePicksFilter === s) ? null : s;
+        renderPickResults();
+      });
+    });
+
+    // Filter label + clear button
+    if (activePicksFilter) {
+      const cfg = PICK_STATUS_CONFIG[activePicksFilter];
+      filterLabel.textContent = `Showing: ${cfg.label} only`;
+      filterLabel.style.display = 'inline';
+      clearBtn.style.display = 'inline';
+    } else {
+      filterLabel.textContent = '';
+      filterLabel.style.display = 'none';
+      clearBtn.style.display = 'none';
+    }
+
+    // Filter picks
+    const visible = activePicksFilter
+      ? picks.filter(p => p.result_status === activePicksFilter)
+      : picks;
+
+    // Sort: matched first, then by pick_year desc, then round asc
+    const statusOrder = { matched: 0, ambiguous: 1, unknown: 2, pending: 3 };
+    const sorted = [...visible].sort((a, b) => {
+      const so = (statusOrder[a.result_status] || 9) - (statusOrder[b.result_status] || 9);
+      if (so !== 0) return so;
+      const yd = b.pick_year - a.pick_year;
+      if (yd !== 0) return yd;
+      return a.pick_round - b.pick_round;
+    });
+
+    if (!sorted.length) {
+      tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted" style="padding:24px">No picks match the current filter.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = sorted.map(pick => {
+      const cfg = PICK_STATUS_CONFIG[pick.result_status] || { color: '#6b7280', label: pick.result_status };
+      const statusBadge = `<span style="
+        display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700;
+        background:${cfg.color}22;color:${cfg.color};border:1px solid ${cfg.color}44
+      ">${cfg.label}</span>`;
+
+      const pickLabel = `${pick.pick_year} R${pick.pick_round}`;
+
+      const tradeDate = pick.trade_date
+        ? pick.trade_date.slice(0, 10)
+        : '—';
+
+      // Traded From → To
+      const sendColor  = D.ownerColor(pick.sending_owner);
+      const recvColor  = D.ownerColor(pick.receiving_owner);
+      const sendDot    = pick.sending_owner
+        ? `<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${sendColor};margin-right:4px"></span>`
+        : '';
+      const recvDot    = pick.receiving_owner
+        ? `<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${recvColor};margin-right:4px"></span>`
+        : '';
+      const tradeDir   = `${sendDot}${pick.sending_owner || '?'}
+        <span style="color:var(--text-muted);margin:0 4px">→</span>
+        ${recvDot}${pick.receiving_owner || '?'}`;
+
+      // Original holder
+      const holderCell = pick.original_holder
+        ? `<span style="opacity:0.75;font-size:12px">${pick.original_holder}</span>`
+        : `<span style="opacity:0.4;font-size:12px">—</span>`;
+
+      // Drafted player cell
+      let playerCell = '';
+      if (pick.result_status === 'matched' && pick.drafted_player) {
+        const dp = pick.drafted_player;
+        playerCell = `<strong>${dp.player_name}</strong>
+          <br><span style="font-size:11px;color:var(--text-muted)">Pick ${dp.overall_pick} (R${dp.round}.${dp.pick_in_round})</span>`;
+      } else if (pick.result_status === 'ambiguous' && pick.ambiguous_candidates?.length) {
+        const names = pick.ambiguous_candidates.map(c => c.player_name).join(' or ');
+        playerCell = `<span style="color:#f59e0b" title="Multiple picks of same slot — cannot confirm which player">⚠ ${names}</span>`;
+      } else if (pick.result_status === 'pending') {
+        playerCell = `<span style="color:var(--text-muted);font-style:italic">Draft not yet held</span>`;
+      } else {
+        playerCell = `<span style="color:var(--text-muted);font-style:italic">No record found</span>`;
+      }
+
+      // Current owner cell
+      let currentOwnerCell = '—';
+      if (pick.result_status === 'matched' && pick.drafted_player) {
+        const dp = pick.drafted_player;
+        if (dp.current_owner) {
+          const ownerColor = D.ownerColor(dp.current_owner);
+          const changedHands = dp.current_owner !== pick.receiving_owner;
+          currentOwnerCell = `<span style="display:inline-flex;align-items:center;gap:5px">
+            <span style="width:8px;height:8px;border-radius:50%;background:${ownerColor};display:inline-block"></span>
+            ${dp.current_owner}
+            ${changedHands ? `<span style="font-size:10px;color:var(--text-muted)">(${dp.owner_changes} move${dp.owner_changes!==1?'s':''})</span>` : ''}
+          </span>`;
+        } else if (!dp.still_rostered) {
+          currentOwnerCell = `<span style="color:var(--text-muted);font-style:italic">Off roster</span>`;
+        }
+      } else if (pick.result_status === 'ambiguous' && pick.ambiguous_candidates?.length) {
+        const curOwners = [...new Set(pick.ambiguous_candidates.map(c => c.current_owner).filter(Boolean))];
+        if (curOwners.length) {
+          currentOwnerCell = curOwners.map(o => {
+            const oc = D.ownerColor(o);
+            return `<span style="display:inline-flex;align-items:center;gap:4px">
+              <span style="width:8px;height:8px;border-radius:50%;background:${oc}"></span>${o}
+            </span>`;
+          }).join('<br>');
+        }
+      }
+
+      return `<tr>
+        <td style="white-space:nowrap;font-weight:600">${pickLabel}</td>
+        <td style="white-space:nowrap;font-size:13px">${tradeDate}</td>
+        <td style="font-size:13px">${tradeDir}</td>
+        <td>${holderCell}</td>
+        <td>${playerCell}</td>
+        <td style="font-size:13px">${currentOwnerCell}</td>
+        <td>${statusBadge}</td>
+      </tr>`;
+    }).join('');
+
+    // Insight text
+    const matchedCount = statusCounts.matched || 0;
+    const total = picks.length;
+    const pendCount = statusCounts.pending || 0;
+    const ambigCount = statusCounts.ambiguous || 0;
+    if (insight) {
+      insight.textContent = `${total} traded picks tracked across all seasons. `
+        + `${matchedCount} matched to a specific drafted player. `
+        + `${ambigCount} are ambiguous (same owner held multiple picks of the same round/year). `
+        + `${pendCount} are future picks not yet drafted.`;
+    }
+  }
+
+  // Clear picks filter button
+  document.getElementById('clear-picks-filter')?.addEventListener('click', () => {
+    activePicksFilter = null;
+    renderPickResults();
+  });
+
   // ── Initial render ────────────────────────────────────────────────
   applyFilters();
+  renderPickResults();
 
   // Re-render on theme change (chart defaults update, need re-draw)
   document.addEventListener('themechange', () => {
@@ -1055,6 +1244,7 @@
     renderTradeNetwork();
     renderHeatmap();
     renderTradeTypeBreakdown();
+    renderPickResults();
   });
 
 })();
