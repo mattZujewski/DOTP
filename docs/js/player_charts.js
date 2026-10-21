@@ -573,7 +573,7 @@
           <span class="journey-stop-tenure">${tenure}</span>
         </div>
         <div class="journey-stop-dates">
-          ${D.fmtDate(s.start_date)} → ${s.end_date ? D.fmtDate(s.end_date) : '<strong style="color:var(--brand-green)">Present</strong>'}
+          ${D.fmtDate(s.start_date)} → ${s.end_date ? D.fmtDate(s.end_date) : (s.is_current ? '<strong style="color:var(--brand-green)">Present</strong>' : 'End date unavailable')}
           · <em>${s.owner_real_name}</em>
         </div>
       </div>`;

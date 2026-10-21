@@ -34,13 +34,17 @@ import re
 import sys
 import time
 import threading
+import tempfile
+import uuid
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
 import requests
+from collection_state import ProfileCache, atomic_json, publish_run, validate_collection, validate_profile
+from history_store import HistoryStore, date_iso
 
 try:
     import yaml
@@ -223,6 +227,8 @@ def _build_team_to_owner() -> Dict[str, Dict]:
     return lookup
 
 TEAM_TO_OWNER = _build_team_to_owner()
+from team_identity import TEAM_ALIASES, owner_aliases
+TEAM_TO_OWNER.update(owner_aliases())
 
 
 def get_owner_from_team_name(team_name: str) -> Dict[str, Any]:
@@ -254,7 +260,7 @@ def get_owner_from_team_name(team_name: str) -> Dict[str, Any]:
 # =============================================================================
 
 def utc_stamp() -> str:
-    return datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    return datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
 
 def now_local_iso() -> str:
@@ -299,7 +305,7 @@ def extract_bold_text(html: str) -> Optional[str]:
 @dataclass
 class Config:
     league_id: str
-    jsessionid: str
+    jsessionid: str = ""
     user_secret_id: str = ""
     extra_cookies: Dict[str, str] = field(default_factory=dict)
     request_delay: float = 0.5
@@ -308,6 +314,11 @@ class Config:
     verbose: bool = False
     all_season_league_ids: Dict[int, str] = field(default_factory=dict)
     workers: int = 8  # threads for parallel player fetching
+    season: Optional[int] = None
+    cache_max_age_hours: float = 24
+    draft_results: str = str(Path(__file__).resolve().parent.parent / "docs/data/draft_results.json")
+    allow_roster_shrink: bool = False
+    api_version: str = "187.3.6"
 
 
 @dataclass
@@ -343,18 +354,22 @@ def load_config(config_path: Path, args: argparse.Namespace) -> Config:
         jsessionid=args.jsessionid or cfg.get('jsessionid') or os.getenv('FANTRAX_JSESSIONID', ''),
         user_secret_id=args.user_secret_id or cfg.get('user_secret_id') or os.getenv('FANTRAX_USER_SECRET_ID', ''),
         extra_cookies=cfg.get('extra_cookies') or {},
+        api_version=str(cfg.get('api_version') or Config.__dataclass_fields__['api_version'].default),
         request_delay=args.delay if args.delay is not None else cfg.get('request_delay', 0.5),
         data_root=args.data_root or cfg.get('data_root', 'fantrax_data'),
         refresh=args.refresh,
         verbose=args.verbose,
         all_season_league_ids=all_season_league_ids,
         workers=getattr(args, 'workers', 8) or 8,
+        cache_max_age_hours=args.cache_max_age_hours if args.cache_max_age_hours is not None else cfg.get('cache_max_age_hours', 24),
+        draft_results=args.draft_results or cfg.get('draft_results') or Config.__dataclass_fields__['draft_results'].default,
+        allow_roster_shrink=args.allow_roster_shrink,
     )
 
 
 def setup_run_dirs(data_root: Path) -> RunDirs:
     """Create timestamped output directory structure."""
-    run_name = f"run_{utc_stamp()}"
+    run_name = f"run_{utc_stamp()}_{uuid.uuid4().hex[:8]}"
     root = data_root / run_name
     
     dirs = RunDirs(
@@ -369,16 +384,20 @@ def setup_run_dirs(data_root: Path) -> RunDirs:
     for d in [dirs.input_dir, dirs.output_dir, dirs.logs_dir, dirs.raw_dir, dirs.cache_dir]:
         d.mkdir(parents=True, exist_ok=True)
     
-    # Create "latest" symlink
-    latest = data_root / "latest"
-    try:
-        if latest.exists() or latest.is_symlink():
-            latest.unlink()
-        latest.symlink_to(run_name)
-    except Exception:
-        pass  # Windows doesn't support symlinks without admin
-    
+    atomic_json(root / "manifest.json", {"schema_version": 1, "status": "collecting"})
     return dirs
+
+
+def save_run_config(dirs: RunDirs, config: Config) -> None:
+    """Store collection identity and timing, never session credentials."""
+    atomic_json(dirs.input_dir / "config.json", {
+        "league_id": config.league_id, "season": config.season,
+        "data_root": config.data_root, "request_delay": config.request_delay,
+        "workers": config.workers, "refresh": config.refresh,
+        "cache_max_age_hours": config.cache_max_age_hours,
+        "api_version": config.api_version,
+        "start_time": datetime.now(timezone.utc).isoformat(),
+    })
 
 
 def setup_logging(logs_dir: Path, verbose: bool) -> logging.Logger:
@@ -413,6 +432,11 @@ class FantraxAuthError(Exception):
     pass
 
 
+class FantraxRateLimitError(Exception):
+    """A persistent service throttle must stop collection, not fail every player."""
+    pass
+
+
 class FantraxAPI:
     """Fantrax API client with auth validation and response caching."""
     
@@ -421,7 +445,46 @@ class FantraxAPI:
         self.raw_dir = raw_dir
         self.logger = logger
         self.request_count = 0
-        self._session = requests.Session()
+        self._thread_state = threading.local()
+        self._request_lock = threading.Lock()
+        self._last_request = 0.0
+        self._profile_lock = threading.Lock()
+        self._profile_delay = max(1.0, config.request_delay)
+        self._last_profile = 0.0
+
+    def _session_for_thread(self):
+        if not hasattr(self._thread_state, "session"):
+            self._thread_state.session = requests.Session()
+        return self._thread_state.session
+
+    def _request(self, method, url, **kwargs):
+        """One global request pace across workers, with bounded transient retries.
+
+        All requests here read league data, including the internal API's POST queries.
+        """
+        for attempt in range(3):
+            with self._request_lock:
+                wait = self.config.request_delay - (time.monotonic() - self._last_request)
+                if wait > 0:
+                    time.sleep(wait)
+                self._last_request = time.monotonic()
+                self.request_count += 1
+            try:
+                response = self._session_for_thread().request(method, url, timeout=30, **kwargs)
+                retryable = response.status_code in (429, 500, 502, 503, 504)
+                if not retryable or attempt == 2:
+                    response.raise_for_status()
+                    return response
+                try:
+                    delay = min(60, max(0, float(response.headers.get("Retry-After", 2 ** attempt))))
+                except ValueError:
+                    delay = 2 ** attempt
+                response.close()
+            except (requests.Timeout, requests.ConnectionError):
+                if attempt == 2:
+                    raise
+                delay = 2 ** attempt
+            time.sleep(delay)
     
     def _headers(self) -> Dict[str, str]:
         return {
@@ -460,7 +523,7 @@ class FantraxAPI:
         if has_auth_error(data):
             raise FantraxAuthError(
                 f"Session expired (context: {context}). "
-                "Get a fresh JSESSIONID from Chrome DevTools -> Application -> Cookies -> fantrax.com"
+                "Refresh FX_RM (or JSESSIONID if present) from Chrome DevTools -> Application -> Cookies -> fantrax.com"
             )
     
     def _sleep(self) -> None:
@@ -474,24 +537,21 @@ class FantraxAPI:
         payload = {
             "uiv": 3,
             "refUrl": f"https://www.fantrax.com/fantasy/league/{self.config.league_id}/home",
-            "dt": 2,
+            "dt": 0,
             "at": 0,
-            "av": "0.0",
             "tz": "America/New_York",
-            "v": "182.0.1",
+            "v": self.config.api_version,
             "msgs": msgs,
         }
         
-        self.request_count += 1
         method = msgs[0].get("method", "unknown") if msgs else "unknown"
-        self.logger.debug(f"Request #{self.request_count}: {method}")
+        self.logger.debug(f"Request: {method}")
         
-        resp = self._session.post(
+        resp = self._request("POST",
             url,
             headers=self._headers(),
             cookies=self._cookies(),
             json=payload,
-            timeout=30,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -501,21 +561,20 @@ class FantraxAPI:
         if save_as:
             self._save_raw(save_as, data)
         
-        self._sleep()
         return data
     
     def public_request(self, endpoint: str, params: Dict = None) -> Dict:
         """Make request to public /fxea API."""
         url = f"{BASE_URL}/{endpoint}"
         
-        self.request_count += 1
-        self.logger.debug(f"Request #{self.request_count}: {endpoint}")
+        self.logger.debug(f"Request: {endpoint}")
         
-        resp = self._session.get(url, params=params, timeout=30)
+        resp = self._request("GET", url, params=params, cookies=self._cookies())
         resp.raise_for_status()
         
-        self._sleep()
-        return resp.json()
+        data = resp.json()
+        self._check_auth(data, endpoint)
+        return data
     
     # --- High-level methods ---
     
@@ -530,6 +589,12 @@ class FantraxAPI:
             if isinstance(d.get("fantasyTeams"), list):
                 teams.extend(d["fantasyTeams"])
         return teams
+
+    def get_player_names(self) -> Dict[str, str]:
+        from player_directory import player_names
+        data = self.public_request("getPlayerIds", {"sport": "MLB"})
+        self._save_raw("player_directory", data)
+        return player_names(data)
     
     def get_team_rosters_public(self) -> Dict:
         """Get rosters via public API (requires valid session or userSecretId)."""
@@ -541,6 +606,8 @@ class FantraxAPI:
             data = self.public_request("getTeamRosters", params)
             self._save_raw("team_rosters_public", data)
             return data
+        except FantraxAuthError:
+            raise
         except Exception as e:
             self.logger.warning(f"Public roster API failed: {e}")
             return {}
@@ -562,7 +629,24 @@ class FantraxAPI:
             "playerId": player_id,
             "tab": "TRANSACTIONS_FANTASY"
         }}]
-        return self.internal_request(msgs, save_as=save_as)
+        # Fantrax also signals rate limits inside HTTP 200 responses. Serialize
+        # profile requests so every worker observes the same cooldown and pace.
+        with self._profile_lock:
+            for attempt in range(4):
+                wait = self._profile_delay - (time.monotonic() - self._last_profile)
+                if wait > 0:
+                    time.sleep(wait)
+                self._last_profile = time.monotonic()
+                data = self.internal_request(msgs, save_as=save_as)
+                errors = [data.get("pageError", {})] + [r.get("pageError", {}) for r in data.get("responses", [])]
+                throttled = any("too quickly" in str(e.get("text", "")).lower() for e in errors)
+                if not throttled:
+                    return data
+                self._profile_delay = min(8.0, self._profile_delay * 2)
+                if attempt == 3:
+                    raise FantraxRateLimitError("Fantrax continues to request a slowdown; collection stopped.")
+                self.logger.warning("Fantrax requested a slowdown; cooling down 60 seconds, then %.1fs per profile", self._profile_delay)
+                time.sleep(60)
 
 
 # =============================================================================
@@ -684,6 +768,8 @@ def parse_transaction_table(profile_data: Dict) -> List[Dict]:
                 # Parse action
                 action_clean = strip_html(action_html)
                 team_name = extract_bold_text(action_html)
+                if not date_iso(date_str) or not team_name:
+                    raise ValueError("Transaction has no valid date or team")
                 
                 # Determine action type
                 action_lower = action_clean.lower()
@@ -721,7 +807,7 @@ def parse_transaction_table(profile_data: Dict) -> List[Dict]:
                 })
     
     except Exception as e:
-        pass
+        raise ValueError("Could not parse player transaction table") from e
     
     return transactions
 
@@ -823,6 +909,12 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
     rosters_data = api.get_team_rosters_public()
     rosters = rosters_data.get("rosters", {})
 
+    expected_team_ids = {t["team_id"] for t in teams}
+    if len(expected_team_ids) != len(teams) or not all(expected_team_ids):
+        raise ValueError("Duplicate or missing team IDs")
+    if not isinstance(rosters, dict) or set(rosters) != expected_team_ids:
+        raise ValueError("Roster response does not cover exactly the league's teams")
+
     if rosters:
         rostered = []
         for team_id, roster in rosters.items():
@@ -858,8 +950,28 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
     all_journeys = []
     errors = []
 
-    players_to_fetch = collected["players"] or []
+    # Seed a durable player inventory from every saved season and draft, not just
+    # today's roster. Existing snapshots stay untouched and retain provenance.
+    history = HistoryStore(Path(config.data_root) / "history.sqlite3")
+    try:
+        draft_path = Path(config.draft_results)
+        drafts = history.import_drafts(draft_path) if draft_path.exists() else {}
+        for old_run in sorted(Path(config.data_root).glob("run_*")):
+            if old_run.is_dir() and old_run != dirs.root:
+                history.import_run(old_run, drafts)
+        known_players = history.known_players()
+    finally:
+        history.close()
+    roster_by_id = {p["player_id"]: p for p in collected["players"]}
+    players_to_fetch = list(roster_by_id.values())
+    players_to_fetch.extend(p for p in known_players if p["player_id"] not in roster_by_id)
+    canonical_names = api.get_player_names()
+    for player in players_to_fetch:
+        if player["player_id"] in canonical_names:
+            player["player_name"] = canonical_names[player["player_id"]]
     total = len(players_to_fetch)
+    cache = ProfileCache(dirs.cache_dir, config.league_id, config.season, config.cache_max_age_hours)
+    profile_sources = {}
 
     # Thread-safe counter and lock for progress logging
     _counter_lock = threading.Lock()
@@ -869,26 +981,22 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
         """Fetch + parse one player; returns result dict or None on error."""
         pid = player["player_id"]
         pname = player["player_name"]
-        cache_path = dirs.cache_dir / f"player_{pid}.json"
-
         try:
-            if cache_path.exists() and not config.refresh:
-                with open(cache_path) as f:
-                    profile_data = json.load(f)
+            cached = None if config.refresh else cache.read(pid)
+            if cached is not None:
+                profile_data = cached["payload"]
                 source = "cached"
+                fetched_at = cached["fetched_at"]
             else:
                 profile_data = api.get_player_profile(pid, save_as=f"player_{pid}")
-                # Write cache (atomic via tmp file to avoid partial writes)
-                tmp = cache_path.with_suffix(".tmp")
-                with open(tmp, "w") as f:
-                    json.dump(profile_data, f, indent=2)
-                tmp.replace(cache_path)
+                validate_profile(profile_data)
+                fetched_at = datetime.now(timezone.utc).isoformat()
                 source = "fetched"
-                # Respect rate limit — only when actually making a network call
-                time.sleep(config.request_delay)
 
             resolved_name = pname or extract_player_name_from_profile(profile_data) or pid
             txns = parse_transaction_table(profile_data)
+            if source == "fetched":
+                fetched_at = cache.write(pid, profile_data)["fetched_at"]
             for t in txns:
                 t["player_id"] = pid
                 t["player_name"] = resolved_name
@@ -907,9 +1015,11 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
                 "resolved_name": resolved_name,
                 "transactions": txns,
                 "journeys": journeys,
+                "source": source,
+                "fetched_at": fetched_at,
             }
 
-        except FantraxAuthError:
+        except (FantraxAuthError, FantraxRateLimitError):
             raise  # propagate auth errors immediately
         except Exception as e:
             logger.warning(f"Error processing player {pname or pid}: {e}")
@@ -926,7 +1036,7 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
         for future in concurrent.futures.as_completed(futures):
             try:
                 result = future.result()
-            except FantraxAuthError:
+            except (FantraxAuthError, FantraxRateLimitError):
                 # Cancel remaining futures and re-raise
                 pool.shutdown(wait=False, cancel_futures=True)
                 raise
@@ -945,10 +1055,18 @@ def collect_all(api: FantraxAPI, dirs: RunDirs, config: Config, logger: logging.
                 result["player"]["player_name"] = result["resolved_name"]
                 all_transactions.extend(result["transactions"])
                 all_journeys.extend(result["journeys"])
+                profile_sources[result["player"]["player_id"]] = {
+                    "source": result["source"], "fetched_at": result["fetched_at"],
+                }
 
     collected["transactions"] = all_transactions
     collected["journeys"] = all_journeys
     collected["errors"].extend(errors)
+    collected["profile_count"] = total
+    collected["profile_sources"] = profile_sources
+    # Thread completion order must not affect event IDs or exported snapshots.
+    collected["transactions"].sort(key=lambda t: (t["player_id"], t["date"], t["action_type"], t["details"]))
+    collected["journeys"].sort(key=lambda j: (j["player_id"], j["start_date"]))
 
     logger.info(f"Collected {len(all_transactions)} transactions, {len(all_journeys)} ownership stints")
     
@@ -976,12 +1094,12 @@ def export_all(collected: Dict, dirs: RunDirs, logger: logging.Logger) -> None:
     logger.info(f"Exported {len(players_df)} rostered players")
     
     # Transactions
-    txn_df = pd.DataFrame(collected["transactions"])
+    txn_df = pd.DataFrame(collected["transactions"], columns=["date", "action_type", "team_name", "owner_username", "owner_real_name", "salary", "details", "action_raw", "player_id", "player_name"])
     txn_df.to_csv(output / "transaction_history.csv", index=False)
     logger.info(f"Exported {len(txn_df)} transactions")
     
     # Journeys
-    journeys_df = pd.DataFrame(collected["journeys"])
+    journeys_df = pd.DataFrame(collected["journeys"], columns=["player_id", "player_name", "team_name", "owner_username", "owner_real_name", "start_date", "end_date", "acquisition_type", "acquisition_salary"])
     journeys_df.to_csv(output / "player_journeys.csv", index=False)
     logger.info(f"Exported {len(journeys_df)} ownership stints")
     
@@ -995,7 +1113,9 @@ def export_all(collected: Dict, dirs: RunDirs, logger: logging.Logger) -> None:
                 "season": year,
                 "team_name": team_name,
             })
-    owner_df = pd.DataFrame(owner_records)
+    owner_records.extend({key: row[key] for key in ("username", "real_name", "season", "team_name")}
+                         for row in TEAM_ALIASES)
+    owner_df = pd.DataFrame(owner_records).drop_duplicates()
     owner_df.to_csv(output / "owner_team_mapping.csv", index=False)
     logger.info(f"Exported {len(owner_df)} owner mappings")
     
@@ -1047,19 +1167,27 @@ def run_single_season(
         jsessionid=config.jsessionid,
         user_secret_id=config.user_secret_id,
         extra_cookies=config.extra_cookies,
+        api_version=config.api_version,
         request_delay=config.request_delay,
         data_root=config.data_root,
         refresh=config.refresh,
         verbose=config.verbose,
         all_season_league_ids=config.all_season_league_ids,
         workers=config.workers,
+        season=season,
+        cache_max_age_hours=config.cache_max_age_hours,
+        draft_results=config.draft_results,
+        allow_roster_shrink=config.allow_roster_shrink,
     )
 
     try:
         dirs = setup_run_dirs(data_root)
+        save_run_config(dirs, season_config)
         api = FantraxAPI(season_config, dirs.raw_dir, season_logger)
         collected = collect_all(api, dirs, season_config, season_logger)
         export_all(collected, dirs, season_logger)
+        validate_collection(collected, season_config)
+        publish_run(dirs, season_config, collected)
         season_logger.info(f"Season {season} complete → {dirs.root}")
         return dirs.root
     except FantraxAuthError as e:
@@ -1141,6 +1269,10 @@ Examples:
     p.add_argument("--delay", type=float, help="Request delay in seconds")
     p.add_argument("--refresh", action="store_true", help="Re-fetch cached player data")
     p.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
+    p.add_argument("--cache-max-age-hours", type=float, help="Profile cache lifetime (default: 24; 0 disables reuse)")
+    p.add_argument("--draft-results", help="Draft JSON used to discover former players")
+    p.add_argument("--allow-roster-shrink", action="store_true", help="Accept a verified roster decrease greater than 20 percent")
+    p.add_argument("--check-auth", action="store_true", help="Check current league access without collecting or publishing data")
 
     # Multi-season flags
     p.add_argument(
@@ -1174,17 +1306,34 @@ def main() -> int:
     # Load config
     config_path = Path(args.config)
     config = load_config(config_path, args)
+    config.season = next((year for year, lid in config.all_season_league_ids.items() if lid == config.league_id), None)
+    if config.cache_max_age_hours < 0 or config.request_delay < 0 or config.workers < 1:
+        print("ERROR: Cache age and delay must be nonnegative; workers must be positive.", file=sys.stderr)
+        return 1
 
     # Validate auth
-    if not config.jsessionid:
-        print("ERROR: Missing jsessionid. Set in config.yaml or use --jsessionid", file=sys.stderr)
-        print("\nTo get your JSESSIONID:", file=sys.stderr)
+    if not (config.jsessionid or config.extra_cookies.get("FX_RM") or config.extra_cookies.get("JSESSIONID")):
+        print("ERROR: Missing Fantrax credentials. Set extra_cookies.FX_RM or jsessionid in config.yaml.", file=sys.stderr)
+        print("\nTo get your Fantrax cookie:", file=sys.stderr)
         print("  1. Open Chrome and log into Fantrax", file=sys.stderr)
         print("  2. Open DevTools (F12) -> Application -> Cookies -> fantrax.com", file=sys.stderr)
-        print("  3. Copy the JSESSIONID value", file=sys.stderr)
+        print("  3. Copy FX_RM (or JSESSIONID if present) into your local config.yaml", file=sys.stderr)
         return 1
 
     data_root = Path(config.data_root)
+
+    if args.check_auth:
+        with tempfile.TemporaryDirectory(prefix="fantrax-auth-") as temp:
+            try:
+                api = FantraxAPI(config, Path(temp), logging.getLogger("fantrax.auth"))
+                teams = api.get_fantasy_teams()
+                if not teams:
+                    raise ValueError("No teams returned")
+                print(f"Access verified: {len(teams)} teams returned. No data published.")
+                return 0
+            except Exception as error:
+                print(f"Access check failed: {error}", file=sys.stderr)
+                return 2
 
     # ── Multi-season mode ─────────────────────────────────────────────────────
     if args.all_seasons or args.seasons:
@@ -1255,17 +1404,7 @@ def main() -> int:
     dirs = setup_run_dirs(data_root)
     logger = setup_logging(dirs.logs_dir, config.verbose)
 
-    # Save config snapshot (without secrets)
-    config_snapshot = {
-        "league_id": config.league_id,
-        "data_root": config.data_root,
-        "request_delay": config.request_delay,
-        "workers": config.workers,
-        "refresh": config.refresh,
-        "start_time": now_local_iso(),
-    }
-    with open(dirs.input_dir / "config.json", "w") as f:
-        json.dump(config_snapshot, f, indent=2)
+    save_run_config(dirs, config)
 
     logger.info("=" * 60)
     logger.info("FANTRAX OWNERSHIP TRACKER v4")
@@ -1279,6 +1418,8 @@ def main() -> int:
     try:
         collected = collect_all(api, dirs, config, logger)
         export_all(collected, dirs, logger)
+        validate_collection(collected, config)
+        publish_run(dirs, config, collected)
 
         logger.info("")
         logger.info("=" * 60)

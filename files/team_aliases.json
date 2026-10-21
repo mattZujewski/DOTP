@@ -1,0 +1,114 @@
+{
+  "verified_at": "2026-10-21",
+  "evidence": "Current getFantasyTeams IDs matched to the existing 2026 draft team IDs and owner records. Names are aliases; owner continuity follows the saved team identity.",
+  "teams": [
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "cse0s4mdmi4yj35o",
+      "team_name": "Bazzana Republic",
+      "previous_team_name": "Partially Torked",
+      "real_name": "Trent Radding",
+      "username": "trentradding"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "8bvmdvwdmi4yj35o",
+      "team_name": "Gimmie Adell Yeah!",
+      "previous_team_name": "The Undisputed ERA",
+      "real_name": "Alex Beim",
+      "username": "Beim"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "ql6tcbo4mi4yj35o",
+      "team_name": "McGone Fishin'",
+      "previous_team_name": "Mojo Dojo Casas House",
+      "real_name": "Jordan Papula",
+      "username": "Jpapula"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "fk83se6zmi4yj35o",
+      "team_name": "Miller Time",
+      "previous_team_name": "Top Gunnar",
+      "real_name": "Matthew Zujewski",
+      "username": "MattZujewski"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "8ka9joj6mi4yj35o",
+      "team_name": "Otto\u2019s Army",
+      "previous_team_name": "Boot & Raleigh",
+      "real_name": "Liam Burns",
+      "username": "lpburns"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "49oyomuemi4yj35o",
+      "team_name": "Rates & Carrolls",
+      "previous_team_name": "Rates & Carrolls",
+      "real_name": "Jose Garcia-Chope",
+      "username": "Jgchope"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "hbv2v2cdmi4yj35o",
+      "team_name": "Reed's Trading Post",
+      "previous_team_name": "Reed's Trading Post",
+      "real_name": "Reed Heim",
+      "username": "rheim"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "2q41vv5smi4yj35o",
+      "team_name": "The Big Miz Show",
+      "previous_team_name": "Gho-Strider",
+      "real_name": "Jason Bartolini",
+      "username": "sfgiant"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "mih49znrmi4yj35o",
+      "team_name": "The Juan-Binary Murderers\u2019 Row",
+      "previous_team_name": "The Juan-Binary Murderers' Row",
+      "real_name": "Owen Hern",
+      "username": "owenhern"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "8bdvsnv9mi4yj35o",
+      "team_name": "The Roman Empire",
+      "previous_team_name": "The Roman Empire",
+      "real_name": "Evan Soraci",
+      "username": "esoraci"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "hb31cor4mi4yj35o",
+      "team_name": "Wallace & deGromit",
+      "previous_team_name": "Wallace & deGromit",
+      "real_name": "Jack Dunne",
+      "username": "Jookuh"
+    },
+    {
+      "season": 2026,
+      "league_id": "f0ksi2jtmi4yj35i",
+      "team_id": "d6a4sddumi4yj35o",
+      "team_name": "Yoshi's Riland",
+      "previous_team_name": "Yoshi's Riland",
+      "real_name": "David Turley",
+      "username": "dturls55"
+    }
+  ]
+}

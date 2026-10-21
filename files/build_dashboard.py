@@ -148,11 +148,30 @@ OWNER_HISTORY: Dict[str, Dict] = {
 def find_latest_run(data_root: str) -> Path:
     root = Path(data_root)
     latest = root / "latest"
-    if latest.exists() or latest.is_symlink():
+    def usable(run):
+        manifest = run / "manifest.json"
+        if manifest.exists():
+            try:
+                metadata = json.loads(manifest.read_text())
+                if metadata.get("status") != "complete":
+                    return False
+                if metadata.get("current_season") and metadata.get("season") != metadata["current_season"]:
+                    return False
+            except (ValueError, OSError):
+                return False
+        required = ["teams", "current_rosters", "transaction_history", "player_journeys", "owner_team_mapping"]
+        if not all((run / "output" / f"{name}.csv").exists() for name in required):
+            return False
+        try:
+            return not pd.read_csv(run / "output" / "current_rosters.csv").empty
+        except (ValueError, OSError, pd.errors.EmptyDataError):
+            return False
+
+    if latest.exists() and usable(latest.resolve()):
         return latest.resolve() / "output"
-    runs = sorted(d for d in root.iterdir() if d.is_dir() and d.name.startswith("run_"))
+    runs = sorted(d for d in root.iterdir() if d.is_dir() and d.name.startswith("run_") and usable(d))
     if not runs:
-        sys.exit(f"No run directories found in {data_root}")
+        sys.exit(f"No successful run directories found in {data_root}")
     return runs[-1] / "output"
 
 
@@ -165,6 +184,8 @@ def load_data(data_root: str) -> Dict[str, pd.DataFrame]:
         "rosters":      pd.read_csv(out_dir / "current_rosters.csv"),
         "journeys":     pd.read_csv(out_dir / "player_journeys.csv"),
         "owner_mapping":pd.read_csv(out_dir / "owner_team_mapping.csv"),
+        "trade_events": pd.read_csv(out_dir / "trade_events.csv") if (out_dir / "trade_events.csv").exists() else None,
+        "season_teams": pd.read_csv(out_dir / "season_teams.csv") if (out_dir / "season_teams.csv").exists() else None,
     }
 
 # ---------------------------------------------------------------------------
@@ -248,11 +269,19 @@ def resolve_partners_to_owners(
     return owners
 
 
+def trade_owners(row, all_team_names_sorted, team_to_owner):
+    structured = row.get("assets_by_party_json")
+    if isinstance(structured, str) and structured:
+        return set(json.loads(structured))
+    return resolve_partners_to_owners(extract_trade_partners(row["details"], all_team_names_sorted), team_to_owner)
+
+
 def build_trade_events(transactions_df: pd.DataFrame) -> pd.DataFrame:
     """Deduplicated trade events with year/month columns."""
     trades = transactions_df[transactions_df["action_type"] == "TRADED"].copy()
     trades["details"] = trades["details"].fillna("").apply(normalize_quotes)
-    unique = trades.drop_duplicates(subset=["date", "details"]).copy()
+    key = ["event_id"] if "event_id" in trades.columns and trades["event_id"].notna().all() else ["date", "details"]
+    unique = trades.drop_duplicates(subset=key).copy()
 
     def _year(d):
         dt = parse_date_str(d)
@@ -281,10 +310,10 @@ def build_trade_pairs_df(
 
     for idx, row in trade_events_df.iterrows():
         teams = extract_trade_partners(row["details"], all_team_names_sorted)
-        owners = resolve_partners_to_owners(teams, team_to_owner)
+        owners = trade_owners(row, all_team_names_sorted, team_to_owner)
         if len(owners) < 2:
             continue
-        event_id = row.get("date_iso", str(idx)) + f"-{idx:03d}"
+        event_id = row.get("event_id") or row.get("date_iso", str(idx)) + f"-{idx:03d}"
         for a, b in combinations(sorted(owners), 2):
             pair_counts[(a, b)] += 1
             pair_events[(a, b)].append(event_id)
@@ -391,7 +420,7 @@ def compute_owner_player_throughput(
         )
     df = df[df["owner_real_name"].notna() & ~df["owner_real_name"].isin(["", "Unknown"])]
 
-    unique_players = df.groupby("owner_real_name")["player_name"].nunique().reset_index()
+    unique_players = df.groupby("owner_real_name")["player_id"].nunique().reset_index()
     unique_players.columns = ["owner", "unique_players"]
 
     total_stints = df.groupby("owner_real_name").size().reset_index(name="total_stints")
@@ -520,7 +549,7 @@ def build_owner_stats(
     # Unique players from journeys
     for owner, group in journeys_df[journeys_df["owner_real_name"].notna()].groupby("owner_real_name"):
         if owner in stats:
-            stats[owner]["unique_players_rostered"] = int(group["player_name"].nunique())
+            stats[owner]["unique_players_rostered"] = int(group["player_id"].nunique())
 
     # Trade counts and partner analysis
     owner_trade_counts: Dict[str, int] = defaultdict(int)
@@ -528,7 +557,7 @@ def build_owner_stats(
 
     for _, row in trade_events_df.iterrows():
         teams = extract_trade_partners(row["details"], all_team_names_sorted)
-        owners = resolve_partners_to_owners(teams, team_to_owner)
+        owners = trade_owners(row, all_team_names_sorted, team_to_owner)
         for o in owners:
             owner_trade_counts[o] += 1
         if len(owners) >= 2:
@@ -594,6 +623,10 @@ def build_teams_json(
             for yr, tn in sorted(data["teams"].items())
         ]
         current_team = data["teams"].get(max(data["teams"].keys()), "")
+        live_team = teams_df.loc[teams_df["owner_real_name"] == real_name, "team_name"]
+        if len(live_team) == 1:
+            current_team = live_team.iloc[0]
+            history[-1]["team_name"] = current_team
         o_stats = owner_stats.get(real_name, {})
         owners_list.append({
             "username":    username,
@@ -607,7 +640,7 @@ def build_teams_json(
     # Sort by real_name for consistency
     owners_list.sort(key=lambda x: x["real_name"])
 
-    unique_players = int(journeys_df["player_name"].nunique())
+    unique_players = int(journeys_df["player_id"].nunique())
 
     return {
         "meta": {
@@ -837,11 +870,11 @@ def build_trades_json(
 
     for idx, row in trade_events_df.iterrows():
         teams  = extract_trade_partners(row["details"], all_team_names_sorted)
-        owners = resolve_partners_to_owners(teams, team_to_owner)
+        owners = trade_owners(row, all_team_names_sorted, team_to_owner)
         party_count = len(owners)
         trade_type = f"{party_count}-team" if party_count >= 2 else "unknown"
 
-        event_id = (row.get("date_iso") or "unknown") + f"-{idx:03d}"
+        event_id = row.get("event_id") or (row.get("date_iso") or "unknown") + f"-{idx:03d}"
 
         for o in owners:
             owner_trade_counts[o] += 1
@@ -859,8 +892,9 @@ def build_trades_json(
         # Fall back to regex parsing only if CSV lookup misses (e.g. format "X to Y").
         date_str_key = str(row.get("date", "")).strip()
         details_norm_key = normalize_quotes(str(row.get("details", "")).strip())
-        assets_by_owner = row_assets_lookup.get((date_str_key, details_norm_key), {})
-        if not assets_by_owner:
+        structured = row.get("assets_by_party_json")
+        assets_by_owner = json.loads(structured) if isinstance(structured, str) and structured else row_assets_lookup.get((date_str_key, details_norm_key), {})
+        if not assets_by_owner and not structured:
             assets = parse_asset_lists(row["details"], all_team_names_sorted)
             for team_name, asset_data in assets.items():
                 owner = team_to_owner.get(normalize_quotes(team_name))
@@ -869,6 +903,10 @@ def build_trades_json(
 
         # FEAT-02: classify trade type from details_raw + asset counts
         type_label, sub_type = classify_trade_type(str(row["details"]), assets_by_owner)
+        asset_types = row.get("asset_types_json")
+        if isinstance(asset_types, str) and asset_types:
+            from structured_trades import classify_assets
+            type_label, sub_type = classify_assets(json.loads(asset_types), assets_by_owner)
 
         trade_events_list.append({
             "event_id":          event_id,
@@ -884,6 +922,7 @@ def build_trades_json(
             "trade_type_label":  type_label,
             "player_sub_type":   sub_type,
             "assets_by_party":   assets_by_owner,
+            **({"pick_assets": json.loads(row["pick_assets_json"])} if isinstance(row.get("pick_assets_json"), str) else {}),
         })
 
     # Sort trade events by date
@@ -962,8 +1001,10 @@ def build_trades_json(
 def build_journeys_json(
     journeys_df: pd.DataFrame,
     team_to_owner: Dict[str, str],
+    rosters_df: Optional[pd.DataFrame] = None,
 ) -> Dict:
     stints = []
+    current_owners = dict(zip(rosters_df["player_id"].astype(str), rosters_df["owner_real_name"])) if rosters_df is not None else None
 
     for _, row in journeys_df.iterrows():
         start_iso = to_iso(row.get("start_date"))
@@ -987,6 +1028,9 @@ def build_journeys_json(
         else:
             owner = _owner_csv
 
+        if current_owners is not None and is_current:
+            is_current = current_owners.get(str(row.get("player_id", ""))) == owner
+
         stints.append({
             "player_id":        str(row.get("player_id", "")),
             "player_name":      str(row.get("player_name", "")),
@@ -998,6 +1042,7 @@ def build_journeys_json(
             "acquisition_type": str(row.get("acquisition_type", "")),
             "acquisition_salary": str(row.get("acquisition_salary", "")) if pd.notna(row.get("acquisition_salary")) else None,
             "is_current":       is_current,
+            "end_date_unknown": end_iso is None and not is_current,
         })
 
     # Sort: player_id then start_date
@@ -1202,12 +1247,17 @@ def build_picks_json(
         draft_data = json.load(f)
 
     player_index: Dict[str, Dict] = journeys_data.get("player_index", {})
+    if trades_data.get("trade_events") and all("pick_assets" in t for t in trades_data["trade_events"]):
+        from structured_trades import build_pick_results
+        return build_pick_results(trades_data["trade_events"], draft_data, player_index)
 
     # Build draft lookup: (draft_year, round, owner_name_lower) → list of picks
     # We use a list because the same owner may hold multiple picks of the same year+round
     draft_lookup: Dict[tuple, List[Dict]] = defaultdict(list)
     for season in draft_data.get("seasons", []):
         for pick in season.get("picks", []):
+            if not pick.get("player_id"):
+                continue
             key = (pick["draft_year"], pick["round"], pick["owner_name"].lower().strip())
             draft_lookup[key].append(pick)
 
@@ -1220,6 +1270,8 @@ def build_picks_json(
         for _yr, _team in _odata.get("teams", {}).items():
             _all_team_to_owner[_team.lower().strip()] = _real
             _all_team_to_owner[normalize_quotes(_team).lower().strip()] = _real
+    from team_identity import owner_aliases
+    _all_team_to_owner.update({name: info["real_name"] for name, info in owner_aliases().items()})
 
     PICK_PAT = _re.compile(
         r"(\d{4})\s+Draft\s+Pick[^,\n]*,\s*Round\s*(\d+)\s*\(([^)]+)\)",
@@ -1316,7 +1368,7 @@ def build_picks_json(
                 if len(receiving_owners) == 1:
                     receiving_owner = receiving_owners[0]
                 elif len(receiving_owners) > 1:
-                    receiving_owner = receiving_owners[0]  # best guess for 3-way
+                    receiving_owner = ""  # Text alone cannot identify a three-way recipient.
                 else:
                     receiving_owner = ""
 
@@ -1328,16 +1380,8 @@ def build_picks_json(
                     lookup_key = (pick_year, pick_round, receiving_owner.lower().strip())
                     matched_picks = draft_lookup.get(lookup_key, [])
                     if not matched_picks:
-                        # Try all parties in case receiving_owner resolution was wrong
-                        for o in parties:
-                            alt_key = (pick_year, pick_round, o.lower().strip())
-                            candidates = draft_lookup.get(alt_key, [])
-                            if candidates:
-                                matched_picks = candidates
-                                receiving_owner = o
-                                break
-                    if not matched_picks:
-                        result_status = "pending" if pick_year >= 2026 else "unknown"
+                        completed_drafts = {s["year"] for s in draft_data.get("seasons", [])}
+                        result_status = "unknown" if pick_year in completed_drafts else "pending"
                     elif len(matched_picks) == 1:
                         result_status = "matched"
                     else:
@@ -1362,7 +1406,7 @@ def build_picks_json(
                             "drafting_team":  dp.get("team_name", ""),
                             # Current status from journeys
                             "current_owner":  ji.get("current_owner", ""),
-                            "still_rostered": bool(ji),
+                            "still_rostered": bool(ji.get("current_owner")),
                             "owner_changes":  ji.get("owner_changes", 0),
                             "total_stints":   ji.get("total_stints", 0),
                         }
@@ -1383,6 +1427,7 @@ def build_picks_json(
                     "trade_date":          date_iso,
                     "trade_type_label":    trade_type_label,
                     "result_status":       result_status,
+                    "match_basis":         "Recipient and draft round; original pick identity is not confirmed" if result_status == "matched" else None,
                     "drafted_player":      drafted_player,
                     "ambiguous_candidates": ambiguous_candidates,
                 })
@@ -1447,7 +1492,7 @@ def main() -> None:
 
     # --- Trade events ---
     print("\n[1/4] Building trade data...")
-    trade_events = build_trade_events(txns)
+    trade_events = build_trade_events(data["trade_events"] if data["trade_events"] is not None else txns)
     print(f"      Unique trade events: {len(trade_events)}")
     trade_pairs = build_trade_pairs_df(trade_events, all_team_names_sorted, team_to_owner)
     print(f"      Trade pairs: {len(trade_pairs)}")
@@ -1463,6 +1508,10 @@ def main() -> None:
         teams_df, journeys_df, trade_events, rosters_df,
         all_team_names_sorted, team_to_owner, len(trade_events),
     )
+    if data["season_teams"] is not None:
+        for owner in teams_data["owners"]:
+            observed = data["season_teams"][data["season_teams"]["username"] == owner["username"]].sort_values("season")
+            owner["history"] = [{"season": int(row["season"]), "team_name": row["team_name"]} for _, row in observed.iterrows()]
     out = data_dir / "teams.json"
     out.write_text(json.dumps(teams_data, indent=2, default=str), encoding="utf-8")
     print(f"      Written: {out} ({out.stat().st_size // 1024}KB)")
@@ -1479,7 +1528,7 @@ def main() -> None:
 
     # --- journeys.json ---
     print("\n[4a/4] Building journeys.json...")
-    journeys_data = build_journeys_json(journeys_df, team_to_owner)
+    journeys_data = build_journeys_json(journeys_df, team_to_owner, rosters_df)
     out = data_dir / "journeys.json"
     out.write_text(json.dumps(journeys_data, indent=2, default=str), encoding="utf-8")
     print(f"      Written: {out} ({out.stat().st_size // 1024}KB)")

@@ -17,6 +17,7 @@ from typing import Any, Dict, List, Optional
 
 import requests
 import yaml
+from team_identity import owner_aliases
 
 # ---------------------------------------------------------------------------
 # Owner/team lookup (mirrors fantrax_tracker_v4.py OWNERS dict)
@@ -151,6 +152,8 @@ for _uname, _odata in OWNERS.items():
         TEAM_TO_OWNER[_alias] = _info
         TEAM_TO_OWNER[_norm(_alias)] = _info
 
+TEAM_TO_OWNER.update(owner_aliases())
+
 def owner_from_team(team_name: str) -> Dict:
     for candidate in (team_name, _norm(team_name)):
         if candidate in TEAM_TO_OWNER:
@@ -188,15 +191,17 @@ def fetch_season_standings(
     jsessionid: str,
     fx_rm: str = "",
     delay: float = 0.4,
+    api_version: str = "187.3.6",
+    raw_dir: Optional[Path] = None,
 ) -> List[Dict]:
     """Fetch standings for a single season. Returns list of team-stat dicts."""
     url = f"{INTERNAL_API_URL}?leagueId={league_id}"
     payload = {
         "uiv": 3,
         "refUrl": f"https://www.fantrax.com/fantasy/league/{league_id}/standings",
-        "dt": 2, "at": 0, "av": "0.0",
+        "dt": 0, "at": 0,
         "tz": "America/New_York",
-        "v": "182.0.1",
+        "v": api_version,
         "msgs": [{"method": "getStandings", "data": {}}],
     }
     headers = {
@@ -206,20 +211,23 @@ def fetch_season_standings(
         "referer": f"https://www.fantrax.com/fantasy/league/{league_id}/standings",
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
     }
-    cookies = {"JSESSIONID": jsessionid}
+    cookies = {"JSESSIONID": jsessionid} if jsessionid else {}
     if fx_rm:
         cookies["FX_RM"] = fx_rm
 
     resp = requests.post(url, headers=headers, cookies=cookies, json=payload, timeout=30)
     resp.raise_for_status()
     data = resp.json()
+    if raw_dir is not None:
+        from collection_state import atomic_json
+        atomic_json(Path(raw_dir) / f"standings_{season}.json", data)
     time.sleep(delay)
 
     # Check auth
     raw_txt = json.dumps(data)
     if "WARNING_NOT_LOGGED_IN" in raw_txt:
         raise RuntimeError(
-            f"Session expired. Refresh JSESSIONID in config.yaml. (season {season})"
+            f"Session expired. Refresh Fantrax login cookies in config.yaml. (season {season})"
         )
 
     results = []
@@ -246,6 +254,11 @@ def fetch_season_standings(
             print(f"  WARNING: No stat table found for season {season}")
             continue
 
+        labels = {str(c.get("shortName", "")).lower().replace("+", ""): i
+                  for i, c in enumerate(stat_table.get("header", {}).get("cells", []))}
+        missing = set(STAT_COLS) - set(labels)
+        if missing:
+            raise ValueError(f"Missing standings columns: {sorted(missing)}")
         rows = stat_table.get("rows", [])
         for row in rows:
             fixed_cells = row.get("fixedCells", [])
@@ -266,37 +279,22 @@ def fetch_season_standings(
             owner_info = owner_from_team(team_name)
 
             # Extract stats from cells (using toolTip for precision when available)
-            def cell_val(i):
+            def cell_val(stat):
+                i = labels[stat]
                 if i >= len(cells):
                     return None
                 c = cells[i]
+                # The displayed .1/.2 denote outs, while toolTip uses decimal innings.
+                if stat == "ip":
+                    return parse_num(str(c.get("content", "")))
                 raw = c.get("toolTip") or c.get("content") or ""
                 return parse_num(str(raw))
 
-            # Cells: [pts, gp, ab, h, r, hr, rbi, sb, obp, ip, k, era, whip, svh3, wqs]
             row_data = {
-                "season": season,
-                "rank": rank,
-                "team_name": team_name,
-                "team_id": team_id,
+                "season": season, "rank": rank, "team_name": team_name, "team_id": team_id,
                 "owner_real_name": owner_info.get("real_name", "Unknown"),
                 "owner_username": owner_info.get("username", "Unknown"),
-                # Stats
-                "pts": cell_val(0),
-                "gp": cell_val(1),
-                "ab": cell_val(2),
-                "h": cell_val(3),
-                "r": cell_val(4),
-                "hr": cell_val(5),
-                "rbi": cell_val(6),
-                "sb": cell_val(7),
-                "obp": cell_val(8),
-                "ip": cell_val(9),
-                "k": cell_val(10),
-                "era": cell_val(11),
-                "whip": cell_val(12),
-                "svh3": cell_val(13),
-                "wqs": cell_val(14),
+                **{stat: cell_val(stat) for stat in STAT_COLS},
             }
             results.append(row_data)
 
@@ -309,7 +307,7 @@ def build_standings_json(all_rows: List[Dict]) -> Dict:
 
     seasons = sorted(set(r["season"] for r in all_rows))
 
-    # All-time: sum counting stats, weighted average for rate stats
+    # All-time: sum counting stats; rate fields are averages of season rates.
     # per owner across all seasons
     alltime_by_owner: Dict[str, Dict] = {}
     for row in all_rows:
@@ -337,7 +335,11 @@ def build_standings_json(all_rows: List[Dict]) -> Dict:
         o["total_gp"] += (row["gp"] or 0)
         for stat in ("ab", "h", "r", "hr", "rbi", "sb", "k"):
             o[stat] = (o[stat] or 0) + (row[stat] or 0)
-        o["ip"] = round((o["ip"] or 0) + (row["ip"] or 0), 1)
+        def innings_to_outs(value):
+            value = float(value or 0)
+            return int(value) * 3 + round((value - int(value)) * 10)
+        outs = innings_to_outs(o["ip"]) + innings_to_outs(row["ip"])
+        o["ip"] = outs // 3 + (outs % 3) / 10
         o["svh3"] = round((o["svh3"] or 0) + (row["svh3"] or 0), 1)
         o["wqs"] = round((o["wqs"] or 0) + (row["wqs"] or 0), 1)
         if row["obp"] is not None:
@@ -374,6 +376,8 @@ def build_standings_json(all_rows: List[Dict]) -> Dict:
         "meta": {
             "generated_at": datetime.now().isoformat(timespec="seconds"),
             "seasons": seasons,
+            "innings_format": "Baseball notation: .1 is one out, .2 is two outs",
+            "rate_aggregation": "Arithmetic average of season rates",
             "stat_columns": ["pts", "gp", "ab", "h", "r", "hr", "rbi", "sb", "obp",
                              "ip", "k", "era", "whip", "svh3", "wqs"],
         },
@@ -396,7 +400,7 @@ def main():
     with open(cfg_path) as f:
         cfg = yaml.safe_load(f)
 
-    jsessionid = cfg["jsessionid"]
+    jsessionid = cfg.get("jsessionid", "")
     fx_rm = cfg.get("extra_cookies", {}).get("FX_RM", "")
     all_season_ids = {int(k): str(v) for k, v in cfg.get("all_season_league_ids", {}).items()}
     delay = cfg.get("request_delay", 0.4)
@@ -409,19 +413,22 @@ def main():
     print(f"Fetching standings for seasons: {target_seasons}")
 
     all_rows = []
+    failed = []
     for season in target_seasons:
         league_id = all_season_ids[season]
         print(f"  {season} (league: {league_id}) ...", end="", flush=True)
         try:
-            rows = fetch_season_standings(league_id, season, jsessionid, fx_rm, delay)
+            rows = fetch_season_standings(league_id, season, jsessionid, fx_rm, delay, cfg.get("api_version", "187.3.6"), Path(args.out).parent / "raw_standings")
+            if not rows or any(r["owner_real_name"] == "Unknown" for r in rows):
+                raise ValueError("Missing teams or unresolved owners")
             all_rows.extend(rows)
             print(f" {len(rows)} teams OK")
         except Exception as e:
+            failed.append(season)
             print(f" ERROR: {e}")
 
-    if not all_rows:
-        print("No data fetched. Exiting.")
-        return
+    if failed or not all_rows:
+        raise SystemExit(f"Standings incomplete ({failed}); existing output retained.")
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)

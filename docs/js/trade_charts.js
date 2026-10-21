@@ -1047,8 +1047,8 @@
   // ── FEAT-03: Traded Picks Results ────────────────────────────────
 
   const PICK_STATUS_CONFIG = {
-    matched:   { label: 'Matched',   color: '#22c55e', desc: 'Pick used on a confirmed player' },
-    ambiguous: { label: 'Ambiguous', color: '#f59e0b', desc: 'Multiple picks of same slot — cannot confirm which player' },
+    matched:   { label: 'Matched', color: '#22c55e', desc: 'Confirmed by exact draft year, round, and pick number' },
+    ambiguous: { label: 'Ambiguous', color: '#f59e0b', desc: 'Original pick identity is unconfirmed; possible draft selections shown' },
     pending:   { label: 'Pending',   color: '#6b7280', desc: 'Draft has not occurred yet' },
     unknown:   { label: 'Unknown',   color: '#ef4444', desc: 'Pick exercised but no matching draft record found' },
   };
@@ -1114,7 +1114,7 @@
     // Sort: matched first, then by pick_year desc, then round asc
     const statusOrder = { matched: 0, ambiguous: 1, unknown: 2, pending: 3 };
     const sorted = [...visible].sort((a, b) => {
-      const so = (statusOrder[a.result_status] || 9) - (statusOrder[b.result_status] || 9);
+      const so = (statusOrder[a.result_status] ?? 9) - (statusOrder[b.result_status] ?? 9);
       if (so !== 0) return so;
       const yd = b.pick_year - a.pick_year;
       if (yd !== 0) return yd;
@@ -1165,7 +1165,7 @@
           <br><span style="font-size:11px;color:var(--text-muted)">Pick ${dp.overall_pick} (R${dp.round}.${dp.pick_in_round})</span>`;
       } else if (pick.result_status === 'ambiguous' && pick.ambiguous_candidates?.length) {
         const names = pick.ambiguous_candidates.map(c => c.player_name).join(' or ');
-        playerCell = `<span style="color:#f59e0b" title="Multiple picks of same slot — cannot confirm which player">⚠ ${names}</span>`;
+        playerCell = `<span style="color:#f59e0b" title="Original pick identity is unconfirmed; possible draft selections shown">⚠ ${names}</span>`;
       } else if (pick.result_status === 'pending') {
         playerCell = `<span style="color:var(--text-muted);font-style:italic">Draft not yet held</span>`;
       } else {
@@ -1217,8 +1217,8 @@
     const ambigCount = statusCounts.ambiguous || 0;
     if (insight) {
       insight.textContent = `${total} traded picks tracked across all seasons. `
-        + `${matchedCount} matched to a specific drafted player. `
-        + `${ambigCount} are ambiguous (same owner held multiple picks of the same round/year). `
+        + `${matchedCount} matched by exact draft slot. `
+        + `${ambigCount} need an original pick identity to confirm the drafted player. `
         + `${pendCount} are future picks not yet drafted.`;
     }
   }

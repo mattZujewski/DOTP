@@ -1,0 +1,55 @@
+{
+  "refreshed_at": "2026-10-21T04:11:05.073040+00:00",
+  "seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "teams": 12,
+  "rostered_players": 569,
+  "historical_players": 1928,
+  "player_transactions": 9803,
+  "trade_events": 665,
+  "standings_records": 96,
+  "draft_slots": 960,
+  "selected_draft_slots": 926,
+  "unfilled_draft_slots": 34,
+  "ownership_stints": 5860,
+  "historical_stints_with_unknown_end_date": 12,
+  "traded_pick_references": 407,
+  "pick_match_statuses": {
+    "pending": 57,
+    "matched": 73,
+    "ambiguous": 230,
+    "unknown": 47
+  },
+  "coverage": "All pages of executed, non-deleted claim/drop and trade logs for 2019\u20132026, plus recorded draft selections. Current ownership verified against live rosters.",
+  "source_pages": 36,
+  "checks": {
+    "all_current_owners_match_rosters": true,
+    "unique_trade_ids": true,
+    "exact_draft_matches_verified": true,
+    "strict_json_valid": true,
+    "source_season_ids_verified": true,
+    "regression_tests_passed": 29,
+    "browser_pages_verified": [
+      "home",
+      "standings",
+      "trades",
+      "players",
+      "teams"
+    ],
+    "browser_console_errors": 0
+  },
+  "limitations": [
+    "12 non-rostered historical players have no recorded closing transaction; exit dates are left unknown.",
+    "Only explicit draft slot numbers establish confirmed traded-pick outcomes.",
+    "Deleted transactions and lineup-position changes are excluded from ownership history."
+  ],
+  "validated_at": "2026-10-21T04:12:39.771278+00:00"
+}

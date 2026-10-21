@@ -26,6 +26,9 @@ from typing import Any, Dict, List, Optional
 
 import requests
 import yaml
+from team_identity import owner_aliases
+from player_directory import player_names
+from collection_state import atomic_json
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -36,7 +39,7 @@ DRAFT_RESULTS_URL = BASE_URL + "/fxea/general/getDraftResults"
 LEAGUE_INFO_URL   = BASE_URL + "/fxea/general/getLeagueInfo"
 PLAYER_PROFILE_URL = BASE_URL + "/fxpa/req"
 
-API_VERSION = "182.0.1"
+API_VERSION = "187.3.6"
 MAIN_LEAGUE_ID = "f0ksi2jtmi4yj35i"  # 2026 — used for getPlayerProfile resolution
 
 # Ground-truth owner history keyed by real_name → {year: team_name}
@@ -131,6 +134,7 @@ TEAM_TO_OWNER.update({
     "the petey blinders": "Jack Dunne",        # variant of "Petey Blinders"
     "kershawshank redemption": "David Turley", # 2020 name; appears in 2021 draft data
 })
+TEAM_TO_OWNER.update({name: row["real_name"] for name, row in owner_aliases().items()})
 
 
 def normalize_team_name(name: str) -> str:
@@ -151,7 +155,8 @@ def normalize_team_name(name: str) -> str:
 
 def make_session(jsessionid: str, fx_rm: str) -> requests.Session:
     s = requests.Session()
-    s.cookies.set("JSESSIONID", jsessionid, domain="www.fantrax.com")
+    if jsessionid:
+        s.cookies.set("JSESSIONID", jsessionid, domain="www.fantrax.com")
     if fx_rm:
         s.cookies.set("FX_RM", fx_rm, domain="www.fantrax.com")
     s.headers.update({
@@ -171,7 +176,10 @@ def get_draft_picks(session: requests.Session, league_id: str, delay: float) -> 
         if resp.status_code != 200:
             print(f"    [WARN] getDraftResults HTTP {resp.status_code} for league {league_id}")
             return None
-        return resp.json()
+        result = resp.json()
+        if hasattr(session, "raw_dir"):
+            atomic_json(session.raw_dir / f"draft_{league_id}.json", result)
+        return result
     except Exception as e:
         print(f"    [ERR] getDraftResults failed for {league_id}: {e}")
         return None
@@ -186,6 +194,8 @@ def get_team_info(session: requests.Session, league_id: str, delay: float) -> Di
         if resp.status_code != 200:
             return {}
         data = resp.json()
+        if hasattr(session, "raw_dir"):
+            atomic_json(session.raw_dir / f"league_{league_id}.json", data)
         team_info = data.get("teamInfo", {})
         # teamInfo is {teamId: {name: str, ...}} or {teamId: str}
         result = {}
@@ -209,8 +219,8 @@ def resolve_player_name_api(session: requests.Session, player_id: str, delay: fl
             "leagueId": MAIN_LEAGUE_ID,
         }}],
         "refUrl": f"https://www.fantrax.com/fantasy/league/{MAIN_LEAGUE_ID}/players",
-        "version": API_VERSION,
-        "returnEnvelope": True,
+        "v": session.headers.get("X-Fantrax-Api", API_VERSION),
+        "uiv": 3, "dt": 0, "at": 0, "tz": "America/New_York",
     }
     try:
         resp = session.post(
@@ -226,7 +236,8 @@ def resolve_player_name_api(session: requests.Session, player_id: str, delay: fl
         if not responses:
             return None
         misc = responses[0].get("data", {}).get("miscData", {})
-        return misc.get("name") or None
+        from fantrax_tracker_v4 import extract_player_name_from_profile
+        return misc.get("name") or extract_player_name_from_profile(data) or None
     except Exception as e:
         print(f"    [ERR] getPlayerProfile failed for {player_id}: {e}")
         return None
@@ -309,7 +320,7 @@ def scrape_season(
         team_id    = p.get("teamId", "")
         player_id  = p.get("playerId", "")
         team_name  = team_name_map.get(team_id, "")
-        player_name = player_cache.get(player_id, f"Unknown ({player_id})")
+        player_name = player_cache.get(player_id, f"Unknown ({player_id})") if player_id else ""
 
         # Resolve owner real name by team name (year-agnostic — Fantrax may
         # return current-season team names for historical league IDs)
@@ -325,6 +336,8 @@ def scrape_season(
             "owner_name":    owner_name,
             "player_id":     player_id,
             "player_name":   player_name,
+            "pick_status":   "selected" if player_id else "unfilled",
+            "picked_at_ms":  p.get("time"),
         })
 
     return {
@@ -368,8 +381,8 @@ def main() -> None:
     delay      = args.delay if args.delay is not None else float(cfg.get("request_delay", 0.4))
     league_ids: Dict[int, str] = {int(k): v for k, v in cfg.get("all_season_league_ids", {}).items()}
 
-    if not jsessionid:
-        sys.exit("No jsessionid in config.yaml — cannot authenticate")
+    if not (jsessionid or fx_rm):
+        sys.exit("No Fantrax login cookies in config.yaml — cannot authenticate")
     if not league_ids:
         sys.exit("No all_season_league_ids in config.yaml")
 
@@ -384,7 +397,15 @@ def main() -> None:
     print(f"Scraping {len(years_to_scrape)} seasons: {years_to_scrape}")
 
     session = make_session(jsessionid, fx_rm)
+    session.headers["X-Fantrax-Api"] = cfg.get("api_version", API_VERSION)
+    session.raw_dir = docs_dir / "raw_drafts"
     player_cache = load_player_cache(docs_dir)
+    directory_response = session.get(BASE_URL + "/fxea/general/getPlayerIds", params={"sport": "MLB"}, timeout=30)
+    directory_response.raise_for_status()
+    directory = directory_response.json()
+    player_cache.update(player_names(directory))
+    atomic_json(session.raw_dir / "player_directory.json", directory)
+    time.sleep(delay)
 
     seasons_out: List[Dict] = []
     picks_by_player: Dict[str, Dict] = {}  # player_id → pick info (latest draft)
@@ -408,6 +429,15 @@ def main() -> None:
                         "player_name":   pick["player_name"],
                         "player_id":     pid,
                     }
+
+    if len(seasons_out) != len(years_to_scrape) or not seasons_out:
+        sys.exit("Draft coverage incomplete; existing output retained.")
+    unresolved = [p for season in seasons_out for p in season["picks"]
+                  if not p["owner_name"] or (p["player_id"] and p["player_name"].startswith("Unknown"))]
+    if unresolved:
+        atomic_json(docs_dir / "draft_review.json", {"seasons": seasons_out, "unresolved": unresolved})
+        print("Unresolved entries:", [{k: p[k] for k in ("draft_year", "player_id", "team_name", "owner_name")} for p in unresolved])
+        sys.exit("Unresolved draft players or owners; existing output retained.")
 
     # Summary stats
     total_picks = sum(s["num_picks"] for s in seasons_out)

@@ -1,0 +1,15 @@
+DOTP visual identity — October 21, 2026
+
+Generated with the built-in ImageGen tool. Original images are preserved here and used locally by the dashboard; no generated asset depends on a personal machine path.
+
+Files
+- dotp-crest.png: transparent baseball duck crest; sidebar identity, favicon, dashboard emblem.
+- pond-ballpark.png: editorial ballpark illustration; clubhouse overview banner.
+
+The application also creates coordinated, readable team monogram shields with stable colors. These are interface identities, not official team marks.
+
+Final logo prompt
+Use case: logo-brand. Create one polished original emblem for Ducks on the Pond Dynasty, a private dynasty baseball league dashboard. A confident mallard duck head in profile wearing a classic cream baseball cap with a tiny green diamond, integrated with a baseball diamond and two subtle pond ripples. Sophisticated heritage minor-league baseball branding, crisp bold silhouette, flat vector-like shapes, beautifully controlled negative space, forest green #173f35, warm cream #f5f0e5, muted gold #d2ad65, small terracotta bill accent. Compact circular crest, legible at small sidebar size, no lettering, no words, no gradients, no shadows, no mockup. Isolated emblem on genuinely transparent background. Center emblem with modest margins. Friendly and competitive, not childish.
+
+Final illustration prompt
+Use case: illustration-story. Asset type: wide editorial illustration for the Ducks on the Pond dynasty baseball dashboard. A beautifully composed small baseball diamond nestled beside a tranquil pond, two mallard ducks floating near reeds, vintage stadium lights, a few quiet grandstand rows and trees. Elevated aerial oblique view. Sophisticated flat screen-printed sports editorial illustration with subtle paper grain, forest green #173f35 and deep evergreen, warm ivory field lines, muted gold grass details and terracotta infield. Landscape 3:2 composition, baseball diamond on right half, calm dark evergreen pond and ripples on left half where the website will overlay text. No people close-up, no lettering, no words, no logos, no photo mockup, no charts. Cohesive restrained heritage baseball aesthetic, strong clean shapes, rich dark green backdrop.

@@ -96,10 +96,10 @@ ${topTravelers || '  (none)'}
 - Mean player tenure: ${Math.round(tenureStats.mean_days||0)} days
 
 ## Your Role
-Answer questions about this dynasty league. Be specific with numbers. If asked about a player or trade you don't have data on, say so honestly. Keep answers concise and conversational. You have data on 6 seasons (2021–2026).`;
+Answer questions about this dynasty league. Be specific with numbers. If asked about a player or trade you don't have data on, say so honestly. Keep answers concise and conversational. You have data on 8 seasons (2019–2026).`;
 
     } catch (e) {
-      return `You are a helpful assistant for the Ducks on the Pond Dynasty fantasy baseball league (6 seasons, 12 owners). Answer questions about trades, players, and owners.`;
+      return `You are a helpful assistant for the Ducks on the Pond Dynasty fantasy baseball league (8 seasons, 12 owners). Answer questions about trades, players, and owners.`;
     }
   }
 

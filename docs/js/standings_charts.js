@@ -185,7 +185,7 @@
     const isAll = activeSeason === 'all';
     title.textContent = isAll ? '🏆 All-Time Rotisserie Standings' : `📅 ${activeSeason} Season Standings`;
     desc.textContent  = isAll
-      ? 'Cumulative Roto points across all 6 seasons. Click a column header to sort. Click a row for Team View.'
+      ? 'Cumulative Roto points across all 8 seasons. Click a column header to sort. Click a row for Team View.'
       : `Full-season Fantrax rotisserie standings for ${activeSeason}. Click headers to sort. Click a row for Team View.`;
 
     if (isAll) {

@@ -1,0 +1,7097 @@
+{
+  "season": 2026,
+  "fetched_at": "2026-10-21T05:37:26.616331+00:00",
+  "stats_mode": "Full Fantasy Team",
+  "basis": "Recorded fantasy-team production during full days after acquisition and before departure, capped at season end. Trade and exit days excluded to avoid ambiguous timing. Reacquisitions are separate windows.",
+  "grading": "A/B/C/D quartiles of received counting-production scores among fully covered player-receiving sides in this season. Score sums each of R, HR, RBI, SB, K, SVH3, W+QS divided by the league median team season total for that category. Zero production is D. No missing values are imputed. Rates are shown per player but not graded. Picks, budget, outgoing cost and future seasons are not valued. Longer ownership windows have more opportunity.",
+  "benchmarks": {
+    "r": 926.5,
+    "hr": 251.5,
+    "rbi": 868.5,
+    "sb": 132.5,
+    "k": 1325.0,
+    "svh3": 87.5,
+    "wqs": 174.5
+  },
+  "audit": [
+    {
+      "owner": "Jack Dunne",
+      "players": 102,
+      "actual": {
+        "r": 1048,
+        "hr": 351,
+        "rbi": 1037,
+        "sb": 133,
+        "k": 1489,
+        "svh3": 109.5,
+        "wqs": 170
+      },
+      "expected": {
+        "r": 1048,
+        "hr": 351,
+        "rbi": 1037,
+        "sb": 133,
+        "k": 1489,
+        "svh3": 109.5,
+        "wqs": 170
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Reed Heim",
+      "players": 106,
+      "actual": {
+        "r": 966,
+        "hr": 271,
+        "rbi": 953,
+        "sb": 189,
+        "k": 1657,
+        "svh3": 24.5,
+        "wqs": 230
+      },
+      "expected": {
+        "r": 966,
+        "hr": 271,
+        "rbi": 953,
+        "sb": 189,
+        "k": 1657,
+        "svh3": 24.5,
+        "wqs": 230
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Jose Garcia-Chope",
+      "players": 81,
+      "actual": {
+        "r": 950,
+        "hr": 254,
+        "rbi": 945,
+        "sb": 132,
+        "k": 1282,
+        "svh3": 125.5,
+        "wqs": 180
+      },
+      "expected": {
+        "r": 950,
+        "hr": 254,
+        "rbi": 945,
+        "sb": 132,
+        "k": 1282,
+        "svh3": 125.5,
+        "wqs": 180
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Jordan Papula",
+      "players": 101,
+      "actual": {
+        "r": 992,
+        "hr": 254,
+        "rbi": 884,
+        "sb": 162,
+        "k": 1299,
+        "svh3": 96.5,
+        "wqs": 185
+      },
+      "expected": {
+        "r": 992,
+        "hr": 254,
+        "rbi": 884,
+        "sb": 162,
+        "k": 1299,
+        "svh3": 96.5,
+        "wqs": 185
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Owen Hern",
+      "players": 71,
+      "actual": {
+        "r": 923,
+        "hr": 231,
+        "rbi": 812,
+        "sb": 112,
+        "k": 1342,
+        "svh3": 74.5,
+        "wqs": 193
+      },
+      "expected": {
+        "r": 923,
+        "hr": 231,
+        "rbi": 812,
+        "sb": 112,
+        "k": 1342,
+        "svh3": 74.5,
+        "wqs": 193
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Liam Burns",
+      "players": 104,
+      "actual": {
+        "r": 887,
+        "hr": 255,
+        "rbi": 878,
+        "sb": 119,
+        "k": 1572,
+        "svh3": 92.0,
+        "wqs": 179
+      },
+      "expected": {
+        "r": 887,
+        "hr": 255,
+        "rbi": 878,
+        "sb": 119,
+        "k": 1572,
+        "svh3": 92,
+        "wqs": 179
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Matthew Zujewski",
+      "players": 70,
+      "actual": {
+        "r": 920,
+        "hr": 249,
+        "rbi": 821,
+        "sb": 155,
+        "k": 1349,
+        "svh3": 102.5,
+        "wqs": 166
+      },
+      "expected": {
+        "r": 920,
+        "hr": 249,
+        "rbi": 821,
+        "sb": 155,
+        "k": 1349,
+        "svh3": 102.5,
+        "wqs": 166
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Alex Beim",
+      "players": 86,
+      "actual": {
+        "r": 958,
+        "hr": 268,
+        "rbi": 908,
+        "sb": 158,
+        "k": 1210,
+        "svh3": 84.5,
+        "wqs": 156
+      },
+      "expected": {
+        "r": 958,
+        "hr": 268,
+        "rbi": 908,
+        "sb": 158,
+        "k": 1249,
+        "svh3": 84.5,
+        "wqs": 165
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": -39,
+        "svh3": 0.0,
+        "wqs": -9
+      }
+    },
+    {
+      "owner": "David Turley",
+      "players": 107,
+      "actual": {
+        "r": 930,
+        "hr": 238,
+        "rbi": 768,
+        "sb": 127,
+        "k": 1413,
+        "svh3": 90.5,
+        "wqs": 177
+      },
+      "expected": {
+        "r": 930,
+        "hr": 238,
+        "rbi": 768,
+        "sb": 127,
+        "k": 1413,
+        "svh3": 90.5,
+        "wqs": 177
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Jason Bartolini",
+      "players": 88,
+      "actual": {
+        "r": 858,
+        "hr": 213,
+        "rbi": 791,
+        "sb": 159,
+        "k": 1308,
+        "svh3": 67.0,
+        "wqs": 143
+      },
+      "expected": {
+        "r": 858,
+        "hr": 213,
+        "rbi": 791,
+        "sb": 159,
+        "k": 1308,
+        "svh3": 67,
+        "wqs": 143
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Evan Soraci",
+      "players": 80,
+      "actual": {
+        "r": 866,
+        "hr": 242,
+        "rbi": 859,
+        "sb": 106,
+        "k": 1290,
+        "svh3": 42.0,
+        "wqs": 172
+      },
+      "expected": {
+        "r": 866,
+        "hr": 242,
+        "rbi": 859,
+        "sb": 106,
+        "k": 1290,
+        "svh3": 42,
+        "wqs": 172
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    },
+    {
+      "owner": "Trent Radding",
+      "players": 90,
+      "actual": {
+        "r": 771,
+        "hr": 233,
+        "rbi": 748,
+        "sb": 106,
+        "k": 1262,
+        "svh3": 23.0,
+        "wqs": 157
+      },
+      "expected": {
+        "r": 771,
+        "hr": 233,
+        "rbi": 748,
+        "sb": 106,
+        "k": 1262,
+        "svh3": 23,
+        "wqs": 157
+      },
+      "differences": {
+        "r": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": 0,
+        "k": 0,
+        "svh3": 0.0,
+        "wqs": 0
+      }
+    }
+  ],
+  "rated_sides": 123,
+  "events": {
+    "2026:c5d6zga2mskkev3v": {
+      "date": "2026-08-08",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Josue Briceno",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "0637j",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Alejandro Kirk",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 127,
+                  "r": 15,
+                  "h": 39,
+                  "hr": 6,
+                  "rbi": 24,
+                  "sb": 1,
+                  "obp": 0.385,
+                  "gp": 34
+                }
+              },
+              "player_id": "04t3y",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 15,
+            "hr": 6,
+            "rbi": 24,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.075228,
+          "grade": "B",
+          "percentile": 61
+        }
+      ]
+    },
+    "2026:2fo7mavmmskkw5v1": {
+      "date": "2026-08-08",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Keibert Ruiz",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "03rmz",
+              "start": "2026-08-09",
+              "end": "2026-08-16"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:ibqn70ofmskz69l3": {
+      "date": "2026-08-08",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Abner Uribe",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "11",
+                  "era": 1.64,
+                  "whip": 1.0,
+                  "k": 14,
+                  "svh3": 2.5,
+                  "wqs": 2,
+                  "gp": 12
+                }
+              },
+              "player_id": "05nso",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 14,
+            "svh3": 2.5,
+            "wqs": 2
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.050599,
+          "grade": "B",
+          "percentile": 54
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:3do7cc2smskzdaql": {
+      "date": "2026-08-08",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Ryan Pepiot",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "0512m",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Nasim Nunez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 15,
+                  "r": 0,
+                  "h": 3,
+                  "hr": 0,
+                  "rbi": 1,
+                  "sb": 0,
+                  "obp": 0.25,
+                  "gp": 4
+                }
+              },
+              "player_id": "04ya4",
+              "start": "2026-08-09",
+              "end": "2026-08-16"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 1,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.001151,
+          "grade": "C",
+          "percentile": 27
+        }
+      ]
+    },
+    "2026:pz1xv6uhmskn9yb9": {
+      "date": "2026-08-08",
+      "sides": [
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [
+            {
+              "player_name": "Addison Barger",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "04qii",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Elian Pena",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06m0g",
+              "start": "2026-08-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:qoa6x3femseskrji": {
+      "date": "2026-08-04",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Drew Rasmussen",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "47.2",
+                  "era": 2.45,
+                  "whip": 0.923,
+                  "k": 44,
+                  "svh3": 0.0,
+                  "wqs": 10,
+                  "gp": 8
+                }
+              },
+              "player_id": "04eee",
+              "start": "2026-08-05",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 44,
+            "svh3": 0.0,
+            "wqs": 10
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.090514,
+          "grade": "B",
+          "percentile": 66
+        },
+        {
+          "owner": "Evan Soraci",
+          "players": [
+            {
+              "player_name": "Max Clark",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05u9y",
+              "start": "2026-08-05",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:fab2e5s5msazcx17": {
+      "date": "2026-08-02",
+      "sides": [
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Jose Caballero",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 21,
+                  "r": 1,
+                  "h": 1,
+                  "hr": 1,
+                  "rbi": 3,
+                  "sb": 1,
+                  "obp": 0.192,
+                  "gp": 10
+                }
+              },
+              "player_id": "04eig",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 1,
+            "hr": 1,
+            "rbi": 3,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.016057,
+          "grade": "C",
+          "percentile": 39
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:5ynm1n0lmsbzy1lh": {
+      "date": "2026-08-02",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Esmerlyn Valdez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 96,
+                  "r": 13,
+                  "h": 18,
+                  "hr": 3,
+                  "rbi": 9,
+                  "sb": 0,
+                  "obp": 0.313,
+                  "gp": 28
+                }
+              },
+              "player_id": "05rbw",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Ceddanne Rafaela",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 120,
+                  "r": 11,
+                  "h": 31,
+                  "hr": 1,
+                  "rbi": 13,
+                  "sb": 2,
+                  "obp": 0.281,
+                  "gp": 28
+                }
+              },
+              "player_id": "05gsi",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 24,
+            "hr": 4,
+            "rbi": 22,
+            "sb": 2,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.082234,
+          "grade": "B",
+          "percentile": 63
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Willson Contreras",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 89,
+                  "r": 12,
+                  "h": 20,
+                  "hr": 4,
+                  "rbi": 14,
+                  "sb": 0,
+                  "obp": 0.349,
+                  "gp": 26
+                }
+              },
+              "player_id": "03oh0",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 12,
+            "hr": 4,
+            "rbi": 14,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.044976,
+          "grade": "B",
+          "percentile": 51
+        }
+      ]
+    },
+    "2026:81gym0fwmsc5l0o7": {
+      "date": "2026-08-02",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Bubba Chandler",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "11.1",
+                  "era": 3.97,
+                  "whip": 1.147,
+                  "k": 11,
+                  "svh3": 0.0,
+                  "wqs": 3,
+                  "gp": 2
+                }
+              },
+              "player_id": "05rik",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 11,
+            "svh3": 0.0,
+            "wqs": 3
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.025494,
+          "grade": "C",
+          "percentile": 43
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Kevin Alvarez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06psn",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Brandon Nimmo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 189,
+                  "r": 19,
+                  "h": 45,
+                  "hr": 3,
+                  "rbi": 22,
+                  "sb": 1,
+                  "obp": 0.291,
+                  "gp": 49
+                }
+              },
+              "player_id": "02bq2",
+              "start": "2026-08-03",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 19,
+            "hr": 3,
+            "rbi": 22,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.065314,
+          "grade": "B",
+          "percentile": 57
+        }
+      ]
+    },
+    "2026:lvntlc1qms7mz2m1": {
+      "date": "2026-07-30",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [
+            {
+              "player_name": "Joe Ryan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "16.1",
+                  "era": 4.41,
+                  "whip": 1.347,
+                  "k": 16,
+                  "svh3": 0.0,
+                  "wqs": 2,
+                  "gp": 3
+                }
+              },
+              "player_id": "04ps7",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Mason Miller",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "22.2",
+                  "era": 3.57,
+                  "whip": 1.103,
+                  "k": 41,
+                  "svh3": 10.0,
+                  "wqs": 1,
+                  "gp": 21
+                }
+              },
+              "player_id": "05ucd",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Ketel Marte",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 127,
+                  "r": 19,
+                  "h": 31,
+                  "hr": 3,
+                  "rbi": 14,
+                  "sb": 0,
+                  "obp": 0.349,
+                  "gp": 34
+                }
+              },
+              "player_id": "0326s",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 19,
+            "hr": 3,
+            "rbi": 14,
+            "sb": 0,
+            "k": 57,
+            "svh3": 10.0,
+            "wqs": 3
+          },
+          "available": 3,
+          "complete": true,
+          "score": 0.223052,
+          "grade": "A",
+          "percentile": 88
+        },
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Hunter Greene",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "04aea",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Gunnar Henderson",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 166,
+                  "r": 25,
+                  "h": 41,
+                  "hr": 6,
+                  "rbi": 13,
+                  "sb": 2,
+                  "obp": 0.362,
+                  "gp": 47
+                }
+              },
+              "player_id": "050w9",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Garrett Whitlock",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "1",
+                  "era": 0.0,
+                  "whip": 2.0,
+                  "k": 0,
+                  "svh3": 0.5,
+                  "wqs": 0,
+                  "gp": 1
+                }
+              },
+              "player_id": "04eqa",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 25,
+            "hr": 6,
+            "rbi": 13,
+            "sb": 2,
+            "k": 0,
+            "svh3": 0.5,
+            "wqs": 0
+          },
+          "available": 3,
+          "complete": true,
+          "score": 0.086617,
+          "grade": "B",
+          "percentile": 65
+        }
+      ]
+    },
+    "2026:30vxy6asms7qzmh5": {
+      "date": "2026-07-30",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Ben Joyce",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "10.1",
+                  "era": 6.1,
+                  "whip": 1.452,
+                  "k": 12,
+                  "svh3": 3.5,
+                  "wqs": 0,
+                  "gp": 11
+                }
+              },
+              "player_id": "060eu",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 12,
+            "svh3": 3.5,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.049057,
+          "grade": "B",
+          "percentile": 52
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "MacKenzie Gore",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "12",
+                  "era": 7.5,
+                  "whip": 2.667,
+                  "k": 9,
+                  "svh3": 0.0,
+                  "wqs": 1,
+                  "gp": 3
+                }
+              },
+              "player_id": "04cd5",
+              "start": "2026-07-31",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 9,
+            "svh3": 0.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.012523,
+          "grade": "C",
+          "percentile": 34
+        }
+      ]
+    },
+    "2026:ave17vitms3cknic": {
+      "date": "2026-07-27",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Brent Rooker",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "04e2u",
+              "start": "2026-07-28",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Sonny Gray",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "62.1",
+                  "era": 2.6,
+                  "whip": 1.123,
+                  "k": 56,
+                  "svh3": 0.0,
+                  "wqs": 13,
+                  "gp": 10
+                }
+              },
+              "player_id": "0260v",
+              "start": "2026-07-28",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 56,
+            "svh3": 0.0,
+            "wqs": 13
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.116763,
+          "grade": "B",
+          "percentile": 74
+        }
+      ]
+    },
+    "2026:u4gs1helms3hsed5": {
+      "date": "2026-07-27",
+      "sides": [
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [
+            {
+              "player_name": "Cody Bellinger",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 118,
+                  "r": 20,
+                  "h": 33,
+                  "hr": 6,
+                  "rbi": 20,
+                  "sb": 2,
+                  "obp": 0.298,
+                  "gp": 29
+                }
+              },
+              "player_id": "03120",
+              "start": "2026-07-28",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 20,
+            "hr": 6,
+            "rbi": 20,
+            "sb": 2,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.083566,
+          "grade": "B",
+          "percentile": 64
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Trevor Megill",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "22.1",
+                  "era": 2.01,
+                  "whip": 0.716,
+                  "k": 20,
+                  "svh3": 13.0,
+                  "wqs": 1,
+                  "gp": 22
+                }
+              },
+              "player_id": "03dau",
+              "start": "2026-07-28",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Trevor Rogers",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "60",
+                  "era": 3.9,
+                  "whip": 1.1,
+                  "k": 65,
+                  "svh3": 0.0,
+                  "wqs": 8,
+                  "gp": 10
+                }
+              },
+              "player_id": "04ak5",
+              "start": "2026-07-28",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 85,
+            "svh3": 13.0,
+            "wqs": 9
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.264298,
+          "grade": "A",
+          "percentile": 91
+        }
+      ]
+    },
+    "2026:501xfg2nms25w5w6": {
+      "date": "2026-07-26",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Shea Langeliers",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 44,
+                  "r": 3,
+                  "h": 10,
+                  "hr": 0,
+                  "rbi": 4,
+                  "sb": 1,
+                  "obp": 0.277,
+                  "gp": 11
+                }
+              },
+              "player_id": "04o4s",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Bryce Miller",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "25.1",
+                  "era": 7.82,
+                  "whip": 1.539,
+                  "k": 21,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 5
+                }
+              },
+              "player_id": "05vy6",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 3,
+            "hr": 0,
+            "rbi": 4,
+            "sb": 1,
+            "k": 21,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.03124,
+          "grade": "C",
+          "percentile": 45
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Cal Raleigh",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 178,
+                  "r": 25,
+                  "h": 37,
+                  "hr": 13,
+                  "rbi": 34,
+                  "sb": 0,
+                  "obp": 0.336,
+                  "gp": 52
+                }
+              },
+              "player_id": "04my4",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Aroldis Chapman",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "18",
+                  "era": 2.0,
+                  "whip": 0.889,
+                  "k": 29,
+                  "svh3": 11.0,
+                  "wqs": 2,
+                  "gp": 18
+                }
+              },
+              "player_id": "01gya",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Randy Arozarena",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 213,
+                  "r": 48,
+                  "h": 59,
+                  "hr": 14,
+                  "rbi": 33,
+                  "sb": 7,
+                  "obp": 0.382,
+                  "gp": 56
+                }
+              },
+              "player_id": "040b5",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 73,
+            "hr": 27,
+            "rbi": 67,
+            "sb": 7,
+            "k": 29,
+            "svh3": 11.0,
+            "wqs": 2
+          },
+          "available": 3,
+          "complete": true,
+          "score": 0.475184,
+          "grade": "A",
+          "percentile": 99
+        }
+      ]
+    },
+    "2026:pp9sp3cqms0fdq2d": {
+      "date": "2026-07-26",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "JoJo Parker",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06se6",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Braden Montgomery",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 111,
+                  "r": 17,
+                  "h": 23,
+                  "hr": 2,
+                  "rbi": 16,
+                  "sb": 0,
+                  "obp": 0.318,
+                  "gp": 31
+                }
+              },
+              "player_id": "05rcg",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 17,
+            "hr": 2,
+            "rbi": 16,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.044723,
+          "grade": "B",
+          "percentile": 50
+        },
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Bryan Baker",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "22",
+                  "era": 1.23,
+                  "whip": 1.045,
+                  "k": 20,
+                  "svh3": 13.0,
+                  "wqs": 3,
+                  "gp": 23
+                }
+              },
+              "player_id": "041w4",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Zack Wheeler",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "62",
+                  "era": 4.35,
+                  "whip": 1.323,
+                  "k": 76,
+                  "svh3": 0.0,
+                  "wqs": 9,
+                  "gp": 12
+                }
+              },
+              "player_id": "01sb3",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 96,
+            "svh3": 13.0,
+            "wqs": 12
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.289792,
+          "grade": "A",
+          "percentile": 93
+        }
+      ]
+    },
+    "2026:xwv6qbppms2jq1dk": {
+      "date": "2026-07-26",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "J.T. Realmuto",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 105,
+                  "r": 19,
+                  "h": 20,
+                  "hr": 4,
+                  "rbi": 12,
+                  "sb": 0,
+                  "obp": 0.248,
+                  "gp": 30
+                }
+              },
+              "player_id": "025i9",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 19,
+            "hr": 4,
+            "rbi": 12,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.050229,
+          "grade": "B",
+          "percentile": 53
+        },
+        {
+          "owner": "Owen Hern",
+          "players": [
+            {
+              "player_name": "Ezequiel Duran",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 185,
+                  "r": 21,
+                  "h": 46,
+                  "hr": 5,
+                  "rbi": 25,
+                  "sb": 4,
+                  "obp": 0.324,
+                  "gp": 50
+                }
+              },
+              "player_id": "04nqx",
+              "start": "2026-07-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 21,
+            "hr": 5,
+            "rbi": 25,
+            "sb": 4,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.101521,
+          "grade": "B",
+          "percentile": 69
+        }
+      ]
+    },
+    "2026:q5xld1m2mrz7722q": {
+      "date": "2026-07-24",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Brody Hopkins",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06f1b",
+              "start": "2026-07-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Jake Bauers",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 154,
+                  "r": 31,
+                  "h": 42,
+                  "hr": 8,
+                  "rbi": 26,
+                  "sb": 3,
+                  "obp": 0.427,
+                  "gp": 48
+                }
+              },
+              "player_id": "0316v",
+              "start": "2026-07-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 31,
+            "hr": 8,
+            "rbi": 26,
+            "sb": 3,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.117847,
+          "grade": "B",
+          "percentile": 75
+        }
+      ]
+    },
+    "2026:1wn6kkeemrtcnxw1": {
+      "date": "2026-07-20",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Dustin May",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "47.2",
+                  "era": 4.53,
+                  "whip": 1.322,
+                  "k": 49,
+                  "svh3": 0.0,
+                  "wqs": 6,
+                  "gp": 12
+                }
+              },
+              "player_id": "041r5",
+              "start": "2026-07-21",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 49,
+            "svh3": 0.0,
+            "wqs": 6
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.071365,
+          "grade": "B",
+          "percentile": 59
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:fso67ybomrtk4oev": {
+      "date": "2026-07-20",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Ian Seymour",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "65",
+                  "era": 3.6,
+                  "whip": 1.092,
+                  "k": 79,
+                  "svh3": 0.0,
+                  "wqs": 8,
+                  "gp": 13
+                }
+              },
+              "player_id": "05jpd",
+              "start": "2026-07-21",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 79,
+            "svh3": 0.0,
+            "wqs": 8
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.105468,
+          "grade": "B",
+          "percentile": 70
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Ike Irish",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06c10",
+              "start": "2026-07-21",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:3uzh0tjpmrtq64tm": {
+      "date": "2026-07-20",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Riley OBrien",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "23.1",
+                  "era": 4.63,
+                  "whip": 1.414,
+                  "k": 23,
+                  "svh3": 13.0,
+                  "wqs": 0,
+                  "gp": 25
+                }
+              },
+              "player_id": "04ej3",
+              "start": "2026-07-21",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 23,
+            "svh3": 13.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.16593,
+          "grade": "A",
+          "percentile": 83
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:zjx4i863mrtrsfax": {
+      "date": "2026-07-20",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Alejandro Kirk",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 46,
+                  "r": 2,
+                  "h": 16,
+                  "hr": 2,
+                  "rbi": 8,
+                  "sb": 0,
+                  "obp": 0.385,
+                  "gp": 13
+                }
+              },
+              "player_id": "04t3y",
+              "start": "2026-07-21",
+              "end": "2026-08-07"
+            }
+          ],
+          "totals": {
+            "r": 2,
+            "hr": 2,
+            "rbi": 8,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.019322,
+          "grade": "C",
+          "percentile": 40
+        },
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [
+            {
+              "player_name": "Royce Lewis",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 23,
+                  "r": 4,
+                  "h": 8,
+                  "hr": 0,
+                  "rbi": 3,
+                  "sb": 0,
+                  "obp": 0.423,
+                  "gp": 6
+                }
+              },
+              "player_id": "04aeb",
+              "start": "2026-07-21",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 4,
+            "hr": 0,
+            "rbi": 3,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.007772,
+          "grade": "C",
+          "percentile": 31
+        }
+      ]
+    },
+    "2026:by4r831fmrsirhy2": {
+      "date": "2026-07-19",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Luis Campusano",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 141,
+                  "r": 10,
+                  "h": 35,
+                  "hr": 4,
+                  "rbi": 18,
+                  "sb": 0,
+                  "obp": 0.342,
+                  "gp": 43
+                }
+              },
+              "player_id": "04eep",
+              "start": "2026-07-20",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 10,
+            "hr": 4,
+            "rbi": 18,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.047423,
+          "grade": "B",
+          "percentile": 52
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:uj1281rkmrntaxqh": {
+      "date": "2026-07-16",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Heriberto Hernandez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 170,
+                  "r": 20,
+                  "h": 36,
+                  "hr": 8,
+                  "rbi": 20,
+                  "sb": 6,
+                  "obp": 0.302,
+                  "gp": 43
+                }
+              },
+              "player_id": "04up9",
+              "start": "2026-07-17",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 20,
+            "hr": 8,
+            "rbi": 20,
+            "sb": 6,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.121707,
+          "grade": "A",
+          "percentile": 76
+        }
+      ]
+    },
+    "2026:n7f7urulmricxkf2": {
+      "date": "2026-07-12",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Jazz Chisholm Jr.",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 142,
+                  "r": 21,
+                  "h": 36,
+                  "hr": 6,
+                  "rbi": 18,
+                  "sb": 14,
+                  "obp": 0.331,
+                  "gp": 43
+                }
+              },
+              "player_id": "045qo",
+              "start": "2026-07-13",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 21,
+            "hr": 6,
+            "rbi": 18,
+            "sb": 14,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.172909,
+          "grade": "A",
+          "percentile": 84
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Kade Anderson",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "30",
+                  "era": 3.6,
+                  "whip": 1.233,
+                  "k": 27,
+                  "svh3": 0.0,
+                  "wqs": 4,
+                  "gp": 6
+                }
+              },
+              "player_id": "05ydp",
+              "start": "2026-07-13",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 27,
+            "svh3": 0.0,
+            "wqs": 4
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0433,
+          "grade": "C",
+          "percentile": 49
+        }
+      ]
+    },
+    "2026:f7fyhjqxmrieztc2": {
+      "date": "2026-07-12",
+      "sides": [
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Bryce Rainer",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05yai",
+              "start": "2026-07-13",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Yoendrys Gomez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "9.1",
+                  "era": 5.79,
+                  "whip": 1.607,
+                  "k": 9,
+                  "svh3": 4.0,
+                  "wqs": 0,
+                  "gp": 9
+                }
+              },
+              "player_id": "04xne",
+              "start": "2026-07-13",
+              "end": "2026-09-20"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 9,
+            "svh3": 4.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.052507,
+          "grade": "B",
+          "percentile": 55
+        }
+      ]
+    },
+    "2026:e0b0ik6hmrciv68v": {
+      "date": "2026-07-08",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Josh Naylor",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 244,
+                  "r": 23,
+                  "h": 67,
+                  "hr": 2,
+                  "rbi": 21,
+                  "sb": 12,
+                  "obp": 0.318,
+                  "gp": 62
+                }
+              },
+              "player_id": "03pjd",
+              "start": "2026-07-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 23,
+            "hr": 2,
+            "rbi": 21,
+            "sb": 12,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.147523,
+          "grade": "A",
+          "percentile": 82
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Zyhir Hope",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06eyu",
+              "start": "2026-07-09",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:scffrksymr947ssn": {
+      "date": "2026-07-06",
+      "sides": [
+        {
+          "owner": "Jason Bartolini",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Evan Soraci",
+          "players": [
+            {
+              "player_name": "Dylan Lee",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "26.2",
+                  "era": 5.4,
+                  "whip": 1.387,
+                  "k": 28,
+                  "svh3": 6.5,
+                  "wqs": 2,
+                  "gp": 29
+                }
+              },
+              "player_id": "041vm",
+              "start": "2026-07-07",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 28,
+            "svh3": 6.5,
+            "wqs": 2
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.106879,
+          "grade": "B",
+          "percentile": 72
+        }
+      ]
+    },
+    "2026:o3k9ansgmqyjpehf": {
+      "date": "2026-06-28",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Karson Milbrandt",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "062z7",
+              "start": "2026-06-29",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Josiah Hartshorn",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06ifw",
+              "start": "2026-06-29",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Ryan Helsley",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "03ql5",
+              "start": "2026-06-29",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:0wlz0qzimqyk87ic": {
+      "date": "2026-06-28",
+      "sides": [
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Kerry Carpenter",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 42,
+                  "r": 5,
+                  "h": 5,
+                  "hr": 1,
+                  "rbi": 1,
+                  "sb": 0,
+                  "obp": 0.196,
+                  "gp": 15
+                }
+              },
+              "player_id": "051em",
+              "start": "2026-06-29",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 5,
+            "hr": 1,
+            "rbi": 1,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.010524,
+          "grade": "C",
+          "percentile": 34
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:uznytfynmquxnp0j": {
+      "date": "2026-06-26",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Eli Willits",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06n8y",
+              "start": "2026-06-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Jackson Merrill",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 307,
+                  "r": 51,
+                  "h": 91,
+                  "hr": 18,
+                  "rbi": 56,
+                  "sb": 10,
+                  "obp": 0.334,
+                  "gp": 79
+                }
+              },
+              "player_id": "05ua7",
+              "start": "2026-06-27",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 51,
+            "hr": 18,
+            "rbi": 56,
+            "sb": 10,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.266567,
+          "grade": "A",
+          "percentile": 92
+        }
+      ]
+    },
+    "2026:f5skp6i2mqsgvv44": {
+      "date": "2026-06-24",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Colton Cowser",
+              "status": "unavailable",
+              "reason": "Player absent from the Fantrax response; not assumed zero",
+              "groups": {},
+              "player_id": "05ras",
+              "start": "2026-06-25",
+              "end": "2026-06-28"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:xjud5nhamqrdcxyx": {
+      "date": "2026-06-23",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Max Muncy",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 174,
+                  "r": 23,
+                  "h": 41,
+                  "hr": 8,
+                  "rbi": 27,
+                  "sb": 2,
+                  "obp": 0.33,
+                  "gp": 53
+                }
+              },
+              "player_id": "02mzg",
+              "start": "2026-06-24",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 23,
+            "hr": 8,
+            "rbi": 27,
+            "sb": 2,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.102816,
+          "grade": "B",
+          "percentile": 70
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Theo Gillen",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05u2m",
+              "start": "2026-06-24",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:q9oj6askmqlhlmkx": {
+      "date": "2026-06-19",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Andrew Painter",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "51.2",
+                  "era": 3.83,
+                  "whip": 1.181,
+                  "k": 52,
+                  "svh3": 0.0,
+                  "wqs": 6,
+                  "gp": 9
+                }
+              },
+              "player_id": "05r3i",
+              "start": "2026-06-20",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 52,
+            "svh3": 0.0,
+            "wqs": 6
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.073629,
+          "grade": "B",
+          "percentile": 61
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:j89e4tw9mqeih89t": {
+      "date": "2026-06-14",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Dylan Lee",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "7.2",
+                  "era": 3.52,
+                  "whip": 0.783,
+                  "k": 9,
+                  "svh3": 1.5,
+                  "wqs": 2,
+                  "gp": 8
+                }
+              },
+              "player_id": "041vm",
+              "start": "2026-06-15",
+              "end": "2026-07-05"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 9,
+            "svh3": 1.5,
+            "wqs": 2
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.035397,
+          "grade": "C",
+          "percentile": 48
+        }
+      ]
+    },
+    "2026:zjsl125emqejyabo": {
+      "date": "2026-06-14",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Lawrence Butler",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 35,
+                  "r": 8,
+                  "h": 9,
+                  "hr": 1,
+                  "rbi": 4,
+                  "sb": 1,
+                  "obp": 0.366,
+                  "gp": 12
+                }
+              },
+              "player_id": "04prt",
+              "start": "2026-06-15",
+              "end": "2026-07-12"
+            }
+          ],
+          "totals": {
+            "r": 8,
+            "hr": 1,
+            "rbi": 4,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.024764,
+          "grade": "C",
+          "percentile": 42
+        }
+      ]
+    },
+    "2026:d1utx7z4mq8v4zpr": {
+      "date": "2026-06-10",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Ryan Helsley",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "4.2",
+                  "era": 7.71,
+                  "whip": 1.714,
+                  "k": 6,
+                  "svh3": 1.0,
+                  "wqs": 0,
+                  "gp": 5
+                }
+              },
+              "player_id": "03ql5",
+              "start": "2026-06-11",
+              "end": "2026-06-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 6,
+            "svh3": 1.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.015957,
+          "grade": "C",
+          "percentile": 37
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Davis Martin",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "53",
+                  "era": 6.28,
+                  "whip": 1.623,
+                  "k": 37,
+                  "svh3": 0.0,
+                  "wqs": 1,
+                  "gp": 13
+                }
+              },
+              "player_id": "04pxf",
+              "start": "2026-06-11",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 37,
+            "svh3": 0.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.033655,
+          "grade": "C",
+          "percentile": 48
+        }
+      ]
+    },
+    "2026:zoyvsj0bmpvhiool": {
+      "date": "2026-06-01",
+      "sides": [
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [
+            {
+              "player_name": "Noelvi Marte",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 38,
+                  "r": 6,
+                  "h": 6,
+                  "hr": 1,
+                  "rbi": 3,
+                  "sb": 1,
+                  "obp": 0.238,
+                  "gp": 12
+                }
+              },
+              "player_id": "04qnd",
+              "start": "2026-06-02",
+              "end": "2026-08-09"
+            }
+          ],
+          "totals": {
+            "r": 6,
+            "hr": 1,
+            "rbi": 3,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.021454,
+          "grade": "C",
+          "percentile": 41
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:th1hob2smpuhlrki": {
+      "date": "2026-05-31",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Brent Rooker",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 25,
+                  "r": 5,
+                  "h": 6,
+                  "hr": 2,
+                  "rbi": 3,
+                  "sb": 0,
+                  "obp": 0.296,
+                  "gp": 7
+                }
+              },
+              "player_id": "04e2u",
+              "start": "2026-06-01",
+              "end": "2026-07-26"
+            },
+            {
+              "player_name": "Esmerlyn Valdez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 60,
+                  "r": 12,
+                  "h": 13,
+                  "hr": 6,
+                  "rbi": 16,
+                  "sb": 0,
+                  "obp": 0.377,
+                  "gp": 18
+                }
+              },
+              "player_id": "05rbw",
+              "start": "2026-06-01",
+              "end": "2026-08-01"
+            }
+          ],
+          "totals": {
+            "r": 17,
+            "hr": 8,
+            "rbi": 19,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.072035,
+          "grade": "B",
+          "percentile": 60
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Christian Yelich",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 138,
+                  "r": 22,
+                  "h": 36,
+                  "hr": 2,
+                  "rbi": 17,
+                  "sb": 2,
+                  "obp": 0.333,
+                  "gp": 32
+                }
+              },
+              "player_id": "025dn",
+              "start": "2026-06-01",
+              "end": "2026-09-20"
+            },
+            {
+              "player_name": "Daulton Varsho",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 25,
+                  "r": 3,
+                  "h": 7,
+                  "hr": 1,
+                  "rbi": 2,
+                  "sb": 2,
+                  "obp": 0.333,
+                  "gp": 6
+                }
+              },
+              "player_id": "04efa",
+              "start": "2026-06-01",
+              "end": "2026-07-05"
+            }
+          ],
+          "totals": {
+            "r": 25,
+            "hr": 3,
+            "rbi": 19,
+            "sb": 4,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.090977,
+          "grade": "B",
+          "percentile": 66
+        }
+      ]
+    },
+    "2026:j2k20yplmpq2495v": {
+      "date": "2026-05-28",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Travis Sykora",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05ycl",
+              "start": "2026-05-29",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Alfredo Duno",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06626",
+              "start": "2026-05-29",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Keibert Ruiz",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 130,
+                  "r": 20,
+                  "h": 34,
+                  "hr": 2,
+                  "rbi": 13,
+                  "sb": 1,
+                  "obp": 0.317,
+                  "gp": 40
+                }
+              },
+              "player_id": "03rmz",
+              "start": "2026-05-29",
+              "end": "2026-08-07"
+            },
+            {
+              "player_name": "Logan Henderson",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "65",
+                  "era": 2.22,
+                  "whip": 0.8,
+                  "k": 72,
+                  "svh3": 0.0,
+                  "wqs": 14,
+                  "gp": 11
+                }
+              },
+              "player_id": "05uo2",
+              "start": "2026-05-29",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 20,
+            "hr": 2,
+            "rbi": 13,
+            "sb": 1,
+            "k": 72,
+            "svh3": 0.0,
+            "wqs": 14
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.186623,
+          "grade": "A",
+          "percentile": 86
+        }
+      ]
+    },
+    "2026:msy5ptt4mpgzyuag": {
+      "date": "2026-05-22",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Caleb Kilian",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "3.2",
+                  "era": 12.27,
+                  "whip": 1.636,
+                  "k": 4,
+                  "svh3": 0.0,
+                  "wqs": 1,
+                  "gp": 3
+                }
+              },
+              "player_id": "04q1w",
+              "start": "2026-05-23",
+              "end": "2026-05-31"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 4,
+            "svh3": 0.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.00875,
+          "grade": "C",
+          "percentile": 32
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:ybu8spd5mph4eaxn": {
+      "date": "2026-05-22",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Mick Abel",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05g4k",
+              "start": "2026-05-23",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Jake Latz",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "46.1",
+                  "era": 2.14,
+                  "whip": 0.906,
+                  "k": 60,
+                  "svh3": 24.5,
+                  "wqs": 2,
+                  "gp": 37
+                }
+              },
+              "player_id": "03div",
+              "start": "2026-05-23",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 60,
+            "svh3": 24.5,
+            "wqs": 2
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.336744,
+          "grade": "A",
+          "percentile": 97
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Christian Yelich",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "025dn",
+              "start": "2026-05-23",
+              "end": "2026-05-30"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:gio6rncympa61enz": {
+      "date": "2026-05-17",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Bo Bichette",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 198,
+                  "r": 26,
+                  "h": 60,
+                  "hr": 8,
+                  "rbi": 30,
+                  "sb": 0,
+                  "obp": 0.336,
+                  "gp": 50
+                }
+              },
+              "player_id": "041qb",
+              "start": "2026-05-18",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 26,
+            "hr": 8,
+            "rbi": 30,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.094414,
+          "grade": "B",
+          "percentile": 67
+        }
+      ]
+    },
+    "2026:nygs5a23mp73e8hh": {
+      "date": "2026-05-15",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Jhoan Duran",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "47.2",
+                  "era": 1.89,
+                  "whip": 0.965,
+                  "k": 65,
+                  "svh3": 26.0,
+                  "wqs": 1,
+                  "gp": 49
+                }
+              },
+              "player_id": "04apj",
+              "start": "2026-05-16",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 65,
+            "svh3": 26.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.35193,
+          "grade": "A",
+          "percentile": 98
+        },
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Randy Arozarena",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 159,
+                  "r": 31,
+                  "h": 43,
+                  "hr": 6,
+                  "rbi": 24,
+                  "sb": 7,
+                  "obp": 0.38,
+                  "gp": 43
+                }
+              },
+              "player_id": "040b5",
+              "start": "2026-05-16",
+              "end": "2026-07-25"
+            }
+          ],
+          "totals": {
+            "r": 31,
+            "hr": 6,
+            "rbi": 24,
+            "sb": 7,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.13778,
+          "grade": "A",
+          "percentile": 80
+        }
+      ]
+    },
+    "2026:813tvip3mp5w9e0i": {
+      "date": "2026-05-14",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Brandon Nimmo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 189,
+                  "r": 23,
+                  "h": 50,
+                  "hr": 5,
+                  "rbi": 18,
+                  "sb": 4,
+                  "obp": 0.327,
+                  "gp": 50
+                }
+              },
+              "player_id": "02bq2",
+              "start": "2026-05-15",
+              "end": "2026-08-01"
+            }
+          ],
+          "totals": {
+            "r": 23,
+            "hr": 5,
+            "rbi": 18,
+            "sb": 4,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.095619,
+          "grade": "B",
+          "percentile": 68
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "River Ryan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05ynx",
+              "start": "2026-05-15",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:uazmvp51mp4fempp": {
+      "date": "2026-05-13",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Hagen Smith",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "20",
+                  "era": 1.35,
+                  "whip": 1.0,
+                  "k": 28,
+                  "svh3": 0.5,
+                  "wqs": 1,
+                  "gp": 12
+                }
+              },
+              "player_id": "05zd4",
+              "start": "2026-05-14",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 28,
+            "svh3": 0.5,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.032577,
+          "grade": "C",
+          "percentile": 47
+        },
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Spencer Torkelson",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 223,
+                  "r": 32,
+                  "h": 47,
+                  "hr": 14,
+                  "rbi": 38,
+                  "sb": 1,
+                  "obp": 0.317,
+                  "gp": 71
+                }
+              },
+              "player_id": "04yk2",
+              "start": "2026-05-14",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 32,
+            "hr": 14,
+            "rbi": 38,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.141505,
+          "grade": "A",
+          "percentile": 80
+        }
+      ]
+    },
+    "2026:41lp72tsmp4ih541": {
+      "date": "2026-05-13",
+      "sides": [
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Brendan Donovan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "04pse",
+              "start": "2026-05-14",
+              "end": "2026-08-06"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:i5slrjskmp1qpqbc": {
+      "date": "2026-05-11",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Daulton Varsho",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 48,
+                  "r": 5,
+                  "h": 13,
+                  "hr": 0,
+                  "rbi": 1,
+                  "sb": 1,
+                  "obp": 0.34,
+                  "gp": 12
+                }
+              },
+              "player_id": "04efa",
+              "start": "2026-05-12",
+              "end": "2026-05-30"
+            }
+          ],
+          "totals": {
+            "r": 5,
+            "hr": 0,
+            "rbi": 1,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.014095,
+          "grade": "C",
+          "percentile": 35
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:oktkjj9dmorpbxxh": {
+      "date": "2026-05-04",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Josue Briceno",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "0637j",
+              "start": "2026-05-05",
+              "end": "2026-08-07"
+            },
+            {
+              "player_name": "Kyle Bradish",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "86",
+                  "era": 3.14,
+                  "whip": 1.186,
+                  "k": 76,
+                  "svh3": 0.0,
+                  "wqs": 15,
+                  "gp": 15
+                }
+              },
+              "player_id": "04pq4",
+              "start": "2026-05-05",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 76,
+            "svh3": 0.0,
+            "wqs": 15
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.143318,
+          "grade": "A",
+          "percentile": 81
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Parker Messick",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "145",
+                  "era": 2.61,
+                  "whip": 1.103,
+                  "k": 149,
+                  "svh3": 0.0,
+                  "wqs": 20,
+                  "gp": 25
+                }
+              },
+              "player_id": "05tzn",
+              "start": "2026-05-05",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 149,
+            "svh3": 0.0,
+            "wqs": 20
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.227066,
+          "grade": "A",
+          "percentile": 89
+        }
+      ]
+    },
+    "2026:6s5fmr5xmopx4xah": {
+      "date": "2026-05-03",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Heliot Ramos",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "04ee8",
+              "start": "2026-05-04",
+              "end": "2026-07-05"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:wkcggqapmoqbsmht": {
+      "date": "2026-05-03",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Tony Santillan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "2.1",
+                  "era": 27.0,
+                  "whip": 3.0,
+                  "k": 2,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 4
+                }
+              },
+              "player_id": "03poq",
+              "start": "2026-05-04",
+              "end": "2026-05-14"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 2,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.001509,
+          "grade": "C",
+          "percentile": 28
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Gary Sanchez",
+              "status": "unavailable",
+              "reason": "No full scoring day in this ownership window",
+              "groups": {},
+              "player_id": "01t9q",
+              "start": "2026-05-04",
+              "end": "2026-05-03"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:4tfi6inrmoqd455p": {
+      "date": "2026-05-03",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Luis Campusano",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 2,
+                  "r": 1,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.5,
+                  "gp": 1
+                }
+              },
+              "player_id": "04eep",
+              "start": "2026-05-04",
+              "end": "2026-07-18"
+            }
+          ],
+          "totals": {
+            "r": 1,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.001079,
+          "grade": "C",
+          "percentile": 26
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:3nnx7eysmolubl8w": {
+      "date": "2026-04-30",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Austin Riley",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 238,
+                  "r": 21,
+                  "h": 53,
+                  "hr": 6,
+                  "rbi": 28,
+                  "sb": 3,
+                  "obp": 0.286,
+                  "gp": 68
+                }
+              },
+              "player_id": "03pom",
+              "start": "2026-05-01",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Bryan Woo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "114",
+                  "era": 3.87,
+                  "whip": 1.158,
+                  "k": 125,
+                  "svh3": 0.0,
+                  "wqs": 19,
+                  "gp": 20
+                }
+              },
+              "player_id": "05y62",
+              "start": "2026-05-01",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 21,
+            "hr": 6,
+            "rbi": 28,
+            "sb": 3,
+            "k": 125,
+            "svh3": 0.0,
+            "wqs": 19
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.304626,
+          "grade": "A",
+          "percentile": 93
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "JJ Wetherholt",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 375,
+                  "r": 61,
+                  "h": 91,
+                  "hr": 10,
+                  "rbi": 32,
+                  "sb": 10,
+                  "obp": 0.34,
+                  "gp": 96
+                }
+              },
+              "player_id": "06aw3",
+              "start": "2026-05-01",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 61,
+            "hr": 10,
+            "rbi": 32,
+            "sb": 10,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.217917,
+          "grade": "A",
+          "percentile": 87
+        }
+      ]
+    },
+    "2026:qlp3gasomombrhbc": {
+      "date": "2026-04-30",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Matthew Boyd",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "81",
+                  "era": 3.78,
+                  "whip": 1.173,
+                  "k": 52,
+                  "svh3": 0.0,
+                  "wqs": 12,
+                  "gp": 13
+                }
+              },
+              "player_id": "02n4s",
+              "start": "2026-05-01",
+              "end": "2026-09-20"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 52,
+            "svh3": 0.0,
+            "wqs": 12
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.108013,
+          "grade": "B",
+          "percentile": 73
+        }
+      ]
+    },
+    "2026:6b1htl26moh8e63r": {
+      "date": "2026-04-27",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Jake Latz",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "9",
+                  "era": 3.0,
+                  "whip": 0.778,
+                  "k": 8,
+                  "svh3": 4.0,
+                  "wqs": 1,
+                  "gp": 7
+                }
+              },
+              "player_id": "03div",
+              "start": "2026-04-28",
+              "end": "2026-05-21"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 8,
+            "svh3": 4.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.057483,
+          "grade": "B",
+          "percentile": 57
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:p4id5tfymod7wrei": {
+      "date": "2026-04-24",
+      "sides": [
+        {
+          "owner": "Jason Bartolini",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Owen Hern",
+          "players": [
+            {
+              "player_name": "Carson Kelly",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 310,
+                  "r": 46,
+                  "h": 76,
+                  "hr": 8,
+                  "rbi": 48,
+                  "sb": 0,
+                  "obp": 0.316,
+                  "gp": 99
+                }
+              },
+              "player_id": "02mxf",
+              "start": "2026-04-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 46,
+            "hr": 8,
+            "rbi": 48,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.136726,
+          "grade": "A",
+          "percentile": 79
+        }
+      ]
+    },
+    "2026:4vqa98fhmoboyh3c": {
+      "date": "2026-04-23",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Tony Santillan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "03poq",
+              "start": "2026-04-24",
+              "end": "2026-05-02"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:j0ka5tbymo6ffojz": {
+      "date": "2026-04-19",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Garrett Whitlock",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "3.1",
+                  "era": 2.7,
+                  "whip": 1.2,
+                  "k": 2,
+                  "svh3": 0.5,
+                  "wqs": 0,
+                  "gp": 3
+                }
+              },
+              "player_id": "04eqa",
+              "start": "2026-04-20",
+              "end": "2026-05-10"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 2,
+            "svh3": 0.5,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.007224,
+          "grade": "C",
+          "percentile": 30
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:iwj4ntrtmo6c0ndf": {
+      "date": "2026-04-19",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Bryce Eldridge",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 328,
+                  "r": 42,
+                  "h": 90,
+                  "hr": 15,
+                  "rbi": 53,
+                  "sb": 1,
+                  "obp": 0.37,
+                  "gp": 89
+                }
+              },
+              "player_id": "05u96",
+              "start": "2026-04-20",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 42,
+            "hr": 15,
+            "rbi": 53,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.173546,
+          "grade": "A",
+          "percentile": 85
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Emmanuel Rodriguez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "054p6",
+              "start": "2026-04-20",
+              "end": "2026-09-27"
+            },
+            {
+              "player_name": "Gabriel Moreno",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 424,
+                  "r": 65,
+                  "h": 135,
+                  "hr": 15,
+                  "rbi": 76,
+                  "sb": 6,
+                  "obp": 0.398,
+                  "gp": 115
+                }
+              },
+              "player_id": "04s1g",
+              "start": "2026-04-20",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 65,
+            "hr": 15,
+            "rbi": 76,
+            "sb": 6,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.262589,
+          "grade": "A",
+          "percentile": 90
+        }
+      ]
+    },
+    "2026:o5o39luymnw2td9p": {
+      "date": "2026-04-12",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Ramon Laureano",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 76,
+                  "r": 8,
+                  "h": 14,
+                  "hr": 1,
+                  "rbi": 8,
+                  "sb": 1,
+                  "obp": 0.273,
+                  "gp": 22
+                }
+              },
+              "player_id": "03dp8",
+              "start": "2026-04-13",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 8,
+            "hr": 1,
+            "rbi": 8,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.029369,
+          "grade": "C",
+          "percentile": 44
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Caleb Bonemer",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06hea",
+              "start": "2026-04-13",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:ellx6phpmnuzidmy": {
+      "date": "2026-04-12",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Gary Sanchez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 45,
+                  "r": 6,
+                  "h": 8,
+                  "hr": 1,
+                  "rbi": 6,
+                  "sb": 0,
+                  "obp": 0.339,
+                  "gp": 13
+                }
+              },
+              "player_id": "01t9q",
+              "start": "2026-04-13",
+              "end": "2026-05-02"
+            }
+          ],
+          "totals": {
+            "r": 6,
+            "hr": 1,
+            "rbi": 6,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.017361,
+          "grade": "C",
+          "percentile": 39
+        },
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:ywu03rbomnbyzgye": {
+      "date": "2026-03-29",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Jordan Walker",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 599,
+                  "r": 91,
+                  "h": 160,
+                  "hr": 28,
+                  "rbi": 99,
+                  "sb": 22,
+                  "obp": 0.324,
+                  "gp": 155
+                }
+              },
+              "player_id": "05gbf",
+              "start": "2026-03-30",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 91,
+            "hr": 28,
+            "rbi": 99,
+            "sb": 22,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.489578,
+          "grade": "A",
+          "percentile": 100
+        },
+        {
+          "owner": "Evan Soraci",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:cuewvhsdmnc7q4d1": {
+      "date": "2026-03-29",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Garrett Whitlock",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "4",
+                  "era": 4.5,
+                  "whip": 1.75,
+                  "k": 6,
+                  "svh3": 1.0,
+                  "wqs": 0,
+                  "gp": 3
+                }
+              },
+              "player_id": "04eqa",
+              "start": "2026-03-30",
+              "end": "2026-04-18"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 6,
+            "svh3": 1.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.015957,
+          "grade": "C",
+          "percentile": 37
+        }
+      ]
+    },
+    "2026:nh1qb4y2mn9eqaz5": {
+      "date": "2026-03-27",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "JJ Wetherholt",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 57,
+                  "r": 15,
+                  "h": 16,
+                  "hr": 5,
+                  "rbi": 10,
+                  "sb": 1,
+                  "obp": 0.4,
+                  "gp": 15
+                }
+              },
+              "player_id": "06aw3",
+              "start": "2026-03-28",
+              "end": "2026-04-29"
+            }
+          ],
+          "totals": {
+            "r": 15,
+            "hr": 5,
+            "rbi": 10,
+            "sb": 1,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.055132,
+          "grade": "B",
+          "percentile": 56
+        },
+        {
+          "owner": "Evan Soraci",
+          "players": [
+            {
+              "player_name": "Jarren Duran",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 477,
+                  "r": 54,
+                  "h": 96,
+                  "hr": 17,
+                  "rbi": 63,
+                  "sb": 16,
+                  "obp": 0.255,
+                  "gp": 130
+                }
+              },
+              "player_id": "04pst",
+              "start": "2026-03-28",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 54,
+            "hr": 17,
+            "rbi": 63,
+            "sb": 16,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.319172,
+          "grade": "A",
+          "percentile": 94
+        }
+      ]
+    },
+    "2026:gokqbtdlmn66gu2i": {
+      "date": "2026-03-25",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Jeremy Pena",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 430,
+                  "r": 79,
+                  "h": 119,
+                  "hr": 22,
+                  "rbi": 55,
+                  "sb": 12,
+                  "obp": 0.323,
+                  "gp": 107
+                }
+              },
+              "player_id": "04ppj",
+              "start": "2026-03-26",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 79,
+            "hr": 22,
+            "rbi": 55,
+            "sb": 12,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.326636,
+          "grade": "A",
+          "percentile": 96
+        },
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Seiya Suzuki",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 511,
+                  "r": 90,
+                  "h": 139,
+                  "hr": 26,
+                  "rbi": 84,
+                  "sb": 3,
+                  "obp": 0.368,
+                  "gp": 134
+                }
+              },
+              "player_id": "04b02",
+              "start": "2026-03-26",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 90,
+            "hr": 26,
+            "rbi": 84,
+            "sb": 3,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.319879,
+          "grade": "A",
+          "percentile": 95
+        }
+      ]
+    },
+    "2026:dd3pdm8wmn6a8p9t": {
+      "date": "2026-03-25",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:dz9bd9oumn5c160e": {
+      "date": "2026-03-24",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [
+            {
+              "player_name": "Tyler Glasnow",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "62",
+                  "era": 3.63,
+                  "whip": 0.984,
+                  "k": 85,
+                  "svh3": 0.0,
+                  "wqs": 10,
+                  "gp": 11
+                }
+              },
+              "player_id": "02btx",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 85,
+            "svh3": 0.0,
+            "wqs": 10
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.121458,
+          "grade": "A",
+          "percentile": 75
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Max Clark",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05u9y",
+              "start": "2026-03-25",
+              "end": "2026-08-03"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:8voxkdkpmn5b43b5": {
+      "date": "2026-03-24",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [
+            {
+              "player_name": "Carlos Narvaez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 97,
+                  "r": 5,
+                  "h": 16,
+                  "hr": 0,
+                  "rbi": 3,
+                  "sb": 0,
+                  "obp": 0.194,
+                  "gp": 32
+                }
+              },
+              "player_id": "048tn",
+              "start": "2026-03-25",
+              "end": "2026-08-02"
+            }
+          ],
+          "totals": {
+            "r": 5,
+            "hr": 0,
+            "rbi": 3,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.008851,
+          "grade": "C",
+          "percentile": 33
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:ws17pwx4mn5cbl7d": {
+      "date": "2026-03-24",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [
+            {
+              "player_name": "Kyson Witherspoon",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06ms5",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Christian Scott",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "46",
+                  "era": 4.11,
+                  "whip": 1.326,
+                  "k": 57,
+                  "svh3": 0.0,
+                  "wqs": 4,
+                  "gp": 9
+                }
+              },
+              "player_id": "05xpq",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 57,
+            "svh3": 0.0,
+            "wqs": 4
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.065942,
+          "grade": "B",
+          "percentile": 58
+        }
+      ]
+    },
+    "2026:6r7iz1cjmn3ig32b": {
+      "date": "2026-03-23",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Adrian Morejon",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "2",
+                  "era": 0.0,
+                  "whip": 0.5,
+                  "k": 1,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 1
+                }
+              },
+              "player_id": "043ia",
+              "start": "2026-03-25",
+              "end": "2026-03-29"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 1,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.000755,
+          "grade": "C",
+          "percentile": 25
+        }
+      ]
+    },
+    "2026:5mc4b7tdmn40p9cl": {
+      "date": "2026-03-23",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Eduardo Quintero",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06c79",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Ryan Sloan",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0",
+                  "era": 0.0,
+                  "whip": 0.0,
+                  "k": 0,
+                  "svh3": 0.0,
+                  "wqs": 0,
+                  "gp": 0
+                }
+              },
+              "player_id": "06ier",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:z65wv86kmn2fahm9": {
+      "date": "2026-03-22",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Michael Arroyo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05yid",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Andrew Abbott",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "20",
+                  "era": 5.85,
+                  "whip": 1.7,
+                  "k": 12,
+                  "svh3": 0.0,
+                  "wqs": 1,
+                  "gp": 4
+                }
+              },
+              "player_id": "05jq2",
+              "start": "2026-03-25",
+              "end": "2026-04-19"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 12,
+            "svh3": 0.0,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.014787,
+          "grade": "C",
+          "percentile": 36
+        }
+      ]
+    },
+    "2026:yfrwofnsmn0o2him": {
+      "date": "2026-03-21",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [
+            {
+              "player_name": "Joey Cantillo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "159",
+                  "era": 3.62,
+                  "whip": 1.415,
+                  "k": 171,
+                  "svh3": 0.0,
+                  "wqs": 17,
+                  "gp": 33
+                }
+              },
+              "player_id": "04eos",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 171,
+            "svh3": 0.0,
+            "wqs": 17
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.226478,
+          "grade": "A",
+          "percentile": 89
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:prxt31zfmmtghymy": {
+      "date": "2026-03-16",
+      "sides": [
+        {
+          "owner": "Liam Burns",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Joe Mack",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 264,
+                  "r": 33,
+                  "h": 61,
+                  "hr": 12,
+                  "rbi": 43,
+                  "sb": 0,
+                  "obp": 0.282,
+                  "gp": 91
+                }
+              },
+              "player_id": "05rcd",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 33,
+            "hr": 12,
+            "rbi": 43,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.132842,
+          "grade": "A",
+          "percentile": 78
+        }
+      ]
+    },
+    "2026:aypi3lnfmmoz30vg": {
+      "date": "2026-03-13",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jason Bartolini",
+          "players": [
+            {
+              "player_name": "Carson Kelly",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 63,
+                  "r": 11,
+                  "h": 21,
+                  "hr": 2,
+                  "rbi": 10,
+                  "sb": 0,
+                  "obp": 0.44,
+                  "gp": 20
+                }
+              },
+              "player_id": "02mxf",
+              "start": "2026-03-25",
+              "end": "2026-04-23"
+            }
+          ],
+          "totals": {
+            "r": 11,
+            "hr": 2,
+            "rbi": 10,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.031339,
+          "grade": "C",
+          "percentile": 46
+        }
+      ]
+    },
+    "2026:9qk7sktsmmnsz06h": {
+      "date": "2026-03-12",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [
+            {
+              "player_name": "Garrett Cleavinger",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "0.1",
+                  "era": 54.0,
+                  "whip": 6.0,
+                  "k": 0,
+                  "svh3": 0.5,
+                  "wqs": 0,
+                  "gp": 1
+                }
+              },
+              "player_id": "03qju",
+              "start": "2026-03-25",
+              "end": "2026-03-28"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0.5,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.005714,
+          "grade": "C",
+          "percentile": 30
+        }
+      ]
+    },
+    "2026:yrphsm80mmjatwyu": {
+      "date": "2026-03-09",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Luis Perales",
+              "status": "unavailable",
+              "reason": "No full scoring day in this ownership window",
+              "groups": {},
+              "player_id": "05gd5",
+              "start": "2026-03-25",
+              "end": "2026-03-22"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "David Turley",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:h05041nsmmgtfv6q": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Matthew Zujewski",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:iwxt3ug8mmgtje8k": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:x85gwzmymmgtkar2": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Matthew Zujewski",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:uxtgihslmmgtvdua": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:ro1rjclymmgucdbt": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Jacob Melton",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "061gx",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:ss3rh3vammguhnp2": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Matthew Zujewski",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:bzk20vwlmmgurkoy": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:lbjy77plmmgv5tli": {
+      "date": "2026-03-07",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jose Garcia-Chope",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:wzl2cfl1mmfda812": {
+      "date": "2026-03-06",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Owen Hern",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:rcyycdqqmmfqndrp": {
+      "date": "2026-03-06",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Owen Hern",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        }
+      ]
+    },
+    "2026:5j82djv5mmc9a869": {
+      "date": "2026-03-04",
+      "sides": [
+        {
+          "owner": "Trent Radding",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Jeremiah Estrada",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "7",
+                  "era": 5.14,
+                  "whip": 1.429,
+                  "k": 8,
+                  "svh3": 1.5,
+                  "wqs": 1,
+                  "gp": 7
+                }
+              },
+              "player_id": "04ehz",
+              "start": "2026-03-25",
+              "end": "2026-05-16"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 8,
+            "svh3": 1.5,
+            "wqs": 1
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.028911,
+          "grade": "C",
+          "percentile": 43
+        }
+      ]
+    },
+    "2026:momse909mmc6wrfk": {
+      "date": "2026-03-04",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Jeff Hoffman",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "40.1",
+                  "era": 4.69,
+                  "whip": 1.537,
+                  "k": 61,
+                  "svh3": 8.0,
+                  "wqs": 5,
+                  "gp": 43
+                }
+              },
+              "player_id": "03ann",
+              "start": "2026-03-25",
+              "end": "2026-07-25"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 61,
+            "svh3": 8.0,
+            "wqs": 5
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.16612,
+          "grade": "A",
+          "percentile": 84
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Colt Emerson",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "060ub",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:kyx9mxatmm0xp527": {
+      "date": "2026-02-24",
+      "sides": [
+        {
+          "owner": "Alex Beim",
+          "players": [
+            {
+              "player_name": "Jack Leiter",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "61.2",
+                  "era": 4.67,
+                  "whip": 1.281,
+                  "k": 68,
+                  "svh3": 0.0,
+                  "wqs": 5,
+                  "gp": 11
+                }
+              },
+              "player_id": "04y9o",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 68,
+            "svh3": 0.0,
+            "wqs": 5
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.079974,
+          "grade": "B",
+          "percentile": 62
+        },
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Ramon Laureano",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 52,
+                  "r": 8,
+                  "h": 14,
+                  "hr": 3,
+                  "rbi": 9,
+                  "sb": 3,
+                  "obp": 0.333,
+                  "gp": 14
+                }
+              },
+              "player_id": "03dp8",
+              "start": "2026-03-25",
+              "end": "2026-04-11"
+            },
+            {
+              "player_name": "Parker Messick",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "34.2",
+                  "era": 2.86,
+                  "whip": 0.923,
+                  "k": 39,
+                  "svh3": 0.0,
+                  "wqs": 4,
+                  "gp": 6
+                }
+              },
+              "player_id": "05tzn",
+              "start": "2026-03-25",
+              "end": "2026-05-03"
+            }
+          ],
+          "totals": {
+            "r": 8,
+            "hr": 3,
+            "rbi": 9,
+            "sb": 3,
+            "k": 39,
+            "svh3": 0.0,
+            "wqs": 4
+          },
+          "available": 2,
+          "complete": true,
+          "score": 0.105924,
+          "grade": "B",
+          "percentile": 71
+        }
+      ]
+    },
+    "2026:hb106fv0mls5jshz": {
+      "date": "2026-02-18",
+      "sides": [
+        {
+          "owner": "Evan Soraci",
+          "players": [],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 0,
+          "complete": false,
+          "score": null,
+          "grade": null
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Coby Mayo",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 0,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.0,
+                  "gp": 0
+                }
+              },
+              "player_id": "05js5",
+              "start": "2026-03-25",
+              "end": "2026-04-18"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        }
+      ]
+    },
+    "2026:4hdw4e50mlf9spp9": {
+      "date": "2026-02-09",
+      "sides": [
+        {
+          "owner": "Jordan Papula",
+          "players": [
+            {
+              "player_name": "Marcell Ozuna",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 9,
+                  "r": 0,
+                  "h": 1,
+                  "hr": 0,
+                  "rbi": 0,
+                  "sb": 0,
+                  "obp": 0.2,
+                  "gp": 2
+                }
+              },
+              "player_id": "01usi",
+              "start": "2026-03-25",
+              "end": "2026-04-05"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.0,
+          "grade": "D",
+          "percentile": 0
+        },
+        {
+          "owner": "Liam Burns",
+          "players": [
+            {
+              "player_name": "Otto Lopez",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 616,
+                  "r": 93,
+                  "h": 188,
+                  "hr": 11,
+                  "rbi": 70,
+                  "sb": 33,
+                  "obp": 0.35,
+                  "gp": 155
+                }
+              },
+              "player_id": "04tjl",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 93,
+            "hr": 11,
+            "rbi": 70,
+            "sb": 33,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.473771,
+          "grade": "A",
+          "percentile": 98
+        }
+      ]
+    },
+    "2026:4y0qz43bmkr80ncq": {
+      "date": "2026-01-23",
+      "sides": [
+        {
+          "owner": "Reed Heim",
+          "players": [
+            {
+              "player_name": "Tanner Bibee",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "pitching": {
+                  "ip": "93.1",
+                  "era": 4.92,
+                  "whip": 1.296,
+                  "k": 78,
+                  "svh3": 0.0,
+                  "wqs": 12,
+                  "gp": 17
+                }
+              },
+              "player_id": "05y23",
+              "start": "2026-03-25",
+              "end": "2026-09-27"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 0,
+            "sb": 0,
+            "k": 78,
+            "svh3": 0.0,
+            "wqs": 12
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.127636,
+          "grade": "A",
+          "percentile": 77
+        },
+        {
+          "owner": "Jack Dunne",
+          "players": [
+            {
+              "player_name": "Addison Barger",
+              "status": "available",
+              "reason": null,
+              "groups": {
+                "hitting": {
+                  "ab": 8,
+                  "r": 0,
+                  "h": 0,
+                  "hr": 0,
+                  "rbi": 2,
+                  "sb": 0,
+                  "obp": 0.182,
+                  "gp": 3
+                }
+              },
+              "player_id": "04qii",
+              "start": "2026-03-25",
+              "end": "2026-08-07"
+            }
+          ],
+          "totals": {
+            "r": 0,
+            "hr": 0,
+            "rbi": 2,
+            "sb": 0,
+            "k": 0,
+            "svh3": 0,
+            "wqs": 0
+          },
+          "available": 1,
+          "complete": true,
+          "score": 0.002303,
+          "grade": "C",
+          "percentile": 29
+        }
+      ]
+    }
+  }
+}
